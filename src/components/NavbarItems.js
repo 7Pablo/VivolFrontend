@@ -2,19 +2,19 @@
 "use client"; 
 
 import { usePathname } from "next/navigation"; 
-import Link from "next/link"; 
+import Link from "next/link";
 
 function NavbarItems({ navItems }) {
-  // Get the current route
-  const pathname = usePathname(); 
+  const pathname = usePathname(); // Get the current route
+  const lang = pathname.startsWith("/en") ? "en" : "es"; // Determine the current language
 
   return (
     <ul className="navbar__items">
       {navItems.map((item, index) => (
         <li key={index}>
-          <Link href={item.href}>
+          <Link href={`/${lang}${item.href}`}>
             <p
-              className={`navbar__items--text${pathname === item.href ? "-active" : ""}`} 
+              className={`navbar__items--text${pathname === `/${lang}${item.href}` || (item.href === "/" && (pathname === `/${lang}` || pathname === `/`)) ? "-active" : ""}`} 
               data-hover={item.label}
             >
               {item.label}

@@ -1,16 +1,14 @@
+// app/layout.js (Global layout for the whole app)
 import '@/css/styles.css';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import { league_spartan, poppins } from '../../public/fonts/fonts'; 
 
-// RootLayout always has the html and body tags
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children, params }) {
+  const lang = params?.lang || 'es';
+
   return (
-    <html lang="es" className={`${league_spartan.variable} ${poppins.variable}`}>
+    <html lang={lang} className={`${league_spartan.variable} ${poppins.variable}`}>
       <body>
-        <Navbar />
         <main>{children}</main>
-        {/* <Footer /> */}
       </body>
     </html>
   );

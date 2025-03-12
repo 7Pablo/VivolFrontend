@@ -2,15 +2,19 @@
 
 import Image from "next/image";
 import NavbarItems from "./NavbarItems"; 
+import { getTranslations } from "locales/translations";
 
-function Navbar() {
+async function Navbar({ lang }) {
+  const locale = lang || 'en';
+  const trans = await getTranslations(locale);
+
   // Navbar items
   const navItems = [
-    { label: "Inicio", href: "/" },
-    { label: "Nosotros", href: "/about" },
-    { label: "Voluntariado", href: "/volunteer" },
-    { label: "Involúcrate", href: "/involve" },
-    { label: "Contacto", href: "/contact" },
+    { label: trans.navbar.home, href: "/" },
+    { label: trans.navbar.about, href: "/about" },
+    { label: trans.navbar.volunteer, href: "/volunteer" },
+    { label: trans.navbar.involve, href: "/involve" },
+    { label: trans.navbar.contact, href: "/contact" },
   ];
 
   return (
