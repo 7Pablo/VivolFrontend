@@ -1,6 +1,6 @@
-// app/[lang]/page.js
-export default async function HomePage({ params }) {
-  const lang = params.lang || 'en';
+export default async function HomePage(props) {
+  const params = await props.params;
+  const lang = params?.lang || 'es'; 
 
   return (
     <div>

@@ -116,6 +116,49 @@ time, mark, audio, video {
   width: 100%;
 }
 
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  width: 50px;
+  height: 25px;
+  background-color: #355FB5;
+  border-radius: 20px;
+  position: relative;
+  transition: background-color 0.4s ease-in-out;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.toggle__container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.toggle__button {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.4s ease-in-out;
+  cursor: pointer;
+}
+.toggle__button.toggled {
+  transform: translateX(100%);
+}
+.toggle__button:focus {
+  outline: none;
+}
+
 .home {
   font-family: var(--font-p), sans-serif;
   font-size: 12px;

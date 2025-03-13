@@ -3,6 +3,7 @@
 import Image from "next/image";
 import NavbarItems from "./NavbarItems"; 
 import { getTranslations } from "locales/translations";
+import LanguageToggle from './LanguageToggle';
 
 async function Navbar({ lang }) {
   const locale = lang || 'en';
@@ -34,6 +35,7 @@ async function Navbar({ lang }) {
         </div>
       </div>
       <NavbarItems navItems={navItems} />
+      <LanguageToggle />
     </div>
   );
 }
