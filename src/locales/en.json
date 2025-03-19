@@ -5,6 +5,14 @@
       "volunteer": "Volunteer",
       "involve": "Get Involved",
       "contact": "Contact"
+    },
+
+    "alt": {
+      "language_change": "Cambiar idioma a español"
+    },
+
+    "button": {
+      "language_text": "Español"
     }
   }
   

@@ -1,0 +1,15 @@
+.ham-dropdown {
+    display: none;
+
+    &__button {
+        outline: none;
+    }
+
+    &__icon {
+        color: $blue-main;
+    }
+
+    @include responsive(smedium) {
+        display: block;
+    }
+}

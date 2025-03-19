@@ -4,7 +4,12 @@
     "paths": {
       "@/css/*": ["css/*"],
       "@/components/*": ["components/*"],
-      "@/locales/*": ["locales/*"]
-    }
+      "@/locales/*": ["locales/*"],
+      "@/*": ["./src/*"]
+    },
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "skipLibCheck": true
   }
 }

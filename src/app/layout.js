@@ -1,13 +1,18 @@
 import '@/css/styles.css';
 import { league_spartan, poppins } from '../../public/fonts/fonts'; 
+import { Provider } from "@/components/ui/provider";
 
-export default async function RootLayout({ children, params }) {
+export default function RootLayout({ children, params }) {
   const lang = params?.lang || 'es'; 
 
   return (
-    <html lang={lang} className={`${league_spartan.variable} ${poppins.variable}`}>
+    <html 
+      lang={lang} 
+      className={`${league_spartan.variable} ${poppins.variable}`}
+      suppressHydrationWarning
+    >
       <body>
-        <main>{children}</main>
+        <Provider>{children}</Provider>
       </body>
     </html>
   );

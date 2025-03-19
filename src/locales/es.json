@@ -5,5 +5,13 @@
       "volunteer": "Voluntariado",
       "involve": "Involúcrate",
       "contact": "Contacto"
+    },
+
+    "alt": {
+      "language_change": "Change language to English"
+    },
+
+    "button": {
+      "language_text": "English"
     }
   }

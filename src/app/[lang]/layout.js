@@ -7,10 +7,10 @@ export default async function LangLayout(props) {
   const lang = params?.lang || 'es'; 
 
   return (
-    <body>
+    <>
       <Navbar lang={lang} />
       <main>{props.children}</main>
       <Footer />
-    </body>
+    </>
   );
 }

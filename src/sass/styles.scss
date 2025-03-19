@@ -40,7 +40,8 @@ time, mark, audio, video {
 
 // Components
 @import './components/navbar';
-@import './components/language-toggle';
+@import './components/ham-dropdown';
+@import './components/language_button';
 
 // Pages 
 @import './pages/home-page';
