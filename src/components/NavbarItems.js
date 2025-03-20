@@ -5,8 +5,8 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 function NavbarItems({ navItems }) {
-  const pathname = usePathname(); // Get the current route
-  const lang = pathname.startsWith("/en") ? "en" : "es"; // Determine the current language
+  const pathname = usePathname(); 
+  const lang = pathname.startsWith("/en") ? "en" : "es"; 
 
   return (
     <ul className="navbar__items">

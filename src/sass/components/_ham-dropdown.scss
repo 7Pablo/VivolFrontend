@@ -9,7 +9,78 @@
         color: $blue-main;
     }
 
+    &__content {
+        @include flex($align: start, $gap: 10px);
+        background-color: $blue-main;
+        margin-top: 25px;
+        border-radius: 12px;
+        padding: 20px 50px 25px 25px;
+        width: 225px;
+
+        .language_button {
+            box-shadow: none;
+        }
+
+        .language_button--text {
+            color: $gray-dark;
+        }
+    }
+
+    &__item {
+        transition: transform 0.3s ease-out;
+        outline: none;
+
+        .chakra-menu__item {
+            @include body-font($color: #fff, $size: 18px, $weight: 300);
+            padding: 8px 0px;
+            background-color: transparent;
+            outline: none;
+        }
+
+        &:hover {
+            transform: translateX(20px);
+        }
+    }
+
     @include responsive(smedium) {
         display: block;
+    }
+
+    @include responsive(small) {
+        &__content {
+            width: 90vw;
+            gap: 15px;
+            padding-bottom: 30px;
+
+            .language_button {
+                transition: transform 0.3s ease-out;
+                width: 150px;
+                height: 40px;
+
+                &--icon {
+                    height: 40px;
+                    width: 40px;
+                }
+
+                &--text {
+                    font-size: 16px;
+                    margin-left: 20px;
+                }
+
+                &:hover {
+                    width: 150px;
+                    transform: translateX(20px);
+                }
+            }
+        }
+
+        &__item {
+            .chakra-menu__item {
+                font-size: 20px;
+                padding: 14px 0px;
+                background-color: transparent;
+            }
+
+        }
     }
 }

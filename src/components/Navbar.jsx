@@ -36,8 +36,10 @@ async function Navbar({ lang }) {
         </div>
       </div>
       <NavbarItems navItems={navItems} />
-      <LanguageButton lang={locale}/>
-      <HamDropdown />
+      <div className="navbar__language">
+        <LanguageButton lang={locale}/>
+      </div>
+      <HamDropdown navItems={navItems}/>
     </div>
   );
 }
