@@ -17,11 +17,11 @@
         padding: 20px 50px 25px 25px;
         width: 225px;
 
-        .language_button {
+        .language-button {
             box-shadow: none;
         }
 
-        .language_button--text {
+        .language-button__text {
             color: $gray-dark;
         }
     }
@@ -40,6 +40,10 @@
         &:hover {
             transform: translateX(20px);
         }
+
+        &-active {
+            font-weight: 600;
+        }
     }
 
     @include responsive(smedium) {
@@ -52,17 +56,17 @@
             gap: 15px;
             padding-bottom: 30px;
 
-            .language_button {
+            .language-button {
                 transition: transform 0.3s ease-out;
                 width: 150px;
                 height: 40px;
 
-                &--icon {
+                &__icon {
                     height: 40px;
                     width: 40px;
                 }
 
-                &--text {
+                &__text {
                     font-size: 16px;
                     margin-left: 20px;
                 }
@@ -80,7 +84,6 @@
                 padding: 14px 0px;
                 background-color: transparent;
             }
-
         }
     }
 }

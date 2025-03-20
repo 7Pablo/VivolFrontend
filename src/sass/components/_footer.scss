@@ -1,0 +1,43 @@
+.footer {
+    @include body-font($color: #fff, $size: 16px);
+    margin-top: auto;
+    padding: 50px 150px;
+    background: linear-gradient(to bottom, $blue-main, $blue-dark 80%);
+    
+    &__top {
+        @include flex($direction: row, $justify: space-between);
+    }
+
+    &__about {
+        @include flex($align: start, $gap: 15px);
+        max-width: 700px;
+
+        h2 {
+            @include title-font($color: #fff, $size: 22px);
+        }
+    }
+
+    &__nav {
+        
+    }
+
+    &__contact {
+        
+    }
+
+    &__line {
+        background-color: #fff;
+        margin: 20px 0px;
+        border: none;
+        height: 0.1px;
+
+    }
+
+    &__bottom {
+        @include flex($direction: row, $justify: space-between);
+    }
+
+    &__social-media {
+        @include flex($direction: row);
+    }
+}

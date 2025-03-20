@@ -7,6 +7,19 @@
       "contact": "Contacto"
     },
 
+    "footer": {
+      "about_title": "Acerca de Nosotros",
+      "about_text": "VIDA y VOLUNTARIADO (VIVOL) es una asociación sin fines de lucro que busca promover el aprendizaje experiencial por medio de procesos de integración multicultural. Con esta propuesta buscamos generar un impacto en las diversas realidades sociales a través del voluntariado internacional y local.",
+      "links_title": "Enlaces Rápidos",
+      "international": "Voluntariado Internacional",
+      "national": "Voluntariado en el Perú",
+      "family": "Programa de Familias Hospederas",
+      "project": "Voluntario en Mi Proyecto",
+      "acknowledgments": "Agradecimientos",
+      "contact": "Contáctanos",
+      "copyright": "Todos los derechos reservados"
+    },
+
     "alt": {
       "language_change": "Change language to English"
     },

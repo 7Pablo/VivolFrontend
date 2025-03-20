@@ -1,4 +1,4 @@
-.language_button {
+.language-button {
     display: flex; /* Use flexbox for alignment */
     align-items: center; /* Center items vertically */
     background-color: #fff;
@@ -10,13 +10,13 @@
     transition: width 0.3s ease-out; 
     overflow: hidden;
 
-    &--icon {
+    &__icon {
         flex-shrink: 0; 
         border-radius: 50px;
         box-sizing: border-box;
     }
 
-    &--text {
+    &__text {
         @include body-font($size: 13px, $weight: 500);
         margin-left: 12px;
         white-space: nowrap; 

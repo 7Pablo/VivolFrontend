@@ -4,7 +4,7 @@ import { Menu } from "@chakra-ui/react"
 import { FaBars } from "react-icons/fa";
 import { usePathname } from "next/navigation"; 
 import Link from "next/link";
-import LanguageButton from "./LanguageButton";
+import LanguageButton from "./Buttons/LanguageButton";
 
 export default function HamDropdown({ navItems }) {
   const pathname = usePathname(); 
@@ -24,7 +24,11 @@ export default function HamDropdown({ navItems }) {
               {navItems.map((item, index) => (
                 <div key={index} className="ham-dropdown__item">
                   <Link href={`/${lang}${item.href}`}>
-                    <Menu.Item>{item.label}</Menu.Item>
+                    <Menu.Item>
+                      <p className={`ham-dropdown__item${pathname === `/${lang}${item.href}` || (item.href === "/" && (pathname === `/${lang}` || pathname === `/`)) ? "-active" : ""}`} >
+                        {item.label}
+                      </p>
+                    </Menu.Item>
                   </Link>
                 </div>
               ))}

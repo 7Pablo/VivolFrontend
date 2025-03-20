@@ -7,6 +7,19 @@
       "contact": "Contact"
     },
 
+    "footer": {
+      "about-title": "About Us",
+      "about-text": "VIDA y VOLUNTARIADO (VIVOL) is a non-profit organization that aims to promote experiential learning through multicultural integration processes. With this initiative, we seek to create an impact on diverse social realities through international and local volunteering.",
+      "links-title": "Quick Links",
+      "international": "International Volunteering",
+      "national": "Volunteering in Peru",
+      "family": "Host Family Program",
+      "project": "Volunteer in My Project",
+      "acknowledgments": "Acknowledgments",
+      "contact": "Contact Us",
+      "copyright": "All rights reserved"
+    },
+
     "alt": {
       "language_change": "Cambiar idioma a español"
     },

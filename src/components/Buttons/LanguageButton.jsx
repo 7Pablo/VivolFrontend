@@ -1,3 +1,4 @@
+// LanguageButton.jsx (Client component)
 "use client";
 
 import { usePathname, useRouter } from "next/navigation";
@@ -30,16 +31,16 @@ export default function LanguageButton({ lang }) {
   };
 
   return (
-    <div className="language_button" onClick={handleLanguageChange}>
+    <div className="language-button" onClick={handleLanguageChange}>
         <Image
           src={lang === "en" ? "/images/espanol.svg" : "/images/ingles.svg"}
           alt={trans.alt.language_change}
           width={32}
           height={32}
           priority
-          className="language_button--icon"
+          className="language-button__icon"
         />
-        <span className="language_button--text">{trans.button.language_text}</span>
+        <span className="language-button__text">{trans.button.language_text}</span>
     </div>
   );
 }

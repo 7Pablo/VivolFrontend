@@ -19,6 +19,12 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+.lang-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 // Logo fonts (Aileron)
 @font-face {
     font-family: 'Aileron';
@@ -40,6 +46,7 @@ time, mark, audio, video {
 
 // Components
 @import './components/navbar';
+@import './components/footer';
 @import './components/ham-dropdown';
 @import './components/language_button';
 
