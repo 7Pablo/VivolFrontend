@@ -9,11 +9,11 @@ export default function FooterItems({ footItems }) {
     const lang = pathname.startsWith("/en") ? "en" : "es"; 
 
     return (
-        <ul className="footer__items">
+        <ul className="footer__nav--items">
           {footItems.map((item, index) => (
             <li key={index}>
               <Link href={`/${lang}${item.href}`}>
-                <p className="footer__items--text">
+                <p className="footer__nav--item-text">
                   {item.label}
                 </p>
               </Link>

@@ -29,14 +29,21 @@ export default async function Footer({ lang }) {
                     <FooterItems footItems={footItems}/>
                 </div>
                 <div className="footer__contact">
-                    <FooterContact 
-                        src="/images/whatsapp.svg"
-                        text='(+51) 903 211 488'
-                    />
-                    <FooterContact 
-                        src="/images/mail.svg"
-                        text='info@vidayvoluntariado.org'
-                    />
+                    <h2>{trans.footer.contact}</h2>
+                    <div className="footer__contact--items">
+                        <FooterContact
+                            src="/images/whatsapp.svg"
+                            text='(+51) 903211488'
+                            medium='51903211488'
+                            type='whatsapp'
+                        />
+                        <FooterContact
+                            src="/images/mail.svg"
+                            text='info@vidayvoluntariado.org'
+                            medium="info@vidayvoluntariado.org"
+                            type="email"
+                        />
+                    </div>
                 </div>
             </div>
             <hr className="footer__line"/>
@@ -47,16 +54,19 @@ export default async function Footer({ lang }) {
                         src="/images/instagram.svg"
                         alt="Vivol Instagram"
                         text="Instagram"
-                    />
-                    <FoldButton 
-                        src="/images/facebook.svg"
-                        alt="Vivol Facebook"
-                        text="Facebook"
+                        link="https://www.instagram.com/vivol_peru/"
                     />
                     <FoldButton 
                         src="/images/tiktok.svg"
                         alt="Vivol Tik Tok"
                         text="Tik Tok"
+                        link="https://www.tiktok.com/@vivol_peru?lang=es"
+                    />
+                    <FoldButton 
+                        src="/images/facebook.svg"
+                        alt="Vivol Facebook"
+                        text="Facebook"
+                        link="https://www.facebook.com/profile.php?id=100080244291572"
                     />
                 </div>
             </div>
