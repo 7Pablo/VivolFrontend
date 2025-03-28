@@ -1,31 +1,30 @@
 .footer {
-    @include body-font($color: #fff, $size: 15px);
+    @include body-font($color: #fff, $size: 14px);
     @include flex();
     margin-top: auto;
-    padding: 50px 150px 25px 150px;
+    padding: 50px 100px 25px 100px;
     background: linear-gradient(to bottom, $blue-main, $blue-dark 80%);
     
     &__top {
-        @include flex($direction: row, $justify: space-between, $align: start);
+        @include flex($direction: row, $justify: space-between, $align: start, $gap: 50px);
         width: 100%;
         max-width: 1440px;
+
+        h2 {
+            @include title-font($color: #fff, $size: 20px);
+        }
     }
 
     &__about {
         @include flex($align: start, $gap: 15px);
-        max-width: 700px;
-
-        h2 {
-            @include title-font($color: #fff, $size: 21px);
-        }
+        text-align: justify;
+        max-width: 600px;
+        line-height: 28px;
     }
 
     &__nav {
         @include flex($align: start, $gap: 15px);
-
-        h2 {
-            @include title-font($color: #fff, $size: 21px);
-        }
+        min-width: fit-content;
 
         &--items {
             @include flex($align: start, $gap: 5px);
@@ -42,10 +41,6 @@
 
     &__contact {
         @include flex($align: start, $gap: 15px);
-        
-        h2 {
-            @include title-font($color: #fff, $size: 21px);
-        }
 
         &--items {
             @include flex($align: start, $gap: 15px);
@@ -79,5 +74,82 @@
 
     &__social-media {
         @include flex($direction: row, $gap: 25px);
+    }
+
+    @include responsive(medium) {
+        font-size: 12px;
+
+        &__top {
+            gap: 30px;
+        
+            h2 {
+                text-align: left;
+                font-size: 18px;
+            }
+        }
+    }
+
+    @include responsive(smedium) {
+        font-size: 13px;
+        padding: 60px 70px 40px 70px;
+
+        &__top {
+            @include flex($direction: column, $justify: start, $align: start, $gap: 50px);
+    
+            h2 {
+                font-size: 22px;
+            }
+        }
+
+        &__about {
+            max-width: fit-content;
+        }
+
+        &__nav {
+            &--items {
+                gap: 20px
+            }
+        }
+
+        &__line {
+            margin: 40px 0px;
+        }
+
+        &__bottom {
+            @include flex($direction: column, $justify: start, $align: start, $gap: 30px);
+
+            &--text {
+                order: 2;
+            }
+        }
+    }
+
+    @include responsive(small) {
+        font-size: 16px;
+        padding: 60px 30px 40px 30px;
+
+        &__top {
+            gap: 60px;
+    
+            h2 {
+                font-size: 24px;
+            }
+        }
+
+        &__about {
+            gap: 25px;
+        }
+
+        &__nav {
+            gap: 25px;
+        }
+
+        &__contact {
+            gap: 25px;
+
+            &--items {
+                gap: 25px;
+            }
+        }
     }
 }

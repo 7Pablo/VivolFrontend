@@ -70,6 +70,10 @@
     @include responsive(medium) {
         gap: 30px;
 
+        &__content {
+            justify-content: space-between;
+        }
+
         &__logo {
     
             &--text {

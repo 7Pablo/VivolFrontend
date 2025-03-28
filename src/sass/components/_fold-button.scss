@@ -21,4 +21,13 @@
     &:hover {
         width: 120px;
     }
+
+    @include responsive(smedium) {
+        transition: transform 0.3s ease-out; 
+
+        &:hover {
+            width: 30px;
+            transform: scale(1.3);
+        }
+    }
 }
