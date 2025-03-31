@@ -4,7 +4,7 @@ import { Menu } from "@chakra-ui/react"
 import { FaBars } from "react-icons/fa";
 import { usePathname } from "next/navigation"; 
 import Link from "next/link";
-import LanguageButton from "./Buttons/LanguageButton";
+import LanguageButton from "./LanguageButton";
 
 export default function HamDropdown({ navItems }) {
   const pathname = usePathname(); 

@@ -3,8 +3,8 @@
 import Image from "next/image";
 import NavbarItems from "./NavbarItems"; 
 import { getTranslations } from "locales/translations";
-import HamDropdown from "./HamDropdown";
-import LanguageButton from "./Buttons/LanguageButton";
+import HamDropdown from "./buttons/HamDropdown";
+import LanguageButton from "./buttons/LanguageButton";
 
 async function Navbar({ lang }) {
   const locale = lang || 'en';

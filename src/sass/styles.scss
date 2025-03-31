@@ -47,9 +47,12 @@ time, mark, audio, video {
 // Components
 @import './components/navbar';
 @import './components/footer';
-@import './components/ham-dropdown';
-@import './components/language-button';
-@import './components/fold-button';
+@import './components/carousel';
+
+// Buttons
+@import './buttons/ham-dropdown';
+@import './buttons/language-button';
+@import './buttons/fold-button';
 
 // Pages 
 @import './pages/home-page';

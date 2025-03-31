@@ -1,13 +1,15 @@
 // Footer.js (Server component)
 
 import { getTranslations } from "locales/translations";
-import FoldButton from "./Buttons/FoldButton";
+import { getCurrentYear } from 'utils/date';
+import FoldButton from "./buttons/FoldButton";
 import FooterItems from "./FooterItems";
 import FooterContact from "./FooterContact";
 
 export default async function Footer({ lang }) {
     const locale = lang || 'en';
     const trans = await getTranslations(locale);
+    const currentYear = getCurrentYear();
 
     // Footer items
     const footItems = [
@@ -48,7 +50,7 @@ export default async function Footer({ lang }) {
             </div>
             <hr className="footer__line"/>
             <div className="footer__bottom">
-                <small className="footer__bottom--text">@ {new Date().getFullYear()} Vida y Voluntariado. {trans.footer.copyright}</small>
+                <small className="footer__bottom--text">@ {currentYear} Vida y Voluntariado. {trans.footer.copyright}</small>
                 <div className="footer__social-media">
                     <FoldButton 
                         src="/images/instagram.svg"
