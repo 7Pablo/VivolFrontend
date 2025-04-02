@@ -365,11 +365,12 @@ time, mark, audio, video {
 .carousel {
   position: relative;
   width: 100%;
-  height: 70vh;
+  height: 550px;
 }
 .carousel__slide--image {
   width: 100%;
-  height: 70vh;
+  height: 550px;
+  overflow: hidden;
 }
 .carousel__overlay {
   display: flex;
@@ -386,9 +387,206 @@ time, mark, audio, video {
   z-index: 10;
 }
 .carousel__content {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0px 100px;
   position: relative;
   z-index: 20;
   color: white;
+}
+.carousel__content-right {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0px 6px 5px rgba(0, 0, 0, 0.7);
+  animation: moveInRight 2s ease-out;
+}
+.carousel__content-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: start;
+  justify-content: center;
+  animation: moveInLeft 2s ease-out;
+}
+.carousel__content-left h1 {
+  font-family: var(--font-ls), sans-serif;
+  font-size: 80px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 80px;
+  text-shadow: 0px 6px 5px rgba(0, 0, 0, 0.7);
+  max-width: 500px;
+}
+.carousel__logo--world {
+  height: 225px;
+  width: 225px;
+  filter: drop-shadow(0px 6px 5px rgba(0, 0, 0, 0.7));
+}
+.carousel__logo--text h1 {
+  font-family: "Aileron", sans-serif;
+  font-size: 130px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 130px;
+}
+.carousel__logo--text h2 {
+  font-family: "Aileron", sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 45px;
+}
+@media (max-width: 1440px) {
+  .carousel__content {
+    gap: 125px;
+  }
+  .carousel__content-left h1 {
+    font-size: 60px;
+    max-width: 350px;
+    line-height: 60px;
+  }
+  .carousel__logo--world {
+    height: 200px;
+    width: 200px;
+  }
+  .carousel__logo--text h1 {
+    font-size: 100px;
+  }
+  .carousel__logo--text h2 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 1200px) {
+  .carousel {
+    height: 650px;
+  }
+  .carousel__slide--image {
+    height: 650px;
+  }
+  .carousel__content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: start;
+    justify-content: center;
+  }
+  .carousel__content-right {
+    animation: moveInLeft 2s ease-out;
+  }
+  .carousel__content-left {
+    order: 2;
+    width: 100%;
+  }
+  .carousel__content-left h1 {
+    font-size: 90px;
+    max-width: 100%;
+    line-height: 90px;
+  }
+}
+@media (max-width: 800px) {
+  .carousel__content {
+    gap: 70px;
+    padding: 0px 50px;
+  }
+  .carousel__content-right {
+    gap: 20px;
+  }
+  .carousel__content-left h1 {
+    font-size: 60px;
+    line-height: 65px;
+  }
+  .carousel__logo--world {
+    height: 175px;
+    width: 175px;
+  }
+  .carousel__logo--text h1 {
+    font-size: 75px;
+    line-height: 75px;
+  }
+  .carousel__logo--text h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 550px) {
+  .carousel {
+    height: 475px;
+  }
+  .carousel__slide--image {
+    height: 475px;
+  }
+  .carousel__content {
+    padding: 0px 30px;
+    gap: 30px;
+  }
+  .carousel__content-left h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .carousel__logo--world {
+    height: 110px;
+    width: 110px;
+  }
+  .carousel__logo--text h1 {
+    font-size: 58px;
+    line-height: 70px;
+  }
+  .carousel__logo--text h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.button--secondary {
+  font-family: var(--font-p), sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #1683F0;
+  background-color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+  padding: 10px 24px;
+  transition: 0.5s;
+  position: relative;
+  transition: all 0.2s;
+}
+.button--secondary:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 8px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 550px) {
+  .button--secondary {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
 }
 
 .ham-dropdown {

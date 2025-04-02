@@ -20,11 +20,16 @@
       "copyright": "Todos los derechos reservados"
     },
 
+    "home_page": {
+      "title": "Voluntariado Internacional"
+    },
+
     "alt": {
       "language_change": "Change language to English"
     },
 
     "button": {
-      "language_text": "English"
+      "language_text": "English",
+      "carousel": "Empecemos"
     }
   }

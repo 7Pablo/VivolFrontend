@@ -20,12 +20,17 @@
       "copyright": "All rights reserved"
     },
 
+    "home_page": {
+      "title": "International Volunteering"
+    },
+
     "alt": {
       "language_change": "Cambiar idioma a español"
     },
 
     "button": {
-      "language_text": "Español"
+      "language_text": "Español",
+      "carousel": "Let's start"
     }
   }
   

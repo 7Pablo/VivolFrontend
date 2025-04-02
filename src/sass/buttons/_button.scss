@@ -1,0 +1,25 @@
+.button {
+    &--secondary {
+        @include body-font($size: 18px, $weight: 500, $color: $blue-tertiary);
+        background-color: #fff;
+        cursor: pointer;
+        border: none;
+        border-radius: 100px;
+        padding: 10px 24px; 
+        transition: 0.5s;
+        position: relative;
+        transition: all .2s;
+
+        &:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 15px 8px rgba(0, 0, 0, 0.2); 
+        }
+    }
+
+    @include responsive(small) {
+        &--secondary {
+            font-size: 16px;
+            padding: 8px 20px;
+        }
+    }
+}

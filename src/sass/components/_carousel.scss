@@ -1,12 +1,13 @@
 .carousel {
     position: relative;
     width: 100%;
-    height: 70vh;
+    height: 550px;
 
     &__slide {
         &--image {
             width: 100%;
-            height: 70vh;
+            height: 550px;
+            overflow: hidden
         }
     }
 
@@ -22,8 +23,210 @@
     }
 
     &__content {
+        @include flex($direction: row, $gap: 100px);
+        width: 100%;
+        max-width: 1440px;
+        padding: 0px 100px;
         position: relative;
         z-index: 20;
         color: white; 
+
+        &-right {
+            @include flex($direction: row, $gap: 30px);
+            text-shadow: 0px 6px 5px rgba(0, 0, 0, 0.7);
+            animation: moveInRight 2s ease-out;
+        }
+
+        &-left {
+            @include flex($align: start, $gap: 30px);
+            animation: moveInLeft 2s ease-out;
+            
+            h1 {
+                @include title-font($size: 80px, $weight: 500, $color: #fff);
+                text-shadow: 0px 6px 5px rgba(0, 0, 0, 0.7);
+                max-width: 500px;
+            }
+        }
+    }
+
+    &__logo {
+        &--world {
+            height: 225px;
+            width: 225px;
+            filter: drop-shadow(0px 6px 5px rgba(0, 0, 0, 0.7));
+        }
+
+        &--text {
+            h1 {
+                @include logo-font($size: 130px, $color: #fff);
+            }
+
+            h2 {
+                @include logo-font($size: 45px, $weight: 400, $color: #fff);
+            }
+        }
+    }
+
+    @include responsive(large) {
+        &__content {
+            gap: 125px;
+    
+            &-left {
+                h1 {
+                    font-size: 60px;
+                    max-width: 350px;
+                    line-height: 60px;
+                }
+            }
+        }
+    
+        &__logo {
+            &--world {
+                height: 200px;
+                width: 200px;
+            }
+    
+            &--text {
+                h1 {
+                    font-size: 100px;
+                }
+    
+                h2 {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+
+    @include responsive(medium) {
+        height: 650px;
+
+        &__slide {
+            &--image {
+                height: 650px;
+            }
+        }
+
+        &__content {
+            @include flex($direction: column, $align: start, $gap: 60px);
+
+            &-right {
+                animation: moveInLeft 2s ease-out;
+            }
+    
+            &-left {
+                order: 2;
+                width: 100%;
+                
+                h1 {
+                    font-size: 90px;
+                    max-width: 100%;
+                    line-height: 90px;
+                }
+            }
+        }
+
+        
+    }
+
+    @include responsive(smedium) {
+        &__content {
+            gap: 70px;
+            padding: 0px 50px;
+
+            &-right {
+                gap: 20px;
+            }
+            
+            &-left {
+                h1 {
+                    font-size: 60px;
+                    line-height: 65px;
+                }
+            }
+        }
+
+        &__logo {
+            &--world {
+                height: 175px;
+                width: 175px;
+            }
+    
+            &--text {
+                h1 {
+                    font-size: 75px;
+                    line-height: 75px;
+                }
+    
+                h2 {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+
+    @include responsive(small) {
+        height: 475px;
+
+        &__slide {
+            &--image {
+                height: 475px;
+            }
+        }
+
+        &__content {
+            padding: 0px 30px;
+            gap: 30px;
+            
+            &-left {
+                h1 {
+                    font-size: 50px;
+                    line-height: 50px;
+                }
+            }
+        }
+
+        &__logo {
+            &--world {
+                height: 110px;
+                width: 110px;
+            }
+    
+            &--text {
+                h1 {
+                    font-size: 58px;
+                    line-height: 70px;
+                }
+    
+                h2 {
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
     }
 }

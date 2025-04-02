@@ -31,18 +31,18 @@ async function Navbar({ lang }) {
             priority
             className="navbar__logo--world"
           />
-          <div className="navbar__logo--text">
+          {/* <div className="navbar__logo--text">
             <h1 className="navbar__logo--text-title">VIVOL</h1>
             <h2 className="navbar__logo--text-subtitle">Vida y Voluntariado</h2>
-          </div>
+          </div> */}
         </div>
         <NavbarItems navItems={navItems} />
         <div className="navbar__language">
           <LanguageButton lang={locale}/>
         </div>
         <HamDropdown navItems={navItems}/>
-            </div>
       </div>
+    </div>
   );
 }
 

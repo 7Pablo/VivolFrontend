@@ -1,9 +1,17 @@
 'use client';
 
-export default function Button(props) {
+export default function Button({
+    type = "primary",
+    onClick,
+    children,
+}) {
+    
     return (
-        <div>
-            Boton
-        </div>
+        <button 
+            className={`button--${type}`}
+            onClick={onClick}
+        >
+            {children}
+        </button>
     );
 }
