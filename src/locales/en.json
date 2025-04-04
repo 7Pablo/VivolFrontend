@@ -21,11 +21,26 @@
     },
 
     "home_page": {
-      "title": "International Volunteering"
+      "title": "International Volunteering",
+      "get_involved" : "How to get involved?",
+      "learn_more": "Learn more",
+      "more_image1": "Volunteering",
+      "more_title1": "ICYE Volunteering Program",
+      "more_body1": "ICYE promotes global citizenship and cultural learning through exchanges and volunteering in over 40 countries for a fairer and more peaceful world.",
+      "more_image2": "Host Family",
+      "more_title2": "Host Family Program",
+      "more_body2": "VIVOL welcomes international volunteers for a cultural learning program in Peru, hosting them with host families who provide support, integration, and share their culture.",
+      "more_image3": "My project",
+      "more_title3": "Volunteers in my project",
+      "more_body3": "VIVOL promotes social volunteering to support local projects, ensuring legality and continuous support."
     },
 
     "alt": {
-      "language_change": "Cambiar idioma a español"
+      "language_change": "Cambiar idioma a español",
+      "carousel_image": "Carousel image",
+      "more_image1": "Volunteering image",
+      "more_image2": "Host family image",
+      "more_image3": "Projects image"
     },
 
     "button": {

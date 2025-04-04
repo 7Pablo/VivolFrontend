@@ -1,3 +1,37 @@
 .home-page {
     @include body-font();
+    
+    &__involve {
+        @include flex($gap: 40px);
+        padding: 50px 100px;
+
+        h3 {
+            @include title-font($size: 28px, $weight: 500, $color: $blue-main);
+        }
+
+        &--cards {
+            @include grid($columns: 1fr 1fr 1fr auto, $gap: 50px);
+            width: 100%;
+            max-width: 1440px;
+        }
+    }
+
+    @include responsive(medium) {
+        &__involve {
+            &--cards {
+                grid-template-columns: 1fr 1fr; 
+                gap: 30px; 
+            }
+        }
+    }
+
+    @include responsive(smedium) {
+        &__involve {
+            &--cards {
+                grid-template-columns: 1fr; 
+                gap: 30px; 
+            }
+        }
+    }
 } 
+
