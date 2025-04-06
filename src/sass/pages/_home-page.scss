@@ -3,24 +3,30 @@
     
     &__involve {
         @include flex($gap: 40px);
-        padding: 50px 100px;
+        padding: 50px 25px;
 
         h3 {
             @include title-font($size: 28px, $weight: 500, $color: $blue-main);
         }
 
         &--cards {
-            @include grid($columns: 1fr 1fr 1fr auto, $gap: 50px);
+            @include grid($columns: repeat(auto-fit, minmax(300px, 1fr)));
+            row-gap: 50px !important;
             width: 100%;
-            max-width: 1440px;
+            max-width: 1200px;
+            justify-items: center;
+            margin: 0 auto;
         }
     }
 
     @include responsive(medium) {
         &__involve {
             &--cards {
-                grid-template-columns: 1fr 1fr; 
-                gap: 30px; 
+                max-width: 750px;
+
+                > *:nth-child(3) {
+                    grid-column: span 2;
+                }
             }
         }
     }
@@ -28,8 +34,11 @@
     @include responsive(smedium) {
         &__involve {
             &--cards {
-                grid-template-columns: 1fr; 
-                gap: 30px; 
+                grid-template-columns: 1fr;
+
+                > *:nth-child(3) {
+                    grid-column: span 1;
+                }
             }
         }
     }

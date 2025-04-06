@@ -32,20 +32,22 @@ export default function MoreCard({ imgSrc, imgAlt, imgText, imgPosition, title, 
         <div className="more-card"
             onClick={handleRedirect}
         >
-            <Image 
-                src={imgSrc}
-                alt={imgAlt}
-                priority
-                className="more-card__image"
-                width={300}
-                height={300}
-                quality={100}
-                style={{
-                    objectPosition: imgPosition || "center center",
-                }}
-            />
-            <div className="more-card__image--text" style={{ backgroundColor: color }}>
-                {imgText}
+            <div className="more-card__image-wrapper">
+                <Image
+                    src={imgSrc}
+                    alt={imgAlt}
+                    priority
+                    className="more-card__image"
+                    width={300}
+                    height={300}
+                    quality={100}
+                    style={{
+                        objectPosition: imgPosition || "center center",
+                    }}
+                />
+                <div className="more-card__image--text" style={{ backgroundColor: color }}>
+                    {imgText}
+                </div>
             </div>
             <div className="more-card__content">
                 <h2 className="more-card__title">{title}</h2>
