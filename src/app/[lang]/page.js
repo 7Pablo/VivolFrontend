@@ -3,6 +3,7 @@
 import Carousel from "@/components/Carousel";
 import { getTranslations } from "locales/translations";
 import MoreCard from "@/components/cards/MoreCard";
+import CircleCard from "@/components/cards/CircleCard";
 import Image from "next/image";
 
 export default async function HomePage(props) {
@@ -19,7 +20,11 @@ export default async function HomePage(props) {
 
   return (
     <div className="home-page">
+
+      {/* Carousel */}
       <Carousel imageLinks={carouselImages}/>
+
+      {/* Get involve */}
       <div className="home-page__involve">
         <h3>{trans.home_page.get_involved}</h3>
         <div className="home-page__involve--cards">
@@ -55,14 +60,18 @@ export default async function HomePage(props) {
           />
         </div>
       </div>
+
+      {/* Carousel */}
       <div className="home-page__quote">
-        <Image 
-          src="/images/photos/paper.jpg"
-          alt={trans.alt.quote1}  
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-        />
+        <div className="home-page__quote--fade">
+          <Image
+            src="/images/photos/papel.jpg"
+            alt={trans.alt.quote1}
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+          />
+        </div>
         <div className="home-page__quote--content">
           <Image
               src='/images/icons/quotes.svg'
@@ -76,6 +85,37 @@ export default async function HomePage(props) {
           <p>— Audrey Hepburn</p>
         </div>
       </div>
+
+      {/* Volunteering */}
+      <div className="home-page__volunteering">
+        <h3>{trans.home_page.title}</h3>
+        <div className="home-page__volunteering--cards">
+          <CircleCard
+            icon="/images/icons/bulb.svg"
+            alt="Bulb icon"
+            text={trans.home_page.start_now}
+            color="#00BF4C"
+            route="volunteer"
+          />
+          <CircleCard
+            icon="/images/icons/docs.svg"
+            alt="Documents icon"
+            text={trans.home_page.documents}
+            color="#B490F0"
+            route=""
+          />
+          <CircleCard
+            icon="/images/icons/plane.svg"
+            alt="Plane icon"
+            text={trans.home_page.destinations}
+            color="#1683F0"
+            route="volunteer/international"
+          />
+        </div>
+      </div>  
+
+      {/* Testimonials */}
+      
     </div>
   );
 }
