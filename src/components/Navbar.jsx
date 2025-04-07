@@ -24,7 +24,7 @@ async function Navbar({ lang }) {
       <div className="navbar__content">
         <div className="navbar__logo">
           <Image
-            src="/images/logo-azul.svg"
+            src="/images/icons/logo-azul.svg"
             alt="Logo de Vivol, Vida y Voluntariado"
             width={45}
             height={45}

@@ -851,7 +851,7 @@ time, mark, audio, video {
   gap: 40px;
   align-items: center;
   justify-content: center;
-  padding: 50px 25px;
+  padding: 50px 25px 80px 25px;
 }
 .home-page__involve h3 {
   font-family: var(--font-ls), sans-serif;
@@ -865,14 +865,71 @@ time, mark, audio, video {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: auto auto;
   gap: 0px;
-  row-gap: 50px !important;
   width: 100%;
   max-width: 1200px;
   justify-items: center;
   margin: 0 auto;
 }
+.home-page__involve--cards > * {
+  opacity: 0;
+  animation: fadeInOpacity 0.8s ease-out forwards;
+}
+.home-page__involve--cards > *:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.home-page__involve--cards > *:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.home-page__involve--cards > *:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.home-page__quote {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+.home-page__quote--content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  max-width: 1200px;
+  width: 100%;
+  animation: fadeIn 1s ease-out;
+}
+.home-page__quote h3, .home-page__quote p {
+  font-family: var(--font-p), sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #41424A;
+  text-align: start;
+  line-height: 45px;
+}
+.home-page__quote p {
+  font-size: 20px;
+  color: #747783;
+  margin-top: 30px;
+}
+@media (max-width: 1440px) {
+  .home-page__quote {
+    height: 450px;
+  }
+  .home-page__quote--content {
+    padding: 0 100px;
+  }
+  .home-page__quote p {
+    margin-top: 20px;
+  }
+}
 @media (max-width: 1200px) {
   .home-page__involve--cards {
+    row-gap: 50px !important;
     max-width: 750px;
   }
   .home-page__involve--cards > *:nth-child(3) {
@@ -880,14 +937,64 @@ time, mark, audio, video {
   }
 }
 @media (max-width: 800px) {
+  .home-page__involve h3 {
+    font-size: 24;
+  }
   .home-page__involve--cards {
     grid-template-columns: 1fr;
   }
   .home-page__involve--cards > *:nth-child(3) {
     grid-column: span 1;
   }
+  .home-page__quote {
+    height: 500px;
+  }
+  .home-page__quote--content {
+    padding: 0 70px;
+  }
+  .home-page__quote h3 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .home-page__quote p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 550px) {
+  .home-page__quote {
+    height: 525px;
+  }
+  .home-page__quote--content {
+    padding: 0 40px;
+  }
+  .home-page__quote h3 {
+    font-size: 23px;
+    line-height: 35px;
+  }
+  .home-page__quote p {
+    font-size: 20px;
+  }
 }
 
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
 body {
   background-color: #f5f5f5;
 }/*# sourceMappingURL=styles.css.map */

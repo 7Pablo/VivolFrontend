@@ -3,6 +3,7 @@
 import Carousel from "@/components/Carousel";
 import { getTranslations } from "locales/translations";
 import MoreCard from "@/components/cards/MoreCard";
+import Image from "next/image";
 
 export default async function HomePage(props) {
   const params = await props.params;
@@ -52,6 +53,27 @@ export default async function HomePage(props) {
             route="involve/project"
             imgPosition="50% 30%"
           />
+        </div>
+      </div>
+      <div className="home-page__quote">
+        <Image 
+          src="/images/photos/paper.jpg"
+          alt={trans.alt.quote1}  
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+        />
+        <div className="home-page__quote--content">
+          <Image
+              src='/images/icons/quotes.svg'
+              alt="Quote icon"
+              width={50}
+              height={50}
+              priority
+              className="home-page__quote--icon"
+          />
+          <h3>{trans.home_page.quote}</h3>
+          <p>— Audrey Hepburn</p>
         </div>
       </div>
     </div>

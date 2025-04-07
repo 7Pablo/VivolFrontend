@@ -76,7 +76,7 @@ export default function Carousel({ imageLinks }) {
                     </div>
                     <div className='carousel__content-right'>
                         <Image
-                            src="/images/logo-blanco.svg"
+                            src="/images/icons/logo-blanco.svg"
                             alt="Logo de Vivol, Vida y Voluntariado"
                             width={45}
                             height={45}

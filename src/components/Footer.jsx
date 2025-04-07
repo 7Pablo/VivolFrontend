@@ -34,13 +34,13 @@ export default async function Footer({ lang }) {
                     <h2>{trans.footer.contact}</h2>
                     <div className="footer__contact--items">
                         <FooterContact
-                            src="/images/whatsapp.svg"
+                            src="/images/icons/whatsapp.svg"
                             text='(+51) 903211488'
                             medium='51903211488'
                             type='whatsapp'
                         />
                         <FooterContact
-                            src="/images/mail.svg"
+                            src="/images/icons/mail.svg"
                             text='info@vidayvoluntariado.org'
                             medium="info@vidayvoluntariado.org"
                             type="email"
@@ -50,22 +50,22 @@ export default async function Footer({ lang }) {
             </div>
             <hr className="footer__line"/>
             <div className="footer__bottom">
-                <small className="footer__bottom--text">@ {currentYear} Vida y Voluntariado. {trans.footer.copyright}</small>
+                <small className="footer__bottom--text">© {currentYear} Vida y Voluntariado. {trans.footer.copyright}</small>
                 <div className="footer__social-media">
                     <FoldButton 
-                        src="/images/instagram.svg"
+                        src="/images/icons/instagram.svg"
                         alt="Vivol Instagram"
                         text="Instagram"
                         link="https://www.instagram.com/vivol_peru/"
                     />
                     <FoldButton 
-                        src="/images/tiktok.svg"
+                        src="/images/icons/tiktok.svg"
                         alt="Vivol Tik Tok"
                         text="Tik Tok"
                         link="https://www.tiktok.com/@vivol_peru?lang=es"
                     />
                     <FoldButton 
-                        src="/images/facebook.svg"
+                        src="/images/icons/facebook.svg"
                         alt="Vivol Facebook"
                         text="Facebook"
                         link="https://www.facebook.com/profile.php?id=100080244291572"

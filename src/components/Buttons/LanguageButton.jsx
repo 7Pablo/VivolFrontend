@@ -33,7 +33,7 @@ export default function LanguageButton({ lang }) {
   return (
     <div className="language-button" onClick={handleLanguageChange}>
         <Image
-          src={lang === "en" ? "/images/espanol.svg" : "/images/ingles.svg"}
+          src={lang === "en" ? "/images/icons/espanol.svg" : "/images/icons/ingles.svg"}
           alt={trans.alt.language_change}
           width={32}
           height={32}
