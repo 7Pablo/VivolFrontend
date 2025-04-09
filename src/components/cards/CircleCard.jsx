@@ -1,3 +1,4 @@
+// CircleCard.jsx (Client Component)
 'use client';
 
 import Image from "next/image";

@@ -51,14 +51,14 @@ export default function Carousel({ imageLinks }) {
                 <SwiperSlide key={index}>
                     <div className="carousel__slide">
                         <div className="carousel__slide--image">
-                        <Image
-                            src={image.src}  
-                            alt={image.alt}  
-                            layout="fill"
-                            objectFit="cover"
-                            objectPosition={image.position || "center center"}
-                            quality={100}
-                        />
+                            <Image
+                                src={image.src}  
+                                alt={image.alt}  
+                                layout="fill"
+                                objectFit="cover"
+                                objectPosition={image.position || "center center"}
+                                quality={100}
+                            />
                         </div>
                     </div>
                 </SwiperSlide>

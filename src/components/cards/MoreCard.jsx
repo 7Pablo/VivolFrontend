@@ -1,3 +1,4 @@
+// MoreCard.jsx (Client Component)
 'use client';
 
 import Image from "next/image";
@@ -34,10 +35,10 @@ export default function MoreCard({ imgSrc, imgAlt, imgText, imgPosition, title, 
         >
             <div className="more-card__image-wrapper">
                 <Image
+                    className="more-card__image"
                     src={imgSrc}
                     alt={imgAlt}
                     priority
-                    className="more-card__image"
                     width={300}
                     height={300}
                     quality={100}

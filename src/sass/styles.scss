@@ -48,6 +48,7 @@ time, mark, audio, video {
 @import './components/navbar';
 @import './components/footer';
 @import './components/carousel';
+@import './components/slider';
 
 // Buttons
 @import './buttons/button';
@@ -58,6 +59,7 @@ time, mark, audio, video {
 // Cards
 @import './cards/more-card';
 @import './cards/circle-card';
+@import './cards/wide-card';
 
 // Pages 
 @import './pages/home-page';

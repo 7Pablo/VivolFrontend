@@ -4,6 +4,7 @@ import Carousel from "@/components/Carousel";
 import { getTranslations } from "locales/translations";
 import MoreCard from "@/components/cards/MoreCard";
 import CircleCard from "@/components/cards/CircleCard";
+import Slider from "@/components/Slider";
 import Image from "next/image";
 
 export default async function HomePage(props) {
@@ -16,6 +17,27 @@ export default async function HomePage(props) {
     { src: "/images/photos/vivol-colores.jpeg", alt: trans.alt.carousel_image, position: "50% 42%"},
     { src: "/images/photos/vivol-desierto.jpg", alt: trans.alt.carousel_image, position: "50% 48%"},
     { src: "/images/photos/vivol-manos.jpg", alt: trans.alt.carousel_image, position: "50% 47%"}
+  ];
+
+  const testimonials = [
+    {
+      imgSrc: "/images/photos/vivol-test1.jpg",
+      imgAlt: trans.alt.testimonials_img,
+      name: "María Inés Salazar",
+      body: trans.home_page.testimonial1,
+    },
+    {
+      imgSrc: "/images/photos/vivol-test2.jpg",
+      imgAlt: trans.alt.testimonials_img,
+      name: "Verónica Camarero",
+      body: trans.home_page.testimonial2,
+    },
+    {
+      imgSrc: "/images/photos/vivol-test3.jpeg",
+      imgAlt: trans.alt.testimonials_img,
+      name: "N/a",
+      body: trans.home_page.testimonial3,
+    },
   ];
 
   return (
@@ -102,7 +124,6 @@ export default async function HomePage(props) {
             alt="Documents icon"
             text={trans.home_page.documents}
             color="#B490F0"
-            route=""
           />
           <CircleCard
             icon="/images/icons/plane.svg"
@@ -115,7 +136,20 @@ export default async function HomePage(props) {
       </div>  
 
       {/* Testimonials */}
-      
+      <div className="home-page__testimonials">
+        <Image 
+          src="/images/photos/colaboration.jpg"
+          alt={trans.alt.colaboration}
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+          className="home-page__testimonials--background"
+        />
+        <div className="home-page__testimonials--overlay">
+          <h3>{trans.home_page.testimonials}</h3>
+          <Slider slides={testimonials}/>
+        </div>
+      </div>
     </div>
   );
 }

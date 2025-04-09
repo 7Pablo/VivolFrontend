@@ -36,8 +36,11 @@
       "quote": "As you grow older, you will discover that you have two hands: one for helping yourself, the other for helping others.",
       "start_now": "Start now",
       "documents": "Documents of interest",
-      "destinations": "Destinations"
-
+      "destinations": "Destinations",
+      "testimonials": "Testimonials",
+      "testimonial1": "\"At 18, I had the incredible opportunity to travel as a volunteer to Mysore, India for six months. My time there was the best way to grow as a person, discover the kind of work I want to dedicate my life to, and meet people from a completely different culture who helped me broaden my view of life. Now, five years after my trip, I still consider it the best experience of my life, and I’m studying to dedicate myself to it full-time in the future.\"",
+      "testimonial2": "\"Looking back on my volunteer work, every time someone asks me about my year in Argentina, it's impossible for me to sum up such an intense and pivotal experience in a simple one-sentence answer. For me, the experience of volunteering has been one of the most defining and impactful adventures of my life.\"",
+      "testimonial3": "\"I’m not going to say it was easy — at first, it was really hard because you're forced to face your own reality and start to realize that what you have is actually quite a lot. I recommend doing a volunteer program in Peru, because I’m sure you’ll have some of the best moments of your life. Of course, there will be challenges, but that’s normal. It’s about getting used to a new environment, food, people, culture, and more. But getting to experience something so different from your home is a wonderful experience that will leave you with a ton of great memories.\""
     },
 
     "alt": {
@@ -46,7 +49,9 @@
       "more_image1": "Volunteering image",
       "more_image2": "Host family image",
       "more_image3": "Projects image",
-      "quote1": "Paper background"
+      "quote1": "Paper background",
+      "colaboration": "People joining hands",
+      "testimonials_img": "Photo attached to the testimonial."
     },
 
     "button": {
