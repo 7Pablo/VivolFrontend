@@ -58,6 +58,7 @@ export default function Carousel({ imageLinks }) {
                                 objectFit="cover"
                                 objectPosition={image.position || "center center"}
                                 quality={100}
+                                priority
                             />
                         </div>
                     </div>

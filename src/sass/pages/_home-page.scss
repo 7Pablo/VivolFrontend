@@ -99,6 +99,21 @@
             max-width: 1200px;
             justify-items: center;
             margin: 0 auto;
+
+            > * {
+                opacity: 0;
+                animation: fadeInOpacity 0.8s ease-out forwards;
+            }
+
+            > *:nth-child(1) {
+                animation-delay: 0.1s;  
+            }
+            > *:nth-child(2) {
+                animation-delay: 0.2s; 
+            }
+            > *:nth-child(3) {
+                animation-delay: 0.3s; 
+            }
         }
     }
 
@@ -124,6 +139,46 @@
             height: 100%; 
             background: linear-gradient(to left, rgba($blue-main, 0.25), rgba($blue-main, 0.85));
             z-index: 1;
+        }
+    }
+
+    // Alliances
+    &__alliances {
+        @include flex();
+        padding: 50px 25px 80px 25px;
+
+        h3 {
+            @include title-font($size: 28px, $weight: 500, $color: $blue-main);
+        }
+
+        &--content {
+            @include flex($direction: row, $gap: 100px);
+            max-width: 1440px;
+            animation: fadeInOpacity 0.8s ease-out forwards;
+        }
+
+        &--alliance {
+            @include flex($justify: start);
+
+            h3, h2 {
+                @include body-font($size: 16px, $weight: 600);
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 22px;
+                color: $gray-dark;
+            }
+            
+        }
+
+        &--icye {
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.7));
+        }
+
+        &--wrapper {
+            @include flex();
+            height: 270px;
         }
     }
 
@@ -167,7 +222,17 @@
         }
 
         &__testimonials {
-            height: 750px;
+            height: 800px;
+
+            &--overlay {
+                gap: 40px;
+            }
+        }
+
+        &__alliances {
+            &--content {
+                gap: 10px;
+            }
         }
     }
 
@@ -218,6 +283,40 @@
                 margin-top: 10px;
             }
         }
+
+        &__testimonials {
+            height: 875px;
+
+            &--overlay {
+                gap: 50px;
+            }
+
+            h3 {
+                font-size: 26px;
+            }
+        }
+
+        &__alliances {
+
+            h3 {
+                font-size: 26px;
+            }
+
+            &--content {
+                @include flex($gap: 10px);
+                margin-top: 40px;
+            }
+
+            &--alliance {
+                h3, h2 {
+                    display: none;
+                }
+            }
+
+            &--wrapper {
+                height: fit-content;
+            }
+        }
     }
 
     @include responsive(small) {
@@ -236,6 +335,10 @@
             p {
                 font-size: 20px;
             }
+        }
+
+        &__testimonials {
+            height: 875px;
         }
     }
 } 

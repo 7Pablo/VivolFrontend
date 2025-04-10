@@ -38,7 +38,6 @@ export default function MoreCard({ imgSrc, imgAlt, imgText, imgPosition, title, 
                     className="more-card__image"
                     src={imgSrc}
                     alt={imgAlt}
-                    priority
                     width={300}
                     height={300}
                     quality={100}

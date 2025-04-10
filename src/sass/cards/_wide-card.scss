@@ -6,6 +6,7 @@
     border-radius: 25px;
     overflow: hidden;
     box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 0.8s ease-out forwards;
 
     &__wrapper {
         position: relative;
@@ -29,14 +30,49 @@
     }
 
     @include responsive(medium) {
-        width: 675px;
-        height: 475px;
+        width: 650px;
+        height: 500px;
     }
 
-    // TODO
     @include responsive(smedium) {
         @include flex($direction: column);
-        width: 500px;
-        height: 600px;
+        width: 475px;
+        height: 700px;
+    }
+
+    @include responsive(small) {
+        width: 100%;
+        height: 700px;
+        max-height: fit-content;
+        justify-content: start;
+
+        &__wrapper {
+            height: 300px;
+        }
+
+        &__body {
+            padding: 25px;
+    
+            h4 {
+                font-size: 20px;
+            }
+    
+            p {
+                font-size: 14px;
+            }
+        }
     }
 }
+
+// Animations
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

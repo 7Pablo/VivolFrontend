@@ -33,6 +33,7 @@ export default function Slider({ slides }) {
                         imgAlt={slide.imgAlt}
                         name={slide.name}
                         body={slide.body}
+                        position={slide.position}
                     />
                 </SwiperSlide>
             ))}

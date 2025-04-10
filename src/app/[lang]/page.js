@@ -25,18 +25,21 @@ export default async function HomePage(props) {
       imgAlt: trans.alt.testimonials_img,
       name: "María Inés Salazar",
       body: trans.home_page.testimonial1,
+      position: "50% 50%"
     },
     {
       imgSrc: "/images/photos/vivol-test2.jpg",
       imgAlt: trans.alt.testimonials_img,
       name: "Verónica Camarero",
       body: trans.home_page.testimonial2,
+      position: "50% 50%"
     },
     {
       imgSrc: "/images/photos/vivol-test3.jpeg",
       imgAlt: trans.alt.testimonials_img,
       name: "N/a",
       body: trans.home_page.testimonial3,
+      position: "50% 100%"
     },
   ];
 
@@ -83,7 +86,7 @@ export default async function HomePage(props) {
         </div>
       </div>
 
-      {/* Carousel */}
+      {/* Quote */}
       <div className="home-page__quote">
         <div className="home-page__quote--fade">
           <Image
@@ -100,7 +103,6 @@ export default async function HomePage(props) {
               alt="Quote icon"
               width={50}
               height={50}
-              priority
               className="home-page__quote--icon"
           />
           <h3>{trans.home_page.quote}</h3>
@@ -148,6 +150,39 @@ export default async function HomePage(props) {
         <div className="home-page__testimonials--overlay">
           <h3>{trans.home_page.testimonials}</h3>
           <Slider slides={testimonials}/>
+        </div>
+      </div>
+
+      {/* Alliances */}
+      <div className="home-page__alliances">
+        <h3>{trans.home_page.alliances}</h3>
+        <div className="home-page__alliances--content">
+          <div className="home-page__alliances--alliance">
+            <div className="home-page__alliances--wrapper">
+              <Image
+                className="home-page__alliances--icye"
+                src="/images/photos/icye-logo.png"
+                alt="ICYE logo"
+                height={400}
+                width={400}
+              />
+            </div>
+            <h2>ICYE</h2>
+            <h3>International Cultural Youth Exchange</h3>
+          </div>
+          <div className="home-page__alliances--alliance">
+            <div className="home-page__alliances--wrapper">
+              <Image
+                className="home-page__alliances--unir"
+                src="/images/photos/unir.svg"
+                alt="ICYE logo"
+                height={400}
+                width={400}
+              />
+            </div>
+            <h2>UNIR</h2> 
+            <h3>Universidad Internacional de la Rioja</h3>
+          </div>
         </div>
       </div>
     </div>

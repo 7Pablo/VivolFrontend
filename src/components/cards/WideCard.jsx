@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-export default function WideCard({ imgSrc, imgAlt, name, body }) {
+export default function WideCard({ imgSrc, imgAlt, name, body, position }) {
     return (
         <div className="wide-card">
             <div className="wide-card__wrapper">
@@ -10,10 +10,10 @@ export default function WideCard({ imgSrc, imgAlt, name, body }) {
                     className="wide-card__image"
                     src={imgSrc}
                     alt={imgAlt}
-                    priority
                     layout="fill"
                     objectFit="cover"
                     quality={100}
+                    objectPosition={position || "center center"}
                 />
             </div>
             <div className="wide-card__body">

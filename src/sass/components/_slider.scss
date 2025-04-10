@@ -70,7 +70,7 @@
     @include responsive(medium) {
         .swiper-slide {
             height: 525px;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
 
         &__button {
@@ -84,11 +84,10 @@
         }
     }
 
-    // TODO
     @include responsive(smedium) {
         .swiper-slide {
-            height: 800px;
-            margin-bottom: 40px;
+            height: 600px;
+            margin-bottom: 70px;
         }
 
         &__button {
@@ -96,6 +95,13 @@
             &--prev {
                 display: none;
             }
+        }
+    }
+
+    @include responsive(small) {
+        .swiper-slide {
+            padding: 0px 40px;
+            margin-bottom: 60px;
         }
     }
 }
