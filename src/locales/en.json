@@ -44,6 +44,16 @@
       "alliances": "Alliances"
     },
 
+    "about_page": {
+      "about": "Who We Are",
+      "text1": "VIDA y VOLUNTARIADO (VIVOL) is a non-profit organization that aims to promote experiential learning through processes of multicultural integration. With this approach, we seek to create a positive impact on diverse social realities through both international and local volunteer work. At the same time, we aim for our participants to develop key skills such as:",
+      "text2": "The combination of action and reflection in international volunteering helps shape independent, global-minded citizens.",
+      "bullet1": "Language skills",
+      "bullet2": "Growth in leadership, commitment, decision-making, and the ability to take risks.",
+      "bullet3": "Strengthen their confidence, self-esteem, and independence.",
+      "bullet4": "Broaden attitudes, values, and perceptions toward another culture."
+    },
+
     "alt": {
       "language_change": "Cambiar idioma a español",
       "carousel_image": "Carousel image",
@@ -52,7 +62,10 @@
       "more_image3": "Projects image",
       "quote1": "Paper background",
       "colaboration": "People joining hands",
-      "testimonials_img": "Photo attached to the testimonial."
+      "testimonials_img": "Photo attached to the testimonial",
+      "about_image1": "Volunteers in front of a pond",
+      "about_image2": "Volunteers in front of on a boat",
+      "about_image3": "Volunteers with surfing gear"
     },
 
     "button": {

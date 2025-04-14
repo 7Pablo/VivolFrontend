@@ -1,0 +1,145 @@
+.about-page {
+    @include flex();
+
+    // Introducction
+    &__intro {
+        @include flex($direction: row, $gap: 80px);
+        width: 100%;
+        max-width: 1440px;
+        margin-top: 80px;
+        padding: 0px 50px;
+
+        &--image {
+            border-radius: 15px;
+            box-shadow: -18px 18px 0px $blue-secondary; 
+            height: auto;
+            width: 450px;
+        }
+
+        &--text {
+            @include flex($align: start, $gap: 25px);
+            max-width: 650px;
+            text-align: justify;
+
+            h2 {
+                @include title-font($size: 45px, $color: $blue-tertiary);
+            }
+
+            p {
+                @include body-font($size: 18px, $color: $gray-light);
+                line-height: 32px;
+            }
+        }
+    }
+
+    //Middle
+    &__middle {
+        @include flex($direction: row, $gap: 95px);
+        width: 100%;
+        max-width: 1440px;
+        margin-top: 60px;
+        margin-bottom: 80px;
+        padding: 0px 50px;
+
+        &--image {
+            border-radius: 15px;
+            box-shadow: -18px 18px 0px $yellow-main; 
+            object-fit: cover;
+            height: 300px;
+            width: 450px;
+        }
+
+        &--text {
+            @include flex($align: start, $gap: 25px);
+            max-width: 650px;
+            text-align: justify;
+
+            ul {
+                list-style-type: disc;
+                padding-left: 20px;
+            }
+
+            p, li {
+                @include body-font($size: 18px, $color: $gray-light);
+                line-height: 32px;
+            }
+        }
+    }
+
+    // Philosophy
+    
+
+    // Responsive
+
+    @include responsive(medium) {
+        &__intro, &__middle {
+            gap: 50px;
+
+            &--image {
+                box-shadow: -14px 14px 0px $blue-secondary; 
+            }
+
+            &--text {
+                gap: 15px;
+
+                h2 {
+                   font-size: 40px;
+                }
+            }
+        }
+
+        &__middle {
+            &--image {
+                box-shadow: -14px 14px 0px $yellow-main; 
+            }
+        }
+    }
+
+    @include responsive(smedium) {
+        &__intro {
+            @include flex($direction: column, $gap: 40px);
+            margin-top: 60px;
+
+            &--image {
+                order: 2;
+            }
+
+            &--text {
+                max-width: 100%;
+                gap: 10px;
+
+                h2 {
+                    font-size: 36px;
+                }
+    
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        &__middle {
+            @include flex($direction: column, $gap: 40px);
+            margin-top: 60px;
+
+            &--text {
+                max-width: 100%;
+                gap: 10px;
+    
+                p, li {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    @include responsive(small) {
+        &__intro, &__middle {
+            padding: 0px 40px;
+
+            &--image {
+                width: auto;
+            }
+        }
+    }
+}

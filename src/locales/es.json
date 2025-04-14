@@ -44,6 +44,16 @@
       "alliances": "Alianzas"
     },
 
+    "about_page": {
+      "about": "¿Quienes somos?",
+      "text1": "VIDA y VOLUNTARIADO (VIVOL) es una asociación sin fines de lucro que busca promover el aprendizaje experiencial por medio de procesos de integración multicultural. Con esta propuesta buscamos generar un impacto en las diversas realidades sociales a través del voluntariado internacional y local; asímismo, buscamos que nuestros participantes desarrollen capacidades tales como:",
+      "text2": "La interacción entre la acción y la reflexión en procesos de voluntariado internacional permite la creación de ciudadanos globales e independientes.",
+      "bullet1": "Habilidades lingüísticas.",
+      "bullet2": "Incremento de liderazgo, compromiso, toma de decisiones y riesgo.",
+      "bullet3": "Afianzar su confianza, autoestima e independencia.",
+      "bullet4": "Ampliar actitudes, valores y percepciones frente a otra cultura.​​"
+    },
+
     "alt": {
       "language_change": "Change language to English",
       "carousel_image": "Imagen del carrusel",
@@ -52,7 +62,11 @@
       "more_image3": "Imagen del proyecto",
       "quote1": "Fondo de papel",
       "colaboration": "Personas juntando las manos",
-      "testimonials_img": "Fotografia adjunta al testimonio"
+      "testimonials_img": "Fotografia adjunta al testimonio",
+      "about_image1": "Voluntarios frente a un estanque",
+      "about_image2": "Voluntarios en un bote",
+      "about_image3": "Voluntarios con equipo de surf"
+
     },
 
     "button": {
