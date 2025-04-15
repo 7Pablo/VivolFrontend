@@ -2,7 +2,6 @@
     @include body-font();
 
     //Involve section
-    
     &__involve {
         @include flex($gap: 40px);
         padding: 50px 25px 80px 25px;
@@ -344,7 +343,7 @@
 } 
 
 // Animations
-
+ 
 @keyframes fadeInOpacity {
     0% {
         opacity: 0;

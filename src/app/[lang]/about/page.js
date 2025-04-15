@@ -2,6 +2,7 @@
 
 import { getTranslations } from "locales/translations";
 import Image from "next/image";
+import OvalCard from "@/components/cards/OvalCard";
 
 export default async function AboutPage(props) {
     const params = await props.params;
@@ -52,7 +53,35 @@ export default async function AboutPage(props) {
 
         {/* Philosophy */}
         <div className="about-page__philosophy">
-          
+          <OvalCard 
+            icon="/images/icons/target.svg"
+            alt="target icon"
+            title={trans.about_page.mission}
+            text={trans.about_page.mission_text}
+            color="#00BF4C"
+          />
+          <OvalCard 
+            icon="/images/icons/eye.svg"
+            alt="eye icon"
+            title={trans.about_page.vision}
+            text={trans.about_page.vision_text}
+            color="#B490F0"
+          />
+          <OvalCard 
+            icon="/images/icons/diamond.svg"
+            alt="target icon"
+            title={trans.about_page.values.title}
+            listItems={[ 
+              trans.about_page.values.bullet1,
+              trans.about_page.values.bullet2,
+              trans.about_page.values.bullet3,
+              trans.about_page.values.bullet4,
+              trans.about_page.values.bullet5,
+              trans.about_page.values.bullet6,
+              trans.about_page.values.bullet7
+            ]}
+            color="#FFDE59"
+          />
         </div>
       </div>
     );

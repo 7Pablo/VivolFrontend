@@ -14,12 +14,14 @@
             box-shadow: -18px 18px 0px $blue-secondary; 
             height: auto;
             width: 450px;
+            animation: slideInLeft 0.8s ease-out 0.2s forwards;
         }
 
         &--text {
             @include flex($align: start, $gap: 25px);
             max-width: 650px;
             text-align: justify;
+            animation: slideInRight 0.8s ease-out 0.2s forwards;
 
             h2 {
                 @include title-font($size: 45px, $color: $blue-tertiary);
@@ -38,21 +40,22 @@
         width: 100%;
         max-width: 1440px;
         margin-top: 60px;
-        margin-bottom: 80px;
         padding: 0px 50px;
 
         &--image {
             border-radius: 15px;
-            box-shadow: -18px 18px 0px $yellow-main; 
+            box-shadow: -18px 18px 0px $yellow-main;
             object-fit: cover;
             height: 300px;
             width: 450px;
+            animation: slideInRight 0.8s ease-out 0.2s forwards;
         }
 
         &--text {
             @include flex($align: start, $gap: 25px);
             max-width: 650px;
             text-align: justify;
+            animation: slideInLeft 0.8s ease-out 0.2s forwards;
 
             ul {
                 list-style-type: disc;
@@ -67,10 +70,32 @@
     }
 
     // Philosophy
-    
+    &__philosophy {
+        @include grid($columns: repeat(auto-fit, minmax(300px, 1fr)));
+        width: 100%;
+        max-width: 1350px;
+        justify-items: center;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        padding: 0px 50px;
+
+        > * {
+            opacity: 0;
+            animation: bounceInShake 0.8s ease-out forwards;
+        }
+
+        > *:nth-child(1) {
+            animation-delay: 0.1s;  
+        }
+        > *:nth-child(2) {
+            animation-delay: 0.2s; 
+        }
+        > *:nth-child(3) {
+            animation-delay: 0.3s; 
+        }
+    }
 
     // Responsive
-
     @include responsive(medium) {
         &__intro, &__middle {
             gap: 50px;
@@ -93,6 +118,15 @@
                 box-shadow: -14px 14px 0px $yellow-main; 
             }
         }
+
+        &__philosophy {
+            max-width: 950px;
+            margin-bottom: 0px;
+
+            > *:nth-child(3) {
+                grid-column: span 2;
+            }
+        }
     }
 
     @include responsive(smedium) {
@@ -107,6 +141,7 @@
             &--text {
                 max-width: 100%;
                 gap: 10px;
+                animation: slideInLeft 0.8s ease-out 0.2s forwards;
 
                 h2 {
                     font-size: 36px;
@@ -122,6 +157,10 @@
             @include flex($direction: column, $gap: 40px);
             margin-top: 60px;
 
+            &--image {
+                animation: slideInLeft 0.8s ease-out 0.2s forwards;
+            }
+
             &--text {
                 max-width: 100%;
                 gap: 10px;
@@ -129,6 +168,16 @@
                 p, li {
                     font-size: 16px;
                 }
+            }
+        }
+
+        &__philosophy {
+            grid-template-columns: 1fr;
+            padding: 0px 40px;
+            margin-top: 100px;
+
+            > *:nth-child(3) {
+                grid-column: span 1;
             }
         }
     }
@@ -143,3 +192,43 @@
         }
     }
 }
+
+// Animations
+@keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes bounceInShake {
+    0% {
+        opacity: 0;
+        transform: translateY(100px) scale(0.95);
+    }
+    60% {
+        transform: translateY(-10px) scale(1.03) rotate(2deg);
+    }
+    80% {
+        transform: translateY(5px) scale(0.98) rotate(-2deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1) rotate(0deg);
+    }
+  }

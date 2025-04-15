@@ -51,7 +51,21 @@
       "bullet1": "Language skills",
       "bullet2": "Growth in leadership, commitment, decision-making, and the ability to take risks.",
       "bullet3": "Strengthen their confidence, self-esteem, and independence.",
-      "bullet4": "Broaden attitudes, values, and perceptions toward another culture."
+      "bullet4": "Broaden attitudes, values, and perceptions toward another culture.",
+      "mission": "Mission",
+      "mission_text": "To create an association that promotes alternative and experiential learning through international exchanges, allowing young people and civil society to gain a different perspective of the world based on equality and equity, while fostering awareness of individual impact on community well-being.",
+      "vision": "Vision",
+      "vision_text": "In the next 10 years, to become the first choice for alternative learning processes and the leading association in Lima for international cultural exchanges. Also, to create spaces and programs for collaboration with organizations to actively participate in social projects.",
+      "values": {
+        "title": "Values",
+        "bullet1": "Responsibility",
+        "bullet2": "Proactivity",
+        "bullet3": "Solidarity",
+        "bullet4": "Friendship",
+        "bullet5": "Tolerance",
+        "bullet6": "Mutual understanding",
+        "bullet7": "Cultural diversity"
+      }
     },
 
     "alt": {

@@ -1,0 +1,85 @@
+.oval-card {
+    @include flex($justify: start);
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.25); 
+    width: 325px;
+    border-radius: 200px 200px 50px 50px;
+    min-width: 0;
+
+    &__image {  
+        width: 45%;
+
+        &--wrapper {
+            @include flex();
+            width: 100%;
+            height: 325px;
+            border-radius: 200px;
+            border-width: 22px !important;
+        }
+    }
+
+    &__body {
+        @include flex($align: start, $justify: start, $gap: 10px);
+        width: 100%;
+        padding: 10px 30px 40px 30px;
+    }
+
+    h2 {
+        @include body-font($size: 30px, $weight: 500);
+    }
+
+    p, li {
+        @include body-font($size: 16px);
+        line-height: 28px;
+    }
+
+    ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+
+    @include responsive(medium) {
+        border-radius: 30px;
+        margin: 80px;
+
+        &__image {  
+            width: 55%;
+    
+            &--wrapper {
+                @include flex();
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #fff;
+                width: 175px;
+                height: 175px;
+                border-radius: 200px;
+                border-width: 12px !important;
+            }
+        }
+
+        &__body {
+            @include flex($align: start, $justify: start, $gap: 10px);
+            padding: 100px 30px 40px 30px;
+            margin-bottom: 0px;
+        }
+
+        h2 {
+            font-size: 26px;
+        }
+    
+        p, li {
+            font-size: 14px;
+            line-height: 26px;
+        }
+    }
+
+    @include responsive(smedium) {
+        width: 350px;
+    }
+
+    @include responsive(small) {
+        width: 100%;
+    }
+}

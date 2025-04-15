@@ -51,7 +51,21 @@
       "bullet1": "Habilidades lingüísticas.",
       "bullet2": "Incremento de liderazgo, compromiso, toma de decisiones y riesgo.",
       "bullet3": "Afianzar su confianza, autoestima e independencia.",
-      "bullet4": "Ampliar actitudes, valores y percepciones frente a otra cultura.​​"
+      "bullet4": "Ampliar actitudes, valores y percepciones frente a otra cultura.​​",
+      "mission": "Misión",
+      "mission_text": "Crear una asociación que promueva el aprendizaje alternativo y experiencial mediante intercambios internacionales, permitiendo a jóvenes y a la sociedad civil tener una visión diferente del mundo basada en la igualdad y equidad, y fomentando la conciencia sobre el impacto individual en el bienestar comunitario.",
+      "vision": "Visión",
+      "vision_text": "En los próximos 10 años, convertirse en la primera opción para procesos de aprendizaje alternativos y ser la asociación líder en Lima para intercambios culturales internacionales. También, crear espacios y programas de colaboración con organizaciones para participar activamente en proyectos sociales.",
+      "values": {
+        "title": "Valores",
+        "bullet1": "Responsabilidad",
+        "bullet2": "Proactividad",
+        "bullet3": "Solidaridad",
+        "bullet4": "Amistad",
+        "bullet5": "Tolerancia",
+        "bullet6": "Entendimiento mutuo",
+        "bullet7": "Diversidad cultural"
+      }
     },
 
     "alt": {
@@ -66,7 +80,6 @@
       "about_image1": "Voluntarios frente a un estanque",
       "about_image2": "Voluntarios en un bote",
       "about_image3": "Voluntarios con equipo de surf"
-
     },
 
     "button": {
