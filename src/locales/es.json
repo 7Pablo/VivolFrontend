@@ -65,7 +65,20 @@
         "bullet5": "Tolerancia",
         "bullet6": "Entendimiento mutuo",
         "bullet7": "Diversidad cultural"
-      }
+      },
+      "members_title": "Nuestro Equipo",
+      "members_active": "Miembros Activos",
+      "members": {
+        "member1_role": "Director Administrativo",
+        "member2_role": "Coordinadora de Programas",
+        "member3_role": "Coordinadora Administrativa",
+        "member1_phrase": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum purus nec purus dignissim, consectetur rutrum nisl porttitor.",
+        "member2_phrase": "Viajar como voluntaria transformó mi vida en 2012, desde entonces acompaño a jóvenes y sus familias a vivir experiencias que conectan, enseñan y dejan huella en el mundo.",
+        "member3_phrase": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum purus nec purus dignissim, consectetur rutrum nisl porttitor."
+      },
+      "life_title": "Vida y voluntariado",
+      "life_text1": "El trabajo voluntario es la manifestación altruista que el ser humano tiene con la sociedad. El voluntariado es una gota en el basto océano, la suma de las pequeñas cosas se convierte en una fuerza abrumadora que busca cambiar el estado perenne de una realidad ajena.",
+      "life_text2": "Comprender estas realidades diversas y situaciones fuera de nuestra zona de confort nos permite comprender que hay mucho mas que hacer y que hay lugares por alcanzar. ​Vida y voluntariado nace como una pequeña gota que busca generar esta fuerza abrumadora. El objetivo es trasmitir nuestros deseos de generar cambios a través de la preparación de ciudadanos globales, ciudadanos humanos que comprendan la realidad existente detrás de cada sonrisa y tristeza."
     },
 
     "alt": {
@@ -79,7 +92,7 @@
       "testimonials_img": "Fotografia adjunta al testimonio",
       "about_image1": "Voluntarios frente a un estanque",
       "about_image2": "Voluntarios en un bote",
-      "about_image3": "Voluntarios con equipo de surf"
+      "about_image3": "Voluntarios con estudiantes esquiando"
     },
 
     "button": {

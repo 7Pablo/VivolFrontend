@@ -3,6 +3,7 @@
 import { getTranslations } from "locales/translations";
 import Image from "next/image";
 import OvalCard from "@/components/cards/OvalCard";
+import MemberCard from "@/components/cards/MemberCard";
 
 export default async function AboutPage(props) {
     const params = await props.params;
@@ -83,6 +84,67 @@ export default async function AboutPage(props) {
             color="#FFDE59"
           />
         </div>
+
+        {/* Members */}
+        <div className="about-page__members">
+            <Image 
+              src="/images/photos/machupicchu.jpg"
+              alt="Machu Picchu, Peru"
+              layout="fill"
+              objectFit="cover"
+              quality={100}
+              objectPosition="50% 60%"
+              priority
+              className="about-page__members--background"
+            />
+            <div className="about-page__members--overlay">
+              <h3>{trans.about_page.members_title}</h3>
+              <h2>{trans.about_page.members_active}</h2>
+              <div className="about-page__members--cards">
+                <MemberCard 
+                  src="/images/photos/anonymous.jpg"
+                  alt="Renato Noriega"
+                  name="Renato Noriega"
+                  role={trans.about_page.members.member1_role}
+                  phrase={trans.about_page.members.member1_phrase}
+                />
+                <MemberCard 
+                  src="/images/photos/anonymous.jpg"
+                  alt="Pamela Villagómez"
+                  name="Pamela Villagómez"
+                  role={trans.about_page.members.member2_role}
+                  phrase={trans.about_page.members.member2_phrase}
+                />
+                <MemberCard 
+                  src="/images/photos/anonymous.jpg"
+                  alt="Flor María Merlo"
+                  name="Flor María Merlo"
+                  role={trans.about_page.members.member3_role}
+                  phrase={trans.about_page.members.member3_phrase}
+                />
+              </div>
+            </div>
+        </div>
+        
+        {/* Life */}
+        <div className="about-page__life">
+          <h3>{trans.about_page.life_title}</h3>
+          <div className="about-page__life--content">
+            <Image
+                className="about-page__life--image"
+                src="/images/photos/vivol-nieve.JPG"
+                alt={trans.alt.about_image3}
+                width={500}
+                height={500}
+                quality={100}
+            />
+            <div className="about-page__life--text">
+              <p>{trans.about_page.life_text1}</p>
+              <p>{trans.about_page.life_text2}</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     );
 }

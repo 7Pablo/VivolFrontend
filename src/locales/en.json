@@ -65,7 +65,20 @@
         "bullet5": "Tolerance",
         "bullet6": "Mutual understanding",
         "bullet7": "Cultural diversity"
-      }
+      },
+      "members_title": "Our Team",
+      "members_active": "Active Members",
+      "members": {
+        "member1_role": "Administrative Director",
+        "member2_role": "Program Coordinator",
+        "member3_role": "Administrative Coordinator",
+        "member1_phrase": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum purus nec purus dignissim, consectetur rutrum nisl porttitor.",
+        "member2_phrase": "Traveling as a volunteer changed my life in 2012. Since then, I’ve been guiding young people and their families through experiences that connect, teach, and leave a mark on the world.",
+        "member3_phrase": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum purus nec purus dignissim, consectetur rutrum nisl porttitor."
+      },
+      "life_title": "Life and Volunteering",
+      "life_text1": "Volunteer work is the altruistic expression of human connection with society. Volunteering is a drop in the vast ocean—the sum of small actions becomes an overwhelming force that seeks to change the enduring state of an unfamiliar reality.",
+      "life_text2": "Understanding these diverse realities and situations beyond our comfort zone allows us to realize there is much more to be done and many places yet to reach. Life and Volunteering was born as a small drop aiming to create that overwhelming force. The goal is to share our desire to create change by preparing global citizens—human citizens who understand the reality behind every smile and every sadness."
     },
 
     "alt": {
@@ -79,7 +92,7 @@
       "testimonials_img": "Photo attached to the testimonial",
       "about_image1": "Volunteers in front of a pond",
       "about_image2": "Volunteers in front of on a boat",
-      "about_image3": "Volunteers with surfing gear"
+      "about_image3": "Volunteers with students skiing"
     },
 
     "button": {
