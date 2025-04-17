@@ -1,0 +1,34 @@
+.double-button {
+    @include body-font($size: 18px, $weight: 500);
+    @include flex($direction: row);
+
+    p {
+        line-height: 20px;
+        padding: 0 30px;
+    }
+
+    &__left, 
+    &__right {
+        @include flex();
+        flex: 1;
+        height: 60px;
+        cursor: pointer;
+        
+    }
+
+    &__left {
+        color: $blue-tertiary;
+        background-color: #fff;
+        border-radius: 100px 0 0 100px;
+    }
+
+    &__right {
+        color: #fff;
+        background-color: $blue-tertiary;
+        border-radius: 0 100px 100px 0;
+
+        p {
+            width: 200px;
+        }
+    }
+}

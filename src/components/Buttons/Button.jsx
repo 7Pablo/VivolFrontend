@@ -1,3 +1,4 @@
+// Button.jsx (Client component)
 'use client';
 
 export default function Button({

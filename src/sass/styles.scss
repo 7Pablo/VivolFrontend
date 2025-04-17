@@ -55,6 +55,7 @@ time, mark, audio, video {
 @import './buttons/ham-dropdown';
 @import './buttons/language-button';
 @import './buttons/fold-button';
+@import './buttons/double-button';
 
 // Cards
 @import './cards/more-card';
@@ -66,6 +67,7 @@ time, mark, audio, video {
 // Pages 
 @import './pages/home-page';
 @import './pages/about-page';
+@import './pages/volunteer-page';
 
 body {
 	background-color: $background-main; 

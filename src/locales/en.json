@@ -81,6 +81,10 @@
       "life_text2": "Understanding these diverse realities and situations beyond our comfort zone allows us to realize there is much more to be done and many places yet to reach. Life and Volunteering was born as a small drop aiming to create that overwhelming force. The goal is to share our desire to create change by preparing global citizens—human citizens who understand the reality behind every smile and every sadness."
     },
 
+    "volunteer_page": {
+      "title": "International Volunteering and Volunteering in Peru: Choose Your Path"
+    },
+
     "alt": {
       "language_change": "Cambiar idioma a español",
       "carousel_image": "Carousel image",
@@ -92,12 +96,16 @@
       "testimonials_img": "Photo attached to the testimonial",
       "about_image1": "Volunteers in front of a pond",
       "about_image2": "Volunteers in front of on a boat",
-      "about_image3": "Volunteers with students skiing"
+      "about_image3": "Volunteers with students skiing",
+      "volunteer_background1": "Volunteer in Germany",
+      "volunteer_background2": "Volunteer in Peru"
     },
 
     "button": {
       "language_text": "Español",
-      "carousel": "Let's start"
+      "carousel": "Let's start",
+      "volunteer_inter": "International Volunteering",
+      "volunteer_nat": "Volunteering in Peru"
     }
   }
   

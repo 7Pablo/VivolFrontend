@@ -1,0 +1,39 @@
+.volunteer {
+    &__decision {
+      position: relative;
+      width: 100%;
+      height: 560px;
+  
+      &--background {
+        @include flex($direction: row);
+        width: 100%;
+        height: 100%;
+      }
+  
+      &--half {
+        position: relative;
+        flex: 1; 
+        height: 100%;
+      }
+
+      &--overlay {
+        @include flex($gap: 40px);
+        position: absolute;
+        padding: 50px 25px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; 
+        background-color: rgba(0, 0, 0, 0.25);
+        z-index: 2;
+
+        h1 {
+            @include title-font($size: 48px, $weight: 500, $color: #fff);
+            text-shadow: 0px 6px 5px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            max-width: 800px;
+        }
+      }
+    }
+  }
+  

@@ -1,8 +1,6 @@
 // Fold-button (Client component)
 'use client';
 
-import React from 'react';
-
 import Image from 'next/image';
 
 export default function FoldButton({ src, alt, text, link }) {

@@ -134,8 +134,8 @@ export default async function AboutPage(props) {
                 className="about-page__life--image"
                 src="/images/photos/vivol-nieve.JPG"
                 alt={trans.alt.about_image3}
-                width={500}
-                height={500}
+                width={300}
+                height={300}
                 quality={100}
             />
             <div className="about-page__life--text">
