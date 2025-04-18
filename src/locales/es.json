@@ -82,7 +82,22 @@
     },
 
     "volunteer_page": {
-      "title": "Voluntariado Internacional y en Perú: Elige tu Camino"
+      "title": "Voluntariado Internacional y en Perú: Elige tu Camino",
+      "definition": "Volunteering is a challenge taken on altruistically, offering our knowledge and skills in service of a specific cause. It is the expression of human connection and social support.",
+      "quote": "En cada comunidad hay trabajo por hacer. En cada nación hay heridas que sanar. En cada corazón está el poder para hacerlo",
+      "middle_text1": "Te invitamos a formar parte de nuestro equipo de voluntarios que año a año se suman a esta gran iniciativa. Promover la ayuda social y participar de un proceso de aprendizaje experimental.",
+      "middle_text2": "Un intercambio cultural social te permite desarrollar y potenciar habilidades que solo es posible a través de procesos de inmersión. Al realizar un voluntariado internacional no solo tiene la oportunidad de viajar a otro país sino que te permite:",
+      "middle_text3": {
+        "bullet1": "Descubrir una nueva cultura",
+        "bullet2": "Descubrir sus costumbres y tradiciones",
+        "bullet3": "Desarrollar nuevas habilidades",
+        "bullet4": "Potenciar habilidades",
+        "bullet5": "Adquirir independencia",
+        "bullet6": "Descubrir tus fortalezas y debilidades",
+        "bullet7": "Descubrir el valor de la familia y la amistad",
+        "bullet8": "Conocer y experimentar un idioma",
+        "bullet9": "Desarrollar habilidades de toma de decisiones y manejo de crisis"
+      }
     },
 
     "alt": {
@@ -97,8 +112,11 @@
       "about_image1": "Voluntarios frente a un estanque",
       "about_image2": "Voluntarios en un bote",
       "about_image3": "Voluntarios con estudiantes esquiando",
-      "volunteer_backrgound1": "Voluntaria en Alemania",
-      "volunteer_background2": "Voluntario en Perú"
+      "volunteer_background1": "Voluntaria en Alemania",
+      "volunteer_background2": "Voluntario en Perú",
+      "volunteer_image1": "Voluntaria en Austria",
+      "volunteer_image2": "Voluntaria Italiana con niños",
+      "volunteer_iamge3": "Voluntarios sosteniendo un cartel"
     },
 
     "button": {

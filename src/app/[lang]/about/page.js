@@ -131,12 +131,12 @@ export default async function AboutPage(props) {
           <h3>{trans.about_page.life_title}</h3>
           <div className="about-page__life--content">
             <Image
-                className="about-page__life--image"
-                src="/images/photos/vivol-nieve.JPG"
-                alt={trans.alt.about_image3}
-                width={300}
-                height={300}
-                quality={100}
+              className="about-page__life--image"
+              src="/images/photos/vivol-nieve.JPG"
+              alt={trans.alt.about_image3}
+              width={300}
+              height={300}
+              quality={100}
             />
             <div className="about-page__life--text">
               <p>{trans.about_page.life_text1}</p>

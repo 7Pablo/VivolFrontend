@@ -7,28 +7,110 @@
         padding: 0 30px;
     }
 
-    &__left, 
+    &__left,
     &__right {
         @include flex();
         flex: 1;
         height: 60px;
         cursor: pointer;
-        
+        transition: box-shadow 0.3s ease;
+        border-radius: inherit;
     }
 
     &__left {
         color: $blue-tertiary;
         background-color: #fff;
         border-radius: 100px 0 0 100px;
+        animation: slideInLeft 0.8s ease-out 0.2s forwards;
+
+        &:hover {
+            box-shadow: 0 0 12px 4px #fff;
+        }
     }
 
     &__right {
         color: #fff;
         background-color: $blue-tertiary;
         border-radius: 0 100px 100px 0;
+        animation: slideInRight 0.8s ease-out 0.2s forwards;
+
+        &:hover {
+            box-shadow: 0 0 12px 4px $blue-tertiary;
+        }
 
         p {
             width: 200px;
         }
     }
 }
+
+// Responsive smedium
+
+@include responsive(smedium) {
+    .double-button {
+        font-size: 16px;
+
+        p {
+            line-height: 16px;
+            padding: 0 25px;
+        }
+
+        &__left,
+        &__right {
+            height: 55px;
+        }
+
+        &__right {
+            p {
+                width: 200px;
+            }
+        }
+    }
+}
+
+// Responsive small
+@include responsive(small) {
+    .double-button {
+        font-size: 15px;
+
+        p {
+            line-height: 16px;
+            padding: 0 20px;
+        }
+
+        &__left,
+        &__right {
+            height: 50px;
+        }
+
+        &__right {
+            p {
+                width: 150px;
+            }
+        }
+    }
+}
+
+// Animations
+@keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+  
+@keyframes slideInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+  

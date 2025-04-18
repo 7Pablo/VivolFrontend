@@ -82,7 +82,22 @@
     },
 
     "volunteer_page": {
-      "title": "International Volunteering and Volunteering in Peru: Choose Your Path"
+      "title": "International Volunteering and Volunteering in Peru: Choose Your Path",
+      "definition": "El voluntariado es un reto que se toma de forma altruista, ofreciendo nuestros conocimientos y capacidades al servicio de una causa concreta. Es la manifestación del contacto humano y la ayuda social.",
+      "quote": "In every community, there is work to be done. In every nation, there are wounds to heal. In every heart, there is the power to do it.",
+      "middle_text1": "We invite you to join our team of volunteers who take part in this great initiative year after year—promoting social support and participating in an experiential learning process.",
+      "middle_text2": "A social cultural exchange allows you to develop and strengthen skills that are only possible through immersion. By doing international volunteering, you not only have the opportunity to travel to another country, but you also get to:",
+      "middle_text3": {
+        "bullet1": "Discover a new culture",
+        "bullet2": "Learn about its customs and traditions",
+        "bullet3": "Develop new skills",
+        "bullet4": "Strengthen existing abilities",
+        "bullet5": "Gain independence",
+        "bullet6": "Discover your strengths and weaknesses",
+        "bullet7": "Understand the value of family and friendship",
+        "bullet8": "Learn and experience a language",
+        "bullet9": "Develop decision-making and crisis management skills"
+      }
     },
 
     "alt": {
@@ -98,7 +113,10 @@
       "about_image2": "Volunteers in front of on a boat",
       "about_image3": "Volunteers with students skiing",
       "volunteer_background1": "Volunteer in Germany",
-      "volunteer_background2": "Volunteer in Peru"
+      "volunteer_background2": "Volunteer in Peru",
+      "volunteer_image1": "Volunteer in Austria",
+      "volunteer_image2": "Italian volunteer with children",
+      "volunteer_image3": "Volunteers holding a sign"
     },
 
     "button": {

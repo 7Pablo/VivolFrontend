@@ -1,39 +1,238 @@
-.volunteer {
-    &__decision {
-      position: relative;
+.volunteer {  
+  @include flex();
+
+  // Decision
+	&__decision { 
+		position: relative;
+		width: 100%;
+		height: 560px;
+
+		&--background {
+			@include flex($direction: row);
+			width: 100%;
+			height: 100%;
+		}
+
+		&--half {
+			position: relative;
+			flex: 1;
+			height: 100%;
       width: 100%;
-      height: 560px;
-  
-      &--background {
-        @include flex($direction: row);
-        width: 100%;
-        height: 100%;
-      }
-  
-      &--half {
-        position: relative;
-        flex: 1; 
-        height: 100%;
-      }
+		}
 
-      &--overlay {
-        @include flex($gap: 40px);
-        position: absolute;
-        padding: 50px 25px;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%; 
-        background-color: rgba(0, 0, 0, 0.25);
-        z-index: 2;
+		&--overlay {
+			@include flex($gap: 40px);
+			position: absolute;
+			padding: 50px 25px;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.25);
+			z-index: 2;
 
-        h1 {
-            @include title-font($size: 48px, $weight: 500, $color: #fff);
-            text-shadow: 0px 6px 5px rgba(0, 0, 0, 0.7);
-            text-align: center;
-            max-width: 800px;
-        }
+			h1 {
+				@include title-font($size: 48px, $weight: 500, $color: #fff);
+				text-shadow: 0px 6px 5px rgba(0, 0, 0, 0.7);
+				text-align: center;
+				max-width: 800px;
+        animation: fadeInOpacity 0.8s ease-out forwards;
+			}
+		}
+	}
+
+  // Definition
+  &__definition {
+    @include flex($direction: row, $gap: 80px);
+    width: 100%;
+    max-width: 1440px;
+    margin-top: 60px;
+    padding: 50px 50px 100px 50px;
+
+    &--image {
+      border-radius: 15px;
+      box-shadow: -18px 18px 0px $green-main;
+      object-fit: cover;
+      height: auto;
+      width: 350px;
+      animation: slideInLeft 0.8s ease-out 0.2s forwards;
+    }
+
+    &--text {
+      @include body-font($size: 18px, $color: $gray-light);
+      line-height: 32px;
+      max-width: 650px;
+      text-align: justify;
+      animation: slideInRight 0.8s ease-out 0.2s forwards;
+    } 
+  }
+
+  // Middle
+  &__middle {
+    @include flex($direction: column, $gap: 80px);
+    width: 100%;
+    max-width: 1440px;
+    padding: 50px;
+    margin-top: 60px;
+    
+    &--image-1, &--image-2 {
+      border-radius: 15px;
+      object-fit: cover;
+      height: auto;
+      width: 350px;
+      
+    }
+
+    &--image-1 {
+      box-shadow: -18px 18px 0px $purple-main;
+    }
+
+    &--image-2 {
+      box-shadow: -18px 18px 0px $yellow-main;
+    }
+
+    &--top, &--bottom {
+      @include flex($direction: row, $gap: 80px);
+      @include body-font($size: 18px, $color: $gray-light);
+      line-height: 32px;
+      text-align: justify;
+
+      p {
+        max-width: 650px;
+      }
+    }
+
+    &--top {
+      animation: slideInRight 0.8s ease-out 0.2s forwards;
+
+      &-text {
+        @include flex($gap: 25px);
+      }
+    }
+
+    &--bottom {
+      animation: slideInLeft 0.8s ease-out 0.2s forwards;
+
+      ul {
+        list-style-type: disc;
+        padding-left: 20px;
       }
     }
   }
-  
+}
+
+// Responsive medium 
+@include responsive(medium) {
+  .volunteer {
+    &__definition {
+      gap: 50px;
+
+      &--image {
+        box-shadow: -14px 14px 0px $green-main; 
+      }
+    }
+  }
+}
+
+// Responsive smedium
+@include responsive(smedium) {
+	.volunteer {
+    &__decision {
+      &--background {
+        @include flex($direction: column);
+      }
+
+      &--half:nth-of-type(2) {
+        img {
+          object-position: 50% 40% !important;
+        }
+      }
+
+      &--overlay {
+        gap: 70px;
+
+        h1 {
+          font-size: 42px;
+          line-height: 40px;
+          max-width: 650px;
+        }
+      }
+    }
+
+    &__definition {
+      @include flex($direction: column, $gap: 40px);
+      margin: 0;
+      padding: 50px 40px;
+
+      &--image {
+        order: 2;
+      }
+    
+      &--text {
+        font-size: 16px;
+        max-width: 100%;
+      } 
+    }
+  }
+}
+
+// Responsive small
+@include responsive(small) {
+	.volunteer {
+    &__decision {
+      &--overlay {
+        gap: 45px;
+
+        h1 {
+          font-size: 36px;
+          line-height: 45px;
+        }
+      }
+    }
+
+    &__definition {
+      padding: 50px 30px;
+
+      &--image {
+        width: 300px;
+      }
+    
+      &--text {
+        font-size: 16px;
+        max-width: 100%;
+      } 
+    }
+  }
+}
+
+// Animations
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInOpacity {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
