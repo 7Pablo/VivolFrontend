@@ -310,6 +310,10 @@
             gap: 30px;
             padding: 50px 30px;
 
+            h3 {
+                font-size: 26px;
+            }
+
             &--content {
                 @include flex($direction: column, $gap: 60px);
             }

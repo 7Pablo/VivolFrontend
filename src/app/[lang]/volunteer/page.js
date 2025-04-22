@@ -1,8 +1,10 @@
-// page.js (Homepage/Server component)
+// page.js (Volunteer Page/Server component)
 
 import Image from "next/image";
 import { getTranslations } from "locales/translations";
 import DoubleButton from "@/components/buttons/DoubleButton";
+import BenefitCard from "@/components/cards/BenefitCard";
+import Button from "@/components/buttons/Button";
 
 export default async function VolunteerPage(props) {
   const params = await props.params;
@@ -37,7 +39,7 @@ export default async function VolunteerPage(props) {
         <div className="volunteer__decision--overlay">
           <h1>{trans.volunteer_page.title}</h1>
           <DoubleButton
-            routeLeft="volunteer/intenational"
+            routeLeft="volunteer/international"
             routeRight="volunteer/national"
             textLeft={trans.button.volunteer_inter}
             textRight={trans.button.volunteer_nat}
@@ -50,7 +52,7 @@ export default async function VolunteerPage(props) {
         <Image
           className="volunteer__definition--image"
           src="/images/photos/vivol-austria.jpeg"
-          alt={trans.alt.volunteer_image1}
+          alt={trans?.alt?.volunteer_image1 || "Volunteer in Austria"}
           width={300}
           height={300}
           quality={100}
@@ -65,7 +67,7 @@ export default async function VolunteerPage(props) {
         <div className="home-page__quote--fade">
           <Image
             src="/images/photos/papel.jpg"
-            alt={trans.alt.quote1}
+            alt={trans?.alt?.quote1 || "Paper background"}
             layout="fill"
             objectFit="cover"
             quality={100}
@@ -94,7 +96,7 @@ export default async function VolunteerPage(props) {
           <Image
             className="volunteer__middle--image-1"
             src="/images/photos/vivol-fiestas.jpg"
-            alt={trans.alt.volunteer_image2}
+            alt={trans?.alt?.volunteer_image2 || "Volunteers in Party"}
             width={300}
             height={300}
             quality={100}
@@ -104,7 +106,7 @@ export default async function VolunteerPage(props) {
           <Image
             className="volunteer__middle--image-2"
             src="/images/photos/vivol-cartel.jpg"
-            alt={trans.alt.volunteer_image3}
+            alt={trans.alt.volunteer_image3 || "Volunteers holding a sign"}
             width={300}
             height={300}
             quality={100}
@@ -123,6 +125,52 @@ export default async function VolunteerPage(props) {
         </div>
       </div>
 
+      {/* Benefits */}
+      <div className="volunteer__benefits">
+        <h3>{trans.volunteer_page.benefits_title}</h3>
+        <div className="volunteer__benefits--cards">
+          <BenefitCard
+            icon="/images/icons/house.svg"
+            title={trans.volunteer_page.benefits_host_title}
+            text={trans.volunteer_page.benefits_host_text}
+            color="#00BF4C"
+          />
+          <BenefitCard
+            icon="/images/icons/food.svg"
+            title={trans.volunteer_page.benefits_food_title}
+            text={trans.volunteer_page.benefits_food_text}
+            color="#BF0000"
+          />
+          <BenefitCard
+            icon="/images/icons/message.svg"
+            title={trans.volunteer_page.benefits_talk_title}
+            text={trans.volunteer_page.benefits_talk_text}
+            color="#FFDE59"
+          />
+          <BenefitCard
+            icon="/images/icons/world.svg"
+            title={trans.volunteer_page.benefits_world_title}
+            text={trans.volunteer_page.benefits_world_text}
+            color="#1683F0"
+          />
+          <BenefitCard
+            icon="/images/icons/truck.svg"
+            title={trans.volunteer_page.benefits_truck_title}
+            text={trans.volunteer_page.benefits_truck_text}
+            color="#00BFBF"
+          />
+          <BenefitCard
+            icon="/images/icons/book.svg"
+            title={trans.volunteer_page.benefits_book_title}
+            text={trans.volunteer_page.benefits_book_text}
+            color="#B490F0"
+          />
+        </div>
+        <Button 
+          route="contact"
+          children={trans.button.carousel}
+        />
+      </div>
     </div>
   );
 }

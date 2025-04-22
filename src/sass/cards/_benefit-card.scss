@@ -1,0 +1,56 @@
+.benefit-card {
+    @include flex($justify: start, $gap: 25px);
+    width: 275px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideFadeUp 0.7s ease-out forwards;
+
+    &__wrapper {
+        border-radius: 100%;
+        padding: 25px;
+        border-width: 12px !important;
+    }
+
+    &__text {
+        @include flex($gap: 10px);
+        text-align: center;
+
+        h4 {
+            @include body-font($size: 20px, $weight: 500, $color: $gray-dark);
+            line-height: 25px;
+        }
+    
+        p {
+            @include body-font($size: 18px);
+        }
+    }
+}
+
+@include responsive(smedium) {
+    .benefit-card {
+        &__text {
+            gap: 5px;
+    
+            h4 {
+                font-size: 19px;
+                line-height: 22px;
+            }
+        
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+// Animation
+@keyframes slideFadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px) scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+}

@@ -27,10 +27,6 @@ export default function Carousel({ imageLinks }) {
         fetchTranslations();
     }, [lang]);
 
-    const handleRedirect = () => {
-        router.push(`/${lang}/contact`)
-    };
-
     if (!translations) {
         return <div></div>;
     }
@@ -71,7 +67,7 @@ export default function Carousel({ imageLinks }) {
                         <h1>{translations.home_page.title}</h1>
                         <Button 
                             type='secondary'
-                            onClick={handleRedirect}
+                            route="contact"
                             children={translations.button.carousel}
                         />
                     </div>

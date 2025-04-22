@@ -103,6 +103,7 @@
     }
 
     &--top {
+      @include flex($direction: row, $gap: 95px);
       animation: slideInRight 0.8s ease-out 0.2s forwards;
 
       &-text {
@@ -119,6 +120,30 @@
       }
     }
   }
+
+  // Benefit
+  &__benefits {
+    @include flex($gap: 50px);
+    max-width: 1440px;
+    padding: 50px;
+
+    h3 {
+      @include title-font($size: 28px, $weight: 500, $color: $blue-main);
+      max-width: 700px;
+      text-align: center;
+    }
+
+    &--cards {
+      @include grid($columns: repeat(auto-fit, minmax(300px, 1fr)));
+      row-gap: 50px;
+      justify-items: center;
+      width: 1000px;
+    }
+
+    button {
+      margin: 20px 0 30px;
+    }
+  }
 }
 
 // Responsive medium 
@@ -126,9 +151,35 @@
   .volunteer {
     &__definition {
       gap: 50px;
+      padding: 50px 40px 100px 40px;
 
       &--image {
         box-shadow: -14px 14px 0px $green-main; 
+      }
+    }
+
+    &__middle {
+      padding: 40px 40px 60px 40px;
+
+      &--top, &--bottom {
+        gap: 50px;
+      }
+
+      &--image-1 {
+        box-shadow: -14px 14px 0px $purple-main;
+      }
+  
+      &--image-2 {
+        box-shadow: -14px 14px 0px $yellow-main;
+      }
+    }
+
+    &__benefits {
+      padding: 40px;
+      margin-bottom: 20px;
+  
+      &--cards {
+        width: 100%;
       }
     }
   }
@@ -162,7 +213,6 @@
     &__definition {
       @include flex($direction: column, $gap: 40px);
       margin: 0;
-      padding: 50px 40px;
 
       &--image {
         order: 2;
@@ -172,6 +222,34 @@
         font-size: 16px;
         max-width: 100%;
       } 
+    }
+
+    &__middle {
+      gap: 50px;
+      
+
+      &--top, &--bottom {
+        @include flex($direction: column, $gap: 40px);
+        animation: slideInLeft 0.8s ease-out 0.2s forwards;
+
+        p, li {
+          font-size: 16px;
+        }
+      }
+
+      &--image-2 {
+        order: 2;
+      }
+    }
+
+    &__benefits {
+      h3 {
+        font-size: 26px;
+      }
+
+      button {
+        margin: 20px 0;
+      }
     }
   }
 }
@@ -191,7 +269,7 @@
     }
 
     &__definition {
-      padding: 50px 30px;
+      padding: 50px 30px 80px 30px;
 
       &--image {
         width: 300px;
@@ -201,6 +279,23 @@
         font-size: 16px;
         max-width: 100%;
       } 
+    }
+
+    &__middle {
+      padding: 30px 30px 80px 30px;
+      margin-top: 30px;
+
+      &--image-1 {
+        width: 300px;
+      }
+  
+      &--image-2 {
+        width: 300px;
+      }
+    }
+
+    &__benefits {
+      padding: 30px;
     }
   }
 }

@@ -97,7 +97,20 @@
         "bullet7": "Descubrir el valor de la familia y la amistad",
         "bullet8": "Conocer y experimentar un idioma",
         "bullet9": "Desarrollar habilidades de toma de decisiones y manejo de crisis"
-      }
+      },
+      "benefits_title": "En Perú o a nivel internacional, buscamos que nuestro programa de voluntariado brinde los siguientes beneficios a los candidatos",
+      "benefits_host_title": "Host / Hospedaje",
+      "benefits_host_text": "En familia o en proyecto",
+      "benefits_food_title": "Alimentación",
+      "benefits_food_text": "Alimentación nacional",
+      "benefits_talk_title": "Asesoramiento",
+      "benefits_talk_text": "Asistencia durante tramites de visado",
+      "benefits_world_title": "Seguimiento internacional / Seguro de salud internacional",
+      "benefits_world_text": "Seguimiento y asistencia 24 horas",
+      "benefits_truck_title": "Dinero de transporte",
+      "benefits_truck_text": "Dinero destinado para el transporte para y desde el proyecto",
+      "benefits_book_title": "Capacitaciones",
+      "benefits_book_text": "Capacitaciones locales e internacionales"
     },
 
     "alt": {
