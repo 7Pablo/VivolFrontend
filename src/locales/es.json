@@ -113,6 +113,29 @@
       "benefits_book_text": "Capacitaciones locales e internacionales"
     },
 
+    "national_page": {
+      "title": "Voluntariado en Perú",
+      "intro_text": "Únete al voluntariado en Perú y contribuye al bienestar de comunidades locales mientras vives una experiencia cultural enriquecedora. ¡Tu ayuda puede marcar la diferencia!",
+      "capital_title": "Capital",
+      "capital_text": "Lima",
+      "language_title": "Lenguajes oficiales",
+      "language_text": "Español, Quechua y Aimara",
+      "government_title": "Tipo de gobierno",
+      "government_text": "República presidencial unitaria",
+      "currency_title": "Moneda",
+      "currency_text": "Sol (S/.)",
+      "geography_title": "Geografía",
+      "geography_text": "Perú está ubicado en la parte occidental de América del Sur. Su territorio limita con Ecuador, Colombia, Brasil, Bolivia y Chile. Tiene una población estimada de más de 34 millones de habitantes. El país está dividido en 25 regiones o departamentos. Tiene 11 eco-regiones, incluyendo 28 de los 32 climas mundiales, sin embargo, podría dividirse en tres regiones principales: Costa, Montañas y Selva.",
+      "cards": {
+        "card_title1": "Costa Pacífico",
+        "card_title2": "Sierra",
+        "card_title3": "Amazonia",
+        "card_text1": "La costa es una larga franja desértica que se extiende desde Tumbes, en el límite norte con Ecuador, hasta Tacna, en el sur, limitando con Chile. La temperatura media en diciembre a abril es de 25º a 28º grados Celsius y la temperatura promedio de mayo a noviembre es de 12º a 15º grados Celsius. La costa ocupa el 11% del territorio, sin embargo, alberga a más del 50% de la población total. ",
+        "card_text2": "La cordillera de los Andes ocupa el 30% del territorio. Se extiende a lo largo del lado occidental del país, casi paralelo al Pacífico. La cordillera de los Andes es la más larga del mundo y se extiende a siete países, comenzando de norte a sur, desde Venezuela, Colombia, Ecuador, Perú, Bolivia, Chile y Argentina.",
+        "card_text3": "La jungla ocupa el 59% del territorio. Tiene dos partes, la Selva alta y la baja. La selva alta se encuentra a los pies de los Andes y crece en las laderas de las montañas. La selva baja es parte de la selva tropical más grande del mundo. La jungla alberga más de 1.000 especies de ranas, 10.000 especies de mamíferos, 1.500 especies de aves y 3.000 especies de peces."
+      }
+    },
+
     "alt": {
       "language_change": "Change language to English",
       "carousel_image": "Imagen del carrusel",
@@ -129,7 +152,9 @@
       "volunteer_background2": "Voluntario en Perú",
       "volunteer_image1": "Voluntaria en Austria",
       "volunteer_image2": "Voluntaria Italiana con niños",
-      "volunteer_iamge3": "Voluntarios sosteniendo un cartel"
+      "volunteer_iamge3": "Voluntarios sosteniendo un cartel",
+      "national_image1": "Voluntarios con paletas",
+      "peru_flag": "Bandera de Perú"
     },
 
     "button": {

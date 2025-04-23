@@ -238,7 +238,7 @@ time, mark, audio, video {
   transition: transform 0.3s ease-out;
 }
 .footer__nav--item-text:hover {
-  transform: translateX(20px);
+  transform: translateX(10px);
 }
 .footer__contact {
   display: flex;
@@ -264,7 +264,7 @@ time, mark, audio, video {
   cursor: pointer;
 }
 .footer__contact--item:hover {
-  transform: translateX(20px);
+  transform: translateX(10px);
 }
 .footer__line {
   background-color: #fff;
@@ -1413,6 +1413,131 @@ time, mark, audio, video {
     transform: translateY(0) scale(1);
   }
 }
+.small-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+}
+.small-card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.small-card__text h3 {
+  font-family: var(--font-p), sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #747783;
+}
+.small-card__text p {
+  font-family: var(--font-p), sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #747783;
+}
+
+@media (max-width: 800px) {
+  .small-card {
+    width: 200px;
+  }
+  .small-card__text h3 {
+    font-size: 18px;
+  }
+  .small-card__text p {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 550px) {
+  .small-card {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+  }
+  .small-card__text {
+    align-items: start;
+    text-align: left;
+    gap: 10px;
+  }
+}
+.simple-card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  justify-content: start;
+  background-color: #fff;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 30px;
+  width: 400px;
+  height: 100%;
+}
+.simple-card__icon {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: end;
+  height: 120px;
+}
+.simple-card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: start;
+  text-align: justify;
+}
+.simple-card__text h4 {
+  font-family: var(--font-p), sans-serif;
+  font-size: 24px;
+  font-weight: 500px;
+  color: #1683F0;
+}
+.simple-card__text p {
+  font-family: var(--font-p), sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #747783;
+}
+
+@media (max-width: 1440px) {
+  .simple-card {
+    width: 355px;
+  }
+}
+@media (max-width: 1200px) {
+  .simple-card {
+    width: 335px;
+  }
+}
+@media (max-width: 800px) {
+  .simple-card {
+    width: 100%;
+    max-width: 400px;
+  }
+  .simple-card__text h4 {
+    font-size: 22px;
+  }
+  .simple-card__text p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 800px) {
+  .simple-card {
+    padding: 0px 25px 25px 25px;
+  }
+}
 .home-page {
   font-family: var(--font-p), sans-serif;
   font-size: 12px;
@@ -2064,7 +2189,6 @@ time, mark, audio, video {
     gap: 30px;
   }
   .about-page__members--cards {
-    max-width: 900px;
     grid-template-columns: 1fr;
   }
   .about-page__members--cards > *:nth-child(3) {
@@ -2445,6 +2569,316 @@ time, mark, audio, video {
   }
   .volunteer__benefits {
     padding: 30px;
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.national-page {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+}
+.national-page__intro {
+  position: relative;
+  width: 100%;
+  height: 560px;
+}
+.national-page__intro--overlay {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding: 50px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+.national-page__intro--text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  max-width: 1440px;
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+.national-page__intro--text h1 {
+  font-family: var(--font-ls), sans-serif;
+  font-size: 80px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 80px;
+  text-shadow: 0px 6px 5px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  max-width: 600px;
+  text-align: start;
+}
+.national-page__intro--text p {
+  font-family: var(--font-p), sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 30px;
+  max-width: 800px;
+  text-shadow: 0px 6px 5px rgba(0, 0, 0, 0.7);
+}
+.national-page__info {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 50px;
+  max-width: 1440px;
+  animation: fadeInOpacity 0.8s ease-out forwards;
+}
+.national-page__info--image img {
+  object-fit: cover;
+  border-radius: 400px 400px 50px 400px;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.3);
+  height: 400px;
+  width: 300px;
+  min-width: 300px;
+}
+.national-page__info--cards {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.national-page__info--cards-top, .national-page__info--cards-bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.national-page__geography {
+  position: relative;
+  height: 1000px;
+  width: 100%;
+}
+.national-page__geography--image {
+  max-height: 800px;
+}
+.national-page__geography--text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+}
+.national-page__geography--text h3 {
+  font-family: var(--font-ls), sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 28px;
+  text-align: center;
+}
+.national-page__geography--text p {
+  font-family: var(--font-p), sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 36px;
+  text-align: justify;
+}
+.national-page__geography--overlay {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  justify-content: start;
+  padding: 100px 50px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(53, 95, 181, 0.25), rgba(53, 95, 181, 0.85));
+  z-index: 1;
+}
+.national-page__geography--cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto auto;
+  gap: 0px;
+  width: 100%;
+  max-width: 1440px;
+  justify-items: center;
+}
+
+@media (max-width: 1440px) {
+  .national-page__geography {
+    height: 1025px;
+  }
+  .national-page__geography--cards {
+    max-width: 1250px;
+  }
+}
+@media (max-width: 1200px) {
+  .national-page__intro--overlay {
+    padding: 40px;
+  }
+  .national-page__intro--text h1 {
+    font-size: 70px;
+    line-height: 70px;
+    max-width: 500px;
+  }
+  .national-page__info {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 40px;
+  }
+  .national-page__info--image {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+  .national-page__info--image img {
+    border-radius: 30px;
+    height: 350px;
+    width: 80%;
+  }
+  .national-page__info--cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  .national-page__info--cards-top, .national-page__info--cards-bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .national-page__geography {
+    min-height: 100vh;
+    height: auto;
+  }
+  .national-page__geography--overlay {
+    padding: 80px 40px;
+  }
+  .national-page__geography--cards {
+    max-width: 800px;
+    row-gap: 4vw !important;
+  }
+  .national-page__geography--cards > *:nth-child(3) {
+    grid-column: span 2;
+  }
+}
+@media (max-width: 800px) {
+  .national-page__intro--text p {
+    font-size: 18px;
+    max-width: 100%;
+  }
+  .national-page__geography h3 {
+    font-size: 26px;
+  }
+  .national-page__geography p {
+    font-size: 16px;
+    line-height: 34px;
+  }
+  .national-page__geography--cards {
+    grid-template-columns: 1fr;
+    row-gap: 40px !important;
+  }
+  .national-page__geography--cards > *:nth-child(3) {
+    grid-column: span 1;
+  }
+}
+@media (max-width: 550px) {
+  .national-page__intro--overlay {
+    padding: 30px;
+  }
+  .national-page__intro--text h1 {
+    font-size: 55px;
+    line-height: 55px;
+    max-width: 100%;
+  }
+  .national-page__intro--text p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .national-page__info {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 30px;
+  }
+  .national-page__info--image {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+  .national-page__info--image img {
+    height: 300px;
+    width: 300px;
+  }
+  .national-page__info--cards {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    align-items: start;
+    justify-content: center;
+  }
+  .national-page__info--cards-top, .national-page__info--cards-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    align-items: start;
+    justify-content: center;
+  }
+  .national-page__geography--overlay {
+    padding: 80px 30px;
   }
 }
 @keyframes slideInLeft {

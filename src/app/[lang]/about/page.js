@@ -90,12 +90,9 @@ export default async function AboutPage(props) {
             <Image 
               src="/images/photos/machupicchu.jpg"
               alt="Machu Picchu, Peru"
-              layout="fill"
-              objectFit="cover"
-              quality={100}
-              objectPosition="50% 60%"
+              fill
+              style={{ objectFit: 'cover', objectPosition: '50% 60%' }}
               priority
-              className="about-page__members--background"
             />
             <div className="about-page__members--overlay">
               <h3>{trans.about_page.members_title}</h3>

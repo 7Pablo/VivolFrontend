@@ -1,0 +1,49 @@
+.small-card {
+    @include flex($gap: 20px);
+    width: 250px;
+
+    &__text {
+        @include flex($gap: 5px);
+        text-align: center;
+
+        h3 {
+            @include body-font($size: 20px, $weight: 500);
+        }
+
+        p {
+            @include body-font($size: 18px);
+        }
+    }
+}
+
+// Responsive smedium
+@include responsive(smedium) {
+    .small-card {
+        width: 200px;
+
+        &__text {
+            h3 {
+                font-size: 18px;
+            }
+    
+            p {
+                font-size: 16px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+// Responsive small
+@include responsive(small) {
+    .small-card {
+        @include flex($direction: row, $justify: start, $gap: 20px);
+        width: 100%;
+
+        &__text {
+            align-items: start;
+            text-align: left;
+            gap: 10px;
+        }
+    }
+}

@@ -113,6 +113,29 @@
       "benefits_book_text": "Local and international training sessions"
     },
 
+    "national_page": {
+      "title": "Volunteering in Peru",
+      "intro_text": "Join the volunteering program in Peru and contribute to the well-being of local communities while living a rich cultural experience. Your help can make a difference!",
+      "capital_title": "Capital",
+      "capital_text": "Lima",
+      "language_title": "Official Languages",
+      "language_text": "Spanish, Quechua, and Aymara",
+      "government_title": "Type of Government",
+      "government_text": "Unitary presidential republic",
+      "currency_title": "Currency",
+      "currency_text": "Sol (S/.)",
+      "geography_title": "Geography",
+      "geography_text": "Peru is located on the western side of South America. Its territory borders Ecuador, Colombia, Brazil, Bolivia, and Chile. It has an estimated population of over 34 million inhabitants. The country is divided into 25 regions or departments. It has 11 eco-regions, including 28 of the world's 32 climates, but can be mainly divided into three regions: Coast, Mountains, and Jungle.",
+      "cards": {
+        "card_title1": "Pacific Coast",
+        "card_title2": "Highlands",
+        "card_title3": "Amazon",
+        "card_text1": "The coast is a long desert strip stretching from Tumbes, on the northern border with Ecuador, to Tacna in the south, bordering Chile. The average temperature from December to April is 25º to 28º Celsius, and from May to November it's 12º to 15º Celsius. The coast makes up 11% of the territory but is home to over 50% of the total population.",
+        "card_text2": "The Andes Mountains cover 30% of the territory. They run along the western side of the country, almost parallel to the Pacific. The Andes are the longest mountain range in the world, stretching across seven countries from north to south: Venezuela, Colombia, Ecuador, Peru, Bolivia, Chile, and Argentina.",
+        "card_text3": "The jungle covers 59% of the territory. It has two parts: high jungle and low jungle. The high jungle lies at the foot of the Andes and grows along the mountain slopes. The low jungle is part of the largest tropical rainforest in the world. The jungle is home to over 1,000 species of frogs, 10,000 species of mammals, 1,500 species of birds, and 3,000 species of fish."
+      }
+    },
+
     "alt": {
       "language_change": "Cambiar idioma a español",
       "carousel_image": "Carousel image",
@@ -129,7 +152,9 @@
       "volunteer_background2": "Volunteer in Peru",
       "volunteer_image1": "Volunteer in Austria",
       "volunteer_image2": "Italian volunteer with children",
-      "volunteer_image3": "Volunteers holding a sign"
+      "volunteer_image3": "Volunteers holding a sign",
+      "national_image1": "Volunteers with paddles",
+      "peru_flag": "Peru flag"
     },
 
     "button": {

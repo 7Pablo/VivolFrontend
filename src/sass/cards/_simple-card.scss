@@ -1,0 +1,66 @@
+.simple-card {
+    @include flex($justify: start, $gap: 25px);
+    background-color: #fff;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 30px;
+    width: 400px;
+    height: 100%;
+
+    &__icon {
+        @include flex($justify: end);
+        height: 120px;
+    }
+
+    &__text {
+        @include flex($justify: start, $gap: 15px);
+        text-align: justify;
+
+        h4 {
+            @include body-font($size: 24px, $weight: 500px, $color: $blue-tertiary);
+        }
+        
+        p {
+            @include body-font($size: 16px);
+        }
+    }
+}
+
+// Responsive large 
+@include responsive(large) {
+    .simple-card {
+        width: 355px;
+    }
+}
+
+// Responsive medium 
+@include responsive(medium) {
+    .simple-card {
+        width: 335px;
+    }
+}
+
+// Responsive smedium 
+@include responsive(smedium) {
+    .simple-card {
+        width: 100%;
+        max-width: 400px;
+
+        &__text {
+            h4 {
+               font-size: 22px;
+            }
+            
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+// Responsive small 
+@include responsive(smedium) {
+    .simple-card {
+        padding: 0px 25px 25px 25px;
+    }
+}

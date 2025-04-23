@@ -64,11 +64,14 @@ time, mark, audio, video {
 @import './cards/oval-card';
 @import './cards/member-card';
 @import './cards/benefit-card';
+@import './cards/small-card';
+@import './cards/simple-card';
 
 // Pages 
 @import './pages/home-page';
 @import './pages/about-page';
 @import './pages/volunteer-page';
+@import './pages/national-page';
 
 body {
 	background-color: $background-main; 
