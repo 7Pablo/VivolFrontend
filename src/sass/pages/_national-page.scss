@@ -76,7 +76,6 @@
 
         &--image {
             max-height: 800px;
-
         }
 
         &--text {
@@ -112,6 +111,96 @@
             width: 100%;
             max-width: 1440px;
             justify-items: center;
+
+            > * {
+                animation: dropCard 0.6s ease-out forwards;
+            }
+        
+            > *:nth-child(1) {
+                animation-delay: 0s;
+            }
+        
+            > *:nth-child(2) {
+                animation-delay: 0.2s;
+            }
+        
+            > *:nth-child(3) {
+                animation-delay: 0.4s;
+            }
+        }
+    }
+
+    // Reason
+    &__reason {
+        @include flex($direction: row);
+        margin: 100px 50px;
+        max-width: 1200px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.3);
+        
+        &--left {
+            @include flex($align: start, $gap: 20px);
+            flex: 1;
+            background-color: #fff;
+            border-radius: 20px 0 0 20px;
+            padding: 50px;
+            min-height: 400px;
+            animation: slideInLeft 0.6s ease-out forwards;
+
+            h3 {
+                @include body-font($size: 28px, $weight: 500, $color: $blue-tertiary);
+            }
+
+            ul {
+                list-style-type: disc;
+                padding-left: 20px;
+            }
+
+            li {
+                @include body-font($size: 18px, $color: $gray-light);
+                line-height: 32px;
+            }
+        }
+
+        &--right {
+            @include flex($align: start, $gap: 20px);
+            flex: 1;
+            background-color: $blue-secondary;
+            border-radius: 20px;
+            padding: 50px;
+            min-height: 400px;
+            box-shadow: -6px 0px 6px rgba(0, 0, 0, 0.3);
+            animation: slideInRight 0.6s ease-out forwards;
+
+            h3 {
+                @include body-font($size: 28px, $weight: 500, $color: #fff);
+            }
+
+            ul {
+                list-style-type: disc;
+                padding-left: 20px;
+            }
+
+            li {
+                @include body-font($size: 18px, $color: #fff);
+                line-height: 32px;
+            }
+        }
+    }
+
+    &__projects {
+        @include flex($gap: 70px);
+        padding: 20px 50px 100px;
+
+        h3 {
+            @include title-font($size: 28px, $weight: 500, $color: $blue-main);
+            text-align: center;
+        }
+
+        &--cards {
+            @include flex($direction: row, $gap: 100px);
+            animation: fadeInOpacity 0.6s ease-out forwards;
         }
     }
 }
@@ -186,6 +275,14 @@
                 }
             }
         }
+
+        &__reason {
+            margin: 100px 40px;
+        }
+
+        &__projects {
+            padding: 20px 40px 100px;
+        }
     }
 }
 
@@ -219,6 +316,56 @@
                 > *:nth-child(3) {
                     grid-column: span 1;
                 }
+            }
+        }
+
+        &__reason {
+            @include flex($direction: column);
+            animation: slideInTop 0.6s ease-out forwards;
+            
+            &--left {
+                @include flex($align: start, $gap: 20px);
+                padding: 40px;
+                animation: none;
+    
+                h3 {
+                    font-size: 26px;
+                }
+    
+                li {
+                    font-size: 16px;
+                    line-height: 30px;
+                }
+            }
+    
+            &--right {
+                @include flex($align: start, $gap: 20px);
+                padding: 40px;
+                box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.3);
+                animation: none;
+                width: 100%;
+    
+                h3 {
+                    font-size: 26px;
+                }
+    
+                li {
+                    font-size: 16px;
+                    line-height: 30px;
+                }
+            }
+        }
+
+        &__projects {
+            gap: 60px;
+            padding: 20px 40px 100px;
+
+            h3 {
+                font-size: 26px;
+            }
+    
+            &--cards {
+                @include flex($direction: column, $gap: 80px);
             }
         }
     }
@@ -273,6 +420,31 @@
                 padding: 80px 30px;
             }
         }
+
+        &__reason { 
+            margin: 80px 30px;
+
+            &--left {
+                padding: 25px;
+            }
+    
+            &--right {
+                padding: 25px;
+            }
+        }
+
+        &__projects {
+            gap: 60px;
+            padding: 20px 30px 100px;
+
+            h3 {
+                font-size: 26px;
+            }
+    
+            &--cards {
+                @include flex($direction: column, $gap: 80px);
+            }
+        }
     }
 }
 
@@ -305,5 +477,49 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes dropCard {
+    from {
+      opacity: 0;
+      transform: translateY(-30px) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+  
+@keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes slideInTop {
+    from {
+      opacity: 0;
+      transform: translateY(-30px) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0) scale(1);
     }
 }

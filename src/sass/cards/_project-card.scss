@@ -1,0 +1,72 @@
+.project-card {
+    @include flex($gap: 40px);
+    max-width: 400px;
+    height: 600px;
+    text-align: center;
+
+    &__image {
+        position: relative;
+        width: 300px;
+        height: 250px;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: -18px 18px 0px var(--shadow-color);
+    }
+
+    &__text {
+        @include flex($justify: space-between);
+        height: 250px;
+    }
+
+    h1 {
+        @include flex();
+        @include body-font($size: 26px, $weight: 500px, $color: $blue-tertiary);
+        line-height: 35px;
+        height: 70px;
+    }
+
+    h4 {
+        @include body-font($size: 20px, $color: $gray-dark);
+    }
+
+    p {
+        @include body-font($size: 18px);
+    }
+}
+
+// Responsive medium 
+@include responsive(medium) {
+    .project-card {
+        &__image {
+            box-shadow: -14px 14px 0px var(--shadow-color);
+        }
+    }
+}
+
+// Responsive smedium 
+@include responsive(smedium) {
+    .project-card {
+        &__image {
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            @include flex($justify: space-between);
+            height: 200px;
+        }
+
+        h1 {
+            font-size: 24px;
+            line-height: 32px;
+            height: 50px;
+        }
+    
+        h4 {
+            font-size: 18px;
+        }
+    
+        p {
+            font-size: 16px;
+        }
+    }
+}

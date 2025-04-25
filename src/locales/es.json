@@ -133,7 +133,32 @@
         "card_text1": "La costa es una larga franja desértica que se extiende desde Tumbes, en el límite norte con Ecuador, hasta Tacna, en el sur, limitando con Chile. La temperatura media en diciembre a abril es de 25º a 28º grados Celsius y la temperatura promedio de mayo a noviembre es de 12º a 15º grados Celsius. La costa ocupa el 11% del territorio, sin embargo, alberga a más del 50% de la población total. ",
         "card_text2": "La cordillera de los Andes ocupa el 30% del territorio. Se extiende a lo largo del lado occidental del país, casi paralelo al Pacífico. La cordillera de los Andes es la más larga del mundo y se extiende a siete países, comenzando de norte a sur, desde Venezuela, Colombia, Ecuador, Perú, Bolivia, Chile y Argentina.",
         "card_text3": "La jungla ocupa el 59% del territorio. Tiene dos partes, la Selva alta y la baja. La selva alta se encuentra a los pies de los Andes y crece en las laderas de las montañas. La selva baja es parte de la selva tropical más grande del mundo. La jungla alberga más de 1.000 especies de ranas, 10.000 especies de mamíferos, 1.500 especies de aves y 3.000 especies de peces."
-      }
+      },
+      "reason_question1": "¿Por qué Perú?",
+      "reason_question2": "¿Por qué realizar un voluntariado?",
+      "reasons1": {
+        "bullet1": "Es uno de los países con más biodiversidad.",
+        "bullet2": "Su geografía es maravillosa.",
+        "bullet3": "Es cuna de historia.",
+        "bullet4": "Su gastronomía es considerada una de las mejores del mundo.",
+        "bullet5": "Puedes encontrar muchas culturas diferentes.",
+        "bullet6": "La cortesía peruana.",
+        "bullet7": "¡Por supuesto! ¡Machu Picchu! ¡Lago Titicaca! ¡Líneas de Nazca! ¡Huacachina! ¡Y más!"
+      },
+      "reasons2": {
+        "bullet1": "Conocerás una cultura de una manera más profunda.",
+        "bullet2": "Aprenderás un nuevo idioma.",
+        "bullet3": "Te permitirá crear tu propia red de apoyo.",
+        "bullet4": "Te ayudará a aprender más sobre ti y los demás.",
+        "bullet5": "Vivirás experiencias para toda la vida.",
+        "bullet6": "Conseguirás un segundo hogar.",
+        "bullet7": "Puedes perderte a ti mismo solo para encontrar una mejor versión de ti."
+      },
+      "projects_title": "Proyectos de voluntariado",
+      "projects_card_title1": "Trabaja con niños",
+      "projects_card_quote1": "\"Nos preocupamos por lo que los niños y niñas se convertirán mañana, pero nos olvidamos de que hoy son alguien\"",
+      "projects_card_title2": "Trabaja con personas de edad avanzada",
+      "projects_card_quote2": "\"Tengo claro que voy a ayudar a los ancianos. Algún día voy a ser viejo también\""
     },
 
     "alt": {
@@ -151,10 +176,12 @@
       "volunteer_background1": "Voluntaria en Alemania",
       "volunteer_background2": "Voluntario en Perú",
       "volunteer_image1": "Voluntaria en Austria",
-      "volunteer_image2": "Voluntaria Italiana con niños",
+      "volunteer_image2": "Voluntaria italiana con niños",
       "volunteer_iamge3": "Voluntarios sosteniendo un cartel",
       "national_image1": "Voluntarios con paletas",
-      "peru_flag": "Bandera de Perú"
+      "peru_flag": "Bandera de Perú",
+      "national_image2": "Voluntaria alemana compartiendo con niños",
+      "national_image3": "Voluntaria peruana compartiendo con ancianos"
     },
 
     "button": {
