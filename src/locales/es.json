@@ -161,6 +161,45 @@
       "projects_card_quote2": "\"Tengo claro que voy a ayudar a los ancianos. Algún día voy a ser viejo también\""
     },
 
+    "inter_page": {
+      "title": "Voluntariado Internacional",
+      "intro_text": "Participa en el voluntariado internacional y lleva tu apoyo a comunidades de varios países, todo mientras te sumerges en culturas únicas y diversas. Vive aventuras inolvidables, conecta con personas de todo el mundo y deja una huella positiva donde quiera que vayas. ¡Tu participación puede transformar realidades!",
+      "info_title": "Programa de voluntariado ICYE",
+      "info_text1": "La federación International Cultural Youth Exchange - ICYE, es una organización, sin fines de lucro, que cuenta con más de 65 años de experiencia promoviendo la ciudadanía global, la movilidad juvenil, el aprendizaje cultural y programas de servicio voluntario internacional. Los objetivos de ICYE es eliminar prejuicios y desarrollar la comprensión y competencia intercultural para un mundo más justo y pacífico.",
+      "info_text2": "ICYE organiza intercambios a largo y corto plazo que combinan las estancias en el hogar con el servicio voluntario en más de 40 países de todo el mundo. Ofrece a sus participantes, candidatos de los países miembros, la oportunidad de realizar procesos de inmersión cultural a través del trabajo voluntario internacional, permitiendo de esta manera acceder a un proceso de educación multi-cultural y aprendizaje no formal.",
+      "info_text3": "Asociación VIVOL trabaja en conjunto con ICYE promoviendo la movilidad juvenil a través de programas que se desarrollan desde (1 mes a 5 meses) corta duración y programas de larga duración (6 meses a 1 año). El programa de servicio voluntario internacional busca permitir a los jóvenes entender su papel como miembros de una creciente sociedad global al facilitar el entendimiento entre las diversas culturas y naciones.",
+      "benefits_title": "Beneficios del programa",
+      "benefits_text": "El programa ICYE está diseñado con la finalidad de guiar al voluntario durante su experiencia de inmersión en el país, cultura y proyecto de acogida. Durante su programa cultural internacional el voluntario tendrá los siguientes beneficios:",
+      "tangibles": {
+        "title": "Beneficios Tangibles",
+        "bullet1": "Hospedaje",
+        "bullet2": "Alimentación: 3 comidas al día en relación a las costumbres del país de acogida",
+        "bullet3": "Seguro internacional de gastos médicos, póliza de vida y daños a terceros",
+        "bullet4": "Transporte local",
+        "bullet5": "Seminarios y actividades de preparación previo al viaje (local)",
+        "bullet6": "Seminarios y actividades de seguimiento durante el intercambio (internacional)",
+        "bullet7": "Certificado de participación de ICYE",
+        "bullet8": "Lecciones básicas de idioma del país que escojas (programa de larga duración)",
+        "bullet9": "Dinero de bolsillo para gastos personal (programa de larga duración)"
+      },
+      "intangibles": {
+        "title": "Beneficios Intangibles",
+        "bullet1": "Experiencia profesional",
+        "bullet2": "La oportunidad de aprender un nuevo idioma",
+        "bullet3": "Conocer sobre nuevas culturas y realidades diversas",
+        "bullet4": "Crear una red de contactos internacionales",
+        "bullet5": "Desarrollo personal",
+        "bullet6": "Sensibilidad social",
+        "bullet7": "Viajes, aventuras y diversión"
+      },
+      "contain": {
+        "title": "El programa no incluye",
+        "bullet1": "Boleto aéreo",
+        "bullet2": "Costo de visa del país de destino",
+        "bullet3": "Impuestos de salida o entrada"
+      }
+    },
+
     "alt": {
       "language_change": "Change language to English",
       "carousel_image": "Imagen del carrusel",
@@ -181,7 +220,11 @@
       "national_image1": "Voluntarios con paletas",
       "peru_flag": "Bandera de Perú",
       "national_image2": "Voluntaria alemana compartiendo con niños",
-      "national_image3": "Voluntaria peruana compartiendo con ancianos"
+      "national_image3": "Voluntaria peruana compartiendo con ancianos",
+      "inter_image1": "Voluntario en frente de un puerta Torii",
+      "inter_image2": "Voluntaria en alemania frente a torre",
+      "inter_image3": "Voluntario frente a estatua",
+      "inter_image4": "Voluntaria frente a una pileta"
     },
 
     "button": {

@@ -161,6 +161,45 @@
       "projects_card_quote2": "\"Sure I'm for helping the elderly. I'm going to be old myself some day.\""
     },
 
+    "inter_page": {
+      "title": "International Volunteering",
+      "intro_text": "Join international volunteering and bring your support to communities in various countries, all while immersing yourself in unique and diverse cultures. Live unforgettable adventures, connect with people from around the world, and leave a positive impact wherever you go. Your participation can transform lives!",
+      "info_title": "ICYE Volunteering Program",
+      "info_text1": "The International Cultural Youth Exchange (ICYE) federation is a non-profit organization with over 65 years of experience promoting global citizenship, youth mobility, cultural learning, and international volunteer service programs. ICYE's goals are to eliminate prejudice and develop intercultural understanding and competence for a more just and peaceful world.",
+      "info_text2": "ICYE organizes long- and short-term exchanges that combine homestays with volunteer service in over 40 countries around the world. It offers participants from member countries the opportunity to engage in cultural immersion processes through international volunteer work, thus providing access to multicultural education and non-formal learning.",
+      "info_text3": "VIVOL Association works together with ICYE to promote youth mobility through programs that range from short-term (1 to 5 months) to long-term (6 months to 1 year). The international volunteer service program aims to help young people understand their role as members of a growing global society by facilitating understanding among diverse cultures and nations.",
+      "benefits_title": "Program Benefits",
+      "benefits_text": "The ICYE program is designed to guide the volunteer throughout their immersion experience in the host country, culture, and project. During the international cultural program, the volunteer will receive the following benefits:",
+      "tangibles": {
+        "title": "Tangible Benefits",
+        "bullet1": "Accommodation",
+        "bullet2": "Meals: 3 meals a day according to the customs of the host country",
+        "bullet3": "International medical insurance, life insurance, and third-party liability coverage",
+        "bullet4": "Local transportation",
+        "bullet5": "Pre-departure seminars and preparation activities (local)",
+        "bullet6": "Ongoing seminars and support activities during the exchange (international)",
+        "bullet7": "ICYE participation certificate",
+        "bullet8": "Basic language lessons of the host country (long-term program)",
+        "bullet9": "Pocket money for personal expenses (long-term program)"
+      },
+      "intangibles": {
+        "title": "Intangible Benefits",
+        "bullet1": "Professional experience",
+        "bullet2": "The opportunity to learn a new language",
+        "bullet3": "Understanding of new cultures and diverse realities",
+        "bullet4": "Creating an international network",
+        "bullet5": "Personal development",
+        "bullet6": "Social awareness",
+        "bullet7": "Travel, adventure, and fun"
+      },
+      "contain": {
+        "title": "The program doesn't include",
+        "bullet1": "Airfare",
+        "bullet2": "Visa costs for the destination country",
+        "bullet3": "Departure or entry taxes"
+      }
+    },
+
     "alt": {
       "language_change": "Cambiar idioma a español",
       "carousel_image": "Carousel image",
@@ -181,7 +220,11 @@
       "national_image1": "Volunteers with paddles",
       "peru_flag": "Peru flag",
       "national_image2": "German volunteer spending time with children",
-      "national_image3": "Peruvian volunteer spending time with the elderly"
+      "national_image3": "Peruvian volunteer spending time with the elderly",
+      "inter_image1": "Volunteer in front of a Torii gate",
+      "inter_image2": "Volunteer in Germany in front of a tower",
+      "inter_image3": "Volunteer in front of a statue",
+      "inter_image4": "Volunteer in front of a fountain"
     },
 
     "button": {

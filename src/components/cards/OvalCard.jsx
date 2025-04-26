@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function OvalCard({ icon, alt, title, text, color, listItems  }) {
     return (
         <div className="oval-card">
-            <div className="oval-card__image--wrapper" style={{ border: `2px solid ${color}`}}>
+            <div className="oval-card__image--wrapper" style={{ border: `2px solid ${color}` }}>
                 <Image
                     className="oval-card__image"
                     src={icon}

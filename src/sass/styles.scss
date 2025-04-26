@@ -67,12 +67,14 @@ time, mark, audio, video {
 @import './cards/small-card';
 @import './cards/simple-card';
 @import './cards/project-card';
+@import './cards/program-card';
 
 // Pages 
 @import './pages/home-page';
 @import './pages/about-page';
 @import './pages/volunteer-page';
 @import './pages/national-page';
+@import './pages/international-page';
 
 body {
 	background-color: $background-main; 
