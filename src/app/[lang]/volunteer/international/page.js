@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { getTranslations } from "locales/translations";
 import ProgramCard from "@/components/cards/ProgramCard";
+import IconTextCard from "@/components/cards/IconTextCard";
+import ProcessCard from "@/components/cards/ProcessCard";
 
 export default async function InternationalPage(props) {
   const params = await props.params;
@@ -133,11 +135,111 @@ export default async function InternationalPage(props) {
 
       {/* Process */}
       <div className="inter-page__process">
-
+            <div className="inter-page__background">
+              <Image
+                src="/images/photos/alemania.jpg"
+                alt="Germany"
+                fill
+                style={{ objectFit: 'cover'}}
+              />
+            </div>
+            <div className="inter-page__process--overlay">
+              <div className="inter-page__process--text">
+                <h3>{trans.inter_page.process_title}</h3>
+                <h2>{trans.inter_page.process_subtitle1}</h2>
+              </div>
+              <div className="inter-page__process--requirements">
+                <IconTextCard
+                  icon="/images/icons/edad.svg"
+                  text={trans.inter_page.reqs.req1}
+                />
+                <IconTextCard
+                  icon="/images/icons/saludo.png"
+                  text={trans.inter_page.reqs.req2}
+                />
+                <IconTextCard
+                  icon="/images/icons/bandera.svg"
+                  text={trans.inter_page.reqs.req3}
+                />
+                <IconTextCard
+                  icon="/images/icons/registro.svg"
+                  text={trans.inter_page.reqs.req4}
+                />
+                <IconTextCard
+                  icon="/images/icons/manos.svg"
+                  text={trans.inter_page.reqs.req5}
+                />
+                <IconTextCard
+                  icon="/images/icons/boleto.svg"
+                  text={trans.inter_page.reqs.req6}
+                />
+              </div>
+              <div className="inter-page__process--text">
+                <h2>{trans.inter_page.process_subtitle2}</h2>
+              </div>
+              <div className="inter-page__process--steps">
+                <div className="inter-page__process--half">
+                  <ProcessCard
+                    number="1"
+                    text={trans.inter_page.steps.step1}
+                    color="#1683F0"
+                  />
+                  <ProcessCard
+                    number="2"
+                    text={trans.inter_page.steps.step2}
+                    color="#00BF4C"
+                  />
+                  <ProcessCard
+                    number="3"
+                    text={trans.inter_page.steps.step3}
+                    color="#B490F0"
+                  />
+                  <ProcessCard
+                    number="4"
+                    text={trans.inter_page.steps.step4}
+                    color="#FFDE59"
+                  />
+                  <ProcessCard
+                    number="5"
+                    text={trans.inter_page.steps.step5}
+                    color="#2C4B8C"
+                  />
+                </div>
+                <div className="inter-page__process--half">
+                  <ProcessCard
+                    number="6"
+                    text={trans.inter_page.steps.step6}
+                    color="#C90707"
+                  />
+                  <ProcessCard
+                    number="7"
+                    text={trans.inter_page.steps.step7}
+                    color="#00BFBF"
+                  />
+                  <ProcessCard
+                    number="8"
+                    text={trans.inter_page.steps.step8}
+                    color="#F0A616"
+                  />
+                  <ProcessCard
+                    number="9"
+                    text={trans.inter_page.steps.step9}
+                    color="#26824A"
+                  />
+                  <ProcessCard
+                    number="10"
+                    text={trans.inter_page.steps.step10}
+                    color="#F016A6"
+                  />
+                </div>
+              </div>
+            </div>
       </div>
 
       {/* Destination */} 
-
+      <div className="inter-page__destination">
+        <h3>{trans.inter_page.destination_title}</h3>
+      </div>
     </div>
   );
 }

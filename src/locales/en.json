@@ -197,6 +197,29 @@
         "bullet1": "Airfare",
         "bullet2": "Visa costs for the destination country",
         "bullet3": "Departure or entry taxes"
+      },
+      "process_title": "ICYE Program Application Process",
+      "process_subtitle1": "What do you need to participate in the ICYE program?",
+      "reqs": {
+        "req1": "Be between 18 and 35 years old (the age limit may vary depending on the country).",
+        "req2": "Have the desire to collaborate and perform community social work.",
+        "req3": "Have the motivation to live in another country and different culture.",
+        "req4": "Participate in the preparation activities.",
+        "req5": "Cover the program participation fee.",
+        "req6": "Cover the cost of airfare and visa processing."
+      },
+      "process_subtitle2": "ICYE Program Process",
+      "steps": {
+        "step1": "Information session with parents and the future volunteer",
+        "step2": "Application and Motivation Letter",
+        "step3": "Program acceptance",
+        "step4": "Preliminary application",
+        "step5": "Assignment and signing of the agreement",
+        "step6": "Documentation",
+        "step7": "Preparation",
+        "step8": "Visa",
+        "step9": "Program start",
+        "step10": "Start of the international experience"
       }
     },
 

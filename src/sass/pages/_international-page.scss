@@ -46,7 +46,7 @@
     &__info {
         @include flex($align: start, $gap: 40px);
         max-width: 1200px;
-        padding: 50px 50px 80px 50px;
+        padding: 50px;
 
         &--title {
             @include flex($direction: row, $justify: start, $gap: 20px);
@@ -109,7 +109,7 @@
     // Benefits 
     &__benefits {
         @include flex($gap: 60px);
-        padding: 50px 50px 80px;
+        padding: 50px 50px 100px;
 
         &--text {
             @include flex($gap: 40px);
@@ -131,9 +131,110 @@
             @include flex($align: start, $gap: 40px);
             width: 100%;
 
+            > * {
+                opacity: 0;
+                animation: bounceInShake 0.8s ease-out forwards;
+            }
+    
+            > *:nth-child(1) {
+                animation-delay: 0.1s;  
+            }
             
+            > *:nth-child(2) {
+                animation-delay: 0.2s; 
+            }
+
+            > *:nth-child(3) {
+                animation-delay: 0.3s; 
+            }
         }
     }
+
+    // Process
+    &__process {
+        position: relative;
+        width: 100%;
+        min-height: 100vh; 
+        height: auto; 
+
+        &--text {
+            @include flex($gap: 40px);
+
+            h3, h2 {
+                @include title-font($size: 28px, $weight: 500, $color: #fff);
+                text-align: center;
+                text-shadow: 0px 6px 5px rgba(0, 0, 0, 0.7);
+            }
+            
+            h2 {
+                font-size: 36px;
+                font-weight: 700;
+                max-width: 600px;
+                line-height: 45px;
+            }
+        }
+
+        &--overlay {
+            @include flex($justify: start, $gap: 60px);
+            padding: 100px 50px;
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 100vh; 
+            height: auto; 
+            background-color: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        &--requirements {
+            @include grid($columns: repeat(auto-fit, minmax(300px, 1fr)));
+            row-gap: 60px;
+            width: 100%;
+            max-width: 950px;
+            justify-items: center;
+
+            > * {
+                opacity: 0;
+                transform: rotateX(-90deg);
+                animation: dominoFall 0.8s ease-out forwards;
+            }
+        
+            > *:nth-child(1) { animation-delay: 0.1s; }
+            > *:nth-child(2) { animation-delay: 0.2s; }
+            > *:nth-child(3) { animation-delay: 0.3s; }
+            > *:nth-child(4) { animation-delay: 0.4s; }
+            > *:nth-child(5) { animation-delay: 0.5s; }
+            > *:nth-child(6) { animation-delay: 0.6s; }
+        }
+
+        &--steps {
+            @include flex($direction: row, $gap: 80px);
+            width: 100%;
+            max-width: 1050px;
+        }
+
+        &--half {
+            @include flex($gap: 40px);
+            width: 100%;
+            flex: 1;
+
+            > * {
+                opacity: 0;
+                transform: rotateX(-90deg);
+                animation: dominoFall 0.8s ease-out forwards;
+            }
+        
+            > *:nth-child(1) { animation-delay: 0.1s; }
+            > *:nth-child(2) { animation-delay: 0.2s; }
+            > *:nth-child(3) { animation-delay: 0.3s; }
+            > *:nth-child(4) { animation-delay: 0.4s; }
+            > *:nth-child(5) { animation-delay: 0.5s; }
+        }
+    }
+
+    // Destination 
+    
 }
 
 // Responsive medium
@@ -154,7 +255,7 @@
         }
 
         &__info {
-            padding: 40px 40px 80px;
+            padding: 40px;
             gap: 30px;
 
             &--title {
@@ -181,6 +282,26 @@
     
             &--left, &--right  {
                 gap: 50px;
+            }
+        }
+
+        &__benefits {
+            padding: 40px;
+
+            &--cards {
+                @include grid($columns: 1fr);
+                justify-items: center;
+            }
+        }
+
+        &__process {
+            &--requirements {
+                grid-template-columns: 1fr 1fr;
+                max-width: 650px;
+            }
+
+            &--overlay {
+                padding: 100px 40px;
             }
         }
     }
@@ -248,6 +369,57 @@
                 line-height: 30px;
             }
         }
+
+        &__benefits {
+            &--text {
+                gap: 30px;
+
+                h3 {
+                    font-size: 26px;
+                }
+        
+                p {
+                    font-size: 14px;
+                    line-height: 34px;
+                }
+            }
+        }
+
+        &__process {
+            &--text {
+                @include flex($gap: 40px);
+    
+                h3 {
+                    font-size: 26px;
+                }
+    
+                h2 {
+                    font-size: 32px;
+                    line-height: 36px;
+                }
+            }
+
+            &--requirements {
+                grid-template-columns: 1fr;
+                max-width: 100%;
+            }
+
+            &--overlay {
+                padding: 100px 30px;
+            }
+
+            &--steps {
+                @include flex($gap: 40px);
+            }
+
+            &--half {
+                > *:nth-child(1) { animation-delay: 0s; }
+                > *:nth-child(2) { animation-delay: 0s; }
+                > *:nth-child(3) { animation-delay: 0s; }
+                > *:nth-child(4) { animation-delay: 0s; }
+                > *:nth-child(5) { animation-delay: 0s; }
+            }
+        }
     }
 }
 
@@ -274,7 +446,17 @@
         }
 
         &__info {
-            padding: 30px 30px 60px
+            padding: 30px 30px 40px;
+        }
+
+        &__benefits {
+            padding: 30px;
+        }
+
+        &__process {
+            &--steps {
+                
+            }
         }
     }
 }
@@ -301,3 +483,35 @@
       transform: translateX(0);
     }
 }
+
+@keyframes bounceInShake {
+    0% {
+        opacity: 0;
+        transform: translateY(100px) scale(0.95);
+    }
+    60% {
+        transform: translateY(-10px) scale(1.03) rotate(2deg);
+    }
+    80% {
+        transform: translateY(5px) scale(0.98) rotate(-2deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1) rotate(0deg);
+    }
+}
+
+@keyframes dominoFall {
+    0% {
+      opacity: 0;
+      transform: rotateX(-90deg) translateY(-50px);
+    }
+    60% {
+      transform: rotateX(20deg) translateY(10px);
+      opacity: 1;
+    }
+    100% {
+      transform: rotateX(0) translateY(0);
+      opacity: 1;
+    }
+  }

@@ -197,6 +197,81 @@
         "bullet1": "Boleto aéreo",
         "bullet2": "Costo de visa del país de destino",
         "bullet3": "Impuestos de salida o entrada"
+      },
+      "process_title": "Proceso de aplicación al programa ICYE",
+      "process_subtitle1": "¿Qué necesitas para participar en el programa ICYE?​",
+      "reqs": {
+        "req1": "Tener de 18 a 35 años (el límite de edad puede variar de país a país).",
+        "req2": "Tener deseo de colaborar y realizar un trabajo social comunitario.",
+        "req3": "Tener la motivación para vivir en otro país y cultura diferente.",
+        "req4": "Participar en las actividades de preparación.",
+        "req5": "Cubrir el costo de participación del programa.",
+        "req6": "Cubrir el costo del boleto aéreo y trámites de visa."
+      },
+      "process_subtitle2": "Proceso del programa ICYE",
+      "steps": {
+        "step1": "Charla Informativa con los padres de familia y el futuro voluntarios",
+        "step2": "Aplicación y Carta de Motivación",
+        "step3": "Aceptación al programa",
+        "step4": "Aplicación preliminar",
+        "step5": "Asignación firma del convenio",
+        "step6": "Documentación",
+        "step7": "Preparación",
+        "step8": "Visa",
+        "step9": "Inicio del programa",
+        "step10": "Inicio de la experiencia internacional"
+      },
+      "destination_title": "Destinos",
+      "america": {
+        "title": "América",
+        "country1": "Argentina",
+        "country2": "Bolivia",
+        "country3": "Brasil",
+        "country4": "Colombia",
+        "country5": "Costa Rica",
+        "country6": "Ecuador",
+        "country7": "Estados Unidos",
+        "country8": "Honduras",
+        "country9": "México"
+      },
+      "africa": {
+        "title": "África",
+        "country1": "Ghana",
+        "country2": "Kenya",
+        "country3": "Marruecos",
+        "country4": "Mozambique",
+        "country5": "Nigeria",
+        "country6": "Sudáfrica",
+        "country7": "Tanzania",
+        "country8": "Togo",
+        "country9": "Uganda"
+      },
+      "asia": {
+        "title": "Asia-Pasífico",
+        "country1": "Filipinas",
+        "country2": "India",
+        "country3": "Japón",
+        "country4": "Corea del Sur",
+        "country5": "Nepal",
+        "country6": "Nueva Zelanda",
+        "country7": "Taiwan",
+        "country8": "Vietnam"
+      },
+      "europe": {
+        "title": "Europa",
+        "country1": "Alemania",
+        "country2": "Austria",
+        "country3": "Dinamarca",
+        "country4": "Eslovaquia",
+        "country5": "España",
+        "country6": "Federación Rusa",
+        "country7": "Finlandia",
+        "country8": "Francia",
+        "country9": "Islandia",
+        "country10": "Italia",
+        "country11": "Polonia",
+        "country12": "Reino Unido",
+        "country13": "Suiza"
       }
     },
 

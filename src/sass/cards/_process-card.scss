@@ -1,0 +1,58 @@
+.process-card {
+    @include flex($align: start);
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    height: 120px;
+    width: 100%;
+    max-width: 450px;
+    padding: 0 20px;
+    z-index: 1;
+
+    &__wrapper {
+        @include flex($align: end);
+        position: absolute;
+        width: 80px;
+        height: 70%;
+        left: 0;
+        top: 50%;
+        border-radius: 0 30px 30px 0;
+        transform: translateY(-50%);
+        padding-right: 10px;
+        z-index: 2;
+
+        &--overlay {
+            @include flex();
+            border-radius: 50px;
+            background-color: rgba(0, 0 , 0, 0.2);
+            padding: 20px;
+            z-index: 3;
+        }
+
+        h3 {
+            @include flex();
+            @include body-font($size: 26px, $color: #fff);
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    &__text {
+        margin-left: 80px;
+
+        p {
+            @include body-font($size: 18px, $color: $gray-dark);
+        }
+    }
+}
+
+// Responsive smedium 
+@include responsive(smedium) {
+    .process-card {
+        &__text {
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}

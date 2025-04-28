@@ -1,0 +1,24 @@
+.icon-text-card {
+    @include flex($gap: 30px);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 25px;
+    max-width: 250px;
+    height: 300px;
+    text-align: justify;
+
+    &--image {
+        @include flex($justify: end);
+        height: 80px !important;
+        width: 80px !important;
+    }
+
+    &--text {
+        @include flex();
+    }
+
+    p {
+        @include body-font($size: 16px, $color: $gray-dark);
+        line-height: 30px;
+    }
+}
