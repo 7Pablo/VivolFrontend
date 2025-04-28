@@ -1,0 +1,32 @@
+.world-button {
+    @include flex();
+    background-color: #fff;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 210px;
+    min-width: 0;
+    height: 50px;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
+
+    &:hover {
+        transform: translateY(-5px); 
+        box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2); 
+    }
+
+    &__country {
+        @include flex($direction: row);
+        @include body-font($size: 16px);
+        width: 80%;
+        cursor: pointer;
+        
+        &--image {
+            flex: 1;
+        }
+
+        h4 {
+            text-align: center;
+            line-height: 18px;
+            flex: 1;
+        }
+    }
+}

@@ -220,6 +220,139 @@
         "step8": "Visa",
         "step9": "Program start",
         "step10": "Start of the international experience"
+      },
+      "destination_title": "Destinations",
+      "america": {
+        "title": "America",
+        "argentina": {
+          "title": "Argentina"
+        },
+        "bolivia": {
+          "title": "Bolivia"
+        },
+        "brazil": {
+          "title": "Brazil"
+        },
+        "colombia": {
+          "title": "Colombia"
+        },
+        "costa_rica": {
+          "title": "Costa Rica"
+        },
+        "ecuador": {
+          "title": "Ecuador"
+        },
+        "united_states": {
+          "title": "United States"
+        },
+        "honduras": {
+          "title": "Honduras"
+        },
+        "mexico": {
+          "title": "Mexico"
+        }
+      },
+      "africa": {
+        "title": "Africa",
+        "ghana": {
+          "title": "Ghana"
+        },
+        "kenya": {
+          "title": "Kenya"
+        },
+        "morocco": {
+          "title": "Morocco"
+        },
+        "mozambique": {
+          "title": "Mozambique"
+        },
+        "nigeria": {
+          "title": "Nigeria"
+        },
+        "south_africa": {
+          "title": "South Africa"
+        },
+        "tanzania": {
+          "title": "Tanzania"
+        },
+        "togo": {
+          "title": "Togo"
+        }
+      },
+      "asia": {
+        "title": "Asia-Pacific",
+        "philippines": {
+          "title": "Philippines"
+        },
+        "india": {
+          "title": "India"
+        },
+        "indonesia": {
+          "title": "Indonesia"
+        },
+        "japan": {
+          "title": "Japan"
+        },
+        "south_korea": {
+          "title": "South Korea"
+        },
+        "nepal": {
+          "title": "Nepal"
+        },
+        "new_zealand": {
+          "title": "New Zealand"
+        },
+        "taiwan": {
+          "title": "Taiwan"
+        },
+        "thailand": {
+          "title": "Thailand"
+        },
+        "vietnam": {
+          "title": "Vietnam"
+        }
+      },
+      "europe": {
+        "title": "Europe",
+        "germany": {
+          "title": "Germany"
+        },
+        "austria": {
+          "title": "Austria"
+        },
+        "denmark": {
+          "title": "Denmark"
+        },
+        "spain": {
+          "title": "Spain"
+        },
+        "russia": {
+          "title": "Russian Federation"
+        },
+        "finland": {
+          "title": "Finland"
+        },
+        "france": {
+          "title": "France"
+        },
+        "iceland": {
+          "title": "Iceland"
+        },
+        "italy": {
+          "title": "Italy"
+        },
+        "poland": {
+          "title": "Poland"
+        },
+        "united_kingdom": {
+          "title": "United Kingdom"
+        },
+        "switzerland": {
+          "title": "Switzerland"
+        },
+        "turkey": {
+          "title": "Turkey"
+        }
       }
     },
 

@@ -224,54 +224,135 @@
       "destination_title": "Destinos",
       "america": {
         "title": "América",
-        "country1": "Argentina",
-        "country2": "Bolivia",
-        "country3": "Brasil",
-        "country4": "Colombia",
-        "country5": "Costa Rica",
-        "country6": "Ecuador",
-        "country7": "Estados Unidos",
-        "country8": "Honduras",
-        "country9": "México"
+        "argentina": {
+          "title": "Argentina"
+        },
+        "bolivia": {
+          "title": "Bolivia"
+        },
+        "brazil": {
+          "title": "Brasil"
+        },
+        "colombia": {
+          "title": "Colombia"
+        },
+        "costa_rica": {
+          "title": "Costa Rica"
+        },
+        "ecuador": {
+          "title": "Ecuador"
+        },
+        "united_states": {
+          "title": "Estados Unidos"
+        },
+        "honduras": {
+          "title": "Honduras"
+        },
+        "mexico": {
+          "title": "México"
+        }
       },
       "africa": {
         "title": "África",
-        "country1": "Ghana",
-        "country2": "Kenya",
-        "country3": "Marruecos",
-        "country4": "Mozambique",
-        "country5": "Nigeria",
-        "country6": "Sudáfrica",
-        "country7": "Tanzania",
-        "country8": "Togo",
-        "country9": "Uganda"
+        "ghana": {
+          "title": "Ghana"
+        },
+        "kenya": {
+          "title": "Kenia"
+        },
+        "morocco": {
+          "title": "Marruecos"
+        },
+        "mozambique": {
+          "title": "Mozambique"
+        },
+        "nigeria": {
+          "title": "Nigeria"
+        },
+        "south_africa": {
+          "title": "Sudáfrica"
+        },
+        "tanzania": {
+          "title": "Tanzania"
+        },
+        "togo": {
+          "title": "Togo"
+        }
       },
       "asia": {
-        "title": "Asia-Pasífico",
-        "country1": "Filipinas",
-        "country2": "India",
-        "country3": "Japón",
-        "country4": "Corea del Sur",
-        "country5": "Nepal",
-        "country6": "Nueva Zelanda",
-        "country7": "Taiwan",
-        "country8": "Vietnam"
+        "title": "Asia-Pacífico",
+        "philippines": {
+          "title": "Filipinas"
+        },
+        "india": {
+          "title": "India"
+        },
+        "indonesia": {
+          "title": "Indonesia"
+        },
+        "japan": {
+          "title": "Japón"
+        },
+        "south_korea": {
+          "title": "Corea del Sur"
+        },
+        "nepal": {
+          "title": "Nepal"
+        },
+        "new_zealand": {
+          "title": "Nueva Zelanda"
+        },
+        "taiwan": {
+          "title": "Taiwán"
+        },
+        "thailand": {
+          "title": "Tailandia"
+        },
+        "vietnam": {
+          "title": "Vietnam"
+        }
       },
       "europe": {
         "title": "Europa",
-        "country1": "Alemania",
-        "country2": "Austria",
-        "country3": "Dinamarca",
-        "country4": "Eslovaquia",
-        "country5": "España",
-        "country6": "Federación Rusa",
-        "country7": "Finlandia",
-        "country8": "Francia",
-        "country9": "Islandia",
-        "country10": "Italia",
-        "country11": "Polonia",
-        "country12": "Reino Unido",
-        "country13": "Suiza"
+        "germany": {
+          "title": "Alemania"
+        },
+        "austria": {
+          "title": "Austria"
+        },
+        "denmark": {
+          "title": "Dinamarca"
+        },
+        "spain": {
+          "title": "España"
+        },
+        "russia": {
+          "title": "Federación Rusa"
+        },
+        "finland": {
+          "title": "Finlandia"
+        },
+        "france": {
+          "title": "Francia"
+        },
+        "iceland": {
+          "title": "Islandia"
+        },
+        "italy": {
+          "title": "Italia"
+        },
+        "poland": {
+          "title": "Polonia"
+        },
+        "united_kingdom": {
+          "title": "Reino Unido"
+        },
+        "switzerland": {
+          "title": "Suiza"
+        },
+        "turkey": {
+          "title": "Turquía"
+        }
       }
     },
 

@@ -932,6 +932,46 @@ time, mark, audio, video {
     transform: translateX(0);
   }
 }
+.world-button {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 210px;
+  min-width: 0;
+  height: 50px;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
+}
+.world-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
+}
+.world-button__country {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-p), sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #747783;
+  width: 80%;
+  cursor: pointer;
+}
+.world-button__country--image {
+  flex: 1;
+}
+.world-button__country h4 {
+  text-align: center;
+  line-height: 18px;
+  flex: 1;
+}
+
 .more-card {
   position: relative;
   border-radius: 15px;
@@ -3741,6 +3781,61 @@ time, mark, audio, video {
 .inter-page__process--half > *:nth-child(5) {
   animation-delay: 0.5s;
 }
+.inter-page__destination {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1300px;
+  padding: 50px 50px 80px;
+}
+.inter-page__destination h3 {
+  font-family: var(--font-ls), sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #355FB5;
+  line-height: 28px;
+  text-align: center;
+}
+.inter-page__destination--continents {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+}
+.inter-page__destination--continents-america, .inter-page__destination--continents-africa, .inter-page__destination--continents-asia, .inter-page__destination--continents-europe {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.inter-page__destination--continents-america > *:nth-child(1), .inter-page__destination--continents-africa > *:nth-child(1), .inter-page__destination--continents-asia > *:nth-child(1), .inter-page__destination--continents-europe > *:nth-child(1) {
+  margin-bottom: 20px;
+}
+.inter-page__destination--continents-america > h4, .inter-page__destination--continents-africa > h4, .inter-page__destination--continents-asia > h4, .inter-page__destination--continents-europe > h4 {
+  font-family: var(--font-p), sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #41424A;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 210px;
+  min-width: 0;
+  height: 50px;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
+}
 
 @media (max-width: 1200px) {
   .inter-page__intro--overlay {
@@ -3788,6 +3883,9 @@ time, mark, audio, video {
   }
   .inter-page__process--overlay {
     padding: 100px 40px;
+  }
+  .inter-page__destination {
+    padding: 40px 40px 60px;
   }
 }
 @media (max-width: 800px) {
@@ -3903,6 +4001,9 @@ time, mark, audio, video {
   .inter-page__process--half > *:nth-child(5) {
     animation-delay: 0s;
   }
+  .inter-page__destination h3 {
+    font-size: 26px;
+  }
 }
 @media (max-width: 550px) {
   .inter-page__intro--overlay {
@@ -3922,6 +4023,9 @@ time, mark, audio, video {
   }
   .inter-page__benefits {
     padding: 30px;
+  }
+  .inter-page__destination {
+    padding: 30px 30px 50px;
   }
 }
 @keyframes slideInLeft {

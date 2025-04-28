@@ -234,7 +234,43 @@
     }
 
     // Destination 
-    
+    &__destination {
+        @include flex($gap: 60px);
+        width: 100%;
+        max-width: 1300px;
+        padding: 50px 50px 80px;
+
+        h3 {
+            @include title-font($size: 28px, $weight: 500, $color: $blue-main);
+            text-align: center;
+        }
+
+        &--continents {
+            @include flex($direction: row, $justify: space-between, $align: start);
+            width: 100%;
+
+            &-america, &-africa, &-asia, &-europe {
+                @include flex($gap: 13px);
+                width: 100%;
+
+                > *:nth-child(1) {
+                    margin-bottom: 20px;
+                }
+
+                > h4 {
+                    @include body-font($size: 20px, $weight: 600, $color: $gray-dark);
+                    @include flex();
+                    background-color: #fff;
+                    border-radius: 12px;
+                    width: 100%;
+                    max-width: 210px;
+                    min-width: 0;
+                    height: 50px;
+                    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
+                }
+            }
+        }
+    }
 }
 
 // Responsive medium
@@ -303,6 +339,10 @@
             &--overlay {
                 padding: 100px 40px;
             }
+        }
+
+        &__destination {
+            padding: 40px 40px 60px;
         }
     }
 }
@@ -420,6 +460,12 @@
                 > *:nth-child(5) { animation-delay: 0s; }
             }
         }
+
+        &__destination {
+            h3 {
+                font-size: 26px;
+            }
+        }
     }
 }
 
@@ -453,10 +499,8 @@
             padding: 30px;
         }
 
-        &__process {
-            &--steps {
-                
-            }
+        &__destination {
+            padding: 30px 30px 50px;
         }
     }
 }
