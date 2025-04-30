@@ -956,10 +956,6 @@ time, mark, audio, video {
   gap: 0px;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-p), sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #747783;
   width: 80%;
   cursor: pointer;
 }
@@ -967,11 +963,117 @@ time, mark, audio, video {
   flex: 1;
 }
 .world-button__country h4 {
+  font-family: var(--font-p), sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #747783;
   text-align: center;
   line-height: 18px;
-  flex: 1;
+  flex: 2;
 }
 
+@media (max-width: 1200px) {
+  .world-button {
+    max-width: 170px;
+  }
+  .world-button__country--image img {
+    height: 35px !important;
+    width: 35px !important;
+  }
+  .world-button__country h4 {
+    font-size: 14px;
+    flex: 1.5;
+  }
+}
+@media (max-width: 800px) {
+  .world-button {
+    max-width: 250px;
+  }
+  .world-button--image {
+    flex: 1;
+  }
+  .world-button h4 {
+    flex: 2;
+  }
+}
+.world-dropdown {
+  width: 100%;
+  max-width: 210px;
+  min-width: 0;
+}
+.world-dropdown--big h2, .world-dropdown--small h2 {
+  font-family: var(--font-p), sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #41424A;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
+}
+.world-dropdown--big .chakra-collapsible__trigger, .world-dropdown--small .chakra-collapsible__trigger {
+  width: 100%;
+  max-width: 210px;
+  min-width: 0;
+  margin-bottom: 20px;
+  cursor: default;
+}
+.world-dropdown--big .chakra-collapsible__content, .world-dropdown--small .chakra-collapsible__content {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.world-dropdown--small {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .world-dropdown {
+    max-width: 170px;
+  }
+}
+@media (max-width: 800px) {
+  .world-dropdown {
+    max-width: 250px;
+  }
+  .world-dropdown--big {
+    display: none;
+  }
+  .world-dropdown--small {
+    display: block;
+  }
+  .world-dropdown--small .chakra-collapsible__trigger {
+    max-width: 250px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .world-dropdown--small .chakra-collapsible__trigger h2 {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px 0 35px;
+  }
+  .world-dropdown--small .chakra-collapsible__trigger svg {
+    color: black;
+    width: 30px !important;
+    height: 30px !important;
+    transition: transform 0.3s ease;
+  }
+  .world-dropdown--small .chakra-collapsible__trigger[data-state=open] svg {
+    transform: rotate(180deg);
+  }
+}
 .more-card {
   position: relative;
   border-radius: 15px;
@@ -3788,7 +3890,7 @@ time, mark, audio, video {
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1200px;
   padding: 50px 50px 80px;
 }
 .inter-page__destination h3 {
@@ -3807,34 +3909,29 @@ time, mark, audio, video {
   justify-content: space-between;
   width: 100%;
 }
+.inter-page__destination--continents > * {
+  opacity: 0;
+  animation: slideInTop 0.8s ease-out forwards;
+}
+.inter-page__destination--continents > *:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.inter-page__destination--continents > *:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.inter-page__destination--continents > *:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.inter-page__destination--continents > *:nth-child(4) {
+  animation-delay: 0.4s;
+}
 .inter-page__destination--continents-america, .inter-page__destination--continents-africa, .inter-page__destination--continents-asia, .inter-page__destination--continents-europe {
-  display: flex;
-  flex-direction: column;
-  gap: 13px;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-.inter-page__destination--continents-america > *:nth-child(1), .inter-page__destination--continents-africa > *:nth-child(1), .inter-page__destination--continents-asia > *:nth-child(1), .inter-page__destination--continents-europe > *:nth-child(1) {
-  margin-bottom: 20px;
-}
-.inter-page__destination--continents-america > h4, .inter-page__destination--continents-africa > h4, .inter-page__destination--continents-asia > h4, .inter-page__destination--continents-europe > h4 {
-  font-family: var(--font-p), sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  color: #41424A;
   display: flex;
   flex-direction: column;
   gap: 0px;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
-  border-radius: 12px;
   width: 100%;
-  max-width: 210px;
-  min-width: 0;
-  height: 50px;
-  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 1200px) {
@@ -3885,7 +3982,8 @@ time, mark, audio, video {
     padding: 100px 40px;
   }
   .inter-page__destination {
-    padding: 40px 40px 60px;
+    padding: 30px 30px 60px;
+    max-width: 1000px;
   }
 }
 @media (max-width: 800px) {
@@ -4001,8 +4099,28 @@ time, mark, audio, video {
   .inter-page__process--half > *:nth-child(5) {
     animation-delay: 0s;
   }
+  .inter-page__destination {
+    gap: 30px;
+    padding: 50px 40px;
+  }
   .inter-page__destination h3 {
     font-size: 26px;
+  }
+  .inter-page__destination--continents {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .inter-page__destination--continents-america, .inter-page__destination--continents-africa, .inter-page__destination--continents-asia, .inter-page__destination--continents-europe {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 }
 @media (max-width: 550px) {
@@ -4025,7 +4143,7 @@ time, mark, audio, video {
     padding: 30px;
   }
   .inter-page__destination {
-    padding: 30px 30px 50px;
+    padding: 50px 30px;
   }
 }
 @keyframes slideInLeft {
@@ -4046,6 +4164,16 @@ time, mark, audio, video {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@keyframes slideInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 @keyframes bounceInShake {

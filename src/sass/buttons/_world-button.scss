@@ -1,0 +1,68 @@
+.world-button {
+    @include flex();
+    background-color: #fff;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 210px;
+    min-width: 0;
+    height: 50px;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
+
+    &:hover {
+        transform: translateY(-5px); 
+        box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2); 
+    }
+
+    &__country {
+        @include flex($direction: row);
+        width: 80%;
+        cursor: pointer;
+        
+        &--image {
+            flex: 1;
+        }
+
+        h4 {
+            @include body-font($size: 16px);
+            text-align: center;
+            line-height: 18px;
+            flex: 2;
+        }
+    }
+}
+
+// Responsive medium
+@include responsive(medium) {
+    .world-button {
+        max-width: 170px;
+
+        &__country {
+            &--image {
+                img {
+                    height: 35px !important;
+                    width: 35px !important;
+                }
+            }
+
+            h4 {
+                font-size: 14px;
+                flex: 1.5;
+            }
+        }
+    }
+}
+
+// Responsive smedium
+@include responsive(smedium) {
+    .world-button{
+        max-width: 250px;
+
+        &--image {
+            flex: 1;
+        }
+
+        h4 {
+            flex: 2;
+        }
+    }
+}

@@ -6,6 +6,7 @@ import ProgramCard from "@/components/cards/ProgramCard";
 import IconTextCard from "@/components/cards/IconTextCard";
 import ProcessCard from "@/components/cards/ProcessCard";
 import WorldButton from "@/components/buttons/WorldButton";
+import WorldDropdown from "@/components/buttons/WorldDropdown";
 
 export default async function InternationalPage(props) {
   const params = await props.params;
@@ -242,8 +243,10 @@ export default async function InternationalPage(props) {
         <h3>{trans.inter_page.destination_title}</h3>
         <div className="inter-page__destination--continents">
             <div className="inter-page__destination--continents-america">
-              <h4>{trans.inter_page.america.title}</h4>
-              {Object.entries(trans.inter_page.america)
+              <WorldDropdown
+                text={trans.inter_page.america.title}
+              >
+                {Object.entries(trans.inter_page.america)
                 .filter(([key]) => key !== "title")
                 .map(([countryKey, countryData]) => (
                   <WorldButton
@@ -251,43 +254,53 @@ export default async function InternationalPage(props) {
                     icon={`/images/countries/${countryKey}.svg`}
                     name={countryData.title}
                   />
-              ))}
+                ))}
+              </WorldDropdown>
             </div>
             <div className="inter-page__destination--continents-africa">
-              <h4>{trans.inter_page.africa.title}</h4>
-              {Object.entries(trans.inter_page.africa)
-                .filter(([key]) => key !== "title")
-                .map(([countryKey, countryData]) => (
-                  <WorldButton
-                    key={countryKey}
-                    icon={`/images/countries/${countryKey}.svg`}
-                    name={countryData.title}
-                  />
-              ))}
+              <WorldDropdown
+                text={trans.inter_page.africa.title}
+              >
+                {Object.entries(trans.inter_page.africa)
+                  .filter(([key]) => key !== "title")
+                  .map(([countryKey, countryData]) => (
+                    <WorldButton
+                      key={countryKey}
+                      icon={`/images/countries/${countryKey}.svg`}
+                      name={countryData.title}
+                    />
+                ))}
+              </WorldDropdown>
             </div>
             <div className="inter-page__destination--continents-asia">
-              <h4>{trans.inter_page.asia.title}</h4>
-              {Object.entries(trans.inter_page.asia)
-                .filter(([key]) => key !== "title")
-                .map(([countryKey, countryData]) => (
-                  <WorldButton
-                    key={countryKey}
-                    icon={`/images/countries/${countryKey}.svg`}
-                    name={countryData.title}
-                  />
-              ))}
+              <WorldDropdown
+                text={trans.inter_page.asia.title}
+              >
+                {Object.entries(trans.inter_page.asia)
+                  .filter(([key]) => key !== "title")
+                  .map(([countryKey, countryData]) => (
+                    <WorldButton
+                      key={countryKey}
+                      icon={`/images/countries/${countryKey}.svg`}
+                      name={countryData.title}
+                    />
+                ))}
+              </WorldDropdown>
             </div>
             <div className="inter-page__destination--continents-europe">
-              <h4>{trans.inter_page.europe.title}</h4>
-              {Object.entries(trans.inter_page.europe)
-                .filter(([key]) => key !== "title")
-                .map(([countryKey, countryData]) => (
-                  <WorldButton
-                    key={countryKey}
-                    icon={`/images/countries/${countryKey}.svg`}
-                    name={countryData.title}
-                  />
-              ))}
+              <WorldDropdown
+                text={trans.inter_page.europe.title}
+              >
+                {Object.entries(trans.inter_page.europe)
+                  .filter(([key]) => key !== "title")
+                  .map(([countryKey, countryData]) => (
+                    <WorldButton
+                      key={countryKey}
+                      icon={`/images/countries/${countryKey}.svg`}
+                      name={countryData.title}
+                    />
+                ))}
+              </WorldDropdown>
             </div>
         </div>
       </div>

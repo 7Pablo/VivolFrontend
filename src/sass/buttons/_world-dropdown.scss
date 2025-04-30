@@ -1,0 +1,78 @@
+.world-dropdown {
+    width: 100%;
+    max-width: 210px;
+    min-width: 0;
+
+    &--big, &--small {
+        h2 {
+            @include body-font($size: 20px, $weight: 600, $color: $gray-dark);
+            @include flex();
+            height: 50px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
+        } 
+
+        .chakra-collapsible__trigger {
+            width: 100%;
+            max-width: 210px;
+            min-width: 0;
+            margin-bottom: 20px;
+            cursor: default;
+        }
+
+        .chakra-collapsible__content {
+            @include flex($gap: 13px);
+            padding-bottom: 10px;
+        }
+    }
+
+    &--small {
+        display: none;
+    }
+}
+
+// Responsive medium
+@include responsive(medium) {
+    .world-dropdown {
+        max-width: 170px;
+    }
+}
+
+// Responsive smedium
+@include responsive(smedium) {
+    .world-dropdown {
+        max-width: 250px;
+
+        &--big {
+            display: none;
+        }
+
+        &--small {
+            display: block;
+
+            .chakra-collapsible__trigger {
+                max-width: 250px;
+                margin-bottom: 20px;
+                cursor: pointer;
+
+                h2 {
+                    @include flex($direction: row, $justify: space-between);
+                    width: 100%;
+                    padding: 0 20px 0 35px;
+                }
+    
+                svg {
+                    color: black;
+                    width: 30px !important;
+                    height: 30px !important;
+                    transition: transform 0.3s ease;
+                }
+    
+                &[data-state='open'] svg {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+}
