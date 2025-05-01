@@ -1,16 +1,16 @@
 @mixin body-font($size: 12px, $weight: 400, $color: $gray-light) {
-    font-family: $font-body;
-    font-size: $size;
-    font-weight: $weight;
-    color: $color;
+  font-family: $font-body;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
 }
 
 @mixin title-font($size: 18px, $weight: 600, $color: $gray-light) {
-    font-family: $font-title;
-    font-size: $size;
-    font-weight: $weight;
-    color: $color;
-    line-height: $size;
+  font-family: $font-title;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  line-height: $size;
 }
 
 @mixin logo-font($size: 20px, $weight: 700, $color: $blue-main) {
@@ -22,11 +22,11 @@
 }
 
 @mixin flex($direction: column, $gap: 0px, $align: center, $justify: center) {
-    display: flex;
-    flex-direction: $direction;
-    gap: $gap;
-    align-items: $align;
-    justify-content: $justify;
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
+  align-items: $align;
+  justify-content: $justify;
 }
 
 @mixin grid($rows: auto auto, $columns: auto auto, $gap: 0px){

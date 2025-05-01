@@ -225,135 +225,381 @@
       "america": {
         "title": "America",
         "argentina": {
-          "title": "Argentina"
+          "title": "Argentina",
+          "capital": "Buenos Aires",
+          "population": "46,245,668",
+          "surface": "2,780,400 km²",
+          "currency": "Argentine Peso (ARS)",
+          "language": "Spanish",
+          "info": "Argentina, officially known as the Argentine Republic, is located at the southern tip of the American continent. Its territory features remarkable geographical diversity, including the vast fertile plains of the Pampas, the impressive Andes mountain range to the west, and the subantarctic regions in the south. The country borders Bolivia and Paraguay to the north, Brazil, Uruguay, and the Atlantic Ocean to the east, Chile and the Atlantic Ocean to the south, and Chile to the west. The climate varies from temperate in most parts of the country, arid in the southeast, to subantarctic in the southwest."
         },
         "bolivia": {
-          "title": "Bolivia"
+          "title": "Sucre",
+          "capital": "La Paz",
+          "population": "11,312,620",
+          "surface": "1,098,581 km²",
+          "currency": "Bolivian Boliviano (BOB)",
+          "language": "Spanish, Quechua, Aymara, Guarani",
+          "info": "Bolivia, officially the Plurinational State of Bolivia, is located in the central-western part of South America. It borders Brazil to the north and east, Paraguay and Argentina to the south, and Chile and Peru to the west. Its geography is diverse, ranging from the high peaks of the Andes and the altiplano to the plains and tropical jungles of the Amazon. The country has a rich cultural diversity, with multiple ethnic and linguistic groups, and recognizes 36 official languages, including Spanish, Quechua, Aymara, and Guarani."
         },
         "brazil": {
-          "title": "Brazil"
+          "title": "Brazil",
+          "capital": "Brasília",
+          "population": "216,422,446",
+          "surface": "8,515,770 km²",
+          "currency": "Brazilian Real (BRL)",
+          "language": "Portuguese",
+          "info": "Brazil, officially the Federative Republic of Brazil, is the largest and most populous country in South America. It borders all South American countries except Chile and Ecuador. Its geography is diverse, including the Amazon rainforest in the north, the Pantanal in the central-west, the highlands of the Central Plateau, and an extensive Atlantic coast of over 7,000 km. The climate ranges from equatorial in the Amazon to temperate in the south. The country hosts a rich biodiversity and abundant natural resources, including minerals, oil, and vast freshwater reserves."
         },
         "colombia": {
-          "title": "Colombia"
+          "title": "Colombia",
+          "capital": "Bogotá",
+          "population": "49,588,357",
+          "surface": "1,138,910 km²",
+          "currency": "Colombian Peso (COP)",
+          "language": "Spanish",
+          "info": "Colombia, officially the Republic of Colombia, is located in the northwest of South America. It borders the Caribbean Sea to the north, Venezuela and Brazil to the east, Peru and Ecuador to the south, and Panama and the Pacific Ocean to the west. Its geography is diverse, including the Andes mountain range, extensive eastern plains, and tropical jungles. The climate varies from tropical on the coasts and plains to more temperate in the mountainous regions."
         },
         "costa_rica": {
-          "title": "Costa Rica"
+          "title": "Costa Rica",
+          "capital": "San José",
+          "population": "5,265,575",
+          "surface": "51,100 km²",
+          "currency": "Costa Rican Colón (CRC)",
+          "language": "Spanish",
+          "info": "Costa Rica, officially the Republic of Costa Rica, is located in Central America, bordered by Nicaragua to the north, Panama to the southeast, the Caribbean Sea to the east, and the Pacific Ocean to the west. Its geography is diverse, including coastal plains, mountains, and valleys. The climate is tropical and subtropical, with a dry season from December to April and a rainy season from May to November."
         },
         "ecuador": {
-          "title": "Ecuador"
+          "title": "Ecuador",
+          "capital": "Quito",
+          "population": "18,309,984",
+          "surface": "283,561 km²",
+          "currency": "United States Dollar (USD)",
+          "language": "Spanish",
+          "info": "Ecuador, officially the Republic of Ecuador, is located in the northwestern part of South America, bordered by Colombia to the north, Peru to the east and south, and the Pacific Ocean to the west. Its geography is diverse, including the Pacific coast, the Andes mountain range, and the Amazon region. The country also includes the Galápagos Islands in the Pacific Ocean. The climate varies from tropical in the lowlands to temperate in the highlands."
         },
         "united_states": {
-          "title": "United States"
+          "title": "United States",
+          "capital": "Washington, D.C.",
+          "population": "341,963,408",
+          "surface": "9,833,517 km²",
+          "currency": "United States Dollar (USD)",
+          "language": "English",
+          "info": "The United States, officially the United States of America, is located in North America, bordered by Canada to the north, Mexico to the south, the Atlantic Ocean to the east, and the Pacific Ocean to the west. Its geography is diverse, ranging from the vast central plains to the Rocky Mountains in the west and the Appalachians in the east. The climate varies from arctic in Alaska to tropical in Hawaii and Florida, predominantly temperate in most parts of the country."
         },
         "honduras": {
-          "title": "Honduras"
+          "title": "Honduras",
+          "capital": "Tegucigalpa",
+          "population": "9,529,188",
+          "surface": "112,090 km²",
+          "currency": "Honduran Lempira (HNL)",
+          "language": "Spanish",
+          "info": "Honduras, officially the Republic of Honduras, is located in Central America, bordered by the Caribbean Sea to the north, Nicaragua to the east and south, El Salvador to the southwest, Guatemala to the west, and the Pacific Ocean to the south. Its geography includes a combination of coastal lowlands and interior mountains. The climate is subtropical in the lowlands and temperate in the mountainous regions."
         },
         "mexico": {
-          "title": "Mexico"
+          "title": "Mexico",
+          "capital": "Mexico City",
+          "population": "130,739,927",
+          "surface": "1,964,375 km²",
+          "currency": "Mexican Peso (MXN)",
+          "language": "Spanish",
+          "info": "Mexico, officially the United Mexican States, is located in North America, bordered by the United States to the north, the Gulf of Mexico and the Caribbean Sea to the east, Belize and Guatemala to the southeast, and the Pacific Ocean to the west and south. Its geography is diverse, including deserts, mountains, jungles, and coasts. The climate ranges from tropical to desert, depending on the region."
         }
       },
       "africa": {
         "title": "Africa",
         "ghana": {
-          "title": "Ghana"
+          "title": "Ghana",
+          "capital": "Accra",
+          "population": "26,488,092",
+          "surface": "238,533 km²",
+          "currency": "Cedi (GHS)",
+          "language": "English",
+          "info": "Ghana, officially the Republic of Ghana, is located in West Africa, bordered to the north by Burkina Faso, to the west by Ivory Coast, to the east by Togo, and to the south by the Gulf of Guinea. Its geography is mainly low plains with a dissected plateau in the central-southern area. The climate is tropical, with warm and relatively dry conditions along the southeastern coast, hot and humid conditions in the southwest, and hot and dry conditions in the north. The population is concentrated mainly in the southern half of the country, especially along or near the Atlantic coast."
         },
         "kenya": {
-          "title": "Kenya"
+          "title": "Kenya",
+          "capital": "Nairobi",
+          "population": "58,246,378",
+          "surface": "580,367 km²",
+          "currency": "Kenyan Shilling (KES)",
+          "language": "English, Swahili",
+          "info": "Kenya, officially the Republic of Kenya, is located in East Africa, bordered to the east by the Indian Ocean, to the north by Ethiopia and South Sudan, to the west by Uganda, and to the south by Tanzania. Its geography is diverse, ranging from coastal lowlands to central highlands and the Great Rift Valley. The climate varies from tropical on the coast to arid inland."
         },
         "morocco": {
-          "title": "Morocco"
+          "title": "Morocco",
+          "capital": "Rabat",
+          "population": "37,387,585",
+          "surface": "710,850 km²",
+          "currency": "Moroccan Dirham (MAD)",
+          "language": "Arabic, Berber",
+          "info": "Morocco, officially the Kingdom of Morocco, is located in North Africa, bordered to the north by the Mediterranean Sea, to the west by the Atlantic Ocean, to the east by Algeria, and to the south by Western Sahara. Its geography is diverse, including mountains, deserts, and coasts. The climate varies from Mediterranean in the north to arid in the south."
         },
         "mozambique": {
-          "title": "Mozambique"
+          "title": "Mozambique",
+          "capital": "Maputo",
+          "population": "33,350,954",
+          "surface": "799,380 km²",
+          "currency": "Metical (MZN)",
+          "language": "Portuguese",
+          "info": "Mozambique, officially the Republic of Mozambique, is located in southeastern Africa, bordered to the north by Tanzania, to the west by Malawi, Zambia, and Zimbabwe, to the southwest by South Africa and Eswatini, and to the east by the Indian Ocean. Its geography includes an extensive coastline, plains, plateaus, and mountains. The climate is predominantly tropical, with a wet season from October to March and a dry season from April to September."
         },
         "nigeria": {
-          "title": "Nigeria"
+          "title": "Nigeria",
+          "capital": "Abuja",
+          "population": "229,200,000",
+          "surface": "923,768 km²",
+          "currency": "Naira (NGN)",
+          "language": "English",
+          "info": "Nigeria, officially the Federal Republic of Nigeria, is located in West Africa, bordered to the north by Niger, to the east by Chad and Cameroon, to the south by the Gulf of Guinea, and to the west by Benin. Its geography includes plains, hills, mountains, and an extensive network of rivers, notably the Niger and Benue rivers. The climate varies from equatorial in the south to arid in the north."
         },
         "south_africa": {
-          "title": "South Africa"
+          "title": "South Africa",
+          "capital": "Pretoria, Bloemfontein, and Cape Town",
+          "population": "60,442,647",
+          "surface": "1,219,090 km²",
+          "currency": "Rand (ZAR)",
+          "language": "Afrikaans, English, Zulu, Xhosa, and other indigenous languages",
+          "info": "South Africa, officially the Republic of South Africa, is located at the southern tip of Africa. It is bordered to the north by Namibia, Botswana, Zimbabwe, and Mozambique; to the east by the Indian Ocean; to the south by the Mozambique Channel; and to the west by the Atlantic Ocean. Its geography is diverse, including mountains, plains, and coastlines. The climate varies from semi-arid in the interior to subtropical along the eastern coast."
         },
         "tanzania": {
-          "title": "Tanzania"
+          "title": "Tanzania",
+          "capital": "Dodoma",
+          "population": "67,462,121",
+          "surface": "947,300 km²",
+          "currency": "Tanzanian Shilling (TZS)",
+          "language": "Swahili, English",
+          "info": "Tanzania, officially the United Republic of Tanzania, is located in East Africa, bordered to the north by Kenya and Uganda, to the west by Rwanda, Burundi, and Lake Tanganyika, to the south by Zambia, Malawi, and Mozambique, and to the east by the Indian Ocean. Its geography is diverse, including mountains, plains, and an extensive coastline. The climate ranges from tropical along the coast to temperate in the highlands."
         },
         "togo": {
-          "title": "Togo"
+          "title": "Togo",
+          "capital": "Lomé",
+          "population": "8,703,961",
+          "surface": "56,785 km²",
+          "currency": "CFA Franc (XOF)",
+          "language": "French",
+          "info": "Togo, officially the Togolese Republic, is located in West Africa, bordered to the west by Ghana, to the north by Burkina Faso, to the east by Benin, and to the south by the Atlantic Ocean. Its geography includes a narrow coastal strip, plains in the south, a central mountainous region, and a savanna zone in the north. The climate is tropical in the south with high humidity, and semi-arid in the north."
         }
       },
       "asia": {
         "title": "Asia-Pacific",
         "philippines": {
-          "title": "Philippines"
+          "title": "Philippines",
+          "capital": "Manila",
+          "population": "118,277,063",
+          "surface": "300,000 km²",
+          "info": "The Philippines, officially the Republic of the Philippines, is an archipelago located in Southeast Asia, consisting of over 7,000 islands. It borders the Philippines Sea to the north, the Pacific Ocean to the east, the Celebes Sea to the south, and the South China Sea to the west. Its geography is diverse, including mountains, coastal plains, and numerous islands. The climate is tropical, with a rainy season from June to November and a dry season from December to May.",
+          "currency": "Philippine Peso (PHP)",
+          "language": "Filipino, English"
         },
         "india": {
-          "title": "India"
+          "title": "India",
+          "capital": "New Delhi",
+          "population": "1,399,179,585",
+          "surface": "3,287,263 km²",
+          "info": "India, officially the Republic of India, is located in South Asia, bordering China, Nepal, and Bhutan to the north; Pakistan to the west; Bangladesh and Myanmar to the east; and the Indian Ocean to the south. Its geography is diverse, including mountains, plains, plateaus, and coasts. The climate ranges from tropical monsoon in the south to temperate in the north.",
+          "currency": "Indian Rupee (INR)",
+          "language": "Hindi, English"
         },
         "indonesia": {
-          "title": "Indonesia"
+          "title": "Indonesia",
+          "capital": "Jakarta",
+          "population": "279,476,346",
+          "surface": "1,904,569 km²",
+          "info": "Indonesia, officially the Republic of Indonesia, is an archipelagic country located in Southeast Asia and Oceania. It consists of over 17,000 islands, with Java being the most populous. It borders the Philippines Sea to the north, the Pacific Ocean to the east, the Indian Ocean to the south, and the Indian Ocean and the Strait of Malacca to the west. Its geography includes mountains, plains, and extensive coasts. The climate is tropical, with monsoon seasons and warm temperatures year-round.",
+          "currency": "Indonesian Rupiah (IDR)",
+          "language": "Indonesian"
         },
         "japan": {
-          "title": "Japan"
+          "title": "Japan",
+          "capital": "Tokyo",
+          "population": "123,719,238",
+          "surface": "377,975 km²",
+          "info": "Japan, officially the State of Japan, is an island country located in East Asia. It consists of four main islands—Honshu, Hokkaido, Kyushu, and Shikoku—and thousands of smaller islands. It borders the Pacific Ocean to the east, the Sea of Japan to the west, the Sea of Okhotsk to the north, and the East China Sea to the south. Its geography is mountainous, with about 73% of its territory covered by mountains. The climate ranges from tropical in the south to temperate in the north.",
+          "currency": "Japanese Yen (JPY)",
+          "language": "Japanese"
         },
         "south_korea": {
-          "title": "South Korea"
+          "title": "South Korea",
+          "capital": "Seoul",
+          "population": "51,690,000",
+          "surface": "99,720 km²",
+          "info": "South Korea, officially the Republic of Korea, is located on the Korean Peninsula, bordered to the north by North Korea, to the east by the East Sea (Sea of Japan), to the south by the Korea Strait, and to the west by the Yellow Sea. Its geography is predominantly mountainous, with coastal plains in the west and south. The climate ranges from continental inland to temperate coastal areas.",
+          "currency": "South Korean Won (KRW)",
+          "language": "Korean"
         },
         "nepal": {
-          "title": "Nepal"
+          "title": "Nepal",
+          "capital": "Kathmandu",
+          "population": "30,899,443",
+          "surface": "147,181 km²",
+          "info": "Nepal is a landlocked country located in South Asia, bordered to the north by China and to the south, east, and west by India. Its geography is extremely mountainous, home to Mount Everest, the highest peak in the world. The climate ranges from subtropical in the south to alpine in the north, with cold winters and warm summers.",
+          "currency": "Nepalese Rupee (NPR)",
+          "language": "Nepali"
         },
         "new_zealand": {
-          "title": "New Zealand"
+          "title": "New Zealand",
+          "capital": "Wellington",
+          "population": "5,109,702",
+          "surface": "268,838 km²",
+          "info": "New Zealand is an island country located in the southwestern Pacific Ocean, southeast of Australia. It consists of two main islands, the North Island and the South Island, as well as numerous smaller islands. Its geography is diverse, with mountains, forests, and scenic coasts. The climate is temperate, with significant regional variations.",
+          "currency": "New Zealand Dollar (NZD)",
+          "language": "English, Māori"
         },
         "taiwan": {
-          "title": "Taiwan"
+          "title": "Taiwan",
+          "capital": "Taipei",
+          "population": "23,588,613",
+          "surface": "35,980 km²",
+          "info": "Taiwan is an island located in East Asia, bordered to the north by the Philippine Sea, to the east by the Pacific Ocean, to the south by the Bashi Channel, and to the west by the Taiwan Strait, facing the southern coast of China. Its geography is mountainous in the central and western regions, with coastal plains in the east. The climate is tropical in the south and temperate in the north, with a southwest monsoon season from June to August.",
+          "currency": "New Taiwan Dollar (TWD)",
+          "language": "Mandarin Chinese"
         },
         "thailand": {
-          "title": "Thailand"
+          "title": "Thailand",
+          "capital": "Bangkok",
+          "population": "69,920,998",
+          "surface": "513,120 km²",
+          "info": "Thailand, officially known as the Kingdom of Thailand, is located in Southeast Asia, bordered to the north by Myanmar (Burma) and Laos; to the east by Laos and Cambodia; to the south by the Gulf of Thailand and Malaysia; and to the west by Myanmar and the Andaman Sea. Its geography is diverse, with mountains in the north, plains in the center, and coasts to the east and west. The climate is tropical, with a monsoon season from May to October and a dry season from November to February.",
+          "currency": "Thai Baht (THB)",
+          "language": "Thai"
         },
         "vietnam": {
-          "title": "Vietnam"
+          "title": "Vietnam",
+          "capital": "Hanoi",
+          "population": "104,799,174",
+          "surface": "331,210 km²",
+          "info": "Vietnam is a country located in Southeast Asia, bordered to the north by China, to the west by Laos and Cambodia, and to the east and south by the South China Sea. Its geography is diverse, with mountains in the north, plains in the center, and coasts to the east and west. The climate ranges from tropical in the south to monsoonal in the north, with a rainy season from May to September and a dry season from October to April.",
+          "currency": "Vietnamese Dong (VND)",
+          "language": "Vietnamese"
         }
       },
       "europe": {
-        "title": "Europe",
+        "title": "Europa",
         "germany": {
-          "title": "Germany"
+          "title": "Alemania",
+          "capital": "Berlín",
+          "population": "84,220,184",
+          "surface": "357,022 km²",
+          "info": "Alemania, oficialmente conocida como la República Federal de Alemania, está ubicada en Europa Central y Occidental. Limita al norte con Dinamarca, al este con Polonia y la República Checa, al sur con Austria y Suiza, y al oeste con Francia, Luxemburgo, Bélgica y los Países Bajos. Su geografía es diversa, con montañas en el sur (como los Alpes) y llanuras en el norte. El clima es templado y marítimo, con inviernos fríos y veranos suaves.",
+          "currency": "Euro (EUR)",
+          "language": "Alemán"
         },
         "austria": {
-          "title": "Austria"
+          "title": "Austria",
+          "capital": "Viena",
+          "population": "8,967,982",
+          "surface": "83,871 km²",
+          "info": "Austria es un país sin salida al mar ubicado en Europa Central, limitando al norte con la República Checa y Alemania; al este con Eslovaquia y Hungría; al sur con Eslovenia e Italia; y al oeste con Suiza y Liechtenstein. Su geografía es montañosa, siendo parte de los Alpes, con llanuras en el este. El clima es templado y continental, con inviernos fríos y veranos moderados.",
+          "currency": "Euro (EUR)",
+          "language": "Alemán"
         },
         "denmark": {
-          "title": "Denmark"
+          "title": "Dinamarca",
+          "capital": "Copenhague",
+          "population": "5,982,117",
+          "surface": "43,094 km²",
+          "info": "Dinamarca es un país ubicado en el norte de Europa, limitando al norte con el mar de Kattegat y el estrecho de Skagerrak, al este con el mar Báltico, al sur con Alemania y al oeste con el mar del Norte. Su geografía es predominantemente plana, con algunas colinas en el sur y una extensa línea costera. El clima es templado, con inviernos suaves y veranos frescos, influenciado por las corrientes oceánicas del Atlántico.",
+          "currency": "Corona danesa (DKK)",
+          "language": "Danés"
         },
         "spain": {
-          "title": "Spain"
+          "title": "España",
+          "capital": "Madrid",
+          "population": "47,280,433",
+          "surface": "505,370 km²",
+          "info": "España está ubicada en el suroeste de Europa, ocupando la mayor parte de la península ibérica. Limita al norte con Francia, Andorra y el mar Cantábrico; al oeste con Portugal; al sur con el estrecho de Gibraltar y el mar de Alborán; y al este con el mar Mediterráneo. Incluye además las Islas Baleares en el Mediterráneo y las Islas Canarias en el Atlántico. Su geografía es diversa, con montañas en el norte y mesetas en el centro. El clima varía desde mediterráneo en la costa hasta continental en el interior, con inviernos fríos y veranos calurosos.",
+          "currency": "Euro (EUR)",
+          "language": "Español"
         },
         "russia": {
-          "title": "Russian Federation"
+          "title": "Federación Rusa",
+          "capital": "Moscú",
+          "population": "146,028,325",
+          "surface": "17,098,246 km²",
+          "info": "La Federación Rusa es el país más grande del mundo por superficie, abarcando una vasta extensión desde Europa del Este hasta el Lejano Oriente asiático. Limita al norte con el océano Ártico; al este con el océano Pacífico; al sur con China, Mongolia, Kazajistán, Ucrania, Georgia y Azerbaiyán; y al oeste con Noruega, Finlandia, Estonia, Letonia, Lituania y Polonia. Su geografía es extremadamente diversa, con tundra en el norte, bosques en la taiga, montañas en el Cáucaso y los Urales, y vastas estepas en el sur. El clima varía desde subártico en Siberia hasta templado en las regiones del sur, con inviernos fríos y veranos cálidos en la mayor parte del país.",
+          "currency": "Ruble ruso (RUB)",
+          "language": "Ruso"
         },
         "finland": {
-          "title": "Finland"
+          "title": "Finlandia",
+          "capital": "Helsinki",
+          "population": "5,626,414",
+          "surface": "338,424 km²",
+          "info": "Finlandia está ubicada en el norte de Europa, limitando al norte con Noruega, al este con Rusia, al sur con el mar Báltico y al oeste con Suecia. Su geografía es diversa, con bosques densos, miles de lagos y una costa recortada. El clima varía desde subártico en el norte hasta templado en el sur, con inviernos fríos y veranos suaves.",
+          "currency": "Euro (EUR)",
+          "language": "Finlandés, Sueco"
         },
         "france": {
-          "title": "France"
+          "title": "Francia",
+          "capital": "París",
+          "population": "68,374,591",
+          "surface": "547,030 km²",
+          "info": "Francia está ubicada en el oeste de Europa, limitando al norte con Bélgica, Luxemburgo y Alemania; al este con Suiza e Italia; al sur con Mónaco, España y Andorra; y al oeste con el océano Atlántico. Su geografía es diversa, con llanuras en el norte, montañas en los Alpes y los Pirineos, y una extensa costa atlántica. El clima varía desde oceánico en la costa hasta continental en el interior, con inviernos fríos y veranos cálidos.",
+          "currency": "Euro (EUR)",
+          "language": "Francés"
         },
         "iceland": {
-          "title": "Iceland"
+          "title": "Islandia",
+          "capital": "Reikiavik",
+          "population": "364,000",
+          "surface": "103,000 km²",
+          "info": "Islandia es una isla ubicada en el Atlántico Norte, al sur del Círculo Polar Ártico. Su geografía es volcánica y geotérmica, con numerosos glaciares, géiseres y fuentes termales. El clima es templado en relación con su latitud, moderado por la corriente del Golfo, con inviernos suaves y veranos frescos. Es conocida por su baja densidad poblacional y su alto nivel de desarrollo humano.",
+          "currency": "Corona islandesa (ISK)",
+          "language": "Islandés"
         },
         "italy": {
-          "title": "Italy"
+          "title": "Italia",
+          "capital": "Roma",
+          "population": "58,968,501",
+          "surface": "301,338 km²",
+          "info": "Italia está ubicada en el sur de Europa, limitando al norte con Francia, Suiza, Austria y Eslovenia; al este con el mar Adriático; al sur con el mar Jónico; y al oeste con el mar Tirreno. Su geografía es diversa, con montañas en el norte (los Alpes), llanuras en el valle del Po y una extensa costa mediterránea. El clima varía desde mediterráneo en la costa hasta continental en el interior, con inviernos fríos y veranos calurosos.",
+          "currency": "Euro (EUR)",
+          "language": "Italiano"
         },
         "poland": {
-          "title": "Poland"
+          "title": "Polonia",
+          "capital": "Varsovia",
+          "population": "37,677,000",
+          "surface": "312,696 km²",
+          "info": "Polonia está ubicada en Europa Central, limitando al norte con el mar Báltico y Rusia (óblast de Kaliningrado), al este con Lituania, Bielorrusia y Ucrania, al sur con la República Checa y Eslovaquia, y al oeste con Alemania. Su geografía es diversa, con llanuras en el norte y montañas en el sur, como los Sudetes y los Cárpatos. El clima varía desde oceánico en el norte hasta continental en el sur, con inviernos fríos y veranos calurosos.",
+          "currency": "Zloty polaco (PLN)",
+          "language": "Polaco"
         },
         "united_kingdom": {
-          "title": "United Kingdom"
+          "title": "Reino Unido",
+          "capital": "Londres",
+          "population": "68,500,000",
+          "surface": "243,610 km²",
+          "info": "El Reino Unido está ubicado en el noroeste de Europa, compuesto por cuatro países: Inglaterra, Escocia, Gales e Irlanda del Norte. Limita al norte con el mar de Noruega, al este con el mar del Norte, al sur con el canal de la Mancha y al oeste con el océano Atlántico. Su geografía es diversa, con montañas en Escocia y Gales, llanuras en Inglaterra y una extensa costa. El clima varía desde oceánico en la costa hasta continental en el interior, con inviernos fríos y veranos suaves.",
+          "currency": "Libra esterlina (GBP)",
+          "language": "Inglés"
         },
         "switzerland": {
-          "title": "Switzerland"
+          "title": "Suiza",
+          "capital": "Berna",
+          "population": "9,030,650",
+          "surface": "41,290 km²",
+          "info": "Suiza está ubicada en el centro de Europa, limitando al norte con Alemania, al este con Austria y Liechtenstein, al sur con Italia y al oeste con Francia. Su geografía es montañosa, con los Alpes ocupando aproximadamente el 60% del territorio, y la meseta suiza o Mittelland, una zona más llana y densamente poblada, que se extiende entre los Alpes y la cordillera del Jura al noroeste. El clima varía desde alpino en las montañas hasta templado en las zonas bajas, con inviernos fríos y veranos suaves.",
+          "currency": "Franco suizo (CHF)",
+          "language": "Alemán, Francés, Italiano"
         },
         "turkey": {
-          "title": "Turkey"
+          "title": "Turquía",
+          "capital": "Ankara",
+          "population": "87,473,805",
+          "surface": "783,562 km²",
+          "info": "Turquía es un país transcontinental ubicado en su mayoría en Asia Occidental, con una pequeña parte en Europa del Este. Limita al norte con el mar Negro, al este con Armenia, Irán, Azerbaiyán (Nakhchivan), al sur con Irak y Siria, y al oeste con el mar Egeo. Su geografía es variada, con montañas en el este y llanuras costeras en el oeste. El clima varía desde mediterráneo en las costas hasta continental en el interior, con inviernos fríos y veranos calurosos.",
+          "currency": "Lira turca (TRY)",
+          "language": "Turco"
         }
-      }
+      },
+      "source": "Informative abstract taken from CIA World Factbook.",
+      "capital_title": "Capital",
+      "population_title": "Population",
+      "surface_title": "Surface Area",
+      "currency_title": "Currency",
+      "language_title": "Language"
     },
 
     "alt": {

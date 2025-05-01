@@ -1,6 +1,6 @@
 .world-dropdown {
     width: 100%;
-    max-width: 210px;
+    max-width: 220px;
     min-width: 0;
 
     &--big, &--small {
@@ -12,10 +12,14 @@
             border-radius: 12px;
             box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
         } 
+    
+        .chakra-collapsible__root {
+            @include flex();
+        }
 
         .chakra-collapsible__trigger {
             width: 100%;
-            max-width: 210px;
+            max-width: 200px;
             min-width: 0;
             margin-bottom: 20px;
             cursor: default;
@@ -23,7 +27,8 @@
 
         .chakra-collapsible__content {
             @include flex($gap: 13px);
-            padding-bottom: 10px;
+            width: 100%;
+            padding: 10px;
         }
     }
 
@@ -35,14 +40,18 @@
 // Responsive medium
 @include responsive(medium) {
     .world-dropdown {
-        max-width: 170px;
+        max-width: 180px;
+
+        .chakra-collapsible__trigger {
+            max-width: 160px;
+        }
     }
 }
 
 // Responsive smedium
 @include responsive(smedium) {
     .world-dropdown {
-        max-width: 250px;
+        max-width: 260px;
 
         &--big {
             display: none;
@@ -52,7 +61,7 @@
             display: block;
 
             .chakra-collapsible__trigger {
-                max-width: 250px;
+                max-width: 240px;
                 margin-bottom: 20px;
                 cursor: pointer;
 

@@ -7,6 +7,7 @@
     min-width: 0;
     height: 50px;
     box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 
     &:hover {
         transform: translateY(-5px); 
@@ -16,7 +17,6 @@
     &__country {
         @include flex($direction: row);
         width: 80%;
-        cursor: pointer;
         
         &--image {
             flex: 1;
@@ -29,6 +29,10 @@
             flex: 2;
         }
     }
+}
+
+.chakra-dialog__trigger {
+    width: 100%;
 }
 
 // Responsive medium

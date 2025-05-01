@@ -247,13 +247,14 @@ export default async function InternationalPage(props) {
                 text={trans.inter_page.america.title}
               >
                 {Object.entries(trans.inter_page.america)
-                .filter(([key]) => key !== "title")
-                .map(([countryKey, countryData]) => (
-                  <WorldButton
-                    key={countryKey}
-                    icon={`/images/countries/${countryKey}.svg`}
-                    name={countryData.title}
-                  />
+                  .filter(([key]) => key !== "title")
+                  .map(([countryKey, countryData]) => (
+                    <WorldButton
+                      key={countryKey}
+                      data={countryData}
+                      icon={`/images/countries/${countryKey}.svg`}
+                      trans={trans}
+                    />
                 ))}
               </WorldDropdown>
             </div>
@@ -266,8 +267,9 @@ export default async function InternationalPage(props) {
                   .map(([countryKey, countryData]) => (
                     <WorldButton
                       key={countryKey}
+                      data={countryData}
                       icon={`/images/countries/${countryKey}.svg`}
-                      name={countryData.title}
+                      trans={trans}
                     />
                 ))}
               </WorldDropdown>
@@ -281,8 +283,9 @@ export default async function InternationalPage(props) {
                   .map(([countryKey, countryData]) => (
                     <WorldButton
                       key={countryKey}
+                      data={countryData}
                       icon={`/images/countries/${countryKey}.svg`}
-                      name={countryData.title}
+                      trans={trans}
                     />
                 ))}
               </WorldDropdown>
@@ -296,8 +299,9 @@ export default async function InternationalPage(props) {
                   .map(([countryKey, countryData]) => (
                     <WorldButton
                       key={countryKey}
+                      data={countryData}
                       icon={`/images/countries/${countryKey}.svg`}
-                      name={countryData.title}
+                      trans={trans}
                     />
                 ))}
               </WorldDropdown>
