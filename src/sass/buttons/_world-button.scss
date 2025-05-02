@@ -14,6 +14,19 @@
         box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2); 
     }
 
+    &__close {
+        position: absolute;
+        right: 80px;
+        top: 55px;
+        z-index: 10;
+        cursor: pointer;
+
+        img {
+            width: 20px !important;
+            height: 20px !important;
+        }
+    }
+
     &__country {
         @include flex($direction: row);
         width: 80%;
@@ -53,6 +66,10 @@
                 flex: 1.5;
             }
         }
+
+        &__close {
+            right: 70px;
+        }
     }
 }
 
@@ -67,6 +84,21 @@
 
         h4 {
             flex: 2;
+        }
+    }
+}
+
+// Responsive small
+@include responsive(small) {
+    .world-button {
+        &__close {
+            right: 55px;
+            top: 50px;
+
+            img {
+                width: 15px !important;
+                height: 15px !important;
+            } 
         }
     }
 }

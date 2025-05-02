@@ -475,123 +475,123 @@
         }
       },
       "europe": {
-        "title": "Europa",
+        "title": "Europe",
         "germany": {
-          "title": "Alemania",
-          "capital": "Berlín",
+          "title": "Germany",
+          "capital": "Berlin",
           "population": "84,220,184",
           "surface": "357,022 km²",
-          "info": "Alemania, oficialmente conocida como la República Federal de Alemania, está ubicada en Europa Central y Occidental. Limita al norte con Dinamarca, al este con Polonia y la República Checa, al sur con Austria y Suiza, y al oeste con Francia, Luxemburgo, Bélgica y los Países Bajos. Su geografía es diversa, con montañas en el sur (como los Alpes) y llanuras en el norte. El clima es templado y marítimo, con inviernos fríos y veranos suaves.",
+          "info": "Germany, officially known as the Federal Republic of Germany, is located in Central and Western Europe. It borders Denmark to the north, Poland and the Czech Republic to the east, Austria and Switzerland to the south, and France, Luxembourg, Belgium, and the Netherlands to the west. Its geography is diverse, with mountains in the south (such as the Alps) and plains in the north. The climate is temperate and maritime, with cold winters and mild summers.",
           "currency": "Euro (EUR)",
-          "language": "Alemán"
+          "language": "German"
         },
         "austria": {
           "title": "Austria",
-          "capital": "Viena",
+          "capital": "Vienna",
           "population": "8,967,982",
           "surface": "83,871 km²",
-          "info": "Austria es un país sin salida al mar ubicado en Europa Central, limitando al norte con la República Checa y Alemania; al este con Eslovaquia y Hungría; al sur con Eslovenia e Italia; y al oeste con Suiza y Liechtenstein. Su geografía es montañosa, siendo parte de los Alpes, con llanuras en el este. El clima es templado y continental, con inviernos fríos y veranos moderados.",
+          "info": "Austria is a landlocked country in Central Europe, bordering the Czech Republic and Germany to the north; Slovakia and Hungary to the east; Slovenia and Italy to the south; and Switzerland and Liechtenstein to the west. Its geography is mountainous, being part of the Alps, with plains in the east. The climate is temperate and continental, with cold winters and moderate summers.",
           "currency": "Euro (EUR)",
-          "language": "Alemán"
+          "language": "German"
         },
         "denmark": {
-          "title": "Dinamarca",
-          "capital": "Copenhague",
+          "title": "Denmark",
+          "capital": "Copenhagen",
           "population": "5,982,117",
           "surface": "43,094 km²",
-          "info": "Dinamarca es un país ubicado en el norte de Europa, limitando al norte con el mar de Kattegat y el estrecho de Skagerrak, al este con el mar Báltico, al sur con Alemania y al oeste con el mar del Norte. Su geografía es predominantemente plana, con algunas colinas en el sur y una extensa línea costera. El clima es templado, con inviernos suaves y veranos frescos, influenciado por las corrientes oceánicas del Atlántico.",
-          "currency": "Corona danesa (DKK)",
-          "language": "Danés"
+          "info": "Denmark is located in Northern Europe, bordered by the Kattegat Sea and Skagerrak Strait to the north, the Baltic Sea to the east, Germany to the south, and the North Sea to the west. Its geography is mostly flat, with some hills in the south and a long coastline. The climate is temperate, with mild winters and cool summers, influenced by Atlantic Ocean currents.",
+          "currency": "Danish krone (DKK)",
+          "language": "Danish"
         },
         "spain": {
-          "title": "España",
+          "title": "Spain",
           "capital": "Madrid",
           "population": "47,280,433",
           "surface": "505,370 km²",
-          "info": "España está ubicada en el suroeste de Europa, ocupando la mayor parte de la península ibérica. Limita al norte con Francia, Andorra y el mar Cantábrico; al oeste con Portugal; al sur con el estrecho de Gibraltar y el mar de Alborán; y al este con el mar Mediterráneo. Incluye además las Islas Baleares en el Mediterráneo y las Islas Canarias en el Atlántico. Su geografía es diversa, con montañas en el norte y mesetas en el centro. El clima varía desde mediterráneo en la costa hasta continental en el interior, con inviernos fríos y veranos calurosos.",
+          "info": "Spain is located in southwestern Europe, occupying most of the Iberian Peninsula. It borders France, Andorra, and the Cantabrian Sea to the north; Portugal to the west; the Strait of Gibraltar and the Alboran Sea to the south; and the Mediterranean Sea to the east. It also includes the Balearic Islands in the Mediterranean and the Canary Islands in the Atlantic. Its geography is diverse, with mountains in the north and plateaus in the center. The climate ranges from Mediterranean on the coast to continental inland, with cold winters and hot summers.",
           "currency": "Euro (EUR)",
-          "language": "Español"
+          "language": "Spanish"
         },
         "russia": {
-          "title": "Federación Rusa",
-          "capital": "Moscú",
+          "title": "Russian Federation",
+          "capital": "Moscow",
           "population": "146,028,325",
           "surface": "17,098,246 km²",
-          "info": "La Federación Rusa es el país más grande del mundo por superficie, abarcando una vasta extensión desde Europa del Este hasta el Lejano Oriente asiático. Limita al norte con el océano Ártico; al este con el océano Pacífico; al sur con China, Mongolia, Kazajistán, Ucrania, Georgia y Azerbaiyán; y al oeste con Noruega, Finlandia, Estonia, Letonia, Lituania y Polonia. Su geografía es extremadamente diversa, con tundra en el norte, bosques en la taiga, montañas en el Cáucaso y los Urales, y vastas estepas en el sur. El clima varía desde subártico en Siberia hasta templado en las regiones del sur, con inviernos fríos y veranos cálidos en la mayor parte del país.",
-          "currency": "Ruble ruso (RUB)",
-          "language": "Ruso"
+          "info": "The Russian Federation is the largest country in the world by area, spanning a vast expanse from Eastern Europe to the Far East of Asia. It borders the Arctic Ocean to the north, the Pacific Ocean to the east, China, Mongolia, Kazakhstan, Ukraine, Georgia, and Azerbaijan to the south, and Norway, Finland, Estonia, Latvia, Lithuania, and Poland to the west. Its geography is extremely diverse, with tundra in the north, forests in the taiga, mountains in the Caucasus and the Urals, and vast steppes in the south. The climate ranges from subarctic in Siberia to temperate in the southern regions, with cold winters and warm summers in most of the country.",
+          "currency": "Russian ruble (RUB)",
+          "language": "Russian"
         },
         "finland": {
-          "title": "Finlandia",
+          "title": "Finland",
           "capital": "Helsinki",
           "population": "5,626,414",
           "surface": "338,424 km²",
-          "info": "Finlandia está ubicada en el norte de Europa, limitando al norte con Noruega, al este con Rusia, al sur con el mar Báltico y al oeste con Suecia. Su geografía es diversa, con bosques densos, miles de lagos y una costa recortada. El clima varía desde subártico en el norte hasta templado en el sur, con inviernos fríos y veranos suaves.",
+          "info": "Finland is located in Northern Europe, bordering Norway to the north, Russia to the east, the Baltic Sea to the south, and Sweden to the west. Its geography is diverse, with dense forests, thousands of lakes, and a jagged coastline. The climate ranges from subarctic in the north to temperate in the south, with cold winters and mild summers.",
           "currency": "Euro (EUR)",
-          "language": "Finlandés, Sueco"
+          "language": "Finnish, Swedish"
         },
         "france": {
-          "title": "Francia",
-          "capital": "París",
+          "title": "France",
+          "capital": "Paris",
           "population": "68,374,591",
           "surface": "547,030 km²",
-          "info": "Francia está ubicada en el oeste de Europa, limitando al norte con Bélgica, Luxemburgo y Alemania; al este con Suiza e Italia; al sur con Mónaco, España y Andorra; y al oeste con el océano Atlántico. Su geografía es diversa, con llanuras en el norte, montañas en los Alpes y los Pirineos, y una extensa costa atlántica. El clima varía desde oceánico en la costa hasta continental en el interior, con inviernos fríos y veranos cálidos.",
+          "info": "France is located in Western Europe, bordered by Belgium, Luxembourg, and Germany to the north; Switzerland and Italy to the east; Monaco, Spain, and Andorra to the south; and the Atlantic Ocean to the west. Its geography is diverse, with plains in the north, mountains in the Alps and Pyrenees, and a long Atlantic coastline. The climate ranges from oceanic on the coast to continental inland, with cold winters and warm summers.",
           "currency": "Euro (EUR)",
-          "language": "Francés"
+          "language": "French"
         },
         "iceland": {
-          "title": "Islandia",
-          "capital": "Reikiavik",
+          "title": "Iceland",
+          "capital": "Reykjavik",
           "population": "364,000",
           "surface": "103,000 km²",
-          "info": "Islandia es una isla ubicada en el Atlántico Norte, al sur del Círculo Polar Ártico. Su geografía es volcánica y geotérmica, con numerosos glaciares, géiseres y fuentes termales. El clima es templado en relación con su latitud, moderado por la corriente del Golfo, con inviernos suaves y veranos frescos. Es conocida por su baja densidad poblacional y su alto nivel de desarrollo humano.",
-          "currency": "Corona islandesa (ISK)",
-          "language": "Islandés"
+          "info": "Iceland is an island located in the North Atlantic, south of the Arctic Circle. Its geography is volcanic and geothermal, with many glaciers, geysers, and hot springs. The climate is mild for its latitude, moderated by the Gulf Stream, with mild winters and cool summers. It is known for its low population density and high human development index.",
+          "currency": "Icelandic króna (ISK)",
+          "language": "Icelandic"
         },
         "italy": {
-          "title": "Italia",
-          "capital": "Roma",
+          "title": "Italy",
+          "capital": "Rome",
           "population": "58,968,501",
           "surface": "301,338 km²",
-          "info": "Italia está ubicada en el sur de Europa, limitando al norte con Francia, Suiza, Austria y Eslovenia; al este con el mar Adriático; al sur con el mar Jónico; y al oeste con el mar Tirreno. Su geografía es diversa, con montañas en el norte (los Alpes), llanuras en el valle del Po y una extensa costa mediterránea. El clima varía desde mediterráneo en la costa hasta continental en el interior, con inviernos fríos y veranos calurosos.",
+          "info": "Italy is located in Southern Europe, bordering France, Switzerland, Austria, and Slovenia to the north; the Adriatic Sea to the east; the Ionian Sea to the south; and the Tyrrhenian Sea to the west. Its geography is diverse, with mountains in the north (the Alps), plains in the Po Valley, and a long Mediterranean coastline. The climate ranges from Mediterranean on the coast to continental inland, with cold winters and hot summers.",
           "currency": "Euro (EUR)",
-          "language": "Italiano"
+          "language": "Italian"
         },
         "poland": {
-          "title": "Polonia",
-          "capital": "Varsovia",
+          "title": "Poland",
+          "capital": "Warsaw",
           "population": "37,677,000",
           "surface": "312,696 km²",
-          "info": "Polonia está ubicada en Europa Central, limitando al norte con el mar Báltico y Rusia (óblast de Kaliningrado), al este con Lituania, Bielorrusia y Ucrania, al sur con la República Checa y Eslovaquia, y al oeste con Alemania. Su geografía es diversa, con llanuras en el norte y montañas en el sur, como los Sudetes y los Cárpatos. El clima varía desde oceánico en el norte hasta continental en el sur, con inviernos fríos y veranos calurosos.",
-          "currency": "Zloty polaco (PLN)",
-          "language": "Polaco"
+          "info": "Poland is located in Central Europe, bordering the Baltic Sea and Russia (Kaliningrad Oblast) to the north, Lithuania, Belarus, and Ukraine to the east, the Czech Republic and Slovakia to the south, and Germany to the west. Its geography is diverse, with plains in the north and mountains in the south, such as the Sudetes and the Carpathians. The climate ranges from oceanic in the north to continental in the south, with cold winters and hot summers.",
+          "currency": "Polish zloty (PLN)",
+          "language": "Polish"
         },
         "united_kingdom": {
-          "title": "Reino Unido",
-          "capital": "Londres",
+          "title": "United Kingdom",
+          "capital": "London",
           "population": "68,500,000",
           "surface": "243,610 km²",
-          "info": "El Reino Unido está ubicado en el noroeste de Europa, compuesto por cuatro países: Inglaterra, Escocia, Gales e Irlanda del Norte. Limita al norte con el mar de Noruega, al este con el mar del Norte, al sur con el canal de la Mancha y al oeste con el océano Atlántico. Su geografía es diversa, con montañas en Escocia y Gales, llanuras en Inglaterra y una extensa costa. El clima varía desde oceánico en la costa hasta continental en el interior, con inviernos fríos y veranos suaves.",
-          "currency": "Libra esterlina (GBP)",
-          "language": "Inglés"
+          "info": "The United Kingdom is located in northwestern Europe, made up of four countries: England, Scotland, Wales, and Northern Ireland. It borders the Norwegian Sea to the north, the North Sea to the east, the English Channel to the south, and the Atlantic Ocean to the west. Its geography is diverse, with mountains in Scotland and Wales, plains in England, and a long coastline. The climate ranges from oceanic on the coast to continental inland, with cold winters and mild summers.",
+          "currency": "Pound sterling (GBP)",
+          "language": "English"
         },
         "switzerland": {
-          "title": "Suiza",
-          "capital": "Berna",
+          "title": "Switzerland",
+          "capital": "Bern",
           "population": "9,030,650",
           "surface": "41,290 km²",
-          "info": "Suiza está ubicada en el centro de Europa, limitando al norte con Alemania, al este con Austria y Liechtenstein, al sur con Italia y al oeste con Francia. Su geografía es montañosa, con los Alpes ocupando aproximadamente el 60% del territorio, y la meseta suiza o Mittelland, una zona más llana y densamente poblada, que se extiende entre los Alpes y la cordillera del Jura al noroeste. El clima varía desde alpino en las montañas hasta templado en las zonas bajas, con inviernos fríos y veranos suaves.",
-          "currency": "Franco suizo (CHF)",
-          "language": "Alemán, Francés, Italiano"
+          "info": "Switzerland is located in the center of Europe, bordering Germany to the north, Austria and Liechtenstein to the east, Italy to the south, and France to the west. Its geography is mountainous, with the Alps covering about 60% of the territory, and the Swiss Plateau or Mittelland, a flatter and more densely populated area, lying between the Alps and the Jura Mountains to the northwest. The climate ranges from alpine in the mountains to temperate in the lower areas, with cold winters and mild summers.",
+          "currency": "Swiss franc (CHF)",
+          "language": "German, French, Italian"
         },
         "turkey": {
-          "title": "Turquía",
+          "title": "Turkey",
           "capital": "Ankara",
           "population": "87,473,805",
           "surface": "783,562 km²",
-          "info": "Turquía es un país transcontinental ubicado en su mayoría en Asia Occidental, con una pequeña parte en Europa del Este. Limita al norte con el mar Negro, al este con Armenia, Irán, Azerbaiyán (Nakhchivan), al sur con Irak y Siria, y al oeste con el mar Egeo. Su geografía es variada, con montañas en el este y llanuras costeras en el oeste. El clima varía desde mediterráneo en las costas hasta continental en el interior, con inviernos fríos y veranos calurosos.",
-          "currency": "Lira turca (TRY)",
-          "language": "Turco"
+          "info": "Turkey is a transcontinental country mostly located in Western Asia, with a small part in Eastern Europe. It borders the Black Sea to the north, Armenia, Iran, and Azerbaijan (Nakhchivan) to the east, Iraq and Syria to the south, and the Aegean Sea to the west. Its geography is varied, with mountains in the east and coastal plains in the west. The climate ranges from Mediterranean on the coasts to continental inland, with cold winters and hot summers.",
+          "currency": "Turkish lira (TRY)",
+          "language": "Turkish"
         }
       },
       "source": "Informative abstract taken from CIA World Factbook.",
@@ -600,6 +600,18 @@
       "surface_title": "Surface Area",
       "currency_title": "Currency",
       "language_title": "Language"
+    },
+
+    "involve_page": {
+      "title": "Get Involved",
+      "body": "Join the Vivol family and become part of a movement that changes lives. Become a volunteer and make a difference in the community!",
+      "card1": "Host Family",
+      "card2": "Volunteer in My Project"
+    },
+
+    "family_page": {
+      "title": "Host Family Program",
+      "intro_text": "Join Vivol’s Host Family Program and welcome international volunteers into your home. Be part of a unique cultural experience and transform lives!"
     },
 
     "alt": {
@@ -626,7 +638,10 @@
       "inter_image1": "Volunteer in front of a Torii gate",
       "inter_image2": "Volunteer in Germany in front of a tower",
       "inter_image3": "Volunteer in front of a statue",
-      "inter_image4": "Volunteer in front of a fountain"
+      "inter_image4": "Volunteer in front of a fountain",
+      "involve_image1": "Rainbow Mountain, Peru",
+      "involve_image2": "Volunteer with their host family",
+      "involve_image3": "Volunteer at her project"
     },
 
     "button": {

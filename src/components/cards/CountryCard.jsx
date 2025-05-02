@@ -17,8 +17,8 @@ export default function CountryCard({
     
     return (
         <div className="country-card">
-            <h3 className="country-card__title">{country}</h3>
             <div className="country-card__content">
+                <h3 className="country-card__title">{country}</h3>
                 <div className="country-card__content--top">
                     <div className="country-card__image">
                         <Image

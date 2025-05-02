@@ -602,6 +602,18 @@
       "language_title": "Idioma"
     },
 
+    "involve_page": {
+      "title": "Involúcrate",
+      "body": "Únete a la familia de Vivol y forma parte de un movimiento que cambia vidas. ¡Conviértete en voluntario y haz la diferencia en la comunidad!",
+      "card1": "Familia Hospedera",
+      "card2": "Voluntario en mi proyecto"
+    },
+
+    "family_page": {
+      "title": "Programa de familias hospederas",
+      "intro_text": "Únete al Programa de Familias Hospederas de Vivol y recibe a voluntarios internacionales en tu hogar. ¡Sé parte de una experiencia cultural única y transforma vidas!"
+    },
+
     "alt": {
       "language_change": "Change language to English",
       "carousel_image": "Imagen del carrusel",
@@ -626,7 +638,10 @@
       "inter_image1": "Voluntario en frente de un puerta Torii",
       "inter_image2": "Voluntaria en alemania frente a torre",
       "inter_image3": "Voluntario frente a estatua",
-      "inter_image4": "Voluntaria frente a una pileta"
+      "inter_image4": "Voluntaria frente a una pileta",
+      "involve_image1": "Montaña de Siete Colores, Perú",
+      "involve_image2": "Voluntario con su familia hospedera",
+      "involve_image3": "Voluntaria en su proyecto"
     },
 
     "button": {

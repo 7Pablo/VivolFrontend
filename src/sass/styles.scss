@@ -73,6 +73,7 @@ time, mark, audio, video {
 @import './cards/icon-text-card';
 @import './cards/process-card';
 @import './cards/country-card';
+@import './cards/select-card';
 
 // Pages 
 @import './pages/home-page';
@@ -80,6 +81,8 @@ time, mark, audio, video {
 @import './pages/volunteer-page';
 @import './pages/national-page';
 @import './pages/international-page';
+@import './pages/involve-page';
+@import './pages/family-page';
 
 body {
 	background-color: $background-main; 

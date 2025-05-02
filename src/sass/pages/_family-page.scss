@@ -1,0 +1,100 @@
+.family-page {
+    @include flex();
+
+    // Intro
+    &__intro {
+        position: relative;
+		width: 100%;
+		height: 560px;
+
+        &--overlay {
+			@include flex();
+			position: absolute;
+			padding: 50px;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.2);
+			z-index: 2;
+		}
+
+        &--text {
+            @include flex($align: start, $gap: 20px);
+            width: 100%;
+            max-width: 1440px;
+            animation: slideInLeft 0.8s ease-out forwards;
+
+            h1 {
+				@include title-font($size: 80px, $weight: 500, $color: #fff);
+				text-shadow: 0px 6px 5px rgba(0, 0, 0, 0.7);
+                width: 100%;
+                max-width: 700px;
+                text-align: start;
+			}
+
+            p {
+                @include body-font($size: 20px, $color: #fff);
+                line-height: 30px;
+                max-width: 700px;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+            }
+        }
+    }
+}
+
+// Responsive medium
+@include responsive(medium) {
+    .family-page {
+        &__intro {
+            &--overlay {
+                padding: 40px;
+            }
+
+            &--text {
+                h1 {
+                    font-size: 70px;
+                    line-height: 70px;
+                    max-width: 900px;
+                }
+            }
+        }
+    }
+}
+
+// Responsive smedium
+@include responsive(smedium) {
+    .family-page {
+        &__intro {
+            &--text {
+                p {
+                    font-size: 18px;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// Responsive small
+@include responsive(small) {
+    .family-page {
+        &__intro {
+            &--overlay {
+                padding: 30px;
+            }
+
+            &--text {
+                h1 {
+                    font-size: 53px;
+                    line-height: 53px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}

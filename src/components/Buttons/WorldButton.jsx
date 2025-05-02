@@ -29,6 +29,17 @@ export default function WorldButton({ data, icon, trans }) {
                     <Dialog.Backdrop />
                     <Dialog.Positioner>
                         <Dialog.Content>
+                            <Dialog.CloseTrigger asChild>
+                                <div className="world-button__close">
+                                    <Image
+                                        src="/images/icons/close.svg"
+                                        alt="x"
+                                        width={100}
+                                        height={100}
+                                        priority
+                                    />
+                                </div>
+                            </Dialog.CloseTrigger>
                             <CountryCard 
                                 country={data.title}
                                 flag={icon}

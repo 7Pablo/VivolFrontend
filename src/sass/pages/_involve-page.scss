@@ -1,0 +1,143 @@
+.involve-page {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; 
+    height: auto; 
+
+    &__overlay {
+        @include flex($justify: start, $gap: 100px);
+        padding: 100px 50px;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100vh; 
+        height: auto; 
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    &__text {
+        @include flex($align: start, $gap: 20px);
+        width: 100%;
+        max-width: 1100px;
+        animation: slideInLeft 0.8s ease-out forwards;
+
+        h2 {
+            @include title-font($size: 80px, $weight: 500, $color: #fff);
+            line-height: 60px;
+            text-shadow: 0px 6px 5px rgba(0, 0, 0, 0.7);
+            width: 100%;
+            text-align: start;
+        }
+
+        p {
+            @include body-font($size: 20px, $color: #fff);
+            line-height: 30px;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+        }
+    }
+
+    &__cards {
+        @include flex($direction: row, $justify: space-between);
+        width: 100%;
+        max-width: 950px;
+        animation: fadeInOpacity 0.8s ease-out forwards;
+
+        > :nth-child(1) {
+            animation: bounceEvery8s 5s ease-in-out infinite;
+        }
+
+        > :nth-child(2) {
+            animation: bounceEvery8s 5s ease-in-out infinite;
+            animation-delay: 0.3s;
+        }
+    }
+}
+
+// Responsive medium
+@include responsive(medium) {
+    .involve-page {
+        &__text {
+            h2 {
+                font-size: 70px;
+            }
+        }
+        
+        &__overlay {
+            padding: 100px 40px;
+        }
+
+        &__cards {
+            @include flex($gap: 60px);
+        }
+    }
+}
+
+// Responsive smedium
+@include responsive(smedium) {
+    .involve-page {
+        &__text {
+            h2 {
+                font-size: 55px;
+            }
+    
+            p {
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+
+        &__overlay {
+            gap: 60px;
+        }
+    }
+}
+
+// Responsive small
+@include responsive(small) {
+    .involve-page {
+        &__overlay {
+            padding: 50px;
+        }
+    }
+}
+
+// Animations
+@keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceEvery8s {
+    0%, 87.5%, 100% {
+      transform: translateY(0);
+    }
+    2.5% {
+      transform: translateY(-10px);
+    }
+    5% {
+      transform: translateY(5px);
+    }
+    7.5% {
+      transform: translateY(-5px);
+    }
+    10% {
+      transform: translateY(2px);
+    }
+}
