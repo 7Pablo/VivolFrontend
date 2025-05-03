@@ -611,7 +611,77 @@
 
     "family_page": {
       "title": "Host Family Program",
-      "intro_text": "Join Vivol’s Host Family Program and welcome international volunteers into your home. Be part of a unique cultural experience and transform lives!"
+      "intro_text": "Join Vivol’s Host Family Program and welcome international volunteers into your home. Be part of a unique cultural experience and transform lives!",
+      "question_question": "How can you experience a different culture without leaving your country?",
+      "question_text": "VIVOL welcomes volunteers from different parts of the world to participate in a cultural learning program through social volunteering. Our volunteers stay with host families or projects during the time they carry out their social mission in Peru.",
+      "meaning_title": "What does it mean to be a host family?",
+      "meaning_text": {
+        "top": "Being a host family means:",
+        "bullet1": "Providing support",
+        "bullet2": "Doing activities together with the volunteer",
+        "bullet3": "Spending family time together",
+        "bullet4": "Giving advice and guidance",
+        "bullet5": "Being there during difficult moments",
+        "bullet6": "Encouraging them to be part of the culture and language",
+        "bullet7": "Sharing our interests",
+        "bullet8": "Offering a space where they feel at home",
+        "bullet9": "Sharing time and resources"
+      },
+      "middle_text": "We are looking for host families to be part of this learning process. By becoming a host family, you not only become a key part of a process of integration; by welcoming a foreign volunteer, families also participate in the experience and become part of the learning journey.",
+      "benefits_title": "Benefits for the host family",
+      "benefits_language": "A new language",
+      "benefits_culture": "Breaking cultural stereotypes",
+      "benefits_perspective": "New perspectives and ideologies",
+      "benefits_learning": "Cultural learning",
+      "join_title": "Do you want to be part of our host family program?",
+      "join_text": "Through our family program, all members have the opportunity to take part in this experience, learn about diverse cultures, and broaden their view of the world.",
+      "join_contact": "Get in touch with us and we’ll gladly provide more information."
+    },
+
+    "project_page": {
+      "title": "Volunteer in My Project",
+      "intro_text": "If you need support for your project, educational unit, public cafeteria, nursing home, children's home, youth support centers, shelters, or others, we are happy to collaborate by placing international volunteers.",
+      "top_text1": "VIVOL aims to support the growth of a society based on equality, justice, and peace. To achieve this, we promote exchange programs with an emphasis on social volunteering, supporting the development of local activities and projects with social purposes.",
+      "top_text2": "The program is available to all those who share the goals of our organization, regardless of race, culture, or creed.",
+      "card1": {
+        "title": "VIVOL Commitments",
+        "bullet1": "Responsibility for the legality of the volunteer during their stay in the country.",
+        "bullet2": "Mediation in any problems that may arise between the project and the volunteers.",
+        "bullet3": "Provide all necessary information about the program and volunteers before the start of projects and placements.",
+        "bullet4": "Periodically assess the activities of the volunteer.",
+        "bullet5": "Inform the project in advance about any extra activities the volunteer needs to perform.",
+        "bullet6": "Be available 24 hours in case of emergencies.",
+        "bullet7": "Resolve and guide any issues volunteers may encounter."
+      },
+      "card2": {
+        "title": "Volunteer Commitments",
+        "bullet1": "Comply with the rules established in the project.",
+        "bullet2": "Communicate in writing and in advance with the project about any extraordinary activities that may affect the program’s activities.",
+        "bullet3": "Notify the project and VIVOL about any justified absences.",
+        "bullet4": "Punctuality and effectiveness in the program’s schedule and activities.",
+        "bullet5": "Integrate and actively participate in all project activities.",
+        "bullet6": "Respect all members and the ideology of the project.",
+        "bullet7": "Respect the laws of the country, the project, the family, and VIVOL.",
+        "bullet8": "Submit a written report every three months about their work to VIVOL.",
+        "bullet9": "Attend the three training camps organized by VIVOL.",
+        "bullet10": "Integrate culturally into society.",
+        "bullet11": "Notify the Project and VIVOL about any upcoming travel plans.",
+        "bullet12": "Complete 30-40 hours of volunteer work per week.",
+        "bullet13": "Immediately inform VIVOL of any health or safety issues."
+      },
+      "card3": {
+        "title": "Commitments the Host Project Must Fulfill",
+        "bullet1": "Provide VIVOL with updated information about the organization, activities conducted in the project, and the volunteer’s roles and requirements.",
+        "bullet2": "Commit to working together with the volunteer.",
+        "bullet3": "Respect the volunteer’s privacy, integrity, and personality.",
+        "bullet4": "Provide appropriate materials for carrying out the work.",
+        "bullet5": "Train the volunteer if new activities are assigned within the project.",
+        "bullet6": "Take responsibility for informing VIVOL of any issues with the volunteer.",
+        "bullet7": "Ensure the safety and well-being of the volunteer.",
+        "bullet8": "Keep records of absences and control vacation time.",
+        "bullet9": "Provide a contact person for the volunteer, someone they can turn to for doubts or clarifications regarding their tasks, as well as having regular meetings, etc.",
+        "bullet10": "Give the volunteer clearly defined activities."
+      }
     },
 
     "alt": {
@@ -641,14 +711,21 @@
       "inter_image4": "Volunteer in front of a fountain",
       "involve_image1": "Rainbow Mountain, Peru",
       "involve_image2": "Volunteer with their host family",
-      "involve_image3": "Volunteer at her project"
+      "involve_image3": "Volunteer at her project",
+      "family_image1": "Volunteers sharing with host family at Christmas",
+      "family_image2": "Volunteer with host family on a rock",
+      "project_image1": "Volunteers drawing with children",
+      "project_image2": "VIVOL volunteers",
+      "project_image3": "Volunteer with a monkey",
+      "project_image4": "Volunteer with signs on some stairs"
     },
 
     "button": {
       "language_text": "Español",
       "carousel": "Let's start",
       "volunteer_inter": "International Volunteering",
-      "volunteer_nat": "Volunteering in Peru"
+      "volunteer_nat": "Volunteering in Peru",
+      "contact": "Contact us"
     }
   }
   

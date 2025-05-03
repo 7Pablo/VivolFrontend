@@ -611,7 +611,77 @@
 
     "family_page": {
       "title": "Programa de familias hospederas",
-      "intro_text": "Únete al Programa de Familias Hospederas de Vivol y recibe a voluntarios internacionales en tu hogar. ¡Sé parte de una experiencia cultural única y transforma vidas!"
+      "intro_text": "Únete al Programa de Familias Hospederas de Vivol y recibe a voluntarios internacionales en tu hogar. ¡Sé parte de una experiencia cultural única y transforma vidas!",
+      "question_question": "¿Como se puede experimentar una cultura diferente sin salir de tu país?",
+      "question_text": "VIVOL recibe voluntarios y voluntarias de distintas partes del mundo para realizar un programa de aprendizaje cultural a través del voluntariado social. Nuestros voluntarios se hospedan en familias o proyectos de acogida durante el tiempo que realizan su misión social en el Perú.",
+      "meaning_title": "¿Qué es ser familia de acogida?",
+      "meaning_text": {
+        "top": "Ser familia de acogida significa:",
+        "bullet1": "Brindar apoyo",
+        "bullet2": "Realizar actividades en conjunto con el intercambio",
+        "bullet3": "Compartir tiempo en familia",
+        "bullet4": "Aconsejar y guiar",
+        "bullet5": "Acompañar durante los momentos difíciles",
+        "bullet6": "Motivarles a ser parte de la cultura y el idioma",
+        "bullet7": "Compartir nuestros gustos",
+        "bullet8": "Brindar un espacio en el cual se sienta en casa",
+        "bullet9": "Compartir tiempo y recursos"
+      },
+      "middle_text": "Estamos en la búsqueda de familias de acogida que formen parte de este proceso de aprendizaje. Al ser familia de acogida no solo conviertes a tu familia en parte fundamental de un proceso de integración; a su ves, al recibir a un voluntario extranjero las familias forman parte de este proceso y participan del aprendizaje.",
+      "benefits_title": "Beneficios para la familia hospedera",
+      "benefits_language": "Un nuevo idioma",
+      "benefits_culture": "Ruptura de estereotipos culturales",
+      "benefits_perspective": "Perspectivas e ideologías nuevas",
+      "benefits_learning": "Aprendizaje cultural",
+      "join_title": "¿Deseas ser parte de nuestro programa de familias de acogida?",
+      "join_text": "A través de nuestro programa de familias todos los miembros tienen la oportunidad de ser participes de esta experiencia, aprender sobre culturas diversas y ampliar la visión que tenemos sobre el mundo.",
+      "join_contact": "Ponte en contacto con nosotros y con gusto te ofreceremos mayor información."
+    },
+
+    "project_page": {
+      "title": "Voluntario en mi proyecto",
+      "intro_text": "Si necesitan apoyo en su proyecto, unidad educativa, comedor publico, centro geriátrico, hogar de niños y niñas, centros de apoyo adolescentes, casas de acogida, entre otros; estaremos gustosos de cooperar en conjunto mediante la ubicación de voluntarios internacionales.",
+      "top_text1": "VIVOL busca apoyar al crecimiento de una sociedad en igualdad, justicia y paz. Con la finalidad de conseguir esto promovemos programas de intercambio con énfasis en el voluntariado social para lo cual apoyamos al desarrollo de actividades y proyectos locales con fines sociales.",
+      "top_text2": "El programa está disponible para todos aquellos que comparten los objetivos de nuestra organización, sin distinciones de raza, cultura o credo.",
+      "card1": {
+        "title": "Compromisos de VIVOL",
+        "bullet1": "Responsabilidad de la legalidad del voluntario durante la estadía del país.",
+        "bullet2": "Mediación en los problemas que puedan surgir entre el proyecto y los voluntarios.",
+        "bullet3": "Proporcionar toda la información acerca del programa y los voluntarios con antelación a los proyectos y voluntarios.",
+        "bullet4": "Evaluar periódicamente las actividades del voluntario.",
+        "bullet5": "Informar previamente al proyecto sobre actividades extra que el voluntario debe realizar.",
+        "bullet6": "Estar dispuestos 24 horas en caso de emergencia.",
+        "bullet7": "Solventar y guiar inconvenientes que tengan sus voluntarios."
+      },
+      "card2": {
+        "title": "Compromisos del voluntario",
+        "bullet1": "Cumplir con las reglas establecidas en el proyecto.",
+        "bullet2": "Comunicar por escrito y con anticipación al proyecto las actividades extraordinarias que influyan en el desarrollo de las actividades del programa.",
+        "bullet3": "Avisar las inasistencias justificadas al proyecto y a VIVOL.",
+        "bullet4": "Puntualidad y eficacia en los horarios y las actividades del programa.",
+        "bullet5": "Integrarse y participar activamente en todas las actividades del proyecto.",
+        "bullet6": "Respetar a todos los miembros y la ideología del proyecto.",
+        "bullet7": "Respetar las normas del país, proyecto, familia y VIVOL.",
+        "bullet8": "Realizar cada tres meses un informe escrito acerca del desarrollo de su trabajo a VIVOL.",
+        "bullet9": "Asistir a los tres campamentos de capacitación programados por VIVOL.",
+        "bullet10": "Integrarse culturalmente en la sociedad.",
+        "bullet11": "Informar de los viajes a realizar en un futuro al Proyecto de Trabajo y a VIVOL.",
+        "bullet12": "Hacer 30-40 horas mínimas semanales de voluntariado.",
+        "bullet13": "Informar a VIVOL inmediatamente cuando suceda algo relacionado a su estado de salud y seguridad."
+      },
+      "card3": {
+        "title": "Compromisos que el proyecto de acogida debe cumplir",
+        "bullet1": "Entregar a VIVOL información actualizada de la organización, las actividades que realizan en el proyecto, y las funciones y requisitos del voluntario.",
+        "bullet2": "Compromiso de trabajo en conjunto con el voluntario.",
+        "bullet3": "Respetar la intimidad, integridad y personalidad del voluntario.",
+        "bullet4": "Proporcionar el material adecuado para la realización de su trabajo.",
+        "bullet5": "Capacitar al voluntario en caso de tener nuevas actividades dentro del proyecto.",
+        "bullet6": "Responsabilidad de comunicar a VIVOL las irregularidades que existan con el voluntario.",
+        "bullet7": "Velar por la seguridad y la integridad del voluntario.",
+        "bullet8": "Registro de ausencias y control de vacaciones.",
+        "bullet9": "Proporcionar una persona de contacto para el voluntario, siendo este alguien a quien el voluntario puede recurrir en caso de dudas o aclaraciones respecto a su tarea, tener reuniones periódicas, etc.",
+        "bullet10": "Dar al voluntario actividades definidas."
+      }
     },
 
     "alt": {
@@ -641,13 +711,20 @@
       "inter_image4": "Voluntaria frente a una pileta",
       "involve_image1": "Montaña de Siete Colores, Perú",
       "involve_image2": "Voluntario con su familia hospedera",
-      "involve_image3": "Voluntaria en su proyecto"
+      "involve_image3": "Voluntaria en su proyecto",
+      "family_image1": "Voluntarios compartiendo con familia hospedera en navidad",
+      "family_image2": "Voluntario con familia hospedera en un roca",
+      "project_image1": "Voluntarios dibujando con niños",
+      "project_image2": "Voluntarios de VIVOL",
+      "project_image3": "Voluntaria con un mono",
+      "project_image4": "Voluntario con carteles en unas gradas"
     },
 
     "button": {
       "language_text": "English",
       "carousel": "Empecemos",
       "volunteer_inter": "Voluntariado Internacional",
-      "volunteer_nat": "Voluntariado en Perú"
+      "volunteer_nat": "Voluntariado en Perú",
+      "contact": "Contáctanos"
     }
   }

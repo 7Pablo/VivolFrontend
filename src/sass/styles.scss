@@ -19,6 +19,10 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+a:focus {
+    outline: none; 
+}
+
 .lang-layout {
     display: flex;
     flex-direction: column;
@@ -83,6 +87,7 @@ time, mark, audio, video {
 @import './pages/international-page';
 @import './pages/involve-page';
 @import './pages/family-page';
+@import './pages/project-page';
 
 body {
 	background-color: $background-main; 

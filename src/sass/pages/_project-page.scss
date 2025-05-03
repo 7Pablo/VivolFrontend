@@ -1,0 +1,287 @@
+.project-page {
+    @include flex();
+
+    // Intro
+    &__intro {
+        position: relative;
+		width: 100%;
+		height: 560px;
+
+        &--overlay {
+			@include flex();
+			position: absolute;
+			padding: 50px;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.2);
+			z-index: 2;
+		}
+
+        &--text {
+            @include flex($align: start, $gap: 20px);
+            width: 100%;
+            max-width: 1440px;
+            animation: slideInLeft 0.8s ease-out forwards;
+
+            h1 {
+				@include title-font($size: 80px, $weight: 500, $color: #fff);
+				text-shadow: 0px 6px 5px rgba(0, 0, 0, 0.7);
+                width: 100%;
+                max-width: 700px;
+                text-align: start;
+			}
+
+            p {
+                @include body-font($size: 20px, $color: #fff);
+                line-height: 30px;
+                max-width: 700px;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+            }
+        }
+    }
+
+    // Body
+    &__body {
+        @include flex($gap: 80px);
+        padding: 80px 50px 100px;
+        width: 100%;
+
+        &--top {
+            @include flex($align: start, $gap: 30px);
+            width: 100%;
+            max-width: 1440px;
+            animation: slideInLeft 0.8s ease-out forwards;
+
+            p {
+                @include body-font($size: 18px);
+                line-height: 36px;
+                text-align: left;
+            }
+        }
+
+        &--card {
+            @include flex($direction: row, $gap: 50px);
+            width: 100%;
+            max-width: 1440px;
+            align-items: stretch;
+
+            transform: perspective(1000px) rotateY(10deg) scale(0.9);
+            animation: flipScaleIn 0.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+            animation-delay: 0.2s;
+            will-change: transform, opacity;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+
+            &:nth-child(2) {
+                animation-delay: 0.4s;
+            }
+        
+            &:nth-child(3) {
+                animation-delay: 0.6s;
+            }
+
+            h3 {
+                @include title-font($size: 28px, $weight: 500, $color: $blue-tertiary);
+                text-align: left;
+            }
+
+            ul {
+                list-style-type: disc;
+                padding-left: 20px;
+            }
+
+            li {
+                @include body-font($size: 18px);
+                line-height: 34px;
+                text-align: left;
+            }
+        }
+
+        &--image {
+            position: relative;
+            height: auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.25);
+            flex: 1 1 30%;
+        }
+
+        &--text {
+            &-left, &-right {
+                @include flex($align: start, $gap: 30px);
+                border-radius: 20px;
+                padding: 50px;
+                box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.25);
+                flex: 1 1 70%;
+            }
+
+            &-left {
+                background-color: #fff;
+            }
+
+            &-right {
+                background-color: $blue-secondary;
+
+                li, h3 {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+// Responsive medium
+@include responsive(medium) {
+    .project-page {
+        &__intro {
+            &--overlay {
+                padding: 40px;
+            }
+
+            &--text {
+                h1 {
+                    font-size: 70px;
+                    line-height: 70px;
+                    max-width: 900px;
+                }
+            }
+        }
+
+        &__body {
+            padding: 80px 40px 100px;
+
+            &--card {
+                gap: 30px
+            }
+    
+            &--image {
+                flex: 1 1 40%;
+            }
+    
+            &--text {
+                &-left, &-right {
+                    flex: 1 1 60%;
+                }
+            }
+        }
+    }
+}
+
+// Responsive smedium
+@include responsive(smedium) {
+    .project-page {
+        &__intro {
+            &--text {
+                p {
+                    font-size: 18px;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        &__body {
+            gap: 80px;
+            padding: 50px 40px 80px;
+
+            &--top {
+                p {
+                    font-size: 16px;
+                    line-height: 34px;
+                }
+            }
+
+            &--card {
+                @include flex($gap: 40px);
+                max-width: 500px;
+    
+                h3 {
+                    font-size: 26px;
+                }
+    
+                li {
+                    font-size: 16px;
+                    line-height: 32px;
+                }
+            }
+
+            &--image {
+                width: 100%;
+                height: 300px;
+                flex: none; 
+                order: 1;
+            }
+
+            &--text {
+                &-left, &-right {
+                    gap: 20px;
+                    padding: 40px;
+                    flex: none; 
+                    order: 2;
+                }
+            }
+        }
+    }
+}
+
+// Responsive small
+@include responsive(small) {
+    .project-page {
+        &__intro {
+            &--overlay {
+                padding: 30px;
+            }
+
+            &--text {
+                h1 {
+                    font-size: 53px;
+                    line-height: 53px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        &__body {
+            gap: 55px;
+            padding: 50px 30px 80px;
+
+            &--text {
+                &-left, &-right {
+                    padding: 30px;
+                }
+            }
+        }
+    }
+}
+
+// Animation 
+@keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes flipScaleIn {
+    0% {
+        opacity: 0;
+        transform: perspective(1000px) rotateY(10deg) scale(0.9) translateY(30px);
+    }
+    60% {
+        opacity: 1;
+        transform: perspective(1000px) rotateY(-5deg) scale(1.05) translateY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: perspective(1000px) rotateY(0deg) scale(1) translateY(0);
+    }
+}

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-export default function BenefitCard({ icon, title, text, color }) {
+export default function BenefitCard({ icon, title, text, color, short = false }) {
     return (
         <div className="benefit-card">
             <div className="benefit-card__wrapper" style={{borderColor: color, borderStyle: 'solid', borderWidth: '2px'}}>
@@ -15,7 +15,7 @@ export default function BenefitCard({ icon, title, text, color }) {
             </div>
             <div className="benefit-card__text">
                 <h4>{title}</h4>
-                <p>{text}</p>
+                { short ? null : <p>{text}</p> } 
             </div>
         </div>
     );
