@@ -73,8 +73,9 @@
         "member2_role": "Program Coordinator",
         "member3_role": "Administrative Coordinator",
         "member1_phrase": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum purus nec purus dignissim, consectetur rutrum nisl porttitor.",
-        "member2_phrase": "Traveling as a volunteer changed my life in 2012. Since then, I’ve been guiding young people and their families through experiences that connect, teach, and leave a mark on the world.",
-        "member3_phrase": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum purus nec purus dignissim, consectetur rutrum nisl porttitor."
+        "member2_phrase": "Volunteering abroad changed my life in 2012. Since then, I’ve supported young people and their families in living meaningful experiences that connect, teach, and leave a mark on the world.",
+        "member3_phrase": "My commitment to VIVOL was born from a very special experience: our children’s trip to India and Nepal. When they returned, they shared not only their stories but also how the experience had shaped their character. Seeing how they grew and developed a unique sensitivity to the world inspired me to join this life-changing community."
+
       },
       "life_title": "Life and Volunteering",
       "life_text1": "Volunteer work is the altruistic expression of human connection with society. Volunteering is a drop in the vast ocean—the sum of small actions becomes an overwhelming force that seeks to change the enduring state of an unfamiliar reality.",
@@ -684,6 +685,28 @@
       }
     },
 
+    "contact_page": {
+      "title": "Contact Us",
+      "text": "If you have questions or need information about our volunteer opportunities, we’re here to help. Write to us and we’ll gladly guide you to find the perfect option for you.",
+      "location": "Lima, Peru",
+      "name": "First Name",
+      "name_holder": "Enter your first name",
+      "mail": "Email",
+      "mail_holder": "Enter an email address",
+      "number": "Phone Number",
+      "number_holder": "Enter a phone number",
+      "program": "Program of Interest",
+      "program_holder": "Select a program",
+      "program1": "International Volunteering",
+      "program2": "Volunteering in Peru",
+      "program3": "Host family",
+      "program4": "Receive volunteers in my project",
+      "message": "Message",
+      "message_holder": "Leave a message",
+      "success": "Message sent successfully",
+      "error": "Please fill in all the fields"
+    },
+
     "alt": {
       "language_change": "Cambiar idioma a español",
       "carousel_image": "Carousel image",
@@ -725,7 +748,8 @@
       "carousel": "Let's start",
       "volunteer_inter": "International Volunteering",
       "volunteer_nat": "Volunteering in Peru",
-      "contact": "Contact us"
+      "contact": "Contact us",
+      "send": "Send"
     }
   }
   

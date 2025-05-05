@@ -72,9 +72,9 @@
         "member1_role": "Director Administrativo",
         "member2_role": "Coordinadora de Programas",
         "member3_role": "Coordinadora Administrativa",
-        "member1_phrase": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum purus nec purus dignissim, consectetur rutrum nisl porttitor.",
+        "member1_phrase": "A lo largo de los años cada encuentro con una nueva cultura ha sido una puerta abierta al aprendizaje y a la expansión de mi visión, impulsándome a construir puentes donde otros ven barreras y a transformar la diversidad en una fuente de fuerza y creatividad.",
         "member2_phrase": "Viajar como voluntaria transformó mi vida en 2012, desde entonces acompaño a jóvenes y sus familias a vivir experiencias que conectan, enseñan y dejan huella en el mundo.",
-        "member3_phrase": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum purus nec purus dignissim, consectetur rutrum nisl porttitor."
+        "member3_phrase": "Mi compromiso con VIVOL nace de una experiencia muy especial: el viaje de nuestros hijos a India y Nepal. Al regresar, compartieron no solo sus vivencias, sino también el impacto que tuvo en su carácter. Ver cómo crecieron y desarrollaron una sensibilidad única hacia el mundo me motivó a unirme a esta comunidad que transforma vidas."
       },
       "life_title": "Vida y voluntariado",
       "life_text1": "El trabajo voluntario es la manifestación altruista que el ser humano tiene con la sociedad. El voluntariado es una gota en el basto océano, la suma de las pequeñas cosas se convierte en una fuerza abrumadora que busca cambiar el estado perenne de una realidad ajena.",
@@ -684,6 +684,28 @@
       }
     },
 
+    "contact_page": {
+      "title": "Contáctanos",
+      "text": "Si tienes preguntas o necesitas información sobre nuestras oportunidades de voluntariado, estamos aquí para ayudarte. Escríbenos y con gusto te orientaremos para que encuentres la opción perfecta para ti.",
+      "location": "Lima, Perú",
+      "name": "Nombre",
+      "name_holder": "Ingresa tu nombre",
+      "mail": "Correo de electrónico",
+      "mail_holder": "Ingresa un correo electrónico",
+      "number": "Número de teléfono",
+      "number_holder": "Ingresa un teléfono",
+      "program": "Programa de interés",
+      "program_holder": "Selecciona un programa",
+      "program1": "Voluntariado internacional",
+      "program2": "Voluntariado en Perú",
+      "program3": "Familia hospedera",
+      "program4": "Recibir voluntarios en mi proyecto",
+      "message": "Mensaje",
+      "message_holder": "Deja algun mensaje",
+      "success": "Mensaje enviado con éxito",
+      "error": "Por favor, completa todos los campos"
+    },
+
     "alt": {
       "language_change": "Change language to English",
       "carousel_image": "Imagen del carrusel",
@@ -725,6 +747,7 @@
       "carousel": "Empecemos",
       "volunteer_inter": "Voluntariado Internacional",
       "volunteer_nat": "Voluntariado en Perú",
-      "contact": "Contáctanos"
+      "contact": "Contáctanos",
+      "send": "Enviar"
     }
   }

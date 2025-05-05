@@ -1,0 +1,103 @@
+.contact-form {
+    @include flex($align: start, $gap: 20px);
+
+    &__input {
+        @include flex($align: start, $gap: 5px);
+        width: 100%;
+
+        input, select, textarea {
+            @include body-font($size: 16px, $color: $gray-dark);
+            background-color: #fff;
+            border-radius: 6px;
+            height: 40px;
+            width: 100%;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+            padding: 0 15px;
+
+            &::placeholder {
+                @include body-font($size: 16px, $color: $gray-placeholder);
+            }
+
+            &:focus {
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+                outline: none;
+            }
+        }
+
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+
+        &--wrapper {
+            position: relative;
+            width: 100%;
+    
+            .select-icon {
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                pointer-events: none;
+                color: $gray-dark;
+                width: 25px; 
+                height: 25px;
+            }
+        }
+
+        textarea {
+            height: 100px;
+            padding: 8px 15px;
+            resize: none;
+        }
+    }
+    
+    h4 {
+        @include body-font($size: 14px, $color: #fff);
+        line-height: 32px;
+        text-align: justify;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    button {
+        @include body-font($size: 18px, $weight: 500, $color: #fff);
+        position: relative;
+        color: $blue-tertiary;
+        background-color: #fff;
+        border: none;
+        border-radius: 100px;
+        min-width: 150px;
+        padding: 10px 24px; 
+        margin-top: 10px;
+        transition: all .2s;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 15px 8px rgba(0, 0, 0, 0.2); 
+        }
+    }
+}
+
+// Responsive small
+@include responsive(small) {
+    .contact-form {
+        &__input {
+            input, select, textarea {
+                padding: 0 10px;
+            }
+
+            textarea {
+                height: 200px;
+                padding: 8px 15px;
+            }
+
+            &--wrapper {
+                .select-icon {
+                    right: 10px;
+                }
+            }
+        }
+    }
+}

@@ -64,6 +64,7 @@
     @include responsive(small) {
         width: 100%;
         gap: 20px;
+        padding: 20px;
     }
 }
 

@@ -53,6 +53,8 @@ a:focus {
 @import './components/footer';
 @import './components/carousel';
 @import './components/slider';
+@import './components/contact-form';
+@import './components/toast';
 
 // Buttons
 @import './buttons/button';
@@ -88,6 +90,7 @@ a:focus {
 @import './pages/involve-page';
 @import './pages/family-page';
 @import './pages/project-page';
+@import './pages/contact-page';
 
 body {
 	background-color: $background-main; 

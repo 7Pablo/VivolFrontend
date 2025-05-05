@@ -98,8 +98,8 @@
     // Members
     &__members {
         position: relative;
-        height: 800px;
         width: 100%;
+        min-height: 100vh;
 
         h3, h2 {
             @include title-font($size: 28px, $weight: 500, $color: #fff);
@@ -118,7 +118,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%; 
+            min-height: 100vh;
             background: linear-gradient(to left, rgba($blue-main, 0.25), rgba($blue-main, 0.85));
             z-index: 1;
         }
@@ -204,8 +204,6 @@
         }
 
         &__members {
-            height: 1350px;
-
             &--cards {
                 max-width: 900px;
                 row-gap: 4vw !important;
@@ -281,8 +279,6 @@
         }
 
         &__members {
-            height: 1750px;
-
             h3 {
                 font-size: 26px;
             }
@@ -340,10 +336,6 @@
             &--image {
                 width: auto;
             }
-        }
-
-        &__members {
-            height: 1700px;
         }
     }
 
