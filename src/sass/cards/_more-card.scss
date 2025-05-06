@@ -3,7 +3,7 @@
     border-radius: 15px;
     background-color: #fff;
     width: 350px;
-    height: 400px;
+    height: 425px;
     overflow: hidden;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2); 
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -50,6 +50,7 @@
 
     &__body {
         font-size: 16px;
+        text-align: justify;
     }
 
     &__button {
@@ -72,7 +73,7 @@
 
     @include responsive(medium) {
         width: 325px;
-        height: 415px;
+        height: 450px;
     }
 
     @include responsive(smedium) {

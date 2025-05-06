@@ -21,14 +21,15 @@ export default function CircleCard({ icon, alt, text, color, route }) {
             style={{ border: `2px solid ${color}`}}
             onClick={handleRedirect}
         >
-            <Image 
-                src={icon}
-                alt={alt}
-                width={80}
-                height={80}
-                priority
-                className="circle-card__icon"
-            />
+            <div className="circle-card__icon">
+                <Image
+                    src={icon}
+                    alt={alt}
+                    width={80}
+                    height={80}
+                    priority
+                />
+            </div>
             <p>{text}</p>
         </div>
     );

@@ -106,7 +106,7 @@ export default async function InternationalPage(props) {
               trans.inter_page.tangibles.bullet8,
               trans.inter_page.tangibles.bullet9
             ]}
-            color="#00BF4C"
+            color="#85AF59"
           />
           <ProgramCard
             icon="/images/icons/heart.svg"
@@ -120,7 +120,7 @@ export default async function InternationalPage(props) {
               trans.inter_page.intangibles.bullet6,
               trans.inter_page.intangibles.bullet7
             ]}
-            color="#1683F0"
+            color="#1583F0"
           />
           <ProgramCard
             icon="/images/icons/x.svg"
@@ -189,7 +189,7 @@ export default async function InternationalPage(props) {
                   <ProcessCard
                     number="2"
                     text={trans.inter_page.steps.step2}
-                    color="#00BF4C"
+                    color="#85AF59"
                   />
                   <ProcessCard
                     number="3"
@@ -199,7 +199,7 @@ export default async function InternationalPage(props) {
                   <ProcessCard
                     number="4"
                     text={trans.inter_page.steps.step4}
-                    color="#FFDE59"
+                    color="#E1BD2A"
                   />
                   <ProcessCard
                     number="5"
@@ -231,7 +231,7 @@ export default async function InternationalPage(props) {
                   <ProcessCard
                     number="10"
                     text={trans.inter_page.steps.step10}
-                    color="#F016A6"
+                    color="#D53686"
                   />
                 </div>
               </div>

@@ -1,13 +1,15 @@
-import { League_Spartan, Poppins } from 'next/font/google';
+import { Varela_Round, Montserrat } from 'next/font/google';
 
-export const league_spartan = League_Spartan({
+export const varelaRound = Varela_Round({
     subsets: ['latin'],
-    weight: ['300', '400', '500', '700'],
-    variable: '--font-ls',
+    weight: ['400'],
+    variable: '--font-varela-round',
 });
 
-export const poppins = Poppins({
+export const montserrat = Montserrat({
     subsets: ['latin'],
     weight: ['300', '400', '500', '700'],
-    variable: '--font-p',
+    variable: '--font-montserrat',
 });
+
+

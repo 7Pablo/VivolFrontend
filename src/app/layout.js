@@ -1,5 +1,5 @@
 import '@/css/styles.css';
-import { league_spartan, poppins } from '../../public/fonts/fonts'; 
+import { varelaRound, montserrat } from '../../public/fonts/fonts';
 import { Provider } from "@/components/ui/provider";
 
 export default function RootLayout({ children, params }) {
@@ -8,7 +8,7 @@ export default function RootLayout({ children, params }) {
   return (
     <html 
       lang={lang} 
-      className={`${league_spartan.variable} ${poppins.variable}`}
+      className={`${varelaRound.variable} ${montserrat.variable}` }
       suppressHydrationWarning
     >
       <body>

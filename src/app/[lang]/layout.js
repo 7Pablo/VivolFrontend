@@ -9,7 +9,9 @@ export default async function LangLayout(props) {
   return (
     <div className='lang-layout'>
       <Navbar lang={lang} />
-      <main>{props.children}</main>
+        <main>
+          {props.children}
+        </main>
       <Footer lang={lang}/>
     </div>
   );

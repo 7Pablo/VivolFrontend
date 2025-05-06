@@ -18,7 +18,7 @@
         left: 0;
         width: 100%;
         height: 100%; 
-        background: linear-gradient(to left, rgba($blue-main, 0.25), rgba($blue-main, 0.85));
+        background: linear-gradient(to left, rgba($blue-main, 0.20), rgba($blue-main, 0.70));
         z-index: 10;
     }
 
@@ -42,8 +42,9 @@
             animation: moveInLeft 2s ease-out;
             
             h1 {
-                @include title-font($size: 80px, $weight: 500, $color: #fff);
+                @include title-font($size: 70px, $weight: 500, $color: #fff);
                 text-shadow: 0px 6px 5px rgba(0, 0, 0, 0.7);
+                line-height: 80px;
                 max-width: 500px;
             }
         }
@@ -57,12 +58,14 @@
         }
 
         &--text {
+            max-width: 380px;
+
             h1 {
-                @include logo-font($size: 130px, $color: #fff);
+                @include logo-font($size: 124px, $color: #fff);
             }
 
             h2 {
-                @include logo-font($size: 45px, $weight: 400, $color: #fff);
+                @include logo-font($size: 41px, $weight: 400, $color: #fff);
             }
         }
     }
@@ -73,7 +76,7 @@
     
             &-left {
                 h1 {
-                    font-size: 60px;
+                    font-size: 50px;
                     max-width: 350px;
                     line-height: 60px;
                 }
@@ -88,11 +91,11 @@
     
             &--text {
                 h1 {
-                    font-size: 100px;
+                    font-size: 97px;
                 }
     
                 h2 {
-                    font-size: 35px;
+                    font-size: 32px;
                 }
             }
         }
@@ -119,7 +122,7 @@
                 width: 100%;
                 
                 h1 {
-                    font-size: 90px;
+                    font-size: 80px;
                     max-width: 100%;
                     line-height: 90px;
                 }
@@ -141,7 +144,7 @@
             &-left {
                 h1 {
                     font-size: 60px;
-                    line-height: 65px;
+                    line-height: 70px;
                 }
             }
         }
@@ -159,7 +162,7 @@
                 }
     
                 h2 {
-                    font-size: 26px;
+                    font-size: 25px;
                 }
             }
         }
@@ -180,8 +183,8 @@
             
             &-left {
                 h1 {
-                    font-size: 50px;
-                    line-height: 50px;
+                    font-size: 42px;
+                    line-height: 52px;
                 }
             }
         }
@@ -199,7 +202,7 @@
                 }
     
                 h2 {
-                    font-size: 20px;
+                    font-size: 19px;
                     line-height: 20px;
                 }
             }

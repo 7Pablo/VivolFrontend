@@ -13,23 +13,8 @@
     }
 
     &__logo {
-        @include flex($direction: row, $gap: 8px);
-
-        &--text {
-            @include flex();
-            text-align: center;
-
-            &-title {
-                @include logo-font($size: 30px);
-                letter-spacing: 1px;
-            }
-
-            &-subtitle {
-                @include logo-font($color: $gray-logo, $weight: 400, $size: 10.5px);
-                white-space: nowrap;
-                width: 100%;
-            }
-        }
+        @include flex();
+        cursor: pointer;
     }
 
     &__items {
@@ -70,24 +55,6 @@
     @include responsive(medium) {
         gap: 30px;
 
-        &__logo {
-    
-            &--text {
-                &-title {
-                    font-size: 25px;
-                }
-    
-                &-subtitle {
-                    font-size: 9px;
-                }
-            }
-
-            &--world {
-                width: 40px !important;
-                height: 40px !important;
-            }
-        }
-
         &__items {
             @include flex($direction: row, $justify: start, $gap: 40px);
 
@@ -106,29 +73,20 @@
             justify-content: space-between;
         }
 
-        &__logo {
-            &--text {
-                &-title {
-                    font-size: 30px;
-                }
-    
-                &-subtitle {
-                    font-size: 10.5px;
-                }
-            }
-
-            &--world {
-                width: 45px !important;
-                height: 45px !important;
-            }
-        }
-
         &__items {
             display: none;
         }
 
         &__language {
             display: none;
+        }
+    }
+
+    @include responsive(small) {
+        &__logo {
+            img {
+                width: 130px !important;
+            }
         }
     }
 }

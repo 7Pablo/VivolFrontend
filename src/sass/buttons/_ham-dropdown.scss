@@ -2,29 +2,29 @@
     display: none;
 
     &__button {
+        .menu-icon {
+            transition: transform 0.3s ease;
+        }
+    
+        &.is-open .menu-icon {
+            transform: rotate(90deg);
+        }
+
         &:focus {
             outline: none;
         }
     }
 
-    &__icon {
-        color: $blue-main;
-    }
-
     &__content {
         @include flex($align: start, $gap: 10px);
-        background-color: $blue-main;
+        background-color: #fff;
         margin-top: 25px;
         border-radius: 12px;
         padding: 20px 50px 25px 25px;
         width: 225px;
 
         .language-button {
-            box-shadow: none;
-        }
-
-        .language-button__text {
-            color: $gray-dark;
+            box-shadow: 0 3px 0px rgba(0,0,0,0.2);
         }
     }
 
@@ -37,7 +37,7 @@
         }
 
         .chakra-menu__item {
-            @include body-font($color: #fff, $size: 18px, $weight: 300);
+            @include body-font($color: $blue-main, $size: 18px, $weight: 300);
             padding: 8px 0px;
             background-color: transparent;
 
@@ -61,22 +61,16 @@
 
     @include responsive(smedium) {
         display: block;
-    }
 
-    @include responsive(small) {
         &__content {
-            width: 90vw;
-            gap: 15px;
-            padding-bottom: 30px;
-
             .language-button {
                 transition: transform 0.3s ease-out;
                 width: 150px;
-                height: 40px;
+                height: 35px;
 
                 &__icon {
-                    height: 40px;
-                    width: 40px;
+                    height: 35px;
+                    width: 35px;
                 }
 
                 &__text {
@@ -89,6 +83,14 @@
                     transform: translateX(10px);
                 }
             }
+        }
+    }
+
+    @include responsive(small) {
+        &__content {
+            width: 90vw;
+            gap: 15px;
+            padding-bottom: 30px;
         }
 
         &__item {

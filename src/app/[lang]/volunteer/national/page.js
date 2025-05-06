@@ -48,13 +48,13 @@ export default async function NationalPage(props) {
               icon="/images/icons/pin.svg"
               title={trans.national_page.capital_title}
               text={trans.national_page.capital_text}
-              color="#00BF4C"
+              color="#85AF59"
             />
             <SmallCard
               icon="/images/icons/hollow-world.svg"
               title={trans.national_page.language_title}
               text={trans.national_page.language_text}
-              color="#B490F0"
+              color="#D53686"
             />
           </div>
           <div className="national-page__info--cards-bottom">
@@ -62,13 +62,13 @@ export default async function NationalPage(props) {
               icon="/images/icons/bank.svg"
               title={trans.national_page.government_title}
               text={trans.national_page.government_text}
-              color="#FFDE59"
+              color="#E1BD2A"
             />
             <SmallCard
               icon="/images/icons/coin.svg"
               title={trans.national_page.currency_title}
               text={trans.national_page.currency_text}
-              color="#1683F0"
+              color="#1583F0"
             />
           </div>
         </div>

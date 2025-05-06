@@ -73,17 +73,17 @@ export default function Carousel({ imageLinks }) {
                     </div>
                     <div className='carousel__content-right'>
                         <Image
-                            src="/images/icons/logo-blanco.svg"
+                            src="/images/icons/logo-blanco.png"
                             alt="Logo de Vivol, Vida y Voluntariado"
-                            width={45}
-                            height={45}
+                            width={1000}
+                            height={1000}
                             priority
                             className="carousel__logo--world"
                         />
-                            <div className="carousel__logo--text">
-                                <h1 className="carousel__logo--text-title">VIVOL</h1>
-                                <h2 className="carousel__logo--text-subtitle">Vida y Voluntariado</h2>
-                            </div>
+                        <div className="carousel__logo--text">
+                            <h1 className="carousel__logo--text-title">VIVOL</h1>
+                            <h2 className="carousel__logo--text-subtitle">Vida y Voluntariado</h2>
+                        </div>
                     </div>
                 </div>
             </div>

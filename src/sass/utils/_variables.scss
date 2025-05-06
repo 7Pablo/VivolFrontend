@@ -1,12 +1,12 @@
 //Colors
-$blue-main: #355FB5;
-$blue-secondary: #2087C9;
-$blue-tertiary: #1683F0;
+$blue-main: #031472;
+$blue-secondary: #355FB5;
+$blue-tertiary: #1583F0;
 $blue-quarternary: #2C4B8C;
 $blue-dark: #17294F;
-$purple-main: #B490F0;
-$green-main: #00BF63;
-$yellow-main: #FFDE59;
+$purple-main: #D53686;
+$green-main: #85AF59;
+$yellow-main: #E1BD2A;
 $gray-dark: #41424A;
 $gray-light: #747783;
 $gray-placeholder: #B7B7B7;
@@ -16,6 +16,5 @@ $background-secondary: #f6f6f6;
 $cream-main: #f7ede3;
 
 // Fonts
-$font-title: var(--font-ls), sans-serif;
-$font-body: var(--font-p), sans-serif;
-$font-logo: 'Aileron', sans-serif;
+$font-page: var(--font-montserrat), sans-serif;
+$font-logo: var(--font-varela-round), sans-serif;

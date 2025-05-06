@@ -3,9 +3,9 @@
 <rect x="1" width="100" height="100" fill="url(#pattern0_875_41)"/>
 </mask>
 <g mask="url(#mask0_875_41)">
-<rect x="1" width="100" height="100" fill="#1683F0"/>
+<rect x="1" width="100" height="100" fill="#1583F0"/>
 </g>
-<path d="M97 50C97 75.3677 76.2189 96 50.5 96C24.7811 96 4 75.3677 4 50C4 24.6323 24.7811 4 50.5 4C76.2189 4 97 24.6323 97 50Z" stroke="#1363B3" stroke-width="8"/>
+<path d="M50.5 4C76.2189 4 97 24.6323 97 50C97 75.3677 76.2189 96 50.5 96C24.7811 96 4 75.3677 4 50C4 24.6323 24.7811 4 50.5 4Z" stroke="#355FB5" stroke-width="8"/>
 <defs>
 <pattern id="pattern0_875_41" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_875_41" transform="scale(0.00195312)"/>

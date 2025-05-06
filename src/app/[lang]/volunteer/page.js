@@ -133,7 +133,7 @@ export default async function VolunteerPage(props) {
             icon="/images/icons/house.svg"
             title={trans.volunteer_page.benefits_host_title}
             text={trans.volunteer_page.benefits_host_text}
-            color="#00BF4C"
+            color="#85AF59"
           />
           <BenefitCard
             icon="/images/icons/food.svg"
@@ -145,13 +145,13 @@ export default async function VolunteerPage(props) {
             icon="/images/icons/message.svg"
             title={trans.volunteer_page.benefits_talk_title}
             text={trans.volunteer_page.benefits_talk_text}
-            color="#FFDE59"
+            color="#E1BD2A"
           />
           <BenefitCard
             icon="/images/icons/world.svg"
             title={trans.volunteer_page.benefits_world_title}
             text={trans.volunteer_page.benefits_world_text}
-            color="#1683F0"
+            color="#1583F0"
           />
           <BenefitCard
             icon="/images/icons/truck.svg"
@@ -163,7 +163,7 @@ export default async function VolunteerPage(props) {
             icon="/images/icons/book.svg"
             title={trans.volunteer_page.benefits_book_title}
             text={trans.volunteer_page.benefits_book_text}
-            color="#B490F0"
+            color="#D53686"
           />
         </div>
         <Button 

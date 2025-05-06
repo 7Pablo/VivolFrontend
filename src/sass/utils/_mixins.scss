@@ -1,16 +1,17 @@
 @mixin body-font($size: 12px, $weight: 400, $color: $gray-light) {
-  font-family: $font-body;
+  font-family: $font-page;
   font-size: $size;
   font-weight: $weight;
   color: $color;
+  line-height: calc($size + 10px);
 }
 
 @mixin title-font($size: 18px, $weight: 600, $color: $gray-light) {
-  font-family: $font-title;
+  font-family: $font-page;
   font-size: $size;
   font-weight: $weight;
   color: $color;
-  line-height: $size;
+  line-height: calc($size + 10px);
 }
 
 @mixin logo-font($size: 20px, $weight: 700, $color: $blue-main) {

@@ -59,14 +59,14 @@ export default async function AboutPage(props) {
             alt="target icon"
             title={trans.about_page.mission}
             text={trans.about_page.mission_text}
-            color="#00BF4C"
+            color="#85AF59"
           />
           <OvalCard 
             icon="/images/icons/eye.svg"
             alt="eye icon"
             title={trans.about_page.vision}
             text={trans.about_page.vision_text}
-            color="#B490F0"
+            color="#D53686"
           />
           <OvalCard 
             icon="/images/icons/diamond.svg"
@@ -81,7 +81,7 @@ export default async function AboutPage(props) {
               trans.about_page.values.bullet6,
               trans.about_page.values.bullet7
             ]}
-            color="#FFDE59"
+            color="#E1BD2A"
           />
         </div>
 
@@ -113,11 +113,12 @@ export default async function AboutPage(props) {
                   phrase={trans.about_page.members.member2_phrase}
                 />
                 <MemberCard 
-                  src="/images/photos/anonymous.jpg"
+                  src="/images/photos/member3.jpg"
                   alt="Flor María Merlo"
                   name="Flor María Merlo"
                   role={trans.about_page.members.member3_role}
                   phrase={trans.about_page.members.member3_phrase}
+                  position="50% 20%"
                 />
               </div>
             </div>

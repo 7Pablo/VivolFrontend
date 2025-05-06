@@ -21,23 +21,16 @@ export default async function HomePage(props) {
 
   const testimonials = [
     {
-      imgSrc: "/images/photos/vivol-test1.jpg",
+      imgSrc: "/images/photos/vivol-testimonio1.jpg",
       imgAlt: trans.alt.testimonials_img,
-      name: "María Inés Salazar",
+      name: "Juan Pablo Armendáriz", 
       body: trans.home_page.testimonial1,
-      position: "50% 50%"
-    },
-    {
-      imgSrc: "/images/photos/vivol-test2.jpg",
-      imgAlt: trans.alt.testimonials_img,
-      name: "Verónica Camarero",
-      body: trans.home_page.testimonial2,
       position: "50% 50%"
     },
     {
       imgSrc: "/images/photos/vivol-test3.jpeg",
       imgAlt: trans.alt.testimonials_img,
-      name: "N/a",
+      name: "Laura Martin",
       body: trans.home_page.testimonial3,
       position: "50% 100%"
     },
@@ -59,7 +52,7 @@ export default async function HomePage(props) {
             imgText={trans.home_page.more_image1}
             title={trans.home_page.more_title1}
             bodyText={trans.home_page.more_body1}
-            color="#00BF4C"
+            color="#85AF59"
             route="volunteer"
             imgPosition="50% 32%"
           />
@@ -69,7 +62,7 @@ export default async function HomePage(props) {
             imgText={trans.home_page.more_image2}
             title={trans.home_page.more_title2}
             bodyText={trans.home_page.more_body2}
-            color="#B490F0"
+            color="#D53686"
             route="involve/family"
             imgPosition="50% 50%"
           />
@@ -79,7 +72,7 @@ export default async function HomePage(props) {
             imgText={trans.home_page.more_image3}
             title={trans.home_page.more_title3}
             bodyText={trans.home_page.more_body3}
-            color="#1683F0"
+            color="#1583F0"
             route="involve/project"
             imgPosition="50% 30%"
           />
@@ -115,23 +108,23 @@ export default async function HomePage(props) {
         <h3>{trans.home_page.title}</h3>
         <div className="home-page__volunteering--cards">
           <CircleCard
-            icon="/images/icons/bulb.svg"
+            icon="/images/icons/group.png"
             alt="Bulb icon"
             text={trans.home_page.start_now}
-            color="#00BF4C"
+            color="#85AF59"
             route="volunteer"
           />
           <CircleCard
-            icon="/images/icons/docs.svg"
+            icon="/images/icons/docs.png"
             alt="Documents icon"
             text={trans.home_page.documents}
-            color="#B490F0"
+            color="#D53686"
           />
           <CircleCard
-            icon="/images/icons/plane.svg"
+            icon="/images/icons/travel.png"
             alt="Plane icon"
             text={trans.home_page.destinations}
-            color="#1683F0"
+            color="#1583F0"
             route="volunteer/international"
           />
         </div>

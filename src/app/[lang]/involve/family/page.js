@@ -93,25 +93,25 @@ export default async function FamilyPage(props) {
           <BenefitCard 
             icon="/images/icons/culture.svg"
             title={trans.family_page.benefits_language}
-            color="#00BF4C"
+            color="#85AF59"
             short={true}
           />
           <BenefitCard 
             icon="/images/icons/brain.svg"
             title={trans.family_page.benefits_culture}
-            color="#FFDE59"
+            color="#E1BD2A"
             short={true}
           />
           <BenefitCard 
             icon="/images/icons/perspective.svg"
             title={trans.family_page.benefits_perspective}
-            color="#1683F0"
+            color="#1583F0"
             short={true}
           />
           <BenefitCard 
             icon="/images/icons/holding.svg"
             title={trans.family_page.benefits_learning}
-            color="#B490F0"
+            color="#D53686"
             short={true}
           />
         </div>

@@ -3,7 +3,7 @@
     @include flex();
     margin-top: auto;
     padding: 50px 100px 25px 100px;
-    background: linear-gradient(to bottom, $blue-main, $blue-dark 80%);
+    background: linear-gradient(to bottom, $blue-secondary, $blue-dark 80%);
     
     &__top {
         @include flex($direction: row, $justify: space-between, $align: start, $gap: 50px);

@@ -29,7 +29,7 @@
 				@include title-font($size: 80px, $weight: 500, $color: #fff);
 				text-shadow: 0px 6px 5px rgba(0, 0, 0, 0.7);
                 width: 100%;
-                max-width: 700px;
+                max-width: 900px;
                 text-align: start;
 			}
 
@@ -52,7 +52,7 @@
             position: relative;
             width: 350px;
             height: 250px;
-            box-shadow: -18px 18px 0px $blue-secondary;
+            box-shadow: -18px 18px 0px $blue-tertiary;
             border-radius: 15px;
             overflow: hidden;
             flex-shrink: 0;
@@ -107,7 +107,7 @@
             }
 
             li, p {
-                @include body-font($size: 18px);
+                @include body-font($size: 18px, $color: $gray-dark);
                 line-height: 34px;
                 text-align: justify;
             }
@@ -245,7 +245,7 @@
             padding: 100px 40px;
 
             &--image {
-                box-shadow: -14px 14px 0px $blue-secondary;
+                box-shadow: -14px 14px 0px $blue-tertiary;
             }
 
             &--text {
