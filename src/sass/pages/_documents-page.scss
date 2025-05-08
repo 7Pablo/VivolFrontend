@@ -1,0 +1,89 @@
+.documents-page {
+    @include flex($gap: 40px);
+    padding: 80px 50px;
+
+    h3 {
+        @include title-font($size: 45px, $color: $blue-tertiary);
+        width: 100%;
+        max-width: 1440px;
+    }
+
+    &__content {
+        @include flex($gap: 30px);
+        position: relative;
+        width: 100%;
+        max-width: 1440px;
+        min-height: 600px;
+        box-shadow: 0 6px 6px rgba(0,0,0,0.25);
+        border-radius: 10px 80px 10px 80px;
+        overflow: hidden;
+    }
+
+    &__cards {
+        @include flex($direction: row, $justify: space-between);
+        position: relative;
+        width: 100%;
+        max-width: 850px;
+    }
+}
+
+// Responsive medium
+@include responsive(medium) {
+    .documents-page {
+        padding: 80px 40px;
+
+        h3 {
+            font-size: 42px;
+            max-width: 900px;
+        }
+
+        &__content {
+            border-radius: 20px;
+            max-width: 900px;
+        }
+
+        &__cards {
+            @include flex($gap: 100px);
+            margin: 100px 0;
+        }
+    }
+}
+
+// Responsive smedium
+@include responsive(smedium) {
+    .documents-page {
+        padding: 60px 0 0;
+
+        &__content {
+            border-radius: 0;
+        }
+
+        h3 {
+            font-size: 40px;
+            line-height: 40px;
+            padding: 0 40px;
+        }
+
+        &__cards {
+            margin: 100px 40px;
+            gap: 120px;
+        }
+    }
+}
+
+// Responsive small
+@include responsive(small) {
+    .documents-page {
+        padding: 50px 0 0;
+        
+        h3 {
+            font-size: 34px;
+            padding: 0 30px;
+            text-align: center;
+        }
+
+        &__cards {
+            margin: 100px 30px;
+        }
+    }
+}

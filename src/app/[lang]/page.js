@@ -119,6 +119,7 @@ export default async function HomePage(props) {
             alt="Documents icon"
             text={trans.home_page.documents}
             color="#D53686"
+            route="documents"
           />
           <CircleCard
             icon="/images/icons/travel.png"

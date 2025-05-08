@@ -1,0 +1,302 @@
+.book-page {
+    @include flex();
+}
+
+.book-form {
+    @include flex($align: start, $gap: 30px);
+    width: 100%;
+    max-width: 1440px;
+    padding: 80px 50px;
+
+    > * {
+        animation: fadeInUp 0.4s ease-out forwards;
+        opacity: 0;
+    }
+
+    > *:nth-child(1) {animation-delay: 0.2s;}
+    > *:nth-child(2) {animation-delay: 0.4s;}
+    > *:nth-child(3) {animation-delay: 0.6s;}
+    > *:nth-child(4) {animation-delay: 0.8s;}
+      
+
+    h2 {
+        @include title-font($size: 45px, $color: $blue-tertiary);
+    }
+
+    h3 {
+        @include title-font($size: 20px, $weight: 500, $color: #fff);
+    }
+
+    h4, h5 {
+        @include body-font($size: 14px, $color: #fff);
+        line-height: 32px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    &__content {
+        @include flex($align: start, $gap: 30px);
+        width: 100%;
+        padding: 0 30px 40px;
+    }
+
+    &__input {
+        @include flex($align: start, $gap: 5px);
+        width: 100%;
+
+        input, select, textarea {
+            @include body-font($size: 16px, $color: $gray-dark);
+            background-color: #fff;
+            border-radius: 6px;
+            height: 40px;
+            width: 100%;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+            padding: 0 15px;
+
+            &::placeholder {
+                @include body-font($size: 16px, $color: $gray-placeholder);
+            }
+
+            &:focus {
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+                outline: none;
+            }
+        }
+
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+
+        &--wrapper {
+            position: relative;
+            width: 100%;
+    
+            .select-icon {
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                pointer-events: none;
+                color: $gray-dark;
+                width: 25px; 
+                height: 25px;
+            }
+        }
+
+        textarea {
+            height: 100px;
+            padding: 8px 15px;
+            resize: none;
+        }
+    }
+
+    &__radio {
+        @include flex($direction: row, $justify: start, $align: start, $gap: 30px);
+        width: 100%;
+
+        &--buttons {
+            @include flex($direction: row, $justify: start, $align: start, $gap: 30px);
+        }
+
+        &--option {
+            @include flex($direction: row, $gap: 10px);
+
+            input[type="radio"] {
+                appearance: none;
+                width: 20px;
+                height: 20px;
+                border: 2px solid $gray-light;
+                border-radius: 50%;
+                background-color: white;
+                cursor: pointer;
+                position: relative;
+                transition: all 0.2s ease;
+              
+                &:checked {
+                    background-color: $blue-main;
+                    border-color: $blue-main;
+                }
+              
+                &:checked::after {
+                  content: "";
+                  position: absolute;
+                  top: 4px;
+                  left: 4px;
+                  width: 8px;
+                  height: 8px;
+                  background-color: white;
+                  border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    button {
+        @include body-font($size: 18px, $weight: 500, $color: #fff);
+        position: relative;
+        color: $blue-tertiary;
+        background-color: #fff;
+        border: none;
+        border-radius: 100px;
+        min-width: 150px;
+        padding: 10px 24px; 
+        margin-top: 10px;
+        transition: all .2s;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 15px 8px rgba(0, 0, 0, 0.2); 
+        }
+    }
+
+    &__personal, &__contact, &__complaint {
+        @include flex($align: start, $gap: 30px);
+        box-shadow: 0 8px 4px rgba(0,0,0,0.25);
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 20px;
+
+        h3 {
+            background-color: rgba(0,0,0,0.2);
+            border-radius: 20px 20px 0 0;
+            padding: 20px 30px;
+            width: 100%;
+        }
+    }
+
+    &__personal {
+        background-color: $blue-secondary;
+
+        &--middle, &--bottom {
+            @include flex($direction: row, $align: space-between, $gap: 50px);
+            width: 100%;
+        }
+    }
+
+    &__contact {
+        background-color: $green-main;
+
+        &--top, &--bottom {
+            @include flex($direction: row, $align: space-between, $gap: 50px);
+            width: 100%;
+        }
+    }
+
+    &__complaint {
+        background-color: $yellow-main;
+
+        &--top, &--bottom {
+            @include flex($direction: row, $align: space-between, $gap: 50px);
+            width: 100%;
+        }
+    }
+}
+
+// Responsive medium 
+@include responsive(medium) {
+    .book-form {
+        max-width: 700px;
+        padding: 80px 40px;
+        
+        h2 {
+            font-size: 42px;
+        }
+
+        &__content {
+            gap: 20px;
+        }
+
+        &__personal {
+            gap: 20px;
+
+            &--middle, &--bottom {
+                @include flex($gap: 20px);
+            }
+        }
+
+        &__contact {
+            gap: 20px;
+    
+            &--top, &--bottom {
+                @include flex($gap: 20px);
+            }
+        }
+    }
+}
+
+// Responsive smedium 
+@include responsive(smedium) {
+    .book-form {
+        padding: 60px 40px;
+
+        h2 {
+            font-size: 38px;
+            line-height: 38px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        &__input {
+            input, select, textarea {
+                font-size: 14px;
+
+                &::placeholder {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+// Responsive small
+@include responsive(small) {
+    .book-form {
+        padding: 60px 30px;
+
+        h2 {
+            font-size: 34px;
+        }
+
+        h4, h5 {
+            line-height: 20px;
+            margin-bottom: 5px;
+        }
+
+        &__input {
+            input, select, textarea {
+                padding: 0 10px;
+            }
+
+            textarea {
+                height: 200px;
+                padding: 8px 15px;
+            }
+
+            &--wrapper {
+                .select-icon {
+                    right: 10px;
+                }
+            }
+        }
+
+        &__radio {
+            @include flex($justify: start, $align: start, $gap: 10px);
+        }
+    }
+}
+
+// Animation
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}

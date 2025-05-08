@@ -62,6 +62,7 @@
 
             h1 {
                 @include logo-font($size: 124px, $color: #fff);
+                line-height: 124px;
             }
 
             h2 {
@@ -92,6 +93,7 @@
             &--text {
                 h1 {
                     font-size: 97px;
+                    line-height: 80px;
                 }
     
                 h2 {

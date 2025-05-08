@@ -80,6 +80,7 @@ a:focus {
 @import './cards/process-card';
 @import './cards/country-card';
 @import './cards/select-card';
+@import './cards/pin-card';
 
 // Pages 
 @import './pages/home-page';
@@ -91,6 +92,8 @@ a:focus {
 @import './pages/family-page';
 @import './pages/project-page';
 @import './pages/contact-page';
+@import './pages/book-page';
+@import './pages/documents-page';
 
 body {
 	background-color: $background-main; 

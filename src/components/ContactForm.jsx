@@ -6,7 +6,7 @@ import { ChevronDown } from 'lucide-react';
 import Toast from "./Toast";
 
 export default function ContactForm({ data, buttonText }) {
-     // Form data 
+    // Form data 
     const [form, setForm] = useState({
         name: "",
         email: "",
@@ -35,9 +35,8 @@ export default function ContactForm({ data, buttonText }) {
             setToastMessage(data.error || "Please fill in all fields");
             return;
         }
-
         setToastMessage(data.success || "Message sent successfully");
-
+        console.log(form);
     }
     
     return (
@@ -99,11 +98,11 @@ export default function ContactForm({ data, buttonText }) {
                             onChange={handleChange}
                             required
                         >
-                        <option value="">{data.program_holder}</option>
-                        <option value="inter">{data.program1}</option>
-                        <option value="national">{data.program2}</option>
-                        <option value="host">{data.program3}</option>
-                        <option value="project">{data.program4}</option>
+                            <option value="">{data.program_holder}</option>
+                            <option value={data.program1}>{data.program1}</option>
+                            <option value={data.program2}>{data.program2}</option>
+                            <option value={data.program3}>{data.program3}</option>
+                            <option value={data.program4}>{data.program4}</option>
                         </select>
                         <ChevronDown className="select-icon" />
                     </div>

@@ -4,7 +4,7 @@
 import { usePathname } from "next/navigation"; 
 import Link from "next/link";
 
-export default function FooterItems({ footItems }) {    
+export default function FooterItems({ footItems, creditsLabel }) {    
     const pathname = usePathname(); 
     const lang = pathname.startsWith("/en") ? "en" : "es"; 
 
@@ -19,6 +19,9 @@ export default function FooterItems({ footItems }) {
               </Link>
             </li>
           ))}
+          <li>
+              {creditsLabel}
+          </li>
         </ul>
       );
 }

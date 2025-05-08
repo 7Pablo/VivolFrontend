@@ -17,6 +17,8 @@ export default async function Footer({ lang }) {
         { label: trans.footer.national, href: "/volunteer/national" },
         { label: trans.footer.family, href: "/involve/family" },
         { label: trans.footer.project, href: "/involve/project" },
+        { label: trans.footer.book, href: "/book" },
+        { label: trans.footer.docs, href: "/documents" },
     ];
 
     return (
@@ -28,7 +30,10 @@ export default async function Footer({ lang }) {
                 </div>
                 <div className="footer__nav">
                     <h2>{trans.footer.links_title}</h2>
-                    <FooterItems footItems={footItems}/>
+                    <FooterItems 
+                        footItems={footItems} 
+                        creditsLabel={trans.footer.credits}
+                    />
                 </div>
                 <div className="footer__contact">
                     <h2>{trans.footer.contact}</h2>
