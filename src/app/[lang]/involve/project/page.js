@@ -120,3 +120,10 @@ export default async function ProjectPage(props) {
     </div>
   );
 }
+
+export async function generateStaticParams() {
+  return [
+    { lang: 'en' },
+    { lang: 'es' },
+  ];
+}

@@ -170,3 +170,10 @@ export default async function AboutPage(props) {
       </div>
     );
 }
+
+export async function generateStaticParams() {
+  return [
+    { lang: 'en' },
+    { lang: 'es' },
+  ];
+}

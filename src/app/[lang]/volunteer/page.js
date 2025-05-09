@@ -168,9 +168,17 @@ export default async function VolunteerPage(props) {
         </div>
         <Button 
           route="contact"
-          children={trans.button.carousel}
-        />
+        >
+          {trans.button.carousel}
+        </Button>
       </div>
     </div>
   );
+}
+
+export async function generateStaticParams() {
+  return [
+    { lang: 'en' },
+    { lang: 'es' },
+  ];
 }

@@ -127,12 +127,20 @@ export default async function FamilyPage(props) {
             <Button 
               type='secondary'
               route="contact"
-              children={trans.button.contact_simple}
-            />
+            >
+              {trans.button.contact_simple}
+            </Button>
           </div>
         </div>
       </div>
 
     </div>
   );
+}
+
+export async function generateStaticParams() {
+  return [
+    { lang: 'en' },
+    { lang: 'es' },
+  ];
 }

@@ -17,3 +17,10 @@ export default async function BookPage(props) {
         </div>
     );
 }
+
+export async function generateStaticParams() {
+  return [
+    { lang: 'en' },
+    { lang: 'es' },
+  ];
+}

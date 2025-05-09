@@ -311,3 +311,10 @@ export default async function InternationalPage(props) {
     </div>
   );
 }
+
+export async function generateStaticParams() {
+  return [
+    { lang: 'en' },
+    { lang: 'es' },
+  ];
+}

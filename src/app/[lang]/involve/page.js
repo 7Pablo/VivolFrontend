@@ -46,3 +46,10 @@ export default async function InvolvePage(props) {
     </div>
   );
 }
+
+export async function generateStaticParams() {
+  return [
+    { lang: 'en' },
+    { lang: 'es' },
+  ];
+}

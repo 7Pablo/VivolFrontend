@@ -181,3 +181,10 @@ export default async function HomePage(props) {
     </div>
   );
 }
+
+export async function generateStaticParams() {
+  return [
+    { lang: 'en' },
+    { lang: 'es' },
+  ];
+}
