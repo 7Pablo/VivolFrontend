@@ -1,7 +1,7 @@
 .program-card {
     @include flex($direction: row, $justify: start);
     width: fit-content;
-    height: 400px;
+    height: 500px;
     position: relative;
     background-color: #fff;
     border-radius: 50px;
@@ -34,7 +34,7 @@
 
     li {
         @include body-font($size: 16px);
-        line-height: 35px;
+        line-height: 32px;
     }
 
     &__image {  
@@ -104,8 +104,10 @@
         padding: 30px 30px 40px;
 
         &__title {
+            margin-top: 80px;
+
             h3 {
-                $size: 24px;
+                font-size: 24px;
                 line-height: 32px;
             }
         }

@@ -127,7 +127,7 @@ export default async function FamilyPage(props) {
             <Button 
               type='secondary'
               route="contact"
-              children={trans.button.contact}
+              children={trans.button.contact_simple}
             />
           </div>
         </div>

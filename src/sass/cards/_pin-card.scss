@@ -2,8 +2,8 @@
     @include flex($gap: 30px);
     position: relative;
     width: 100%;
-    max-width: 350px;
-    padding: 30px;
+    max-width: 300px;
+    padding: 20px;
     border-radius: 20px;
     box-shadow: 0 8px 4px rgba(0,0,0,0.3);
     transform-origin: top center;
@@ -14,8 +14,9 @@
     }
 
     h4 {
-        @include body-font($size: 24px, $weight: 500, $color: #fff);
+        @include body-font($size: 22px, $weight: 500, $color: #fff);
         text-align: center;
+        padding-bottom: 10px;
     }
 
     &__image {
@@ -28,14 +29,27 @@
 
     &__pin {
         position: absolute;
-        top: -65px; 
+        top: -70px; 
         left: 50%;
         z-index: 2;
         filter: drop-shadow(-4px 6px 6px rgba(0, 0, 0, 0.4));
         transform: scaleX(-1) translateX(100%);
         opacity: 0;
-        animation: dropPin 0.3s ease-out forwards;
-        animation-delay: 0.5s;
+    }
+
+    &:nth-child(1) .pin-card__pin {
+        animation: dropPin 0.6s ease-out forwards;
+        animation-delay: 0.2s;
+    }
+    
+    &:nth-child(2) .pin-card__pin {
+        animation: dropPin 0.6s ease-out forwards;
+        animation-delay: 0.4s;
+    }
+    
+    &:nth-child(3) .pin-card__pin {
+        animation: dropPin 0.6s ease-out forwards;
+        animation-delay: 0.6s;
     }
 }
 

@@ -33,6 +33,12 @@ export default async function BookPage(props) {
                         color="#85AF59"
                         link="https://www.canva.com/design/DAGiG0Jd6eM/R1GALqhZF-qsTWjkQuIcAA/view?utm_content=DAGiG0Jd6eM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h73cb9226ad"
                     />
+                    <PinCard
+                        icon="/images/icons/faq.png"
+                        text={trans.documents_page.faq}
+                        color="#D53686"
+                        link="https://www.canva.com/design/DAGiG0Jd6eM/R1GALqhZF-qsTWjkQuIcAA/view?utm_content=DAGiG0Jd6eM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h73cb9226ad"
+                    />
                 </div>
             </div>
         </div>

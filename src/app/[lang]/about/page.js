@@ -52,6 +52,30 @@ export default async function AboutPage(props) {
           />
         </div>
 
+        {/* Quote */}
+        <div className="home-page__quote">
+          <div className="home-page__quote--fade">
+            <Image
+              src="/images/photos/papel.jpg"
+              alt={trans.alt.quote1}
+              layout="fill"
+              objectFit="cover"
+              quality={100}
+            />
+          </div>
+          <div className="home-page__quote--content">
+            <Image
+                src='/images/icons/quotes.svg'
+                alt="Quote icon"
+                width={50}
+                height={50}
+                className="home-page__quote--icon"
+            />
+            <h3>{trans.home_page.quote}</h3>
+            <p>— Audrey Hepburn</p>
+          </div>
+        </div>
+
         {/* Philosophy */}
         <div className="about-page__philosophy">
           <OvalCard 

@@ -24,17 +24,18 @@
 
     "home_page": {
       "title": "International Volunteering",
+      "slogan": "Explore, Learn, Transform!",
       "get_involved" : "How to get involved?",
       "learn_more": "Learn more",
       "more_image1": "Volunteering",
       "more_title1": "ICYE Volunteering Program",
-      "more_body1": "ICYE promotes global citizenship and cultural learning through exchanges and volunteering in over 40 countries for a fairer and more peaceful world.",
+      "more_body1": "ICYE promotes global citizenship and cultural learning through volunteer exchanges in over 40 countries, building a fairer and more peaceful world.",
       "more_image2": "Host Family",
       "more_title2": "Host Family Program",
-      "more_body2": "VIVOL welcomes international volunteers for a cultural learning program in Peru, hosting them with host families who provide support, integration, and share their culture.",
+      "more_body2": "Would you like to experience a cultural exchange without leaving your country? Host international volunteers in your home and be part of this experience. As a host family, you'll offer support, integration, and share your culture with the volunteer.",
       "more_image3": "My project",
       "more_title3": "Volunteers in my project",
-      "more_body3": "VIVOL promotes social volunteering to support local projects, ensuring legality and continuous support.",
+      "more_body3": "Do you have a social project that needs support? VIVOL connects you with committed volunteers to support your initiative, ensuring full legal backing and continuous guidance throughout the process.",
       "quote": "As you grow older, you will discover that you have two hands: one for helping yourself, the other for helping others.",
       "start_now": "Start now",
       "documents": "Documents of interest",
@@ -48,25 +49,26 @@
 
     "about_page": {
       "about": "Who We Are",
-      "text1": "VIDA y VOLUNTARIADO (VIVOL) is a non-profit organization that aims to promote experiential learning through processes of multicultural integration. With this approach, we seek to create a positive impact on diverse social realities through both international and local volunteer work. At the same time, we aim for our participants to develop key skills such as:",
-      "text2": "The combination of action and reflection in international volunteering helps shape independent, global-minded citizens.",
-      "bullet1": "Language skills",
-      "bullet2": "Growth in leadership, commitment, decision-making, and the ability to take risks.",
-      "bullet3": "Strengthen their confidence, self-esteem, and independence.",
-      "bullet4": "Broaden attitudes, values, and perceptions toward another culture.",
+      "text1": "VIDA y VOLUNTARIADO (VIVOL) is a non-profit association that promotes experiential learning through multicultural integration processes. With this initiative, we aim to make a positive impact on different social realities through international volunteering, and help each volunteer develop new skills such as:",
+      "text2": "We believe that the combination of action and reflection in international volunteering processes shapes global, independent, and compassionate citizens.",
+      "bullet1": "Improve language skills.",
+      "bullet2": "Develop leadership, commitment, decision-making ability, and willingness to take on challenges.",
+      "bullet3": "Strengthen self-confidence, self-esteem, and independence.",
+      "bullet4": "Broaden their perspectives, values, and attitudes toward other cultures.",
       "mission": "Mission",
       "mission_text": "To create an association that promotes alternative and experiential learning through international exchanges, allowing young people and civil society to gain a different perspective of the world based on equality and equity, while fostering awareness of individual impact on community well-being.",
       "vision": "Vision",
       "vision_text": "In the next 10 years, to become the first choice for alternative learning processes and the leading association in Lima for international cultural exchanges. Also, to create spaces and programs for collaboration with organizations to actively participate in social projects.",
       "values": {
         "title": "Values",
-        "bullet1": "Responsibility",
-        "bullet2": "Proactivity",
-        "bullet3": "Solidarity",
-        "bullet4": "Friendship",
-        "bullet5": "Tolerance",
-        "bullet6": "Mutual understanding",
-        "bullet7": "Cultural diversity"
+        "bullet1": "Responsibility: we take our commitments seriously.",
+        "bullet2": "Proactivity: we take initiative to create change.",
+        "bullet3": "Solidarity: we support each other at all times.",
+        "bullet4": "Friendship: we foster sincere and close relationships.",
+        "bullet5": "Tolerance: we respect differences and learn from them.",
+        "bullet6": "Commitment: 100% dedication to every project we undertake.",
+        "bullet7": "Cultural diversity: we celebrate the richness of all cultures.",
+        "bullet8": "Mutual enjoyment: we enjoy shared work and learn while having fun."
       },
       "members_title": "Our Team",
       "members_active": "Active Members",
@@ -74,19 +76,19 @@
         "member1_role": "Administrative Director",
         "member2_role": "Program Coordinator",
         "member3_role": "Administrative Coordinator",
-        "member1_phrase": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum purus nec purus dignissim, consectetur rutrum nisl porttitor.",
+        "member1_phrase": "Throughout the years, each encounter with a new culture has been an open door to learning and expanding my vision, driving me to build bridges where others see barriers and to turn diversity into a source of strength and creativity.",
         "member2_phrase": "Volunteering abroad changed my life in 2012. Since then, I’ve supported young people and their families in living meaningful experiences that connect, teach, and leave a mark on the world.",
         "member3_phrase": "My commitment to VIVOL was born from a very special experience: our children’s trip to India and Nepal. When they returned, they shared not only their stories but also how the experience had shaped their character. Seeing how they grew and developed a unique sensitivity to the world inspired me to join this life-changing community."
 
       },
       "life_title": "Life and Volunteering",
       "life_text1": "Volunteer work is the altruistic expression of human connection with society. Volunteering is a drop in the vast ocean—the sum of small actions becomes an overwhelming force that seeks to change the enduring state of an unfamiliar reality.",
-      "life_text2": "Understanding these diverse realities and situations beyond our comfort zone allows us to realize there is much more to be done and many places yet to reach. Life and Volunteering was born as a small drop aiming to create that overwhelming force. The goal is to share our desire to create change by preparing global citizens—human citizens who understand the reality behind every smile and every sadness."
+      "life_text2": "Understanding these diverse realities and situations beyond our comfort zone allows us to realize there is much more to be done and many places yet to reach. Life and Volunteering was born as a small drop aiming to create that overwhelming force. Our goal is to share our desire to create change by preparing global citizens—human citizens who understand the reality behind every smile and every sadness."
     },
 
     "volunteer_page": {
       "title": "International Volunteering and Volunteering in Peru: Choose Your Path",
-      "definition": "El voluntariado es un reto que se toma de forma altruista, ofreciendo nuestros conocimientos y capacidades al servicio de una causa concreta. Es la manifestación del contacto humano y la ayuda social.",
+      "definition": "Volunteering is a challenge taken on altruistically, offering our knowledge and skills in service of a specific cause. It is the expression of human connection and social support.",
       "quote": "In every community, there is work to be done. In every nation, there are wounds to heal. In every heart, there is the power to do it.",
       "middle_text1": "We invite you to join our team of volunteers who take part in this great initiative year after year—promoting social support and participating in an experiential learning process.",
       "middle_text2": "A social cultural exchange allows you to develop and strengthen skills that are only possible through immersion. By doing international volunteering, you not only have the opportunity to travel to another country, but you also get to:",
@@ -133,8 +135,8 @@
         "card_title1": "Pacific Coast",
         "card_title2": "Highlands",
         "card_title3": "Amazon",
-        "card_text1": "The coast is a long desert strip stretching from Tumbes, on the northern border with Ecuador, to Tacna in the south, bordering Chile. The average temperature from December to April is 25º to 28º Celsius, and from May to November it's 12º to 15º Celsius. The coast makes up 11% of the territory but is home to over 50% of the total population.",
-        "card_text2": "The Andes Mountains cover 30% of the territory. They run along the western side of the country, almost parallel to the Pacific. The Andes are the longest mountain range in the world, stretching across seven countries from north to south: Venezuela, Colombia, Ecuador, Peru, Bolivia, Chile, and Argentina.",
+        "card_text1": "Coastal desert strip from the north (border with Ecuador) to the south (border with Chile). Although it covers only 11% of the territory, more than 50% of the Peruvian population lives here. Major cities like Lima are located on the coast, with warm weather year-round (summers of 25–28°C and winters of around 12–15°C).",
+        "card_text2": "The Andes mountain range runs through the country from north to south, covering 30% of the territory. The high Andean mountains (the longest in the world) offer snowy landscapes, valleys, and traditional villages. Here the climate is cold and high-altitude, and Andean culture is very present (Quechua language, ancestral festivals).",
         "card_text3": "The jungle covers 59% of the territory. It has two parts: high jungle and low jungle. The high jungle lies at the foot of the Andes and grows along the mountain slopes. The low jungle is part of the largest tropical rainforest in the world. The jungle is home to over 1,000 species of frogs, 10,000 species of mammals, 1,500 species of birds, and 3,000 species of fish."
       },
       "reason_question1": "Why Peru?",
@@ -146,7 +148,7 @@
         "bullet4": "Its cuisine is considered one of the best in the world.",
         "bullet5": "You can discover many different cultures.",
         "bullet6": "Peruvian hospitality.",
-        "bullet7": "Of course! Machu Picchu! Lake Titicaca! Nazca Lines! Huacachina! And more!"
+        "bullet7": "Iconic wonders! Machu Picchu, Lake Titicaca, the Nazca Lines, the Huacachina oasis… Peru is full of amazing places to discover!"
       },
       "reasons2": {
         "bullet1": "You’ll get to know a culture on a deeper level.",
@@ -168,32 +170,32 @@
       "title": "International Volunteering",
       "intro_text": "Join international volunteering and bring your support to communities in various countries, all while immersing yourself in unique and diverse cultures. Live unforgettable adventures, connect with people from around the world, and leave a positive impact wherever you go. Your participation can transform lives!",
       "info_title": "ICYE Volunteering Program",
-      "info_text1": "The International Cultural Youth Exchange (ICYE) federation is a non-profit organization with over 65 years of experience promoting global citizenship, youth mobility, cultural learning, and international volunteer service programs. ICYE's goals are to eliminate prejudice and develop intercultural understanding and competence for a more just and peaceful world.",
-      "info_text2": "ICYE organizes long- and short-term exchanges that combine homestays with volunteer service in over 40 countries around the world. It offers participants from member countries the opportunity to engage in cultural immersion processes through international volunteer work, thus providing access to multicultural education and non-formal learning.",
-      "info_text3": "VIVOL Association works together with ICYE to promote youth mobility through programs that range from short-term (1 to 5 months) to long-term (6 months to 1 year). The international volunteer service program aims to help young people understand their role as members of a growing global society by facilitating understanding among diverse cultures and nations.",
+      "info_text1": "The International Cultural Youth Exchange (ICYE) federation is a non-profit organization with over 65 years of experience promoting global citizenship. Since its beginnings, ICYE has encouraged youth mobility through cultural exchanges and volunteering around the world. Its main goal is to eliminate prejudice and foster intercultural understanding, building a fairer and more peaceful world together.",
+      "info_text2": "ICYE organizes short- and long-term exchange programs in over 40 countries, where you combine your stay with volunteer service. It offers participants the opportunity to immerse themselves in another culture while doing social work abroad, gaining access to multicultural education and non-formal learning.",
+      "info_text3": "At VIVOL, we are part of the ICYE network, promoting these youth exchanges both short-term (1 to 5 months) and long-term (6 months to 1 year). Through this international volunteering program, we want more young people to understand their role as members of a global society, fostering understanding between different cultures and nations.",
       "benefits_title": "Program Benefits",
-      "benefits_text": "The ICYE program is designed to guide the volunteer throughout their immersion experience in the host country, culture, and project. During the international cultural program, the volunteer will receive the following benefits:",
+      "benefits_text": "The ICYE program is designed to guide the volunteer throughout their immersion experience in another country, its culture, and their service project. During your international volunteering, you will have the following benefits:",
       "tangibles": {
         "title": "Tangible Benefits",
-        "bullet1": "Accommodation",
-        "bullet2": "Meals: 3 meals a day according to the customs of the host country",
-        "bullet3": "International medical insurance, life insurance, and third-party liability coverage",
-        "bullet4": "Local transportation",
-        "bullet5": "Pre-departure seminars and preparation activities (local)",
-        "bullet6": "Ongoing seminars and support activities during the exchange (international)",
-        "bullet7": "ICYE participation certificate",
-        "bullet8": "Basic language lessons of the host country (long-term program)",
-        "bullet9": "Pocket money for personal expenses (long-term program)"
+        "bullet1": "Accommodation: free lodging with a host family or project.",
+        "bullet2": "Meals: 3 daily meals adapted to the local cuisine.",
+        "bullet3": "International insurance: medical coverage, life insurance, and liability insurance during your stay.",
+        "bullet4": "Local transportation: basic mobility covered (depending on the project/country).",
+        "bullet5": "Pre-departure training: seminars and preparation activities in Peru before departure.",
+        "bullet6": "On-site orientation: follow-up and orientation activities once you are in your host country.",
+        "bullet7": "ICYE certificate: official participation certificate upon completion of the program.",
+        "bullet8": "Basic language course: introductory lessons in the local language (for long-term programs).",
+        "bullet9": "Pocket money: a monthly financial allowance for personal expenses (for long-term programs)."
       },
       "intangibles": {
         "title": "Intangible Benefits",
-        "bullet1": "Professional experience",
-        "bullet2": "The opportunity to learn a new language",
-        "bullet3": "Understanding of new cultures and diverse realities",
-        "bullet4": "Creating an international network",
-        "bullet5": "Personal development",
-        "bullet6": "Social awareness",
-        "bullet7": "Travel, adventure, and fun"
+        "bullet1": "Professional growth: you will gain international experience that any employer will value.",
+        "bullet2": "Language learning: you will practice and improve in another language naturally.",
+        "bullet3": "Cultural openness: you will learn about new cultures and realities, broadening your view of the world.",
+        "bullet4": "Global network of friends: you will make international contacts and friendships for life.",
+        "bullet5": "Personal growth: you will gain independence, confidence, and maturity.",
+        "bullet6": "Greater social empathy: you will develop sensitivity to social issues and how to address them.",
+        "bullet7": "Unforgettable adventures!: you will experience travels, fun moments, and challenges that will positively impact you."
       },
       "contain": {
         "title": "The program doesn't include",
@@ -204,12 +206,12 @@
       "process_title": "ICYE Program Application Process",
       "process_subtitle1": "What do you need to participate in the ICYE program?",
       "reqs": {
-        "req1": "Be between 18 and 35 years old (the age limit may vary depending on the country).",
-        "req2": "Have the desire to collaborate and perform community social work.",
-        "req3": "Have the motivation to live in another country and different culture.",
-        "req4": "Participate in the preparation activities.",
-        "req5": "Cover the program participation fee.",
-        "req6": "Cover the cost of airfare and visa processing."
+        "req1": "Age: Be between 18 and 35 years old (the exact limit depends on the destination country).",
+        "req2": "Service vocation: Willingness to contribute by doing social work in the community.",
+        "req3": "Adaptability: Motivation to live in another country and immerse yourself in a different culture.",
+        "req4": "Preparation: Availability to attend all pre-departure preparation activities organized by VIVOL.",
+        "req5": "Financing: Ability to cover the cost of participation in the ICYE program.",
+        "req6": "Travel: Means to pay for your airfare and necessary visa procedures."
       },
       "process_subtitle2": "ICYE Program Process",
       "steps": {
@@ -615,8 +617,8 @@
     "family_page": {
       "title": "Host Family Program",
       "intro_text": "Join Vivol’s Host Family Program and welcome international volunteers into your home. Be part of a unique cultural experience and transform lives!",
-      "question_question": "How can you experience a different culture without leaving your country?",
-      "question_text": "VIVOL welcomes volunteers from different parts of the world to participate in a cultural learning program through social volunteering. Our volunteers stay with host families or projects during the time they carry out their social mission in Peru.",
+      "question_question": "Have you ever wondered how you could experience a different culture without leaving your country?",
+      "question_text": "At VIVOL, we welcome young volunteers from different parts of the world for cultural learning programs through social volunteering. These volunteers stay with host families during the time they carry out their social mission in Peru, sharing daily life with them.",
       "meaning_title": "What does it mean to be a host family?",
       "meaning_text": {
         "top": "Being a host family means:",
@@ -630,22 +632,22 @@
         "bullet8": "Offering a space where they feel at home",
         "bullet9": "Sharing time and resources"
       },
-      "middle_text": "We are looking for host families to be part of this learning process. By becoming a host family, you not only become a key part of a process of integration; by welcoming a foreign volunteer, families also participate in the experience and become part of the learning journey.",
+      "middle_text": "At VIVOL, we look for families willing to join this beautiful process of exchange and learning. By opening your home to a foreign volunteer, you make your family a key part of a cultural integration process. It's not just the volunteer who learns from you; *you will also learn a lot from them. The whole family participates and is enriched by this experience!",
       "benefits_title": "Benefits for the host family",
       "benefits_language": "A new language",
       "benefits_culture": "Breaking cultural stereotypes",
       "benefits_perspective": "New perspectives and ideologies",
       "benefits_learning": "Cultural learning",
-      "join_title": "Do you want to be part of our host family program?",
+      "join_title": "Would you like to be part of our Host Family Program?",
       "join_text": "Through our family program, all members have the opportunity to take part in this experience, learn about diverse cultures, and broaden their view of the world.",
-      "join_contact": "Get in touch with us and we’ll gladly provide more information."
+      "join_contact": "Contact us! We’ll be happy to provide more information and answer all your questions."
     },
 
     "project_page": {
       "title": "Volunteers in My Project",
-      "intro_text": "If you need support for your project, educational unit, public cafeteria, nursing home, children's home, youth support centers, shelters, or others, we are happy to collaborate by placing international volunteers.",
-      "top_text1": "VIVOL aims to support the growth of a society based on equality, justice, and peace. To achieve this, we promote exchange programs with an emphasis on social volunteering, supporting the development of local activities and projects with social purposes.",
-      "top_text2": "The program is available to all those who share the goals of our organization, regardless of race, culture, or creed.",
+      "intro_text": "Do you have a project or institution that needs support? It could be a school, community kitchen, senior center, children's home, shelter, or another social program, we would be happy to collaborate with you. VIVOL can help you integrate international volunteers into your initiative, working together to achieve your goals.",
+      "top_text1": "At VIVOL, we aim to contribute to the growth of a society based on equality, justice, and peace. To achieve this, we promote exchange programs with an emphasis on social volunteering, supporting local organizations in the development of their social impact projects. We work hand in hand with community initiatives to enhance their reach through international volunteers.",
+      "top_text2": "This program is open to all organizations that share VIVOL's objectives, regardless of race, culture, or creed. If your project aims to have a positive impact on the community, you can count on us!",
       "card1": {
         "title": "VIVOL Commitments",
         "bullet1": "Responsibility for the legality of the volunteer during their stay in the country.",
@@ -689,7 +691,7 @@
 
     "contact_page": {
       "title": "Contact Us",
-      "text": "If you have questions or need information about our volunteer opportunities, we’re here to help. Write to us and we’ll gladly guide you to find the perfect option for you.",
+      "text": "Ready to start this journey? If you have any questions or need information about our volunteering opportunities, we're here to help. Write to us, and we’ll gladly guide you to find the perfect option for you.",
       "location": "Lima, Peru",
       "name": "First Name",
       "name_holder": "Enter your first name",
@@ -756,7 +758,8 @@
     "documents_page": {
       "title": "Relevant documents",
       "national": "Peru National Profile",
-      "work": "Peru Work Profile"
+      "work": "Peru Work Profile",
+      "faq": "FAQ"
     },
 
     "alt": {
@@ -797,10 +800,11 @@
 
     "button": {
       "language_text": "Español",
-      "carousel": "Let's start",
+      "carousel": "Let's start!",
       "volunteer_inter": "International Volunteering",
       "volunteer_nat": "Volunteering in Peru",
       "contact": "Contact us",
+      "contact_simple": "Contact",
       "send": "Send"
     }
   }

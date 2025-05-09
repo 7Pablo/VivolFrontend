@@ -79,7 +79,7 @@ export default async function HomePage(props) {
         </div>
       </div>
 
-      {/* Quote */}
+      {/* Slogan */}
       <div className="home-page__quote">
         <div className="home-page__quote--fade">
           <Image
@@ -90,16 +90,15 @@ export default async function HomePage(props) {
             quality={100}
           />
         </div>
-        <div className="home-page__quote--content">
+        <div className="home-page__slogan--content">
           <Image
-              src='/images/icons/quotes.svg'
-              alt="Quote icon"
+              src='/images/icons/megaphone.svg'
+              alt="QMegaphone icon"
               width={50}
               height={50}
-              className="home-page__quote--icon"
+              className="home-page__slogan--icon"
           />
-          <h3>{trans.home_page.quote}</h3>
-          <p>— Audrey Hepburn</p>
+          <h4>{trans.home_page.slogan}</h4>
         </div>
       </div>
 

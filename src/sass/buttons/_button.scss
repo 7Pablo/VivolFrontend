@@ -8,6 +8,7 @@
         padding: 10px 24px; 
         position: relative;
         transition: all .2s;
+        min-width: 175px;
 
         &:hover {
             transform: translateY(-5px); 

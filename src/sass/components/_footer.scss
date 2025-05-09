@@ -28,13 +28,15 @@
 
         &--items {
             @include flex($align: start, $gap: 5px);
-        }
 
-        &--item-text {
-            transition: transform 0.3s ease-out;
+            li {
+                text-align: left;
+                cursor: pointer;
+                transition: transform 0.3s ease-out;
 
-            &:hover {
-                transform: translateX(10px);
+                &:hover {
+                    transform: translateX(10px);
+                }
             }
         }
     }

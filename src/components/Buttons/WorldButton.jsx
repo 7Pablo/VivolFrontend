@@ -53,7 +53,7 @@ export default function WorldButton({ data, icon, trans }) {
                             />
                         </Dialog.Content>
                     </Dialog.Positioner>
-                    </Portal>
+                </Portal>
             </Dialog.Root>
         </>
     );
