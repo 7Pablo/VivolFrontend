@@ -2817,6 +2817,7 @@ a:focus {
   gap: 30px;
   align-items: center;
   justify-content: center;
+  padding: 0 50px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2994,6 +2995,18 @@ a:focus {
   .home-page__alliances--content {
     gap: 10px;
   }
+  .home-page__slogan--content {
+    padding: 0 40px;
+  }
+  .home-page__slogan--content h4 {
+    font-size: 38px;
+    line-height: 45px;
+    text-align: left;
+  }
+  .home-page__slogan--icon {
+    width: 60px;
+    height: 60px;
+  }
 }
 @media (max-width: 800px) {
   .home-page__involve h3 {
@@ -3028,6 +3041,14 @@ a:focus {
   .home-page__quote p {
     font-size: 18px;
     margin-top: 10px;
+  }
+  .home-page__slogan--content h4 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .home-page__slogan--icon {
+    width: 50px;
+    height: 50px;
   }
   .home-page__testimonials {
     height: 875px;
@@ -3069,6 +3090,13 @@ a:focus {
   }
   .home-page__quote p {
     font-size: 20px;
+  }
+  .home-page__slogan--content {
+    padding: 0 30px;
+  }
+  .home-page__slogan--content h4 {
+    font-size: 26px;
+    line-height: 32px;
   }
   .home-page__testimonials {
     height: 875px;

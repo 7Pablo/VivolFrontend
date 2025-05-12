@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Dialog, Portal  } from "@chakra-ui/react"
 import Image from "next/image";
 import CreditsCard from "./cards/CreditsCard";
+import { getAssetPath } from "@/utils/getAssetPath";
 
 export default function FooterItems({ footItems, creditsLabel }) {    
     const pathname = usePathname(); 
@@ -37,7 +38,7 @@ export default function FooterItems({ footItems, creditsLabel }) {
                   <Dialog.CloseTrigger asChild>
                       <div className="credits-card__close">
                           <Image
-                              src="/images/icons/close.svg"
+                              src={getAssetPath("/images/icons/close.svg")}
                               alt="x"
                               width={100}
                               height={100}
@@ -46,7 +47,7 @@ export default function FooterItems({ footItems, creditsLabel }) {
                       </div>
                   </Dialog.CloseTrigger>
                   <CreditsCard
-                    imgSrc="/images/photos/juanpablo.jpg"
+                    imgSrc={getAssetPath("/images/photos/juanpablo.jpg")}
                     title={creditsLabel}
                     name="Juan Pablo Armendáriz"
                     email="juanpaarmendariz3@gmail.com"

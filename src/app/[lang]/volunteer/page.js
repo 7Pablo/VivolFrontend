@@ -5,6 +5,7 @@ import { getTranslations } from "locales/translations";
 import DoubleButton from "@/components/buttons/DoubleButton";
 import BenefitCard from "@/components/cards/BenefitCard";
 import Button from "@/components/buttons/Button";
+import { getAssetPath } from "@/utils/getAssetPath";
 
 export default async function VolunteerPage(props) {
   const params = await props.params;
@@ -19,7 +20,7 @@ export default async function VolunteerPage(props) {
         <div className="volunteer__decision--background">
           <div className="volunteer__decision--half">
             <Image
-              src="/images/photos/vivol-inter.jpg"
+              src={getAssetPath("/images/photos/vivol-inter.jpg")}
               alt={trans?.alt?.volunteer_background1 || "Volunteer in Germany"}
               fill
               style={{ objectFit: 'cover', objectPosition: 'center' }}
@@ -28,7 +29,7 @@ export default async function VolunteerPage(props) {
           </div>
           <div className="volunteer__decision--half">
             <Image
-              src="/images/photos/vivol-nat.jpg"
+              src={getAssetPath("/images/photos/vivol-nat.jpg")}
               alt={trans?.alt?.volunteer_background2 || "Volunteer in Peru"}
               fill
               style={{ objectFit: 'cover', objectPosition: 'center' }}
@@ -51,7 +52,7 @@ export default async function VolunteerPage(props) {
       <div className="volunteer__definition">
         <Image
           className="volunteer__definition--image"
-          src="/images/photos/vivol-austria.jpeg"
+          src={getAssetPath("/images/photos/vivol-austria.jpeg")}
           alt={trans?.alt?.volunteer_image1 || "Volunteer in Austria"}
           width={300}
           height={300}
@@ -66,7 +67,7 @@ export default async function VolunteerPage(props) {
       <div className="home-page__quote">
         <div className="home-page__quote--fade">
           <Image
-            src="/images/photos/papel.jpg"
+            src={getAssetPath("/images/photos/papel.jpg")}
             alt={trans?.alt?.quote1 || "Paper background"}
             layout="fill"
             objectFit="cover"
@@ -75,7 +76,7 @@ export default async function VolunteerPage(props) {
         </div>
         <div className="home-page__quote--content">
           <Image
-              src='/images/icons/quotes.svg'
+              src={getAssetPath("/images/icons/quotes.svg")}
               alt="Quote icon"
               width={50}
               height={50}
@@ -95,7 +96,7 @@ export default async function VolunteerPage(props) {
           </div>
           <Image
             className="volunteer__middle--image-1"
-            src="/images/photos/vivol-fiestas.jpg"
+            src={getAssetPath("/images/photos/vivol-fiestas.jpg")}
             alt={trans?.alt?.volunteer_image2 || "Volunteers in Party"}
             width={300}
             height={300}
@@ -105,7 +106,7 @@ export default async function VolunteerPage(props) {
         <div className="volunteer__middle--bottom">
           <Image
             className="volunteer__middle--image-2"
-            src="/images/photos/vivol-cartel.jpg"
+            src={getAssetPath("/images/photos/vivol-cartel.JPG")}
             alt={trans.alt.volunteer_image3 || "Volunteers holding a sign"}
             width={300}
             height={300}
@@ -130,37 +131,37 @@ export default async function VolunteerPage(props) {
         <h3>{trans.volunteer_page.benefits_title}</h3>
         <div className="volunteer__benefits--cards">
           <BenefitCard
-            icon="/images/icons/house.svg"
+            icon={getAssetPath("/images/icons/house.svg")}
             title={trans.volunteer_page.benefits_host_title}
             text={trans.volunteer_page.benefits_host_text}
             color="#85AF59"
           />
           <BenefitCard
-            icon="/images/icons/food.svg"
+            icon={getAssetPath("/images/icons/food.svg")}
             title={trans.volunteer_page.benefits_food_title}
             text={trans.volunteer_page.benefits_food_text}
             color="#BF0000"
           />
           <BenefitCard
-            icon="/images/icons/message.svg"
+            icon={getAssetPath("/images/icons/message.svg")}
             title={trans.volunteer_page.benefits_talk_title}
             text={trans.volunteer_page.benefits_talk_text}
             color="#E1BD2A"
           />
           <BenefitCard
-            icon="/images/icons/world.svg"
+            icon={getAssetPath("/images/icons/world.svg")}
             title={trans.volunteer_page.benefits_world_title}
             text={trans.volunteer_page.benefits_world_text}
             color="#1583F0"
           />
           <BenefitCard
-            icon="/images/icons/truck.svg"
+            icon={getAssetPath("/images/icons/truck.svg")}
             title={trans.volunteer_page.benefits_truck_title}
             text={trans.volunteer_page.benefits_truck_text}
             color="#00BFBF"
           />
           <BenefitCard
-            icon="/images/icons/book.svg"
+            icon={getAssetPath("/images/icons/book.svg")}
             title={trans.volunteer_page.benefits_book_title}
             text={trans.volunteer_page.benefits_book_text}
             color="#D53686"

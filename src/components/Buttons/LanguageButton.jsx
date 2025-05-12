@@ -5,6 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
 import { getTranslations } from "locales/translations";
 import { useState, useEffect } from "react";
+import { getAssetPath } from "@/utils/getAssetPath";
 
 export default function LanguageButton({ lang }) {
   const pathname = usePathname();
@@ -33,7 +34,7 @@ export default function LanguageButton({ lang }) {
   return (
     <div className="language-button" onClick={handleLanguageChange}>
         <Image
-          src={lang === "en" ? "/images/icons/espanol.svg" : "/images/icons/ingles.svg"}
+          src={lang === "en" ? getAssetPath("/images/icons/espanol.svg") : getAssetPath("/images/icons/ingles.svg")}
           alt={trans.alt.language_change}
           width={32}
           height={32}

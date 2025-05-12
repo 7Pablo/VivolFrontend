@@ -7,6 +7,7 @@ import IconTextCard from "@/components/cards/IconTextCard";
 import ProcessCard from "@/components/cards/ProcessCard";
 import WorldButton from "@/components/buttons/WorldButton";
 import WorldDropdown from "@/components/buttons/WorldDropdown";
+import { getAssetPath } from "@/utils/getAssetPath";
 
 export default async function InternationalPage(props) {
   const params = await props.params;
@@ -19,7 +20,7 @@ export default async function InternationalPage(props) {
       {/* Intro */}
       <div className="inter-page__intro">
         <Image
-          src="/images/photos/vivol-torii.jpg"
+          src={getAssetPath("/images/photos/vivol-torii.jpg")}
           alt={trans?.alt?.inter_image1 || "Volunteer in front of a Torii gate"}
           fill
           style={{ objectFit: 'cover', objectPosition: '50% 55%' }}
@@ -38,7 +39,7 @@ export default async function InternationalPage(props) {
         <div className="inter-page__info--title">
           <h1>{trans.inter_page.info_title}</h1>
           <Image
-            src="/images/photos/icye-logo-simple.svg"
+            src={getAssetPath("/images/photos/icye-logo-simple.svg")}
             alt="ICYE logo"
             height={100}
             width={100}
@@ -47,7 +48,7 @@ export default async function InternationalPage(props) {
         <div className="inter-page__info--left">
           <div className="inter-page__info--image-1">
             <Image
-              src="/images/photos/vivol-alemania.jpg"
+              src={getAssetPath("/images/photos/vivol-alemania.jpg")}
               alt={trans?.alt?.inter_image2 || "Volunteer in Germany in front of a tower"}
               fill
               style={{ objectFit: 'cover' }}
@@ -63,7 +64,7 @@ export default async function InternationalPage(props) {
           </p>
           <div className="inter-page__info--image-2">
             <Image
-              src="/images/photos/vivol-paz.jpg"
+              src={getAssetPath("/images/photos/vivol-paz.jpg")}
               alt={trans?.alt?.inter_image3 || "Volunteer in front of a statue"}
               fill
               style={{ objectFit: 'cover' }}
@@ -73,7 +74,7 @@ export default async function InternationalPage(props) {
         <div className="inter-page__info--left">
           <div className="inter-page__info--image-3">
             <Image
-              src="/images/photos/vivol-pileta.jpeg"
+              src={getAssetPath("/images/photos/vivol-pileta.jpeg")}
               alt={trans?.alt?.inter_image4 || "Volunteer in front of a fountain"}
               fill
               style={{ objectFit: 'cover' }}
@@ -93,7 +94,7 @@ export default async function InternationalPage(props) {
         </div>
         <div className="inter-page__benefits--cards">
           <ProgramCard
-            icon="/images/icons/star.svg"
+            icon={getAssetPath("/images/icons/star.svg")}
             title={trans.inter_page.tangibles.title}
             listItems={[
               trans.inter_page.tangibles.bullet1,
@@ -109,7 +110,7 @@ export default async function InternationalPage(props) {
             color="#85AF59"
           />
           <ProgramCard
-            icon="/images/icons/heart.svg"
+            icon={getAssetPath("/images/icons/heart.svg")}
             title={trans.inter_page.intangibles.title}
             listItems={[
               trans.inter_page.intangibles.bullet1,
@@ -123,7 +124,7 @@ export default async function InternationalPage(props) {
             color="#1583F0"
           />
           <ProgramCard
-            icon="/images/icons/x.svg"
+            icon={getAssetPath("/images/icons/x.svg")}
             title={trans.inter_page.contain.title}
             listItems={[
               trans.inter_page.contain.bullet1,
@@ -139,7 +140,7 @@ export default async function InternationalPage(props) {
       <div className="inter-page__process">
             <div className="inter-page__background">
               <Image
-                src="/images/photos/alemania.jpg"
+                src={getAssetPath("/images/photos/alemania.jpg")}
                 alt="Germany"
                 fill
                 style={{ objectFit: 'cover'}}
@@ -152,27 +153,27 @@ export default async function InternationalPage(props) {
               </div>
               <div className="inter-page__process--requirements">
                 <IconTextCard
-                  icon="/images/icons/edad.svg"
+                  icon={getAssetPath("/images/icons/edad.svg")}
                   text={trans.inter_page.reqs.req1}
                 />
                 <IconTextCard
-                  icon="/images/icons/saludo.png"
+                  icon={getAssetPath("/images/icons/saludo.png")}
                   text={trans.inter_page.reqs.req2}
                 />
                 <IconTextCard
-                  icon="/images/icons/bandera.svg"
+                  icon={getAssetPath("/images/icons/bandera.svg")}
                   text={trans.inter_page.reqs.req3}
                 />
                 <IconTextCard
-                  icon="/images/icons/registro.svg"
+                  icon={getAssetPath("/images/icons/registro.svg")}
                   text={trans.inter_page.reqs.req4}
                 />
                 <IconTextCard
-                  icon="/images/icons/manos.svg"
+                  icon={getAssetPath("/images/icons/manos.svg")}
                   text={trans.inter_page.reqs.req5}
                 />
                 <IconTextCard
-                  icon="/images/icons/boleto.svg"
+                  icon={getAssetPath("/images/icons/boleto.svg")}
                   text={trans.inter_page.reqs.req6}
                 />
               </div>
@@ -252,7 +253,7 @@ export default async function InternationalPage(props) {
                     <WorldButton
                       key={countryKey}
                       data={countryData}
-                      icon={`/images/countries/${countryKey}.svg`}
+                      icon={getAssetPath(`/images/countries/${countryKey}.svg`)}
                       trans={trans}
                     />
                 ))}
@@ -268,7 +269,7 @@ export default async function InternationalPage(props) {
                     <WorldButton
                       key={countryKey}
                       data={countryData}
-                      icon={`/images/countries/${countryKey}.svg`}
+                      icon={getAssetPath(`/images/countries/${countryKey}.svg`)}
                       trans={trans}
                     />
                 ))}
@@ -284,7 +285,7 @@ export default async function InternationalPage(props) {
                     <WorldButton
                       key={countryKey}
                       data={countryData}
-                      icon={`/images/countries/${countryKey}.svg`}
+                      icon={getAssetPath(`/images/countries/${countryKey}.svg`)}
                       trans={trans}
                     />
                 ))}
@@ -300,7 +301,7 @@ export default async function InternationalPage(props) {
                     <WorldButton
                       key={countryKey}
                       data={countryData}
-                      icon={`/images/countries/${countryKey}.svg`}
+                      icon={getAssetPath(`/images/countries/${countryKey}.svg`)}
                       trans={trans}
                     />
                 ))}

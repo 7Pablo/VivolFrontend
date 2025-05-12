@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import CountryInfo from "../CountryInfo";
+import { getAssetPath } from "@/utils/getAssetPath";
 
 export default function CountryCard({ 
     country, 
@@ -31,27 +32,27 @@ export default function CountryCard({
                     </div>
                     <div className="country-card__content--info">
                         <CountryInfo
-                            icon="/images/icons/location.svg"
+                            icon={getAssetPath("/images/icons/location.svg")}
                             title={trans.inter_page.capital_title}
                             text={capital}
                         />
                         <CountryInfo
-                            icon="/images/icons/group.svg"
+                            icon={getAssetPath("/images/icons/group.svg")}
                             title={trans.inter_page.population_title}
                             text={population}
                         />
                         <CountryInfo
-                            icon="/images/icons/surface.svg"
+                            icon={getAssetPath("/images/icons/surface.svg")}
                             title={trans.inter_page.surface_title}
                             text={surface}
                         />
                         <CountryInfo
-                            icon="/images/icons/language.svg"
+                            icon={getAssetPath("/images/icons/language.svg")}
                             title={trans.inter_page.language_title}
                             text={language}
                         />
                         <CountryInfo
-                            icon="/images/icons/currency.svg"
+                            icon={getAssetPath("/images/icons/currency.svg")}
                             title={trans.inter_page.currency_title}
                             text={currency}
                         />

@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import LanguageButton from "./LanguageButton";
 import { useState } from "react";
+import { getAssetPath } from "@/utils/getAssetPath";
 
 export default function HamDropdown({ navItems }) {
   const pathname = usePathname();
@@ -19,7 +20,7 @@ export default function HamDropdown({ navItems }) {
         <Menu.Trigger asChild>
           <button className={`ham-dropdown__button ${isOpen ? "is-open" : ""}`}>
             <Image
-              src="/images/icons/menu.svg"
+              src={getAssetPath("/images/icons/menu.svg")}
               alt="Menu icon"
               height={30}
               width={30}

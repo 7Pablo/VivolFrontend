@@ -4,6 +4,7 @@ import Image from "next/image";
 import { getTranslations } from "locales/translations";
 import BenefitCard from "@/components/cards/BenefitCard";
 import Button from "@/components/buttons/Button";
+import { getAssetPath } from "@/utils/getAssetPath";
 
 export default async function FamilyPage(props) {
   const params = await props.params;
@@ -16,7 +17,7 @@ export default async function FamilyPage(props) {
       {/* Intro */}
       <div className="family-page__intro">
         <Image
-          src="/images/photos/vivol-unida.jpg"
+          src={getAssetPath("/images/photos/vivol-unida.jpg")}
           alt={trans?.alt?.involve_image2 || "Volunteer with their host family"}
           fill
           style={{ objectFit: 'cover', objectPosition: '50% 60%' }}
@@ -38,7 +39,7 @@ export default async function FamilyPage(props) {
         </div>
         <div className="family-page__question--image">
           <Image 
-            src="/images/photos/vivol-navidad.JPG"
+            src={getAssetPath("/images/photos/vivol-navidad.JPG")}
             alt={trans?.alt?.family_image1 || "Volunteers sharing with host family at Christmas"}
             fill
             style={{ objectFit: 'cover' }}
@@ -49,7 +50,7 @@ export default async function FamilyPage(props) {
       {/* Meaning */}
       <div className="family-page__meaning">
         <Image
-          src="/images/photos/peru-calles.jpg"
+          src={getAssetPath("/images/photos/peru-calles.jpg")}
           alt="Streets Peru"
           fill
           style={{ objectFit: 'cover' }}
@@ -77,7 +78,7 @@ export default async function FamilyPage(props) {
       <div className="family-page__middle">
         <div className="family-page__middle--image">
           <Image 
-            src="/images/photos/vivol-pico.jpg"
+            src={getAssetPath("/images/photos/vivol-pico.jpg")}
             alt={trans?.alt?.family_image2 || "Volunteer with host family on a rock"}
             fill
             style={{ objectFit: 'cover' }}
@@ -91,25 +92,25 @@ export default async function FamilyPage(props) {
         <h3>{trans.family_page.benefits_title}</h3>
         <div className="family-page__benefits--cards">
           <BenefitCard 
-            icon="/images/icons/culture.svg"
+            icon={getAssetPath("/images/icons/culture.svg")}
             title={trans.family_page.benefits_language}
             color="#85AF59"
             short={true}
           />
           <BenefitCard 
-            icon="/images/icons/brain.svg"
+            icon={getAssetPath("/images/icons/brain.svg")}
             title={trans.family_page.benefits_culture}
             color="#E1BD2A"
             short={true}
           />
           <BenefitCard 
-            icon="/images/icons/perspective.svg"
+            icon={getAssetPath("/images/icons/perspective.svg")}
             title={trans.family_page.benefits_perspective}
             color="#1583F0"
             short={true}
           />
           <BenefitCard 
-            icon="/images/icons/holding.svg"
+            icon={getAssetPath("/images/icons/holding.svg")}
             title={trans.family_page.benefits_learning}
             color="#D53686"
             short={true}

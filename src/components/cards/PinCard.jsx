@@ -1,6 +1,7 @@
 //  PinCard.jsx (Client component)
 'use client';
 
+import { getAssetPath } from "@/utils/getAssetPath";
 import Image from "next/image";
 
 export default function PinCard({ icon, text, color, link }) {
@@ -17,7 +18,7 @@ export default function PinCard({ icon, text, color, link }) {
         >
             <div className="pin-card__pin">
                 <Image
-                    src='/images/icons/red-pin.png'
+                    src={getAssetPath('/images/icons/red-pin.png')}
                     alt="Pin card icon"
                     height={80}
                     width={80}

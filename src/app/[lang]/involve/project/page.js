@@ -1,5 +1,6 @@
 // page.js (Project Page/ Server component) 
 
+import { getAssetPath } from "@/utils/getAssetPath";
 import { getTranslations } from "locales/translations";
 import Image from "next/image";
 
@@ -14,7 +15,7 @@ export default async function ProjectPage(props) {
       {/* Intro */}
       <div className="project-page__intro">
         <Image
-          src="/images/photos/vivol-dibujo.jpg"
+          src={getAssetPath("/images/photos/vivol-dibujo.jpg")}
           alt={trans?.alt?.project_image1 || "Volunteers drawing with children"}
           fill
           style={{ objectFit: 'cover', objectPosition: "50% 60%" }}
@@ -51,7 +52,7 @@ export default async function ProjectPage(props) {
           </div>
           <div className="project-page__body--image">
             <Image
-              src="/images/photos/vivol-salto.jpg"
+              src={getAssetPath("/images/photos/vivol-salto.jpg")}
               alt={trans?.alt?.project_image2 || "VIVOL volunteers"}
               fill
               style={{ objectFit: 'cover', objectPosition: "50% 15%" }}
@@ -63,7 +64,7 @@ export default async function ProjectPage(props) {
         <div className="project-page__body--card">
           <div className="project-page__body--image">
             <Image
-              src="/images/photos/vivol-mono.JPG"
+              src={getAssetPath("/images/photos/vivol-mono.JPG")}
               alt={trans?.alt?.project_image3 || "Volunteer with a monkey"}
               fill
               style={{ objectFit: 'cover' }}
@@ -108,7 +109,7 @@ export default async function ProjectPage(props) {
           </div>
           <div className="project-page__body--image">
             <Image
-              src="/images/photos/vivol-gradas.jpg"
+              src={getAssetPath("/images/photos/vivol-gradas.jpg")}
               alt={trans?.alt?.project_image4 || "Volunteer with signs on some stairs"}
               fill
               style={{ objectFit: 'cover', objectPosition: "10% 80%" }}

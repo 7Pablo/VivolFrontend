@@ -9,6 +9,7 @@ import Button from './buttons/Button';
 import { useRouter, usePathname } from "next/navigation"; 
 import { useState, useEffect } from "react";
 import { getTranslations } from "locales/translations";
+import { getAssetPath } from '@/utils/getAssetPath';
 
 export default function Carousel({ imageLinks }) {
     const router = useRouter();
@@ -73,7 +74,7 @@ export default function Carousel({ imageLinks }) {
                     </div>
                     <div className='carousel__content-right'>
                         <Image
-                            src="/images/icons/logo-blanco.png"
+                            src={getAssetPath("/images/icons/logo-blanco.png")}
                             alt="Logo de Vivol, Vida y Voluntariado"
                             width={1000}
                             height={1000}

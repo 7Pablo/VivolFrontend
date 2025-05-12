@@ -4,6 +4,7 @@ import { getTranslations } from "locales/translations";
 import Image from "next/image";
 import OvalCard from "@/components/cards/OvalCard";
 import MemberCard from "@/components/cards/MemberCard";
+import { getAssetPath } from "@/utils/getAssetPath";
 
 export default async function AboutPage(props) {
     const params = await props.params;
@@ -17,7 +18,7 @@ export default async function AboutPage(props) {
         <div className="about-page__intro">
           <Image
             className="about-page__intro--image"
-            src="/images/photos/vivol-celeste.jpg"
+            src={getAssetPath("/images/photos/vivol-celeste.jpg")}
             alt={trans.alt.about_image1}
             width={300}
             height={300}
@@ -43,7 +44,7 @@ export default async function AboutPage(props) {
           </div>
           <Image
             className="about-page__middle--image"
-            src="/images/photos/vivol-chaleco.jpg"
+            src={getAssetPath("/images/photos/vivol-chaleco.jpg")}
             alt={trans.alt.about_image2}
             width={300}
             height={300}
@@ -56,7 +57,7 @@ export default async function AboutPage(props) {
         <div className="home-page__quote">
           <div className="home-page__quote--fade">
             <Image
-              src="/images/photos/papel.jpg"
+              src={getAssetPath("/images/photos/papel.jpg")}
               alt={trans.alt.quote1}
               layout="fill"
               objectFit="cover"
@@ -65,7 +66,7 @@ export default async function AboutPage(props) {
           </div>
           <div className="home-page__quote--content">
             <Image
-                src='/images/icons/quotes.svg'
+                src={getAssetPath('/images/icons/quotes.svg')}
                 alt="Quote icon"
                 width={50}
                 height={50}
@@ -79,21 +80,21 @@ export default async function AboutPage(props) {
         {/* Philosophy */}
         <div className="about-page__philosophy">
           <OvalCard 
-            icon="/images/icons/target.svg"
+            icon={getAssetPath("/images/icons/target.svg")}
             alt="target icon"
             title={trans.about_page.mission}
             text={trans.about_page.mission_text}
             color="#85AF59"
           />
           <OvalCard 
-            icon="/images/icons/eye.svg"
+            icon={getAssetPath("/images/icons/eye.svg")}
             alt="eye icon"
             title={trans.about_page.vision}
             text={trans.about_page.vision_text}
             color="#D53686"
           />
           <OvalCard 
-            icon="/images/icons/diamond.svg"
+            icon={getAssetPath("/images/icons/diamond.svg")}
             alt="target icon"
             title={trans.about_page.values.title}
             listItems={[ 
@@ -112,7 +113,7 @@ export default async function AboutPage(props) {
         {/* Members */}
         <div className="about-page__members">
             <Image 
-              src="/images/photos/machupicchu.jpg"
+            src={getAssetPath("/images/photos/machupicchu.jpg")}
               alt="Machu Picchu, Peru"
               fill
               style={{ objectFit: 'cover', objectPosition: '50% 60%' }}
@@ -123,21 +124,21 @@ export default async function AboutPage(props) {
               <h2>{trans.about_page.members_active}</h2>
               <div className="about-page__members--cards">
                 <MemberCard 
-                  src="/images/photos/anonymous.jpg"
+                  src={getAssetPath("/images/photos/anonymous.jpg")}
                   alt="Renato Noriega"
                   name="Renato Noriega"
                   role={trans.about_page.members.member1_role}
                   phrase={trans.about_page.members.member1_phrase}
                 />
                 <MemberCard 
-                  src="/images/photos/anonymous.jpg"
+                  src={getAssetPath("/images/photos/anonymous.jpg")}
                   alt="Pamela Villagómez"
                   name="Pamela Villagómez"
                   role={trans.about_page.members.member2_role}
                   phrase={trans.about_page.members.member2_phrase}
                 />
                 <MemberCard 
-                  src="/images/photos/member3.jpg"
+                  src={getAssetPath("/images/photos/member3.jpg")}
                   alt="Flor María Merlo"
                   name="Flor María Merlo"
                   role={trans.about_page.members.member3_role}
@@ -154,7 +155,7 @@ export default async function AboutPage(props) {
           <div className="about-page__life--content">
             <Image
               className="about-page__life--image"
-              src="/images/photos/vivol-nieve.JPG"
+              src={getAssetPath("/images/photos/vivol-nieve.JPG")}
               alt={trans.alt.about_image3}
               width={300}
               height={300}

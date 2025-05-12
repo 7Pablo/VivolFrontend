@@ -5,6 +5,7 @@ import { getCurrentYear } from 'utils/date';
 import FoldButton from "./buttons/FoldButton";
 import FooterItems from "./FooterItems";
 import FooterContact from "./FooterContact";
+import { getAssetPath } from "@/utils/getAssetPath";
 
 export default async function Footer({ lang }) {
     const locale = lang || 'en';
@@ -39,13 +40,13 @@ export default async function Footer({ lang }) {
                     <h2>{trans.footer.contact}</h2>
                     <div className="footer__contact--items">
                         <FooterContact
-                            src="/images/icons/whatsapp.svg"
+                            src={getAssetPath("/images/icons/whatsapp.svg")}
                             text='(+51) 903211488'
                             medium='51903211488'
                             type='whatsapp'
                         />
                         <FooterContact
-                            src="/images/icons/mail.svg"
+                            src={getAssetPath("/images/icons/mail.svg")}
                             text='info@vidayvoluntariado.org'
                             medium="info@vidayvoluntariado.org"
                             type="email"
@@ -58,19 +59,19 @@ export default async function Footer({ lang }) {
                 <small className="footer__bottom--text">© {currentYear} Vida y Voluntariado. {trans.footer.copyright}</small>
                 <div className="footer__social-media">
                     <FoldButton 
-                        src="/images/icons/instagram.svg"
+                        src={getAssetPath("/images/icons/instagram.svg")}
                         alt="Vivol Instagram"
                         text="Instagram"
                         link="https://www.instagram.com/vivol_peru/"
                     />
                     <FoldButton 
-                        src="/images/icons/tiktok.svg"
+                        src={getAssetPath("/images/icons/tiktok.svg")}
                         alt="Vivol Tik Tok"
                         text="Tik Tok"
                         link="https://www.tiktok.com/@vivol_peru?lang=es"
                     />
                     <FoldButton 
-                        src="/images/icons/facebook.svg"
+                        src={getAssetPath("/images/icons/facebook.svg")}
                         alt="Vivol Facebook"
                         text="Facebook"
                         link="https://www.facebook.com/profile.php?id=100080244291572"

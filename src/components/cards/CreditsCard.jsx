@@ -1,6 +1,7 @@
 // CreditsCard.jsx (Server component)
 
 import Image from "next/image";
+import { getAssetPath } from "@/utils/getAssetPath";
 
 export default function CreditsCard({imgSrc, title, name, email, linkedin, number, github}) {
     return (
@@ -19,7 +20,7 @@ export default function CreditsCard({imgSrc, title, name, email, linkedin, numbe
             <div className="credits-card__content">
                 <div className="credits-card__content--info">
                     <Image
-                        src="/images/icons/mail-blue.svg"
+                        src={getAssetPath("/images/icons/mail-blue.svg")}
                         alt="Mail icon"
                         height={30}
                         width={30}
@@ -28,7 +29,7 @@ export default function CreditsCard({imgSrc, title, name, email, linkedin, numbe
                 </div>
                 <div className="credits-card__content--info">
                     <Image
-                        src="/images/icons/linkedin.svg"
+                        src={getAssetPath("/images/icons/linkedin.svg")}
                         alt="Linkedin icon"
                         height={30}
                         width={30}
@@ -39,7 +40,7 @@ export default function CreditsCard({imgSrc, title, name, email, linkedin, numbe
                 </div>
                 <div className="credits-card__content--info">
                     <Image
-                        src="/images/icons/phone-blue.svg"
+                        src={getAssetPath("/images/icons/phone-blue.svg")}
                         alt="Phone icon"
                         height={30}
                         width={30}
@@ -48,7 +49,7 @@ export default function CreditsCard({imgSrc, title, name, email, linkedin, numbe
                 </div>
                 <div className="credits-card__content--info">
                     <Image
-                        src="/images/icons/github.svg"
+                        src={getAssetPath("/images/icons/github.svg")}
                         alt="Github icon"
                         height={30}
                         width={30}

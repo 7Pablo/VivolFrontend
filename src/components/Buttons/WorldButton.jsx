@@ -4,6 +4,7 @@
 import Image from "next/image";
 import { Dialog, Portal  } from "@chakra-ui/react"
 import CountryCard from "../cards/CountryCard";
+import { getAssetPath } from "@/utils/getAssetPath";
 
 export default function WorldButton({ data, icon, trans }) {
     
@@ -32,7 +33,7 @@ export default function WorldButton({ data, icon, trans }) {
                             <Dialog.CloseTrigger asChild>
                                 <div className="world-button__close">
                                     <Image
-                                        src="/images/icons/close.svg"
+                                        src={getAssetPath("/images/icons/close.svg")}
                                         alt="x"
                                         width={100}
                                         height={100}

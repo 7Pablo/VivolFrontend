@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { getTranslations } from "locales/translations";
 import SelectCard from "@/components/cards/SelectCard";
+import { getAssetPath } from "@/utils/getAssetPath";
 
 export default async function InvolvePage(props) {
   const params = await props.params;
@@ -12,7 +13,7 @@ export default async function InvolvePage(props) {
   return (
     <div className="involve-page">
       <Image
-          src="/images/photos/vivol-siete.jpg"
+          src={getAssetPath("/images/photos/vivol-siete.jpg")}
           alt={trans?.alt?.involve_image1 || "Rainbow Mountain, Peru"}
           fill
           style={{ objectFit: 'cover' }}
@@ -24,7 +25,7 @@ export default async function InvolvePage(props) {
         </div>
         <div className="involve-page__cards">
           <SelectCard
-            image="/images/photos/vivol-selfie.jpg"
+            image={getAssetPath("/images/photos/vivol-selfie.jpg")}
             alt={trans.alt.involve_image2}
             title={trans.involve_page.card1}
             backGroundColor="#fff"
@@ -33,7 +34,7 @@ export default async function InvolvePage(props) {
             position="50% 0%"
           />
           <SelectCard
-            image="/images/photos/vivol-sombrero.jpg"
+            image={getAssetPath("/images/photos/vivol-sombrero.jpg")}
             alt={trans.alt.involve_image3}
             title={trans.involve_page.card2}
             backGroundColor="#2087C9"

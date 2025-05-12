@@ -4,6 +4,7 @@ import { getTranslations } from "locales/translations";
 import FoldButton from "@/components/buttons/FoldButton";
 import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
+import { getAssetPath } from "@/utils/getAssetPath";
 
 export default async function ContactPage(props) {
 
@@ -28,7 +29,7 @@ export default async function ContactPage(props) {
           <div className="contact-page__left--middle">
             <div className="contact-page__left--social">
               <Image
-                src="/images/icons/location-blue.svg"
+                src={getAssetPath("/images/icons/location-blue.svg")}
                 alt="Location icon"
                 height={30}
                 width={30}
@@ -37,7 +38,7 @@ export default async function ContactPage(props) {
             </div>
             <div className="contact-page__left--social">
               <Image
-                src="/images/icons/phone-blue.svg"
+                src={getAssetPath("/images/icons/phone-blue.svg")}
                 alt="Phone icon"
                 height={30}
                 width={30}
@@ -46,7 +47,7 @@ export default async function ContactPage(props) {
             </div>
             <div className="contact-page__left--social">
               <Image
-                src="/images/icons/mail-blue.svg"
+                src={getAssetPath("/images/icons/mail-blue.svg")}
                 alt="Mail icon"
                 height={30}
                 width={30}
@@ -59,21 +60,21 @@ export default async function ContactPage(props) {
 
           <div className="contact-page__left--bottom">
             <FoldButton 
-                src="/images/icons/instagram-blue.svg"
+                src={getAssetPath("/images/icons/instagram-blue.svg")}
                 alt="Vivol Instagram"
                 text="Instagram"
                 link="https://www.instagram.com/vivol_peru/"
                 color="#626161"
             />
             <FoldButton 
-                src="/images/icons/tiktok-blue.svg"
+                src={getAssetPath("/images/icons/tiktok-blue.svg")}
                 alt="Vivol Tik Tok"
                 text="Tik Tok"
                 link="https://www.tiktok.com/@vivol_peru?lang=es"
                 color="#626161"
             />
             <FoldButton 
-                src="/images/icons/facebook-blue.svg"
+                src={getAssetPath("/images/icons/facebook-blue.svg")}
                 alt="Vivol Facebook"
                 text="Facebook"
                 link="https://www.facebook.com/profile.php?id=100080244291572"

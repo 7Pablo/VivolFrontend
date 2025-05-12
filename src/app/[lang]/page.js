@@ -6,6 +6,7 @@ import MoreCard from "@/components/cards/MoreCard";
 import CircleCard from "@/components/cards/CircleCard";
 import Slider from "@/components/Slider";
 import Image from "next/image";
+import { getAssetPath } from '@/utils/getAssetPath';
 
 export default async function HomePage(props) {
   const params = await props.params;
@@ -13,22 +14,22 @@ export default async function HomePage(props) {
   const trans = await getTranslations(lang);
 
   const carouselImages = [
-    { src: "/images/photos/vivol-agua.jpg", alt: trans.alt.carousel_image, position: "50% 55%"},
-    { src: "/images/photos/vivol-colores.jpeg", alt: trans.alt.carousel_image, position: "50% 42%"},
-    { src: "/images/photos/vivol-desierto.jpg", alt: trans.alt.carousel_image, position: "50% 48%"},
-    { src: "/images/photos/vivol-manos.jpg", alt: trans.alt.carousel_image, position: "50% 47%"}
+    { src: getAssetPath("/images/photos/vivol-agua.jpg"), alt: trans.alt.carousel_image, position: "50% 55%"},
+    { src: getAssetPath("/images/photos/vivol-colores.jpeg"), alt: trans.alt.carousel_image, position: "50% 42%"},
+    { src: getAssetPath("/images/photos/vivol-desierto.jpg"), alt: trans.alt.carousel_image, position: "50% 48%"},
+    { src: getAssetPath("/images/photos/vivol-manos.jpg"), alt: trans.alt.carousel_image, position: "50% 47%"}
   ];
 
   const testimonials = [
     {
-      imgSrc: "/images/photos/vivol-testimonio1.jpg",
+      imgSrc: getAssetPath("/images/photos/vivol-testimonio1.jpg"),
       imgAlt: trans.alt.testimonials_img,
       name: "Juan Pablo Armendáriz", 
       body: trans.home_page.testimonial1,
       position: "50% 50%"
     },
     {
-      imgSrc: "/images/photos/vivol-test3.jpeg",
+      imgSrc: getAssetPath("/images/photos/vivol-test3.jpeg"),
       imgAlt: trans.alt.testimonials_img,
       name: "Laura Martin",
       body: trans.home_page.testimonial3,
@@ -47,7 +48,7 @@ export default async function HomePage(props) {
         <h3>{trans.home_page.get_involved}</h3>
         <div className="home-page__involve--cards">
           <MoreCard
-            imgSrc="/images/photos/vivol-ninos.JPG"
+            imgSrc={getAssetPath("/images/photos/vivol-ninos.JPG")}
             imgAlt={trans.alt.more_image1}
             imgText={trans.home_page.more_image1}
             title={trans.home_page.more_title1}
@@ -57,7 +58,7 @@ export default async function HomePage(props) {
             imgPosition="50% 32%"
           />
           <MoreCard
-            imgSrc="/images/photos/vivol-familia.jpg"
+            imgSrc={getAssetPath("/images/photos/vivol-familia.jpg")}
             imgAlt={trans.alt.more_image2}
             imgText={trans.home_page.more_image2}
             title={trans.home_page.more_title2}
@@ -67,7 +68,7 @@ export default async function HomePage(props) {
             imgPosition="50% 50%"
           />
           <MoreCard
-            imgSrc="/images/photos/vivol-montana.jpg"
+            imgSrc={getAssetPath("/images/photos/vivol-montana.jpg")}
             imgAlt={trans.alt.more_image3}
             imgText={trans.home_page.more_image3}
             title={trans.home_page.more_title3}
@@ -83,7 +84,7 @@ export default async function HomePage(props) {
       <div className="home-page__quote">
         <div className="home-page__quote--fade">
           <Image
-            src="/images/photos/papel.jpg"
+            src={getAssetPath("/images/photos/papel.jpg")}
             alt={trans.alt.quote1}
             layout="fill"
             objectFit="cover"
@@ -92,7 +93,7 @@ export default async function HomePage(props) {
         </div>
         <div className="home-page__slogan--content">
           <Image
-              src='/images/icons/megaphone.svg'
+              src={getAssetPath('/images/icons/megaphone.svg')}
               alt="QMegaphone icon"
               width={50}
               height={50}
@@ -107,21 +108,21 @@ export default async function HomePage(props) {
         <h3>{trans.home_page.title}</h3>
         <div className="home-page__volunteering--cards">
           <CircleCard
-            icon="/images/icons/group.png"
+            icon={getAssetPath("/images/icons/group.png")}
             alt="Bulb icon"
             text={trans.home_page.start_now}
             color="#85AF59"
             route="volunteer"
           />
           <CircleCard
-            icon="/images/icons/docs.png"
+            icon={getAssetPath("/images/icons/docs.png")}
             alt="Documents icon"
             text={trans.home_page.documents}
             color="#D53686"
             route="documents"
           />
           <CircleCard
-            icon="/images/icons/travel.png"
+            icon={getAssetPath("/images/icons/travel.png")}
             alt="Plane icon"
             text={trans.home_page.destinations}
             color="#1583F0"
@@ -133,7 +134,7 @@ export default async function HomePage(props) {
       {/* Testimonials */}
       <div className="home-page__testimonials">
         <Image 
-          src="/images/photos/colaboration.jpg"
+          src={getAssetPath("/images/photos/colaboration.jpg")}
           alt={trans.alt.colaboration}
           layout="fill"
           objectFit="cover"
@@ -154,7 +155,7 @@ export default async function HomePage(props) {
             <div className="home-page__alliances--wrapper">
               <Image
                 className="home-page__alliances--icye"
-                src="/images/photos/icye-logo.png"
+                src={getAssetPath("/images/photos/icye-logo.png")}
                 alt="ICYE logo"
                 height={400}
                 width={400}
@@ -167,7 +168,7 @@ export default async function HomePage(props) {
             <div className="home-page__alliances--wrapper">
               <Image
                 className="home-page__alliances--unir"
-                src="/images/photos/unir.svg"
+                src={getAssetPath("/images/photos/unir.svg")}
                 alt="ICYE logo"
                 height={400}
                 width={400}

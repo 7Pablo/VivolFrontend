@@ -2,9 +2,10 @@
 
 import NavbarItems from "./NavbarItems"; 
 import { getTranslations } from "locales/translations";
-import HamDropdown from "./buttons/HamDropdown";
 import LanguageButton from "./buttons/LanguageButton";
 import NavbarButton from "./buttons/NavbarButton";
+import HamDropdown from "./buttons/HamDropdown";
+
 
 async function Navbar({ lang }) {
   const locale = lang || 'en';
