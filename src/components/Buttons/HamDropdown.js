@@ -22,8 +22,8 @@ export default function HamDropdown({ navItems }) {
             <Image
               src={getAssetPath("/images/icons/menu.svg")}
               alt="Menu icon"
-              height={30}
-              width={30}
+              height={300}
+              width={300}
               className="menu-icon"
             />
           </button>

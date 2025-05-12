@@ -823,6 +823,10 @@ a:focus {
 .ham-dropdown {
   display: none;
 }
+.ham-dropdown__button {
+  width: 30px;
+  height: 30px;
+}
 .ham-dropdown__button .menu-icon {
   transition: transform 0.3s ease;
 }

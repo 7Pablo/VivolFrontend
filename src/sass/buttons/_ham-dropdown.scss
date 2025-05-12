@@ -1,7 +1,10 @@
 .ham-dropdown {
     display: none;
 
-    &__button {
+    &__button { 
+        width: 30px;
+        height: 30px;
+
         .menu-icon {
             transition: transform 0.3s ease;
         }
