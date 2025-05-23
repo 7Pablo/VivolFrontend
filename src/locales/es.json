@@ -42,8 +42,16 @@
       "destinations": "Destinos",
       "testimonials": "Testimonios",
       "testimonial1": "\"Mi experiencia en Japón despertó en mí un profundo deseo de ayudar a los demás. Como el hijo menor de mi familia, trabajar en una escuela con niños me dio la oportunidad de sentirme como un hermano mayor, de guiarlos y crear vínculos que, estoy seguro, durarán toda la vida. Además, convivir tanto tiempo con otra cultura me permitió aprender sus costumbres y comenzar a estudiar un idioma desde cero.\"",
-      "testimonial2": "\"En retrospectiva a mi voluntariado, cada vez que alguien me pregunta por el año en Argentina, me es imposible resumir una experiencia tan intensa y clave en una simple respuesta de una frase. Para mí la experiencia de mi voluntariado ha sido una de las experiencias y aventuras más decisivas y de las que más marcaron\"",
+      "testimonial2": "\"Perú, mi país lindo. Me robaste el corazón desde el momento en que te conocí. Gracias a ti conocí a gente amable y recibí una bienvenida maravillosa. Con todos tus colores y tu diversidad, tienes la sonrisa más grande. Al vivir aquí, no solo descubrí una nueva cultura y un nuevo idioma, sino también una nueva versión de mí mismo. Aprendí mucho, y por eso siempre quiero volver a estar aquí, en mi mágico Perú.\"",
       "testimonial3": "\"No voy a decir que fue fácil, al principio me resulto muy complicado porque te ves forzado a ver tu realidad y empiezas a entender que lo que tienes es bastante. Recomiendo realizar un programa de voluntariado en el Perú, porque estoy seguro de que tendrás uno de tus mejores momentos, claro que habrá dificultades, pero esto es normal. Es acerca de acostumbrarse a un nuevo ambiente, comida, personas, cultura, etc. Pero poder experimentar algo diverso a tu hogar es una experiencia maravillosa que te dejara con un montón de buenos recuerdos.\"",
+      "testimonial4": "\"Para mi, pasar un año en Perú haciendo un voluntariado significa encontrar muchos nuevos amigos y pasar momentos lindos con ellos. A parte de un trabajo divertido donde aprendí bastantes cosas sobre mí y mis habilidades, tengo la posibilidad de viajar en Perú y Latinoamérica. Gracias al voluntariado en Lima, no ví solamente el desierto de la costa de este hermoso país, pero también la sierra de Arequipa, la selva de Iquitos y incluso algunos lugares de Ecuador. Por supuesto, el trabajo no es siempre facilito pero con cada día tengo la posibilidad de mejorar no solamente mi Español pero también de crear momentos bonitos con los niños.\"",
+      "testimonial5": "\"Mi experiencia en la India no solo me hizo madurar, sino que también me permitió conocer una realidad al otro lado del mundo que pocas veces valoramos. Vivir en un hospital en un pequeño pueblo indio me hizo consciente de los privilegios que tenemos y que muchas veces damos por sentados. Aprendí a adaptarme con poco y a encontrar alegría en las pequeñas cosas. Haber vivido esta experiencia en la mitad de mi carrera universitaria como médico, me forjó de una manera distinta y me ha abierto incontables oportunidades en todos los campos de mi profesión.\"",
+      "testimonial6": "\"Gracias a Vivol viví una experiencia de vulontariado internacional en Perú que me enriqueció profundamente. Me siento más consciente y agradecida por todo lo que tengo, y llevo en el corazón a las personas especiales que conocí. Me considero muy afortunada por haber tenido la oportunidad de conocer una nueva cultura, nuevas personas, nuevos sabores y experimentar un nuevo idioma. Enfrentarme a una realidad tan distinta a la mía me hizo reflexionar sobre cuánto damos por sentado lo esencial. Es una experiencia que me abrió los ojos y dejó una huella profunda en mi\"",
+      "testimonial7": "\"Vivir un año en Alemania como voluntaria ha sido una experiencia que me marcó profundamente. Trabajar en una guardería me enseñó el valor de la paciencia, la empatía y el cariño en lo cotidiano. Aunque estar lejos de casa no siempre fue fácil, cada día con los niños, aprendiendo de una nueva cultura y compartiendo con personas de todo el mundo, me hizo crecer como persona. Sin duda, esta experiencia me cambió la forma de ver el mundo.\"",
+      "testimonial8": "\"Cuando nuestra hija nos contó que se iría un año a Alemania para hacer voluntariado, sentimos una mezcla de orgullo y temor. Era la primera vez que estaría tan lejos, en un país nuevo, con otro idioma y otra cultura. Pero verla tan decidida nos dio fuerzas. Hoy, después de 10 meses escuchando sus historias sobre los niños del voluntariado, lo mucho que ha aprendido y cómo ha crecido como persona, no podemos estar más feliz por su decisión. Sé que esta experiencia no solo ha tocado la vida de los demás, sino que también ha hecho de ella una mujer más fuerte, más empática y más segura. Como sus Padres, solo podemos decir: vale la pena animarlos a dar ese gran paso\"",
+      "testimonial8_name": "Familia Rodrigo Calderón",
+      "testimonial9": "\"Venir a Alemania a hacer mi año de voluntariado ha sido una de las mejores decisiones de mi vida. Este programa unió mis pasiones: viajar, conocer nuevas culturas y ayudar a los demás. Me permitió crecer, hacer vínculos esenciales y descubrir lo que quiero para mi futuro, algo que antes no tenía claro. Estoy profundamente agradecida por esta experiencia y animo a otros jóvenes a vivir algo así.\"",
+      "testimonial10": "\"Mi experiencia en Alemania ha sido transformadora. Ha representado un reto constante, pero también una oportunidad única para descubrirme a mí misma y crecer de manera personal. Cada desafío me ha permitido aprender y adaptarme a nuevas realidades mientras me sumergía en una cultura distinta. Sin duda, esta experiencia me permite expandir mis horizontes de una manera muy enriquecedora.\"",
       "alliances": "Alianzas"
     },
 
@@ -804,5 +812,52 @@
       "contact": "Contáctanos",
       "contact_simple": "Contacto",
       "send": "Enviar"
+    },
+
+    "metadata": {
+      "home": {
+        "title": "Vivol – Voluntariado internacional y en Perú",
+        "description": "Conéctate a través del voluntariado en Perú o en el extranjero. Únete a Vivol y marca la diferencia."
+      },
+      "about": {
+        "title": "Sobre Vivol – Nuestra misión e historia",
+        "description": "Conoce los valores, la misión y el trabajo de Vivol para conectar voluntarios a nivel global."
+      },
+      "book": {
+        "title": "Enviar una queja – Retroalimentación Vivol",
+        "description": "¿Tienes una queja? Envíala de forma segura a través de nuestro formulario."
+      },
+      "contact": {
+        "title": "Contacto – Vivol",
+        "description": "Comunícate con Vivol para preguntas, alianzas o oportunidades de voluntariado."
+      },
+      "documents": {
+        "title": "Documentos y Preguntas Frecuentes – Vivol",
+        "description": "Encuentra documentos importantes, guías y respuestas a preguntas frecuentes sobre Vivol."
+      },
+      "involve": {
+        "title": "Involúcrate – Familias anfitrionas y proyectos – Vivol",
+        "description": "Descubre cómo ser parte de Vivol como familia anfitriona o registrando tu proyecto."
+      },
+      "family": {
+        "title": "Sé una familia anfitriona – Vivol",
+        "description": "Abre tu hogar a voluntarios internacionales y vive un intercambio cultural enriquecedor."
+      },
+      "project": {
+        "title": "Registra tu proyecto – Vivol",
+        "description": "Genera un impacto positivo recibiendo voluntarios internacionales en tu proyecto."
+      },
+      "volunteer": {
+        "title": "Voluntariado con Vivol – Visión general",
+        "description": "Descubre cómo hacer voluntariado con Vivol, ya sea a nivel nacional o internacional con ICYE."
+      },
+      "international": {
+        "title": "Voluntariado en el extranjero – 40 países con Vivol",
+        "description": "¡Sé un voluntario global! Explora oportunidades, requisitos y destinos disponibles."
+      },
+      "national": {
+        "title": "Voluntariado en Perú – Vivol",
+        "description": "Voluntarios internacionales: Descubran Perú y contribuyan a proyectos locales con impacto."
+      }
     }
   }

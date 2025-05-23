@@ -4,6 +4,28 @@ import { getAssetPath } from "@/utils/getAssetPath";
 import { getTranslations } from "locales/translations";
 import Image from "next/image";
 
+// Metadata
+export async function generateMetadata({ params }) {
+
+  // Translations
+  const { lang } = await params;
+  const trans = await getTranslations(lang);
+
+  // Canonical
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const path = `/${lang}/involve/project`; 
+  const canonicalUrl = `${baseUrl}${path}`;
+  
+  return {
+    title: trans.metadata?.project.title || 'Registra tu proyecto – Vivol',
+    description: trans.metadata?.project.description || 'Genera un impacto positivo recibiendo voluntarios internacionales en tu proyecto.',
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
+
+// ProjectPage
 export default async function ProjectPage(props) {
   const params = await props.params;
   const lang = params?.lang || 'es'; 
@@ -15,7 +37,7 @@ export default async function ProjectPage(props) {
       {/* Intro */}
       <div className="project-page__intro">
         <Image
-          src={getAssetPath("/images/photos/vivol-dibujo.jpg")}
+          src={getAssetPath("/images/photos/vivol-dibujo.webp")}
           alt={trans?.alt?.project_image1 || "Volunteers drawing with children"}
           fill
           style={{ objectFit: 'cover', objectPosition: "50% 60%" }}
@@ -52,7 +74,7 @@ export default async function ProjectPage(props) {
           </div>
           <div className="project-page__body--image">
             <Image
-              src={getAssetPath("/images/photos/vivol-salto.jpg")}
+              src={getAssetPath("/images/photos/vivol-salto.webp")}
               alt={trans?.alt?.project_image2 || "VIVOL volunteers"}
               fill
               style={{ objectFit: 'cover', objectPosition: "50% 15%" }}
@@ -64,7 +86,7 @@ export default async function ProjectPage(props) {
         <div className="project-page__body--card">
           <div className="project-page__body--image">
             <Image
-              src={getAssetPath("/images/photos/vivol-mono.JPG")}
+              src={getAssetPath("/images/photos/vivol-mono.webp")}
               alt={trans?.alt?.project_image3 || "Volunteer with a monkey"}
               fill
               style={{ objectFit: 'cover' }}
@@ -109,7 +131,7 @@ export default async function ProjectPage(props) {
           </div>
           <div className="project-page__body--image">
             <Image
-              src={getAssetPath("/images/photos/vivol-gradas.jpg")}
+              src={getAssetPath("/images/photos/vivol-gradas.webp")}
               alt={trans?.alt?.project_image4 || "Volunteer with signs on some stairs"}
               fill
               style={{ objectFit: 'cover', objectPosition: "10% 80%" }}

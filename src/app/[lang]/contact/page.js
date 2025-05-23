@@ -6,6 +6,28 @@ import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
 import { getAssetPath } from "@/utils/getAssetPath";
 
+// Metadata
+export async function generateMetadata({ params }) {
+
+  // Translations
+  const { lang } = await params;
+  const trans = await getTranslations(lang);
+
+  // Canonical
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const path = `/${lang}/contact`; 
+  const canonicalUrl = `${baseUrl}${path}`;
+  
+  return {
+    title: trans.metadata?.contact.title || 'Contacto – Vivol',
+    description: trans.metadata?.contact.description || 'Comunícate con Vivol para preguntas, alianzas o oportunidades de voluntariado.',
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
+
+// ContactPage
 export default async function ContactPage(props) {
 
   // Translation
@@ -20,7 +42,7 @@ export default async function ContactPage(props) {
         {/* Card left */}
         <div className="contact-page__left">
           <div className="contact-page__left--top">
-            <h3>{trans.contact_page.title}</h3>
+            <h1>{trans.contact_page.title}</h1>
             <p>{trans.contact_page.text}</p>
           </div>
 

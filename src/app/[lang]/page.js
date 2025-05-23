@@ -8,28 +8,106 @@ import Slider from "@/components/Slider";
 import Image from "next/image";
 import { getAssetPath } from '@/utils/getAssetPath';
 
+// Metadata
+export async function generateMetadata({ params }) {
+
+  // Translations
+  const { lang } = await params;
+  const trans = await getTranslations(lang);
+
+  // Canonical
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const path = `/${lang}`; 
+  const canonicalUrl = `${baseUrl}${path}`;
+
+  return {
+    title: trans.metadata?.home.title || 'Vivol – Voluntariado internacional y en Perú',
+    description: trans.metadata?.home.description || 'Conéctate a través del voluntariado en Perú o en el extranjero. Únete a Vivol y marca la diferencia.',
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
+
+// HomePage
 export default async function HomePage(props) {
   const params = await props.params;
   const lang = params?.lang || 'es'; 
   const trans = await getTranslations(lang);
 
   const carouselImages = [
-    { src: getAssetPath("/images/photos/vivol-agua.jpg"), alt: trans.alt.carousel_image, position: "50% 55%"},
-    { src: getAssetPath("/images/photos/vivol-colores.jpeg"), alt: trans.alt.carousel_image, position: "50% 42%"},
-    { src: getAssetPath("/images/photos/vivol-desierto.jpg"), alt: trans.alt.carousel_image, position: "50% 48%"},
-    { src: getAssetPath("/images/photos/vivol-manos.jpg"), alt: trans.alt.carousel_image, position: "50% 47%"}
+    { src: getAssetPath("/images/photos/vivol-agua.webp"), alt: trans.alt.carousel_image, position: "50% 55%"},
+    { src: getAssetPath("/images/photos/vivol-colores.webp"), alt: trans.alt.carousel_image, position: "50% 42%"},
+    { src: getAssetPath("/images/photos/vivol-desierto.webp"), alt: trans.alt.carousel_image, position: "50% 48%"},
+    { src: getAssetPath("/images/photos/vivol-manos.webp"), alt: trans.alt.carousel_image, position: "50% 47%"}
   ];
 
   const testimonials = [
     {
-      imgSrc: getAssetPath("/images/photos/vivol-testimonio1.jpg"),
+      imgSrc: getAssetPath("/images/photos/vivol-testimonio1.webp"),
       imgAlt: trans.alt.testimonials_img,
       name: "Juan Pablo Armendáriz", 
       body: trans.home_page.testimonial1,
       position: "50% 50%"
     },
     {
-      imgSrc: getAssetPath("/images/photos/vivol-test3.jpeg"),
+      imgSrc: getAssetPath("/images/photos/vivol-testimonio2.webp"),
+      imgAlt: trans.alt.testimonials_img,
+      name: "Lucie Bollmann", 
+      body: trans.home_page.testimonial2,
+      position: "50% 50%"
+    },
+    {
+      imgSrc: getAssetPath("/images/photos/vivol-testimonio4.webp"),
+      imgAlt: trans.alt.testimonials_img,
+      name: "Arthur Parthier", 
+      body: trans.home_page.testimonial4,
+      position: "50% 50%"
+    },
+    {
+      imgSrc: getAssetPath("/images/photos/vivol-testimonio5.webp"),
+      imgAlt: trans.alt.testimonials_img,
+      name: "Stephy Larrea Merlo", 
+      body: trans.home_page.testimonial5,
+      position: "50% 30%"
+    },
+    {
+      imgSrc: getAssetPath("/images/photos/vivol-testimonio6.webp"),
+      imgAlt: trans.alt.testimonials_img,
+      name: "Maria Madori", 
+      body: trans.home_page.testimonial6,
+      position: "100% 30%"
+    },
+    {
+      imgSrc: getAssetPath("/images/photos/vivol-testimonio7.webp"),
+      imgAlt: trans.alt.testimonials_img,
+      name: "Nicole Rodrigo Calderón", 
+      body: trans.home_page.testimonial7,
+      position: "60% 70%"
+    },
+    {
+      imgSrc: getAssetPath("/images/photos/vivol-testimonio8.webp"),
+      imgAlt: trans.alt.testimonials_img,
+      name: trans.home_page.testimonial8_name, 
+      body: trans.home_page.testimonial8,
+      position: "50% 50%"
+    },
+    {
+      imgSrc: getAssetPath("/images/photos/vivol-testimonio9.webp"),
+      imgAlt: trans.alt.testimonials_img,
+      name: "Daniela Chamorro", 
+      body: trans.home_page.testimonial9,
+      position: "50% 50%"
+    },
+    {
+      imgSrc: getAssetPath("/images/photos/vivol-testimonio10.webp"),
+      imgAlt: trans.alt.testimonials_img,
+      name: "Desiree Meregildo Palomino", 
+      body: trans.home_page.testimonial10,
+      position: "50% 40%"
+    },
+    {
+      imgSrc: getAssetPath("/images/photos/vivol-testimonio3.webp"),
       imgAlt: trans.alt.testimonials_img,
       name: "Laura Martin",
       body: trans.home_page.testimonial3,
@@ -40,15 +118,20 @@ export default async function HomePage(props) {
   return (
     <div className="home-page">
 
+      <h1 className="sr-only">{trans.home_page.title}</h1>
+
       {/* Carousel */}
-      <Carousel imageLinks={carouselImages}/>
+      <Carousel 
+        imageLinks={carouselImages}
+        translations={trans}
+      />
 
       {/* Get involve */}
       <div className="home-page__involve">
         <h3>{trans.home_page.get_involved}</h3>
         <div className="home-page__involve--cards">
           <MoreCard
-            imgSrc={getAssetPath("/images/photos/vivol-ninos.JPG")}
+            imgSrc={getAssetPath("/images/photos/vivol-ninos.webp")}
             imgAlt={trans.alt.more_image1}
             imgText={trans.home_page.more_image1}
             title={trans.home_page.more_title1}
@@ -58,7 +141,7 @@ export default async function HomePage(props) {
             imgPosition="50% 32%"
           />
           <MoreCard
-            imgSrc={getAssetPath("/images/photos/vivol-familia.jpg")}
+            imgSrc={getAssetPath("/images/photos/vivol-familia.webp")}
             imgAlt={trans.alt.more_image2}
             imgText={trans.home_page.more_image2}
             title={trans.home_page.more_title2}
@@ -68,7 +151,7 @@ export default async function HomePage(props) {
             imgPosition="50% 50%"
           />
           <MoreCard
-            imgSrc={getAssetPath("/images/photos/vivol-montana.jpg")}
+            imgSrc={getAssetPath("/images/photos/vivol-montana.webp")}
             imgAlt={trans.alt.more_image3}
             imgText={trans.home_page.more_image3}
             title={trans.home_page.more_title3}
@@ -84,10 +167,10 @@ export default async function HomePage(props) {
       <div className="home-page__quote">
         <div className="home-page__quote--fade">
           <Image
-            src={getAssetPath("/images/photos/papel.jpg")}
+            src={getAssetPath("/images/photos/papel.webp")}
             alt={trans.alt.quote1}
-            layout="fill"
-            objectFit="cover"
+            fill
+            style={{ objectFit: 'cover' }}
             quality={100}
           />
         </div>
@@ -134,10 +217,10 @@ export default async function HomePage(props) {
       {/* Testimonials */}
       <div className="home-page__testimonials">
         <Image 
-          src={getAssetPath("/images/photos/colaboration.jpg")}
+          src={getAssetPath("/images/photos/colaboration.webp")}
           alt={trans.alt.colaboration}
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: 'cover' }}
           quality={100}
           className="home-page__testimonials--background"
         />
@@ -155,7 +238,7 @@ export default async function HomePage(props) {
             <div className="home-page__alliances--wrapper">
               <Image
                 className="home-page__alliances--icye"
-                src={getAssetPath("/images/photos/icye-logo.png")}
+                src={getAssetPath("/images/photos/icye-logo.webp")}
                 alt="ICYE logo"
                 height={400}
                 width={400}

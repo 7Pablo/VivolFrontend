@@ -6,32 +6,9 @@ import 'swiper/css';
 import { Autoplay } from 'swiper/modules'; 
 import Image from 'next/image';
 import Button from './buttons/Button';
-import { useRouter, usePathname } from "next/navigation"; 
-import { useState, useEffect } from "react";
-import { getTranslations } from "locales/translations";
 import { getAssetPath } from '@/utils/getAssetPath';
 
-export default function Carousel({ imageLinks }) {
-    const router = useRouter();
-    const pathname = usePathname(); 
-    const lang = pathname.startsWith("/en") ? "en" : "es"; 
-    
-    // Translations
-    const [translations, setTranslations] = useState(null);
-
-    useEffect(() => {
-        const fetchTranslations = async () => {
-            const trans = await getTranslations(lang);
-            setTranslations(trans);
-        };
-
-        fetchTranslations();
-    }, [lang]);
-
-    if (!translations) {
-        return <div></div>;
-    }
-
+export default function Carousel({ imageLinks, translations }) {
     return (
         <div className='carousel'>
             <Swiper
@@ -51,9 +28,8 @@ export default function Carousel({ imageLinks }) {
                             <Image
                                 src={image.src}  
                                 alt={image.alt}  
-                                layout="fill"
-                                objectFit="cover"
-                                objectPosition={image.position || "center center"}
+                                fill
+                                style={{ objectFit: 'cover', objectPosition: image.position || "center center" }}
                                 quality={100}
                                 priority
                             />
@@ -82,8 +58,8 @@ export default function Carousel({ imageLinks }) {
                             className="carousel__logo--world"
                         />
                         <div className="carousel__logo--text">
-                            <h1 className="carousel__logo--text-title">VIVOL</h1>
-                            <h2 className="carousel__logo--text-subtitle">Vida y Voluntariado</h2>
+                            <h2 className="carousel__logo--text-title">VIVOL</h2>
+                            <h3 className="carousel__logo--text-subtitle">Vida y Voluntariado</h3>
                         </div>
                     </div>
                 </div>

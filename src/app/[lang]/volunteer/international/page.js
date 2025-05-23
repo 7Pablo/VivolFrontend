@@ -9,6 +9,28 @@ import WorldButton from "@/components/buttons/WorldButton";
 import WorldDropdown from "@/components/buttons/WorldDropdown";
 import { getAssetPath } from "@/utils/getAssetPath";
 
+// Metadata
+export async function generateMetadata({ params }) {
+
+  // Translations
+  const { lang } = await params;
+  const trans = await getTranslations(lang);
+
+  // Canonical
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const path = `/${lang}/volunteer/international`; 
+  const canonicalUrl = `${baseUrl}${path}`;
+  
+  return {
+    title: trans.metadata?.international.title || 'Voluntariado en el extranjero – 40 países con Vivol',
+    description: trans.metadata?.international.description || '¡Sé un voluntario global! Explora oportunidades, requisitos y destinos disponibles.',
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
+
+// InternationalPage
 export default async function InternationalPage(props) {
   const params = await props.params;
   const lang = params?.lang || 'es'; 
@@ -20,7 +42,7 @@ export default async function InternationalPage(props) {
       {/* Intro */}
       <div className="inter-page__intro">
         <Image
-          src={getAssetPath("/images/photos/vivol-torii.jpg")}
+          src={getAssetPath("/images/photos/vivol-torii.webp")}
           alt={trans?.alt?.inter_image1 || "Volunteer in front of a Torii gate"}
           fill
           style={{ objectFit: 'cover', objectPosition: '50% 55%' }}
@@ -37,7 +59,7 @@ export default async function InternationalPage(props) {
       {/* Info */}
       <div className="inter-page__info">
         <div className="inter-page__info--title">
-          <h1>{trans.inter_page.info_title}</h1>
+          <h2>{trans.inter_page.info_title}</h2>
           <Image
             src={getAssetPath("/images/photos/icye-logo-simple.svg")}
             alt="ICYE logo"
@@ -48,7 +70,7 @@ export default async function InternationalPage(props) {
         <div className="inter-page__info--left">
           <div className="inter-page__info--image-1">
             <Image
-              src={getAssetPath("/images/photos/vivol-alemania.jpg")}
+              src={getAssetPath("/images/photos/vivol-alemania.webp")}
               alt={trans?.alt?.inter_image2 || "Volunteer in Germany in front of a tower"}
               fill
               style={{ objectFit: 'cover' }}
@@ -64,7 +86,7 @@ export default async function InternationalPage(props) {
           </p>
           <div className="inter-page__info--image-2">
             <Image
-              src={getAssetPath("/images/photos/vivol-paz.jpg")}
+              src={getAssetPath("/images/photos/vivol-paz.webp")}
               alt={trans?.alt?.inter_image3 || "Volunteer in front of a statue"}
               fill
               style={{ objectFit: 'cover' }}
@@ -74,7 +96,7 @@ export default async function InternationalPage(props) {
         <div className="inter-page__info--left">
           <div className="inter-page__info--image-3">
             <Image
-              src={getAssetPath("/images/photos/vivol-pileta.jpeg")}
+              src={getAssetPath("/images/photos/vivol-pileta.webp")}
               alt={trans?.alt?.inter_image4 || "Volunteer in front of a fountain"}
               fill
               style={{ objectFit: 'cover' }}
@@ -140,7 +162,7 @@ export default async function InternationalPage(props) {
       <div className="inter-page__process">
             <div className="inter-page__background">
               <Image
-                src={getAssetPath("/images/photos/alemania.jpg")}
+                src={getAssetPath("/images/photos/alemania.webp")}
                 alt="Germany"
                 fill
                 style={{ objectFit: 'cover'}}

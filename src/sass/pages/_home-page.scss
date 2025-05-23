@@ -115,6 +115,7 @@
 
         h3 {
             @include title-font($size: 28px, $weight: 500, $color: $blue-main);
+            text-align: center;
         } 
 
         &--cards {
@@ -144,7 +145,8 @@
     // Tesmimonials
     &__testimonials {
         position: relative;
-        height: 700px;
+        min-height: fit-content; 
+        height: auto; 
 
         h3 {
             @include title-font($size: 28px, $weight: 500, $color: #fff);
@@ -162,6 +164,7 @@
             height: 100%; 
             background: linear-gradient(to left, rgba($blue-main, 0.20), rgba($blue-main, 0.70));
             z-index: 1;
+            padding: 50px;
         }
     }
 
@@ -245,10 +248,9 @@
         }
 
         &__testimonials {
-            height: 800px;
-
             &--overlay {
                 gap: 40px;
+                padding: 40px;
             }
         }
 
@@ -324,11 +326,16 @@
             }
         }
 
+        .home-page__quote {
+            height: 350px;
+        }
+
         &__slogan {
             &--content {
                 h4 {
                     font-size: 30px;
                     line-height: 36px;
+                    max-width: 300px;
                 }
             }
 
@@ -339,10 +346,9 @@
         }
 
         &__testimonials {
-            height: 875px;
-
             &--overlay {
-                gap: 50px;
+                gap: 30px;
+                padding: 30px;
             }
 
             h3 {
@@ -394,22 +400,24 @@
         &__slogan {
             &--content {
                 padding: 0 30px;
-
-                h4 {
-                    font-size: 26px;
-                    line-height: 32px;
-                }
             }
-        }
-
-        &__testimonials {
-            height: 875px;
         }
     }
 } 
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 // Animations
- 
 @keyframes fadeInOpacity {
     0% {
         opacity: 0;

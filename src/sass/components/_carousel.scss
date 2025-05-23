@@ -59,13 +59,13 @@
 
         &--text {
             max-width: 380px;
-
-            h1 {
+            
+            h2 {
                 @include logo-font($size: 124px, $color: #fff);
                 line-height: 134px;
             }
 
-            h2 {
+            h3 {
                 @include logo-font($size: 41px, $weight: 400, $color: #fff);
             }
         }
@@ -91,12 +91,12 @@
             }
     
             &--text {
-                h1 {
+                h2 {
                     font-size: 97px;
                     line-height: 97px;
                 }
     
-                h2 {
+                h3 {
                     font-size: 32px;
                 }
             }
@@ -158,12 +158,12 @@
             }
     
             &--text {
-                h1 {
+                h2 {
                     font-size: 75px;
                     line-height: 75px;
                 }
     
-                h2 {
+                h3 {
                     font-size: 25px;
                 }
             }
@@ -198,12 +198,12 @@
             }
     
             &--text {
-                h1 {
+                h2 {
                     font-size: 58px;
                     line-height: 70px;
                 }
     
-                h2 {
+                h3 {
                     font-size: 19px;
                     line-height: 20px;
                 }

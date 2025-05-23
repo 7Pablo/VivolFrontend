@@ -6,6 +6,28 @@ import BenefitCard from "@/components/cards/BenefitCard";
 import Button from "@/components/buttons/Button";
 import { getAssetPath } from "@/utils/getAssetPath";
 
+// Metadata
+export async function generateMetadata({ params }) {
+
+  // Translations
+  const { lang } = await params;
+  const trans = await getTranslations(lang);
+
+  // Canonical
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const path = `/${lang}/involve/family`; 
+  const canonicalUrl = `${baseUrl}${path}`;
+  
+  return {
+    title: trans.metadata?.family.title || 'Sé una familia anfitriona – Vivol',
+    description: trans.metadata?.family.description || 'Abre tu hogar a voluntarios internacionales y vive un intercambio cultural enriquecedor.',
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
+
+// FamilyPage
 export default async function FamilyPage(props) {
   const params = await props.params;
   const lang = params?.lang || 'es'; 
@@ -17,7 +39,7 @@ export default async function FamilyPage(props) {
       {/* Intro */}
       <div className="family-page__intro">
         <Image
-          src={getAssetPath("/images/photos/vivol-unida.jpg")}
+          src={getAssetPath("/images/photos/vivol-unida.webp")}
           alt={trans?.alt?.involve_image2 || "Volunteer with their host family"}
           fill
           style={{ objectFit: 'cover', objectPosition: '50% 60%' }}
@@ -39,7 +61,7 @@ export default async function FamilyPage(props) {
         </div>
         <div className="family-page__question--image">
           <Image 
-            src={getAssetPath("/images/photos/vivol-navidad.JPG")}
+            src={getAssetPath("/images/photos/vivol-navidad.webp")}
             alt={trans?.alt?.family_image1 || "Volunteers sharing with host family at Christmas"}
             fill
             style={{ objectFit: 'cover' }}
@@ -50,7 +72,7 @@ export default async function FamilyPage(props) {
       {/* Meaning */}
       <div className="family-page__meaning">
         <Image
-          src={getAssetPath("/images/photos/peru-calles.jpg")}
+          src={getAssetPath("/images/photos/peru-calles.webp")}
           alt="Streets Peru"
           fill
           style={{ objectFit: 'cover' }}
@@ -78,7 +100,7 @@ export default async function FamilyPage(props) {
       <div className="family-page__middle">
         <div className="family-page__middle--image">
           <Image 
-            src={getAssetPath("/images/photos/vivol-pico.jpg")}
+            src={getAssetPath("/images/photos/vivol-pico.webp")}
             alt={trans?.alt?.family_image2 || "Volunteer with host family on a rock"}
             fill
             style={{ objectFit: 'cover' }}

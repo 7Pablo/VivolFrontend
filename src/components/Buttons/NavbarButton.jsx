@@ -23,8 +23,8 @@ export default function NavbarButton() {
                     alt="Logo"
                     priority
                     width={140}
-                    height={0}   
-                    style={{ height: "auto", objectFit: "contain" }}
+                    height={140}   
+                    style={{ objectFit: "contain" }}
                 />
             </div>
         </div>

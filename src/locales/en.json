@@ -41,9 +41,17 @@
       "documents": "Documents of interest",
       "destinations": "Destinations",
       "testimonials": "Testimonials",
-      "testimonial1": "\"My experience in Japan sparked a deep desire in me to help others. As the youngest child in my family, working at a school with children gave me the chance to feel like an older brother—to guide them and build bonds that I believe will last a lifetime. Moreover, spending so much time immersed in another culture allowed me to learn its customs and start studying a new language from scratch.\"",
-      "testimonial2": "\"Looking back on my volunteer work, every time someone asks me about my year in Argentina, it's impossible for me to sum up such an intense and pivotal experience in a simple one-sentence answer. For me, the experience of volunteering has been one of the most defining and impactful adventures of my life.\"",
-      "testimonial3": "\"I’m not going to say it was easy — at first, it was really hard because you're forced to face your own reality and start to realize that what you have is actually quite a lot. I recommend doing a volunteer program in Peru, because I’m sure you’ll have some of the best moments of your life. Of course, there will be challenges, but that’s normal. It’s about getting used to a new environment, food, people, culture, and more. But getting to experience something so different from your home is a wonderful experience that will leave you with a ton of great memories.\"",
+      "testimonial1": "\"My experience in Japan awakened in me a deep desire to help others. As the youngest child in my family, working at a school with children gave me the opportunity to feel like an older brother—to guide them and create bonds that I’m sure will last a lifetime. Also, spending so much time immersed in another culture allowed me to learn their customs and begin studying a language from scratch.\"",
+      "testimonial2": "\"Peru, my beautiful country. You stole my heart from the moment I met you. Thanks to you, I met kind people and received a wonderful welcome. With all your colors and diversity, you have the biggest smile. Living here, I didn’t just discover a new culture and a new language—I also discovered a new version of myself. I learned so much, and that’s why I always want to come back to be here, in my magical Peru.\"",
+      "testimonial3": "\"I’m not going to say it was easy—at first, it was very difficult because you’re forced to see your reality and start to understand that what you have is more than enough. I recommend doing a volunteer program in Peru because I’m sure you’ll have one of your best moments. Of course, there will be challenges, but that’s normal. It’s about getting used to a new environment, food, people, culture, etc. But being able to experience something so different from your home is a wonderful experience that will leave you with many great memories.\"",
+      "testimonial4": "\"For me, spending a year in Peru doing volunteer work meant finding many new friends and having beautiful moments with them. Apart from a fun job where I learned a lot about myself and my abilities, I also had the chance to travel through Peru and Latin America. Thanks to the volunteer program in Lima, I didn’t just see the desert on the coast of this beautiful country, but also the highlands of Arequipa, the jungle in Iquitos, and even parts of Ecuador. Of course, the work wasn’t always easy, but every day gave me the chance to improve not only my Spanish but also to create beautiful moments with the children.\"",
+      "testimonial5": "\"My experience in India not only helped me mature, but also allowed me to see a reality on the other side of the world that we often fail to appreciate. Living in a hospital in a small Indian village made me aware of the privileges we have and often take for granted. I learned to adapt with little and to find joy in the small things. Living this experience in the middle of my university studies as a medical student shaped me in a unique way and opened countless opportunities for me in every field of my profession.\"",
+      "testimonial6": "\"Thanks to Vivol, I had an international volunteering experience in Peru that deeply enriched me. I feel more aware and grateful for everything I have, and I carry in my heart the special people I met. I consider myself very lucky to have had the opportunity to discover a new culture, meet new people, try new flavors, and experience a new language. Facing a reality so different from my own made me reflect on how much we take the essentials for granted. It's an experience that opened my eyes and left a deep mark on me.\"",
+      "testimonial7": "\"Living in Germany for a year as a volunteer was an experience that deeply marked me. Working at a daycare taught me the value of patience, empathy, and affection in daily life. Although being far from home wasn’t always easy, every day with the children, learning about a new culture and sharing with people from all over the world, helped me grow as a person. Without a doubt, this experience changed the way I see the world.\"",
+      "testimonial8": "\"When our daughter told us she was going to Germany for a year to do volunteer work, we felt a mix of pride and fear. It was the first time she would be so far away, in a new country, with a different language and culture. But seeing her so determined gave us strength. Today, after 10 months of hearing her stories about the children she volunteers with, how much she has learned, and how she has grown as a person, we couldn’t be happier with her decision. I know this experience has not only touched the lives of others but also made her a stronger, more empathetic, and more confident woman. As her parents, we can only say: it’s worth encouraging them to take that big step.\"",
+      "testimonial8_name": "Rodrigo Calderón Family",
+      "testimonial9": "\"Coming to Germany to do my year of volunteering has been one of the best decisions of my life. This program combined my passions: traveling, discovering new cultures, and helping others. It allowed me to grow, form essential bonds, and discover what I want for my future—something I wasn’t clear about before. I am deeply grateful for this experience and encourage other young people to live something like this.\"",
+      "testimonial10": "\"My experience in Germany has been transformative. It has been a constant challenge, but also a unique opportunity to discover myself and grow personally. Every obstacle has allowed me to learn and adapt to new realities while immersing myself in a different culture. Without a doubt, this experience has expanded my horizons in a truly enriching way.\"",
       "alliances": "Alliances"
     },
 
@@ -806,6 +814,53 @@
       "contact": "Contact us",
       "contact_simple": "Contact",
       "send": "Send"
+    },
+
+    "metadata": {
+      "home": {
+        "title": "Vivol – International Volunteering and in Peru",
+        "description": "Connect through volunteering in Peru or abroad. Join Vivol and make a difference."
+      },
+      "about": {
+        "title": "About Vivol – Our Mission and Story",
+        "description": "Learn about Vivol's values, mission, and our work to connect volunteers globally."
+      },
+      "book": {
+        "title": "Send a Complaint – Vivol Feedback",
+        "description": "Have a concern? Submit your complaint securely through our feedback form."
+      },
+      "contact": {
+        "title": "Contact Vivol",
+        "description": "Reach out to Vivol for questions, partnerships, or volunteer opportunities."
+      },
+      "documents": {
+        "title": "Documents & FAQs – Vivol",
+        "description": "Find important documents, guides, and answers to common questions about Vivol."
+      },
+      "involve": {
+        "title": "Get Involved – Host Families & Projects – Vivol",
+        "description": "Learn how to join Vivol by hosting volunteers or registering your project."
+      },
+      "family": {
+        "title": "Become a Host Family – Vivol",
+        "description": "Open your home to international volunteers and experience cultural exchange."
+      },
+      "project": {
+        "title": "Register Your Project – Vivol",
+        "description": "Make a positive impact by receiving international volunteers in your project."
+      },
+      "volunteer": {
+        "title": "Volunteering with Vivol – Overview",
+        "description": "Discover how to volunteer with Vivol nationally or internationally with ICYE."
+      },
+      "international": {
+        "title": "Volunteer Abroad – 40 Countries with Vivol",
+        "description": "Become a global volunteer! Explore opportunities, requirements, and destinations."
+      },
+      "national": {
+        "title": "Volunteer in Peru – Vivol",
+        "description": "International volunteers: Discover Peru and contribute to impactful local projects."
+      }
     }
   }
   

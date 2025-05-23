@@ -21,7 +21,7 @@
         padding: 50px;
         flex: 1;
 
-        h3 {
+        h1 {
             @include title-font($size: 45px, $color: $blue-tertiary);
         }
 
@@ -78,7 +78,7 @@
             @include flex($align: start, $gap: 30px);
             padding: 40px;
 
-            h3 {
+            h1 {
                 font-size: 42px;
             }
         }
@@ -97,7 +97,7 @@
         padding: 60px 40px;
 
         &__left {
-            h3 {
+            h1 {
                 font-size: 40px;
             }
     

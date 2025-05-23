@@ -47,7 +47,7 @@ export default function FooterItems({ footItems, creditsLabel }) {
                       </div>
                   </Dialog.CloseTrigger>
                   <CreditsCard
-                    imgSrc={getAssetPath("/images/photos/juanpablo.jpg")}
+                    imgSrc={getAssetPath("/images/photos/juanpablo.webp")}
                     title={creditsLabel}
                     name="Juan Pablo Armendáriz"
                     email="juanpaarmendariz3@gmail.com"

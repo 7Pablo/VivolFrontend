@@ -7,6 +7,28 @@ import BenefitCard from "@/components/cards/BenefitCard";
 import Button from "@/components/buttons/Button";
 import { getAssetPath } from "@/utils/getAssetPath";
 
+// Metadata
+export async function generateMetadata({ params }) {
+
+  // Translations
+  const { lang } = await params;
+  const trans = await getTranslations(lang);
+
+  // Canonical
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const path = `/${lang}/volunteer`; 
+  const canonicalUrl = `${baseUrl}${path}`;
+  
+  return {
+    title: trans.metadata?.volunteer.title || 'Voluntariado con Vivol – Visión general',
+    description: trans.metadata?.volunteer.description || 'Descubre cómo hacer voluntariado con Vivol, ya sea a nivel nacional o internacional con ICYE.',
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
+
+// VolunteerPage
 export default async function VolunteerPage(props) {
   const params = await props.params;
   const lang = params?.lang || 'es'; 
@@ -20,7 +42,7 @@ export default async function VolunteerPage(props) {
         <div className="volunteer__decision--background">
           <div className="volunteer__decision--half">
             <Image
-              src={getAssetPath("/images/photos/vivol-inter.jpg")}
+              src={getAssetPath("/images/photos/vivol-inter.webp")}
               alt={trans?.alt?.volunteer_background1 || "Volunteer in Germany"}
               fill
               style={{ objectFit: 'cover', objectPosition: 'center' }}
@@ -29,7 +51,7 @@ export default async function VolunteerPage(props) {
           </div>
           <div className="volunteer__decision--half">
             <Image
-              src={getAssetPath("/images/photos/vivol-nat.jpg")}
+              src={getAssetPath("/images/photos/vivol-nat.webp")}
               alt={trans?.alt?.volunteer_background2 || "Volunteer in Peru"}
               fill
               style={{ objectFit: 'cover', objectPosition: 'center' }}
@@ -52,7 +74,7 @@ export default async function VolunteerPage(props) {
       <div className="volunteer__definition">
         <Image
           className="volunteer__definition--image"
-          src={getAssetPath("/images/photos/vivol-austria.jpeg")}
+          src={getAssetPath("/images/photos/vivol-austria.webp")}
           alt={trans?.alt?.volunteer_image1 || "Volunteer in Austria"}
           width={300}
           height={300}
@@ -67,10 +89,10 @@ export default async function VolunteerPage(props) {
       <div className="home-page__quote">
         <div className="home-page__quote--fade">
           <Image
-            src={getAssetPath("/images/photos/papel.jpg")}
+            src={getAssetPath("/images/photos/papel.webp")}
             alt={trans?.alt?.quote1 || "Paper background"}
-            layout="fill"
-            objectFit="cover"
+            fill
+            style={{ objectFit: 'cover' }}
             quality={100}
           />
         </div>
@@ -96,7 +118,7 @@ export default async function VolunteerPage(props) {
           </div>
           <Image
             className="volunteer__middle--image-1"
-            src={getAssetPath("/images/photos/vivol-fiestas.jpg")}
+            src={getAssetPath("/images/photos/vivol-fiestas.webp")}
             alt={trans?.alt?.volunteer_image2 || "Volunteers in Party"}
             width={300}
             height={300}
@@ -106,7 +128,7 @@ export default async function VolunteerPage(props) {
         <div className="volunteer__middle--bottom">
           <Image
             className="volunteer__middle--image-2"
-            src={getAssetPath("/images/photos/vivol-cartel.JPG")}
+            src={getAssetPath("/images/photos/vivol-cartel.webp")}
             alt={trans.alt.volunteer_image3 || "Volunteers holding a sign"}
             width={300}
             height={300}

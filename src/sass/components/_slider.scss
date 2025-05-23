@@ -69,7 +69,7 @@
 
     @include responsive(medium) {
         .swiper-slide {
-            height: 525px;
+            height: fit-content;
             margin-bottom: 50px;
         }
 
@@ -86,7 +86,6 @@
 
     @include responsive(smedium) {
         .swiper-slide {
-            height: 600px;
             margin-bottom: 70px;
         }
 
@@ -100,7 +99,7 @@
 
     @include responsive(small) {
         .swiper-slide {
-            padding: 0px 40px;
+            padding: 0px 30px;
             margin-bottom: 60px;
         }
     }

@@ -10,10 +10,9 @@ export default function WideCard({ imgSrc, imgAlt, name, body, position }) {
                     className="wide-card__image"
                     src={imgSrc}
                     alt={imgAlt}
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    style={{ objectFit: 'cover', objectPosition: position || "center center" }}
                     quality={100}
-                    objectPosition={position || "center center"}
                 />
             </div>
             <div className="wide-card__body">

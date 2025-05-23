@@ -6,6 +6,28 @@ import OvalCard from "@/components/cards/OvalCard";
 import MemberCard from "@/components/cards/MemberCard";
 import { getAssetPath } from "@/utils/getAssetPath";
 
+// Metadata
+export async function generateMetadata({ params }) {
+
+  // Translations
+  const { lang } = await params;
+  const trans = await getTranslations(lang);
+
+  // Canonical
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const path = `/${lang}/about`; 
+  const canonicalUrl = `${baseUrl}${path}`;
+
+  return {
+    title: trans.metadata?.about.title || 'Sobre Vivol – Nuestra misión e historia',
+    description: trans.metadata?.about.description || 'Conoce los valores, la misión y el trabajo de Vivol para conectar voluntarios a nivel global.',
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
+
+// AboutPage
 export default async function AboutPage(props) {
     const params = await props.params;
     const lang = params?.lang || 'es'; 
@@ -14,11 +36,13 @@ export default async function AboutPage(props) {
     return (
       <div className="about-page">
 
+        <h1 className="sr-only">{trans.about_page.about}</h1>
+
         {/* Introducction */}
         <div className="about-page__intro">
           <Image
             className="about-page__intro--image"
-            src={getAssetPath("/images/photos/vivol-celeste.jpg")}
+            src={getAssetPath("/images/photos/vivol-celeste.webp")}
             alt={trans.alt.about_image1}
             width={300}
             height={300}
@@ -44,7 +68,7 @@ export default async function AboutPage(props) {
           </div>
           <Image
             className="about-page__middle--image"
-            src={getAssetPath("/images/photos/vivol-chaleco.jpg")}
+            src={getAssetPath("/images/photos/vivol-chaleco.webp")}
             alt={trans.alt.about_image2}
             width={300}
             height={300}
@@ -57,10 +81,10 @@ export default async function AboutPage(props) {
         <div className="home-page__quote">
           <div className="home-page__quote--fade">
             <Image
-              src={getAssetPath("/images/photos/papel.jpg")}
+              src={getAssetPath("/images/photos/papel.webp")}
               alt={trans.alt.quote1}
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: 'cover' }}
               quality={100}
             />
           </div>
@@ -113,7 +137,7 @@ export default async function AboutPage(props) {
         {/* Members */}
         <div className="about-page__members">
             <Image 
-            src={getAssetPath("/images/photos/machupicchu.jpg")}
+            src={getAssetPath("/images/photos/machupicchu.webp")}
               alt="Machu Picchu, Peru"
               fill
               style={{ objectFit: 'cover', objectPosition: '50% 60%' }}
@@ -124,21 +148,21 @@ export default async function AboutPage(props) {
               <h2>{trans.about_page.members_active}</h2>
               <div className="about-page__members--cards">
                 <MemberCard 
-                  src={getAssetPath("/images/photos/anonymous.jpg")}
+                  src={getAssetPath("/images/photos/anonymous.webp")}
                   alt="Renato Noriega"
                   name="Renato Noriega"
                   role={trans.about_page.members.member1_role}
                   phrase={trans.about_page.members.member1_phrase}
                 />
                 <MemberCard 
-                  src={getAssetPath("/images/photos/anonymous.jpg")}
+                  src={getAssetPath("/images/photos/anonymous.webp")}
                   alt="Pamela Villagómez"
                   name="Pamela Villagómez"
                   role={trans.about_page.members.member2_role}
                   phrase={trans.about_page.members.member2_phrase}
                 />
                 <MemberCard 
-                  src={getAssetPath("/images/photos/member3.jpg")}
+                  src={getAssetPath("/images/photos/member3.webp")}
                   alt="Flor María Merlo"
                   name="Flor María Merlo"
                   role={trans.about_page.members.member3_role}
@@ -155,7 +179,7 @@ export default async function AboutPage(props) {
           <div className="about-page__life--content">
             <Image
               className="about-page__life--image"
-              src={getAssetPath("/images/photos/vivol-nieve.JPG")}
+              src={getAssetPath("/images/photos/vivol-nieve.webp")}
               alt={trans.alt.about_image3}
               width={300}
               height={300}

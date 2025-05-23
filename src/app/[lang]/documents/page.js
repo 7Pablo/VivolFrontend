@@ -1,22 +1,44 @@
-// page.js (Dopcuments/Server component)
+// page.js (Documents/Server component)
 
 import PinCard from "@/components/cards/PinCard";
 import { getAssetPath } from "@/utils/getAssetPath";
 import { getTranslations } from "locales/translations";
 import Image from "next/image";
 
-export default async function BookPage(props) {
+// Metadata
+export async function generateMetadata({ params }) {
+
+  // Translations
+  const { lang } = await params;
+  const trans = await getTranslations(lang);
+
+  // Canonical
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const path = `/${lang}/documents`; 
+  const canonicalUrl = `${baseUrl}${path}`;
+  
+  return {
+    title: trans.metadata?.documents.title || 'Documentos y Preguntas Frecuentes – Vivol',
+    description: trans.metadata?.documents.description || 'Encuentra documentos importantes, guías y respuestas a preguntas frecuentes sobre Vivol.',
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
+
+// DocumentsPage
+export default async function DocumentsPage(props) {
     const params = await props.params;
     const lang = params?.lang || 'es'; 
     const trans = await getTranslations(lang);
 
     return (
         <div className="documents-page">
-            <h3>{trans.documents_page.title}</h3>
+            <h1>{trans.documents_page.title}</h1>
 
             <div className="documents-page__content">
                 <Image 
-                    src={getAssetPath("/images/photos/board.jpg")}
+                    src={getAssetPath("/images/photos/board.webp")}
                     alt="board background"
                     fill
                     style={{ objectFit: "cover" }}

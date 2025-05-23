@@ -51,7 +51,7 @@
         &--title {
             @include flex($direction: row, $justify: start, $gap: 20px);
 
-            h1 {
+            h2 {
                 @include title-font($size: 45px, $color: $blue-tertiary);
             }
         }
@@ -293,7 +293,7 @@
             gap: 30px;
 
             &--title {
-                h1 {
+                h2 {
                     font-size: 42px;
                 }
             }
@@ -372,7 +372,7 @@
             &--title {
                 @include flex($direction: column, $gap: 10px);
     
-                h1 {
+                h2 {
                     font-size: 40px;
                     max-width: 500px;
                     text-align: center;

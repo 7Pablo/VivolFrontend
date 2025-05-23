@@ -7,6 +7,28 @@ import Image from "next/image";
 import { getTranslations } from "locales/translations";
 import { getAssetPath } from "@/utils/getAssetPath";
 
+// Metadata
+export async function generateMetadata({ params }) {
+
+  // Translations
+  const { lang } = await params;
+  const trans = await getTranslations(lang);
+
+  // Canonical
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const path = `/${lang}/volunteer/national`; 
+  const canonicalUrl = `${baseUrl}${path}`;
+  
+  return {
+    title: trans.metadata?.national.title || 'Voluntariado en Perú – Vivol',
+    description: trans.metadata?.national.description || 'Voluntarios internacionales: Descubran Perú y contribuyan a proyectos locales con impacto.',
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
+
+// NationalPage
 export default async function NationalPage(props) {
   const params = await props.params;
   const lang = params?.lang || 'es'; 
@@ -18,7 +40,7 @@ export default async function NationalPage(props) {
       {/* Intro */}
       <div className="national-page__intro">
         <Image
-          src={getAssetPath("/images/photos/vivol-paleta.jpg")}
+          src={getAssetPath("/images/photos/vivol-paleta.webp")}
           alt={trans?.alt?.national_image1 || "Volunteer with paddles"}
           fill
           style={{ objectFit: 'cover', objectPosition: '50% 35%' }}
@@ -36,7 +58,7 @@ export default async function NationalPage(props) {
       <div className="national-page__info">
         <div className="national-page__info--image">
           <Image
-            src={getAssetPath("/images/photos/peru.png")}
+            src={getAssetPath("/images/photos/peru.webp")}
             alt={trans?.alt?.peru_flag || "Peru flag"}
             height={500}
             width={500}
@@ -79,7 +101,7 @@ export default async function NationalPage(props) {
       <div className="national-page__geography">
       <div className="national-page__geography--image">
           <Image
-            src={getAssetPath("/images/photos/rio.jpg")}
+            src={getAssetPath("/images/photos/rio.webp")}
             alt="Mountain Peru"
             fill
             style={{ objectFit: 'cover', objectPosition: '40% 50%' }}
@@ -147,7 +169,7 @@ export default async function NationalPage(props) {
         <h3>{trans.national_page.projects_title}</h3>
         <div className="national-page__projects--cards">
           <ProjectCard
-            image={getAssetPath("/images/photos/vivol-compartir.JPG")}
+            image={getAssetPath("/images/photos/vivol-compartir.webp")}
             alt={trans.alt.national_image2}
             title={trans.national_page.projects_card_title1}
             quote={trans.national_page.projects_card_quote1}
@@ -155,7 +177,7 @@ export default async function NationalPage(props) {
             color="#B490F0"
           />
           <ProjectCard 
-            image={getAssetPath("/images/photos/vivol-ancianos.jpeg")}
+            image={getAssetPath("/images/photos/vivol-ancianos.webp")}
             alt={trans.alt.national_image3}
             title={trans.national_page.projects_card_title2}
             quote={trans.national_page.projects_card_quote2}
