@@ -177,7 +177,7 @@ export default async function VolunteerPage(props) {
             color="#1583F0"
           />
           <BenefitCard
-            icon={getAssetPath("/images/icons/truck.svg")}
+            icon={getAssetPath("/images/icons/transport.svg")}
             title={trans.volunteer_page.benefits_truck_title}
             text={trans.volunteer_page.benefits_truck_text}
             color="#00BFBF"

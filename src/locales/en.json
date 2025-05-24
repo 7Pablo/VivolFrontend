@@ -52,6 +52,7 @@
       "testimonial8_name": "Rodrigo Calderón Family",
       "testimonial9": "\"Coming to Germany to do my year of volunteering has been one of the best decisions of my life. This program combined my passions: traveling, discovering new cultures, and helping others. It allowed me to grow, form essential bonds, and discover what I want for my future—something I wasn’t clear about before. I am deeply grateful for this experience and encourage other young people to live something like this.\"",
       "testimonial10": "\"My experience in Germany has been transformative. It has been a constant challenge, but also a unique opportunity to discover myself and grow personally. Every obstacle has allowed me to learn and adapt to new realities while immersing myself in a different culture. Without a doubt, this experience has expanded my horizons in a truly enriching way.\"",
+      "testimonial11": "\"Nepal was an unmatched experience in both my student and personal life. Getting to know the reality of a country and culture so different from my own helped me mature and value my career even more. Living near the hospital where I did my volunteer work allowed me to build close relationships with the staff, doctors, nurses, technicians, and even pharmacists, from whom I gained great friendships and fond memories. By living alongside a different religion, I was able to better understand the culture and the idiosyncrasies of their society. This volunteer experience helped me start my clinical training with more confidence, and it has undoubtedly been a key contribution to my development as a doctor.\"",
       "alliances": "Alliances"
     },
 
@@ -98,7 +99,7 @@
       "title": "International Volunteering and Volunteering in Peru: Choose Your Path",
       "definition": "Volunteering is a challenge taken on altruistically, offering our knowledge and skills in service of a specific cause. It is the expression of human connection and social support.",
       "quote": "In every community, there is work to be done. In every nation, there are wounds to heal. In every heart, there is the power to do it.",
-      "middle_text1": "We invite you to join our team of volunteers who take part in this great initiative year after year—promoting social support and participating in an experiential learning process.",
+      "middle_text1": "We invite you to become part of our team of volunteers who, year after year, join this great initiative. Promote social aid, and take part in an experiential learning process.",
       "middle_text2": "A social cultural exchange allows you to develop and strengthen skills that are only possible through immersion. By doing international volunteering, you not only have the opportunity to travel to another country, but you also get to:",
       "middle_text3": {
         "bullet1": "Discover a new culture",
@@ -177,12 +178,12 @@
     "inter_page": {
       "title": "International Volunteering",
       "intro_text": "Join international volunteering and bring your support to communities in various countries, all while immersing yourself in unique and diverse cultures. Live unforgettable adventures, connect with people from around the world, and leave a positive impact wherever you go. Your participation can transform lives!",
-      "info_title": "ICYE Volunteering Program",
-      "info_text1": "The International Cultural Youth Exchange (ICYE) federation is a non-profit organization with over 65 years of experience promoting global citizenship. Since its beginnings, ICYE has encouraged youth mobility through cultural exchanges and volunteering around the world. Its main goal is to eliminate prejudice and foster intercultural understanding, building a fairer and more peaceful world together.",
-      "info_text2": "ICYE organizes short- and long-term exchange programs in over 40 countries, where you combine your stay with volunteer service. It offers participants the opportunity to immerse themselves in another culture while doing social work abroad, gaining access to multicultural education and non-formal learning.",
-      "info_text3": "At VIVOL, we are part of the ICYE network, promoting these youth exchanges both short-term (1 to 5 months) and long-term (6 months to 1 year). Through this international volunteering program, we want more young people to understand their role as members of a global society, fostering understanding between different cultures and nations.",
+      "info_title": "International Volunteering Program",
+      "info_text1": "VIVOL is part of the ICYE network, promoting these youth exchanges both short-term (1 to 4 months) and long-term (6 months to 1 year). Through this international volunteering program, we want more young people to understand their role as members of a global society, fostering understanding between different cultures and nations.",
+      "info_text2": "The International Cultural Youth Exchange (ICYE) federation is a non-profit organization with over 75 years of experience promoting global citizenship. Since its beginnings, ICYE has encouraged youth mobility through cultural exchanges and volunteering around the world. Its main goal is to eliminate prejudice and foster intercultural understanding, building a fairer and more peaceful world together.",
+      "info_text3": "ICYE organizes short- and long-term exchange programs in over 40 countries, where you combine your stay with volunteer service. It offers participants the opportunity to immerse themselves in another culture while doing social work abroad, gaining access to multicultural education and non-formal learning.",
       "benefits_title": "Program Benefits",
-      "benefits_text": "The ICYE program is designed to guide the volunteer throughout their immersion experience in another country, its culture, and their service project. During your international volunteering, you will have the following benefits:",
+      "benefits_text": "The international volunteering program is designed to guide the volunteer throughout their immersion experience in another country, its culture, and their service project. During your international volunteering, you will have the following benefits:",
       "tangibles": {
         "title": "Tangible Benefits",
         "bullet1": "Accommodation: free lodging with a host family or project.",
@@ -191,7 +192,7 @@
         "bullet4": "Local transportation: basic mobility covered (depending on the project/country).",
         "bullet5": "Pre-departure training: seminars and preparation activities in Peru before departure.",
         "bullet6": "On-site orientation: follow-up and orientation activities once you are in your host country.",
-        "bullet7": "ICYE certificate: official participation certificate upon completion of the program.",
+        "bullet7": "Certificate: official participation certificate upon completion of the program.",
         "bullet8": "Basic language course: introductory lessons in the local language (for long-term programs).",
         "bullet9": "Pocket money: a monthly financial allowance for personal expenses (for long-term programs)."
       },
@@ -211,19 +212,19 @@
         "bullet2": "Visa costs for the destination country",
         "bullet3": "Departure or entry taxes"
       },
-      "process_title": "ICYE Program Application Process",
-      "process_subtitle1": "What do you need to participate in the ICYE program?",
+      "process_title": "International volunteering program application process",
+      "process_subtitle1": "What do you need to participate in the international volunteering program?",
       "reqs": {
         "req1": "Age: Be between 18 and 35 years old (the exact limit depends on the destination country).",
         "req2": "Service vocation: Willingness to contribute by doing social work in the community.",
         "req3": "Adaptability: Motivation to live in another country and immerse yourself in a different culture.",
         "req4": "Preparation: Availability to attend all pre-departure preparation activities organized by VIVOL.",
-        "req5": "Financing: Ability to cover the cost of participation in the ICYE program.",
+        "req5": "Financing: Ability to cover the cost of participation in the volunteering program.",
         "req6": "Travel: Means to pay for your airfare and necessary visa procedures."
       },
       "process_subtitle2": "ICYE Program Process",
       "steps": {
-        "step1": "Information session with parents and the future volunteer",
+        "step1": "Information session with parents and future volunteers",
         "step2": "Application and Motivation Letter",
         "step3": "Program acceptance",
         "step4": "Preliminary application",

@@ -107,6 +107,13 @@ export default async function HomePage(props) {
       position: "50% 40%"
     },
     {
+      imgSrc: getAssetPath("/images/photos/vivol-testimonio11.webp"),
+      imgAlt: trans.alt.testimonials_img,
+      name: "Gabriel Larrea Merlo", 
+      body: trans.home_page.testimonial11,
+      position: "30% 50%"
+    },
+    {
       imgSrc: getAssetPath("/images/photos/vivol-testimonio3.webp"),
       imgAlt: trans.alt.testimonials_img,
       name: "Laura Martin",

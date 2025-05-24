@@ -60,12 +60,6 @@ export default async function InternationalPage(props) {
       <div className="inter-page__info">
         <div className="inter-page__info--title">
           <h2>{trans.inter_page.info_title}</h2>
-          <Image
-            src={getAssetPath("/images/photos/icye-logo-simple.svg")}
-            alt="ICYE logo"
-            height={100}
-            width={100}
-          />
         </div>
         <div className="inter-page__info--left">
           <div className="inter-page__info--image-1">
