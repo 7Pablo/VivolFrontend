@@ -46,7 +46,7 @@
       "testimonial3": "\"I’m not going to say it was easy—at first, it was very difficult because you’re forced to see your reality and start to understand that what you have is more than enough. I recommend doing a volunteer program in Peru because I’m sure you’ll have one of your best moments. Of course, there will be challenges, but that’s normal. It’s about getting used to a new environment, food, people, culture, etc. But being able to experience something so different from your home is a wonderful experience that will leave you with many great memories.\"",
       "testimonial4": "\"For me, spending a year in Peru doing volunteer work meant finding many new friends and having beautiful moments with them. Apart from a fun job where I learned a lot about myself and my abilities, I also had the chance to travel through Peru and Latin America. Thanks to the volunteer program in Lima, I didn’t just see the desert on the coast of this beautiful country, but also the highlands of Arequipa, the jungle in Iquitos, and even parts of Ecuador. Of course, the work wasn’t always easy, but every day gave me the chance to improve not only my Spanish but also to create beautiful moments with the children.\"",
       "testimonial5": "\"My experience in India not only helped me mature, but also allowed me to see a reality on the other side of the world that we often fail to appreciate. Living in a hospital in a small Indian village made me aware of the privileges we have and often take for granted. I learned to adapt with little and to find joy in the small things. Living this experience in the middle of my university studies as a medical student shaped me in a unique way and opened countless opportunities for me in every field of my profession.\"",
-      "testimonial6": "\"Thanks to Vivol, I had an international volunteering experience in Peru that deeply enriched me. I feel more aware and grateful for everything I have, and I carry in my heart the special people I met. I consider myself very lucky to have had the opportunity to discover a new culture, meet new people, try new flavors, and experience a new language. Facing a reality so different from my own made me reflect on how much we take the essentials for granted. It's an experience that opened my eyes and left a deep mark on me.\"",
+      "testimonial6": "\"Thanks to VIVOL, I had an international volunteering experience in Peru that deeply enriched me. I feel more aware and grateful for everything I have, and I carry in my heart the special people I met. I consider myself very lucky to have had the opportunity to discover a new culture, meet new people, try new flavors, and experience a new language. Facing a reality so different from my own made me reflect on how much we take the essentials for granted. It's an experience that opened my eyes and left a deep mark on me.\"",
       "testimonial7": "\"Living in Germany for a year as a volunteer was an experience that deeply marked me. Working at a daycare taught me the value of patience, empathy, and affection in daily life. Although being far from home wasn’t always easy, every day with the children, learning about a new culture and sharing with people from all over the world, helped me grow as a person. Without a doubt, this experience changed the way I see the world.\"",
       "testimonial8": "\"When our daughter told us she was going to Germany for a year to do volunteer work, we felt a mix of pride and fear. It was the first time she would be so far away, in a new country, with a different language and culture. But seeing her so determined gave us strength. Today, after 10 months of hearing her stories about the children she volunteers with, how much she has learned, and how she has grown as a person, we couldn’t be happier with her decision. I know this experience has not only touched the lives of others but also made her a stronger, more empathetic, and more confident woman. As her parents, we can only say: it’s worth encouraging them to take that big step.\"",
       "testimonial8_name": "Rodrigo Calderón Family",
@@ -618,14 +618,14 @@
 
     "involve_page": {
       "title": "Get Involved",
-      "body": "Join the Vivol family and become part of a movement that changes lives. Become a volunteer and make a difference in the community!",
+      "body": "Join the VIVOL family and become part of a movement that changes lives. Become a volunteer and make a difference in the community!",
       "card1": "Host Family",
       "card2": "Volunteer in My Project"
     },
 
     "family_page": {
       "title": "Host Family Program",
-      "intro_text": "Join Vivol’s Host Family Program and welcome international volunteers into your home. Be part of a unique cultural experience and transform lives!",
+      "intro_text": "Join VIVOL’s Host Family Program and welcome international volunteers into your home. Be part of a unique cultural experience and transform lives!",
       "question_question": "Have you ever wondered how you could experience a different culture without leaving your country?",
       "question_text": "At VIVOL, we welcome young volunteers from different parts of the world for cultural learning programs through social volunteering. These volunteers stay with host families during the time they carry out their social mission in Peru, sharing daily life with them.",
       "meaning_title": "What does it mean to be a host family?",
@@ -819,47 +819,47 @@
 
     "metadata": {
       "home": {
-        "title": "Vivol – International Volunteering and in Peru",
-        "description": "Connect through volunteering in Peru or abroad. Join Vivol and make a difference."
+        "title": "VIVOL – International Volunteering and in Peru",
+        "description": "Connect through volunteering in Peru or abroad. Join VIVOL and make a difference."
       },
       "about": {
-        "title": "About Vivol – Our Mission and Story",
-        "description": "Learn about Vivol's values, mission, and our work to connect volunteers globally."
+        "title": "About VIVOL – Our Mission and Story",
+        "description": "Learn about VIVOL's values, mission, and our work to connect volunteers globally."
       },
       "book": {
-        "title": "Send a Complaint – Vivol Feedback",
+        "title": "Send a Complaint – VIVOL Feedback",
         "description": "Have a concern? Submit your complaint securely through our feedback form."
       },
       "contact": {
-        "title": "Contact Vivol",
-        "description": "Reach out to Vivol for questions, partnerships, or volunteer opportunities."
+        "title": "Contact VIVOL",
+        "description": "Reach out to VIVOL for questions, partnerships, or volunteer opportunities."
       },
       "documents": {
-        "title": "Documents & FAQs – Vivol",
-        "description": "Find important documents, guides, and answers to common questions about Vivol."
+        "title": "Documents & FAQs – VIVOL",
+        "description": "Find important documents, guides, and answers to common questions about VIVOL."
       },
       "involve": {
-        "title": "Get Involved – Host Families & Projects – Vivol",
-        "description": "Learn how to join Vivol by hosting volunteers or registering your project."
+        "title": "Get Involved – Host Families & Projects – VIVOL",
+        "description": "Learn how to join VIVOL by hosting volunteers or registering your project."
       },
       "family": {
-        "title": "Become a Host Family – Vivol",
+        "title": "Become a Host Family – VIVOL",
         "description": "Open your home to international volunteers and experience cultural exchange."
       },
       "project": {
-        "title": "Register Your Project – Vivol",
+        "title": "Register Your Project – VIVOL",
         "description": "Make a positive impact by receiving international volunteers in your project."
       },
       "volunteer": {
-        "title": "Volunteering with Vivol – Overview",
-        "description": "Discover how to volunteer with Vivol nationally or internationally with ICYE."
+        "title": "Volunteering with VIVOL – Overview",
+        "description": "Discover how to volunteer with VIVOL nationally or internationally with ICYE."
       },
       "international": {
-        "title": "Volunteer Abroad – 40 Countries with Vivol",
+        "title": "Volunteer Abroad – 40 Countries with VIVOL",
         "description": "Become a global volunteer! Explore opportunities, requirements, and destinations."
       },
       "national": {
-        "title": "Volunteer in Peru – Vivol",
+        "title": "Volunteer in Peru – VIVOL",
         "description": "International volunteers: Discover Peru and contribute to impactful local projects."
       }
     }
