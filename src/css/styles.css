@@ -4280,8 +4280,8 @@ a:focus {
     padding: 30px;
   }
   .national-page__intro--text h1 {
-    font-size: 55px;
-    line-height: 55px;
+    font-size: 44px;
+    line-height: 44px;
     max-width: 100%;
   }
   .national-page__intro--text p {
@@ -4951,8 +4951,8 @@ a:focus {
     padding: 30px;
   }
   .inter-page__intro--text h1 {
-    font-size: 53px;
-    line-height: 53px;
+    font-size: 44px;
+    line-height: 44px;
     max-width: 100%;
   }
   .inter-page__intro--text p {
@@ -5061,7 +5061,7 @@ a:focus {
   max-width: 1100px;
   animation: slideInLeft 0.8s ease-out forwards;
 }
-.involve-page__text h2 {
+.involve-page__text h1 {
   font-family: var(--font-montserrat), sans-serif;
   font-size: 80px;
   font-weight: 500;
@@ -5100,7 +5100,7 @@ a:focus {
 }
 
 @media (max-width: 1200px) {
-  .involve-page__text h2 {
+  .involve-page__text h1 {
     font-size: 70px;
   }
   .involve-page__overlay {
@@ -5115,7 +5115,7 @@ a:focus {
   }
 }
 @media (max-width: 800px) {
-  .involve-page__text h2 {
+  .involve-page__text h1 {
     font-size: 55px;
   }
   .involve-page__text p {
@@ -5129,6 +5129,9 @@ a:focus {
 @media (max-width: 550px) {
   .involve-page__overlay {
     padding: 50px;
+  }
+  .involve-page__text h1 {
+    font-size: 44px;
   }
 }
 @keyframes slideInLeft {
@@ -5601,8 +5604,8 @@ a:focus {
     padding: 30px;
   }
   .family-page__intro--text h1 {
-    font-size: 53px;
-    line-height: 53px;
+    font-size: 44px;
+    line-height: 44px;
   }
   .family-page__intro--text p {
     font-size: 16px;
@@ -5907,8 +5910,8 @@ a:focus {
     padding: 30px;
   }
   .project-page__intro--text h1 {
-    font-size: 53px;
-    line-height: 53px;
+    font-size: 44px;
+    line-height: 44px;
   }
   .project-page__intro--text p {
     font-size: 16px;

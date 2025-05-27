@@ -42,7 +42,7 @@ export default async function InvolvePage(props) {
         />
       <div className="involve-page__overlay">
         <div className="involve-page__text">
-          <h2>{trans.involve_page.title}</h2>
+          <h1>{trans.involve_page.title}</h1>
           <p>{trans.involve_page.body}</p>
         </div>
         <div className="involve-page__cards">

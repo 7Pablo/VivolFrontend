@@ -114,6 +114,13 @@ export default async function HomePage(props) {
       position: "30% 50%"
     },
     {
+      imgSrc: getAssetPath("/images/photos/vivol-testimonio12.webp"),
+      imgAlt: trans.alt.testimonials_img,
+      name: "Gloria Boza", 
+      body: trans.home_page.testimonial12,
+      position: "50% 60%"
+    },
+    {
       imgSrc: getAssetPath("/images/photos/vivol-testimonio3.webp"),
       imgAlt: trans.alt.testimonials_img,
       name: "Laura Martin",
