@@ -7,7 +7,7 @@ import { getTranslations } from "locales/translations";
 export async function generateMetadata({ params }) {
 
   // Translations
-   const { lang } = await params;
+  const { lang } = await params;
   const trans = await getTranslations(lang);
 
   // Canonical

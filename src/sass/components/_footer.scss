@@ -26,7 +26,7 @@
         @include flex($align: start, $gap: 15px);
         min-width: fit-content;
 
-        &--items {
+        &--items { 
             @include flex($align: start, $gap: 5px);
 
             li {
