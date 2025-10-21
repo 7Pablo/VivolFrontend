@@ -17,6 +17,7 @@
         box-shadow: 0 6px 6px rgba(0,0,0,0.25);
         border-radius: 10px 80px 10px 80px;
         overflow: hidden;
+        user-select: none;
     }
 
     &__cards {

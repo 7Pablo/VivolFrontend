@@ -6,6 +6,7 @@
         position: relative;
 		width: 100%;
 		height: 560px;
+        user-select: none;
 
         &--overlay {
 			@include flex();
@@ -23,7 +24,7 @@
             @include flex($align: start, $gap: 20px);
             width: 100%;
             max-width: 1440px;
-            animation: slideInLeft 0.8s ease-out forwards;
+            user-select: text;
 
             h1 {
 				@include title-font($size: 80px, $weight: 500, $color: #fff);
@@ -47,6 +48,10 @@
         @include flex($direction: row, $gap: 95px);
         padding: 100px 50px;
         max-width: 1440px;
+        
+        &--wrapper {
+            overflow: hidden;
+        }
 
         &--image {
             position: relative;
@@ -56,13 +61,12 @@
             border-radius: 15px;
             overflow: hidden;
             flex-shrink: 0;
-            animation: slideInRight 0.8s ease-out 0.2s forwards;
+            user-select: none;
         }
 
         &--text {
             @include flex($gap: 30px);
             max-width: 800px;
-            animation: slideInLeft 0.8s ease-out 0.2s forwards;
 
             h3 {
                 @include title-font($size: 45px, $color: $blue-tertiary);
@@ -82,6 +86,10 @@
         width: 100%;
         min-height: fit-content; 
         height: auto; 
+
+        img {
+            user-select: none;
+        }
 
         &--overlay {
             @include flex($justify: start, $gap: 60px);
@@ -119,7 +127,6 @@
             border-radius: 25px;
             padding: 40px 60px;
             box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3); 
-            animation: slideInTop 0.8s ease-out forwards;
         }
     }
 
@@ -137,7 +144,7 @@
             border-radius: 15px;
             overflow: hidden;
             flex-shrink: 0;
-            animation: slideInLeft 0.8s ease-out forwards;
+            user-select: none;
         }
 
         > p {
@@ -145,7 +152,6 @@
             line-height: 36px;
             max-width: 800px;
             text-align: justify;
-            animation: slideInRight 0.8s ease-out forwards;
         }
     }
 
@@ -153,9 +159,11 @@
     &__benefits {
         @include flex($gap: 80px);
         padding: 20px 50px 100px;
-
-        > h3 {
-            @include title-font($size: 28px, $weight: 500, $color: $blue-main);
+        
+        &--text {
+            h3 {
+                @include title-font($size: 28px, $weight: 500, $color: $blue-main);
+            }
         }
 
         &--cards {
@@ -176,6 +184,7 @@
         @include flex($gap: 60px);
         padding: 60px 50px 100px;
         max-width: 1300px;
+        overflow: hidden;
 
         h3 {
             @include title-font($size: 45px, $color: $blue-tertiary);
@@ -186,12 +195,11 @@
         &--bottom {
             @include flex($direction: row, $gap: 80px);
 
-            > p {
+            p {
                 @include body-font($size: 18px);
                 line-height: 36px;
                 text-align: justify;
                 flex: 1;
-                animation: slideInLeft 0.8s ease-out forwards;
             }
         }
 
@@ -201,7 +209,6 @@
             padding: 25px 40px;
             border-radius: 20px;
             flex: 1;
-            animation: slideInRight 0.8s ease-out forwards;
 
             > p {
                 @include body-font($size: 18px, $color: #fff);
@@ -314,10 +321,6 @@
             @include flex($gap: 40px);
             padding: 40px 40px 80px;
 
-            &--image {
-                animation: slideInLeft 0.8s ease-out forwards;
-            }
-
             &--text {
                 h3 {
                     font-size: 40px;
@@ -364,7 +367,6 @@
             > p {
                 font-size: 16px;
                 line-height: 34px;
-                animation: slideInLeft 0.8s ease-out forwards;
             }
         }
 
@@ -403,7 +405,6 @@
     
             &--contact {
                 max-width: 500px;
-                animation: slideInLeft 0.8s ease-out forwards;
     
                 > p {
                     font-size: 16px;
@@ -491,39 +492,5 @@
                 padding: 30px;
             }
         }
-    }
-}
-
-// Animations
-@keyframes slideInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-}
-  
-@keyframes slideInRight {
-    0% {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-}
-
-@keyframes slideInTop {
-    0% {
-      opacity: 0;
-      transform: translateY(-50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
     }
 }

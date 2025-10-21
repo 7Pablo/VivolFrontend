@@ -1,6 +1,7 @@
 .double-button {
     @include body-font($size: 18px, $weight: 500);
     @include flex($direction: row);
+    user-select: none;
 
     p {
         line-height: 20px;
@@ -21,7 +22,6 @@
         color: $blue-tertiary;
         background-color: #fff;
         border-radius: 100px 0 0 100px;
-        animation: slideInLeft 0.8s ease-out 0.2s forwards;
 
         &:hover {
             box-shadow: 0 0 12px 4px #fff;
@@ -32,7 +32,6 @@
         color: #fff;
         background-color: $blue-tertiary;
         border-radius: 0 100px 100px 0;
-        animation: slideInRight 0.8s ease-out 0.2s forwards;
 
         &:hover {
             box-shadow: 0 0 12px 4px $blue-tertiary;
@@ -88,29 +87,6 @@
                 width: 150px;
             }
         }
-    }
-}
-
-// Animations
-@keyframes slideInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-}
-  
-@keyframes slideInRight {
-    0% {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
     }
 }
   

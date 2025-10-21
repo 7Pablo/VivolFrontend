@@ -2,6 +2,7 @@
     width: 100%;
     max-width: 220px;
     min-width: 0;
+    user-select: none;
 
     &--big, &--small {
         h2 {

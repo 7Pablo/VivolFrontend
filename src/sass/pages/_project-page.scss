@@ -6,6 +6,7 @@
         position: relative;
 		width: 100%;
 		height: 560px;
+        user-select: none;
 
         &--overlay {
 			@include flex();
@@ -23,7 +24,7 @@
             @include flex($align: start, $gap: 20px);
             width: 100%;
             max-width: 1440px;
-            animation: slideInLeft 0.8s ease-out forwards;
+            user-select: text;
 
             h1 {
 				@include title-font($size: 80px, $weight: 500, $color: #fff);
@@ -52,7 +53,6 @@
             @include flex($align: start, $gap: 30px);
             width: 100%;
             max-width: 1440px;
-            animation: slideInLeft 0.8s ease-out forwards;
 
             p {
                 @include body-font($size: 18px);
@@ -66,21 +66,6 @@
             width: 100%;
             max-width: 1440px;
             align-items: stretch;
-
-            transform: perspective(1000px) rotateY(10deg) scale(0.9);
-            animation: flipScaleIn 0.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-            animation-delay: 0.2s;
-            will-change: transform, opacity;
-            backface-visibility: hidden;
-            transform-style: preserve-3d;
-
-            &:nth-child(2) {
-                animation-delay: 0.4s;
-            }
-        
-            &:nth-child(3) {
-                animation-delay: 0.6s;
-            }
 
             h3 {
                 @include title-font($size: 28px, $weight: 500, $color: $blue-tertiary);
@@ -106,6 +91,7 @@
             overflow: hidden;
             box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.25);
             flex: 1 1 30%;
+            user-select: none;
         }
 
         &--text {
@@ -256,32 +242,5 @@
                 }
             }
         }
-    }
-}
-
-// Animation 
-@keyframes slideInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-}
-
-@keyframes flipScaleIn {
-    0% {
-        opacity: 0;
-        transform: perspective(1000px) rotateY(10deg) scale(0.9) translateY(30px);
-    }
-    60% {
-        opacity: 1;
-        transform: perspective(1000px) rotateY(-5deg) scale(1.05) translateY(0);
-    }
-    100% {
-        opacity: 1;
-        transform: perspective(1000px) rotateY(0deg) scale(1) translateY(0);
     }
 }

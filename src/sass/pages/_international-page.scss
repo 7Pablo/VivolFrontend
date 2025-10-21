@@ -6,6 +6,7 @@
         position: relative;
 		width: 100%;
 		height: 560px;
+        user-select: none;
 
         &--overlay {
 			@include flex();
@@ -23,7 +24,7 @@
             @include flex($align: start, $gap: 20px);
             width: 100%;
             max-width: 1440px;
-            animation: slideInLeft 0.8s ease-out forwards;
+            user-select: text;
 
             h1 {
 				@include title-font($size: 80px, $weight: 500, $color: #fff);
@@ -47,6 +48,7 @@
         @include flex($align: start, $gap: 40px);
         max-width: 1200px;
         padding: 50px;
+        overflow: hidden;
 
         &--title {
             @include flex($direction: row, $justify: start, $gap: 20px);
@@ -61,6 +63,7 @@
             border-radius: 15px;
             overflow: hidden;
             flex-shrink: 0;
+            user-select: none;
         }
 
         &--image {
@@ -90,13 +93,11 @@
         &--left {
             @include flex($direction: row, $gap: 80px);
             margin-bottom: 30px;
-            animation: slideInLeft 0.8s ease-out 0.2s forwards;
         }
 
         &--right {
             @include flex($direction: row, $gap: 95px);
             margin-bottom: 30px;
-            animation: slideInRight 0.8s ease-out 0.2s forwards;
         }
 
         &--text {
@@ -130,26 +131,21 @@
         &--cards {
             @include flex($align: start, $gap: 40px);
             width: 100%;
-
-            > * {
-                opacity: 0;
-                animation: bounceInShake 0.8s ease-out forwards;
-            }
+            height: fit-content;
     
             > *:nth-child(1) {
-                animation-delay: 0.1s;  
                 max-width: calc(100% - 70px);
             }
             
             > *:nth-child(2) {
-                animation-delay: 0.2s; 
                 max-width: 950px
             }
 
-            > *:nth-child(3) {
-                animation-delay: 0.3s; 
+            > *:nth-child(3),
+            > *:nth-child(3) > * {
                 max-height: 400px;
-            }
+                justify-content: start;
+            }  
         }
     }
 
@@ -159,6 +155,10 @@
         width: 100%;
         min-height: 100vh; 
         height: auto; 
+
+        img {
+            user-select: none;
+        }
 
         &--text {
             @include flex($gap: 40px);
@@ -196,19 +196,6 @@
             width: 100%;
             max-width: 975px;
             justify-items: center;
-
-            > * {
-                opacity: 0;
-                transform: rotateX(-90deg);
-                animation: dominoFall 0.8s ease-out forwards;
-            }
-        
-            > *:nth-child(1) { animation-delay: 0.1s; }
-            > *:nth-child(2) { animation-delay: 0.2s; }
-            > *:nth-child(3) { animation-delay: 0.3s; }
-            > *:nth-child(4) { animation-delay: 0.4s; }
-            > *:nth-child(5) { animation-delay: 0.5s; }
-            > *:nth-child(6) { animation-delay: 0.6s; }
         }
 
         &--steps {
@@ -221,18 +208,6 @@
             @include flex($gap: 40px);
             width: 100%;
             flex: 1;
-
-            > * {
-                opacity: 0;
-                transform: rotateX(-90deg);
-                animation: dominoFall 0.8s ease-out forwards;
-            }
-        
-            > *:nth-child(1) { animation-delay: 0.1s; }
-            > *:nth-child(2) { animation-delay: 0.2s; }
-            > *:nth-child(3) { animation-delay: 0.3s; }
-            > *:nth-child(4) { animation-delay: 0.4s; }
-            > *:nth-child(5) { animation-delay: 0.5s; }
         }
     }
 
@@ -251,16 +226,6 @@
         &--continents {
             @include flex($direction: row, $justify: space-between, $align: start);
             width: 100%;
-
-            > * {
-                opacity: 0;
-                animation: slideInTop 0.8s ease-out forwards;
-            }
-
-            > *:nth-child(1) { animation-delay: 0.1s; }
-            > *:nth-child(2) { animation-delay: 0.2s; }
-            > *:nth-child(3) { animation-delay: 0.3s; }
-            > *:nth-child(4) { animation-delay: 0.4s; }
 
             &-america, &-africa, &-asia, &-europe {
                 @include flex();
@@ -333,6 +298,15 @@
                 > *:nth-child(2) {
                     max-width: 600px;
                 }
+                    
+                > *:nth-child(3) {
+                    justify-content: center;
+                    max-height: fit-content;
+
+                    .program-card {
+                        min-height: 300px;
+                    }
+                }
             }
         }
 
@@ -374,6 +348,7 @@
     
                 h2 {
                     font-size: 40px;
+                    line-height: 50px;
                     max-width: 500px;
                     text-align: center;
                 }
@@ -408,7 +383,6 @@
     
             &--right {
                 @include flex($direction: column, $gap: 50px);
-                animation: slideInLeft 0.8s ease-out 0.2s forwards;
             }
     
             &--text {
@@ -457,14 +431,6 @@
 
             &--steps {
                 @include flex($gap: 40px);
-            }
-
-            &--half {
-                > *:nth-child(1) { animation-delay: 0s; }
-                > *:nth-child(2) { animation-delay: 0s; }
-                > *:nth-child(3) { animation-delay: 0s; }
-                > *:nth-child(4) { animation-delay: 0s; }
-                > *:nth-child(5) { animation-delay: 0s; }
             }
         }
 
@@ -524,69 +490,3 @@
         }
     }
 }
-
-// Animations
-@keyframes slideInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-}
-  
-@keyframes slideInRight {
-    0% {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-}
-
-@keyframes slideInTop {
-    0% {
-      opacity: 0;
-      transform: translateY(-50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-}
-
-@keyframes bounceInShake {
-    0% {
-        opacity: 0;
-        transform: translateY(100px) scale(0.95);
-    }
-    60% {
-        transform: translateY(-10px) scale(1.03) rotate(2deg);
-    }
-    80% {
-        transform: translateY(5px) scale(0.98) rotate(-2deg);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0) scale(1) rotate(0deg);
-    }
-}
-
-@keyframes dominoFall {
-    0% {
-      opacity: 0;
-      transform: rotateX(-90deg) translateY(-50px);
-    }
-    60% {
-      transform: rotateX(20deg) translateY(10px);
-      opacity: 1;
-    }
-    100% {
-      transform: rotateX(0) translateY(0);
-      opacity: 1;
-    }
-  }

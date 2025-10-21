@@ -10,6 +10,7 @@
     &__icon {
         @include flex($justify: end);
         height: 120px;
+        user-select: none;
     }
 
     &__text {

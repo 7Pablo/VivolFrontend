@@ -7,6 +7,7 @@ import CircleCard from "@/components/cards/CircleCard";
 import Slider from "@/components/Slider";
 import Image from "next/image";
 import { getAssetPath } from '@/utils/getAssetPath';
+import AnimatedSection from "@/utils/AnimatedSection";
 
 // Metadata
 export async function generateMetadata({ params }) {
@@ -142,38 +143,46 @@ export default async function HomePage(props) {
 
       {/* Get involve */}
       <div className="home-page__involve">
-        <h3>{trans.home_page.get_involved}</h3>
+        <AnimatedSection animation="fadeInUp" delay={0.2}>
+          <h3>{trans.home_page.get_involved}</h3>
+        </AnimatedSection>
         <div className="home-page__involve--cards">
-          <MoreCard
-            imgSrc={getAssetPath("/images/photos/vivol-ninos.webp")}
-            imgAlt={trans.alt.more_image1}
-            imgText={trans.home_page.more_image1}
-            title={trans.home_page.more_title1}
-            bodyText={trans.home_page.more_body1}
-            color="#85AF59"
-            route="volunteer"
-            imgPosition="50% 32%"
-          />
-          <MoreCard
-            imgSrc={getAssetPath("/images/photos/vivol-familia.webp")}
-            imgAlt={trans.alt.more_image2}
-            imgText={trans.home_page.more_image2}
-            title={trans.home_page.more_title2}
-            bodyText={trans.home_page.more_body2}
-            color="#D53686"
-            route="involve/family"
-            imgPosition="50% 50%"
-          />
-          <MoreCard
-            imgSrc={getAssetPath("/images/photos/vivol-montana.webp")}
-            imgAlt={trans.alt.more_image3}
-            imgText={trans.home_page.more_image3}
-            title={trans.home_page.more_title3}
-            bodyText={trans.home_page.more_body3}
-            color="#1583F0"
-            route="involve/project"
-            imgPosition="50% 30%"
-          />
+          <AnimatedSection animation="flipCard" delay={0.2}>
+            <MoreCard
+              imgSrc={getAssetPath("/images/photos/vivol-ninos.webp")}
+              imgAlt={trans.alt.more_image1}
+              imgText={trans.home_page.more_image1}
+              title={trans.home_page.more_title1}
+              bodyText={trans.home_page.more_body1}
+              color="#85AF59"
+              route="volunteer"
+              imgPosition="50% 32%"
+            />
+          </AnimatedSection>
+          <AnimatedSection animation="flipCard" delay={0.4}>
+            <MoreCard
+              imgSrc={getAssetPath("/images/photos/vivol-familia.webp")}
+              imgAlt={trans.alt.more_image2}
+              imgText={trans.home_page.more_image2}
+              title={trans.home_page.more_title2}
+              bodyText={trans.home_page.more_body2}
+              color="#D53686"
+              route="involve/family"
+              imgPosition="50% 50%"
+            />
+          </AnimatedSection>
+          <AnimatedSection animation="flipCard" delay={0.6}>
+            <MoreCard
+              imgSrc={getAssetPath("/images/photos/vivol-montana.webp")}
+              imgAlt={trans.alt.more_image3}
+              imgText={trans.home_page.more_image3}
+              title={trans.home_page.more_title3}
+              bodyText={trans.home_page.more_body3}
+              color="#1583F0"
+              route="involve/project"
+              imgPosition="50% 30%"
+            />
+          </AnimatedSection>
         </div>
       </div>
 
@@ -189,42 +198,54 @@ export default async function HomePage(props) {
           />
         </div>
         <div className="home-page__slogan--content">
-          <Image
-              src={getAssetPath('/images/icons/megaphone.svg')}
-              alt="QMegaphone icon"
-              width={50}
-              height={50}
-              className="home-page__slogan--icon"
-          />
-          <h4>{trans.home_page.slogan}</h4>
+          <AnimatedSection animation="pivotShakeFadeIn" delay={0.2}>
+            <Image
+                src={getAssetPath('/images/icons/megaphone.svg')}
+                alt="Megaphone icon"
+                width={50}
+                height={50}
+                className="home-page__slogan--icon"
+            />
+          </AnimatedSection>
+          <AnimatedSection animation="squashStretch" delay={0.2}>
+            <h4>{trans.home_page.slogan}</h4>
+          </AnimatedSection>
         </div>
       </div>
 
       {/* Volunteering */}
       <div className="home-page__volunteering">
-        <h3>{trans.home_page.title}</h3>
+        <AnimatedSection animation="fadeInUp" delay={0.2}>
+          <h3>{trans.home_page.title}</h3>
+        </AnimatedSection>
         <div className="home-page__volunteering--cards">
-          <CircleCard
-            icon={getAssetPath("/images/icons/group.png")}
-            alt="Bulb icon"
-            text={trans.home_page.start_now}
-            color="#85AF59"
-            route="volunteer"
-          />
-          <CircleCard
-            icon={getAssetPath("/images/icons/docs.png")}
-            alt="Documents icon"
-            text={trans.home_page.documents}
-            color="#D53686"
-            route="documents"
-          />
-          <CircleCard
-            icon={getAssetPath("/images/icons/travel.png")}
-            alt="Plane icon"
-            text={trans.home_page.destinations}
-            color="#1583F0"
-            route="volunteer/international"
-          />
+          <AnimatedSection animation="bouncingBall" delay={0.2}>
+            <CircleCard
+              icon={getAssetPath("/images/icons/group.png")}
+              alt="Bulb icon"
+              text={trans.home_page.start_now}
+              color="#85AF59"
+              route="volunteer"
+            />
+          </AnimatedSection>
+          <AnimatedSection animation="bouncingBall" delay={0.4}>
+            <CircleCard
+              icon={getAssetPath("/images/icons/docs.png")}
+              alt="Documents icon"
+              text={trans.home_page.documents}
+              color="#D53686"
+              route="documents"
+            />
+          </AnimatedSection>
+          <AnimatedSection animation="bouncingBall" delay={0.6}>
+            <CircleCard
+              icon={getAssetPath("/images/icons/travel.png")}
+              alt="Plane icon"
+              text={trans.home_page.destinations}
+              color="#1583F0"
+              route="volunteer/international"
+            />
+          </AnimatedSection>
         </div>
       </div>  
 
@@ -239,41 +260,51 @@ export default async function HomePage(props) {
           className="home-page__testimonials--background"
         />
         <div className="home-page__testimonials--overlay">
-          <h3>{trans.home_page.testimonials}</h3>
-          <Slider slides={testimonials}/>
+          <AnimatedSection animation="fadeInUp" delay={0.2}>
+            <h3>{trans.home_page.testimonials}</h3>
+          </AnimatedSection>
+          <AnimatedSection animation="tickerFadeInUp" delay={0.2}>
+            <Slider slides={testimonials}/>
+          </AnimatedSection>
         </div>
       </div>
 
       {/* Alliances */}
       <div className="home-page__alliances">
-        <h3>{trans.home_page.alliances}</h3>
+        <AnimatedSection animation="fadeInUp" delay={0.2}>
+          <h3>{trans.home_page.alliances}</h3>
+        </AnimatedSection>
         <div className="home-page__alliances--content">
-          <div className="home-page__alliances--alliance">
-            <div className="home-page__alliances--wrapper">
-              <Image
-                className="home-page__alliances--icye"
-                src={getAssetPath("/images/photos/icye-logo.webp")}
-                alt="ICYE logo"
-                height={400}
-                width={400}
-              />
+          <AnimatedSection animation="slideFromBottom">
+            <div className="home-page__alliances--alliance">
+              <div className="home-page__alliances--wrapper">
+                <Image
+                  className="home-page__alliances--icye"
+                  src={getAssetPath("/images/photos/icye-logo.webp")}
+                  alt="ICYE logo"
+                  height={400}
+                  width={400}
+                />
+              </div>
+              <h2>ICYE</h2>
+              <h3>International Cultural Youth Exchange</h3>
             </div>
-            <h2>ICYE</h2>
-            <h3>International Cultural Youth Exchange</h3>
-          </div>
-          <div className="home-page__alliances--alliance">
-            <div className="home-page__alliances--wrapper">
-              <Image
-                className="home-page__alliances--unir"
-                src={getAssetPath("/images/photos/unir.svg")}
-                alt="ICYE logo"
-                height={400}
-                width={400}
-              />
+          </AnimatedSection>
+          <AnimatedSection animation="slideFromBottom">
+            <div className="home-page__alliances--alliance">
+              <div className="home-page__alliances--wrapper">
+                <Image
+                  className="home-page__alliances--unir"
+                  src={getAssetPath("/images/photos/unir.svg")}
+                  alt="ICYE logo"
+                  height={400}
+                  width={400}
+                />
+              </div>
+              <h2>UNIR</h2>
+              <h3>Universidad Internacional de la Rioja</h3>
             </div>
-            <h2>UNIR</h2> 
-            <h3>Universidad Internacional de la Rioja</h3>
-          </div>
+          </AnimatedSection>
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@
 'use client';
 
 import { useRouter, usePathname } from "next/navigation"; 
+import AnimatedSection from "@/utils/AnimatedSection";
 
 export default function DoubleButton({ routeRight, routeLeft, textRight, textLeft }) {
     // Routing
@@ -19,18 +20,22 @@ export default function DoubleButton({ routeRight, routeLeft, textRight, textLef
     
     return (
         <div className="double-button">
-            <button 
-                className="double-button__left"
-                onClick={redirectLeft}
-            >
-                <p>{textLeft}</p>
-            </button>
-            <button
-                className="double-button__right"
-                onClick={redirectRight}
-            >
-                <p>{textRight}</p>
-            </button>
+            <AnimatedSection animation="slideFromLeft" delay={0.2} className="animated-section"> 
+                <button
+                    className="double-button__left"
+                    onClick={redirectLeft}
+                >
+                    <p>{textLeft}</p>
+                </button>
+            </AnimatedSection>
+            <AnimatedSection animation="slideFromRight" delay={0.2} className="animated-section"> 
+                <button
+                    className="double-button__right"
+                    onClick={redirectRight}
+                >
+                    <p>{textRight}</p>
+                </button>
+            </AnimatedSection>
         </div>
     );
 }

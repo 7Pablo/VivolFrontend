@@ -2,6 +2,10 @@
     @include flex($gap: 20px);
     width: 250px;
 
+    img {
+        user-select: none;
+    }
+
     &__text {
         @include flex($gap: 5px);
         text-align: center;

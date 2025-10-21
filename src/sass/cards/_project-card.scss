@@ -11,6 +11,7 @@
         border-radius: 15px;
         overflow: hidden;
         box-shadow: -18px 18px 0px var(--shadow-color);
+        user-select: none;
     }
 
     &__text {

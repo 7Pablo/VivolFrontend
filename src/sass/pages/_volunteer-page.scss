@@ -11,6 +11,7 @@
 			@include flex($direction: row);
 			width: 100%;
 			height: 100%;
+      user-select: none;
 		}
 
 		&--half {
@@ -36,7 +37,6 @@
 				text-shadow: 0px 6px 5px rgba(0, 0, 0, 0.7);
 				text-align: center;
 				max-width: 800px;
-        animation: fadeInOpacity 0.8s ease-out forwards;
 			}
 		}
 	}
@@ -55,7 +55,7 @@
       object-fit: cover;
       height: auto;
       width: 350px;
-      animation: slideInLeft 0.8s ease-out 0.2s forwards;
+      user-select: none;
     }
 
     &--text {
@@ -63,7 +63,6 @@
       line-height: 32px;
       max-width: 650px;
       text-align: justify;
-      animation: slideInRight 0.8s ease-out 0.2s forwards;
     } 
   }
 
@@ -74,12 +73,14 @@
     max-width: 1440px;
     padding: 50px;
     margin-top: 60px;
+    overflow: hidden;
     
     &--image-1, &--image-2 {
       border-radius: 15px;
       object-fit: cover;
       height: auto;
       width: 350px;
+      user-select: none;
     }
 
     &--image-1 {
@@ -103,7 +104,6 @@
 
     &--top {
       @include flex($direction: row, $gap: 95px);
-      animation: slideInRight 0.8s ease-out 0.2s forwards;
 
       &-text {
         @include flex($gap: 25px);
@@ -111,8 +111,6 @@
     }
 
     &--bottom {
-      animation: slideInLeft 0.8s ease-out 0.2s forwards;
-
       ul {
         list-style-type: disc;
         padding-left: 20px;
@@ -228,7 +226,6 @@
       
       &--top, &--bottom {
         @include flex($direction: column, $gap: 40px);
-        animation: slideInLeft 0.8s ease-out 0.2s forwards;
 
         p, li {
           font-size: 16px;
@@ -295,37 +292,5 @@
     &__benefits {
       padding: 30px;
     }
-  }
-}
-
-// Animations
-@keyframes slideInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInOpacity {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
   }
 }

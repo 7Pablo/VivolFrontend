@@ -5,6 +5,7 @@ import { getTranslations } from "locales/translations";
 import BenefitCard from "@/components/cards/BenefitCard";
 import Button from "@/components/buttons/Button";
 import { getAssetPath } from "@/utils/getAssetPath";
+import AnimatedSection from "@/utils/AnimatedSection";
 
 // Metadata
 export async function generateMetadata({ params }) {
@@ -54,19 +55,23 @@ export default async function FamilyPage(props) {
       </div>
 
       {/* Question */}
-      <div className="family-page__question">
-        <div className="family-page__question--text">
-          <h3>{trans.family_page.question_question}</h3>
-          <p>{trans.family_page.question_text}</p>
-        </div>
-        <div className="family-page__question--image">
-          <Image 
-            src={getAssetPath("/images/photos/vivol-navidad.webp")}
-            alt={trans?.alt?.family_image1 || "Volunteers sharing with host family at Christmas"}
-            fill
-            style={{ objectFit: 'cover' }}
-          />
-        </div>
+      <div className="family-page__question--wrapper">
+        <AnimatedSection animation="slideFromRight">
+          <div className="family-page__question">
+            <div className="family-page__question--text">
+              <h3>{trans.family_page.question_question}</h3>
+              <p>{trans.family_page.question_text}</p>
+            </div>
+            <div className="family-page__question--image">
+              <Image
+                src={getAssetPath("/images/photos/vivol-navidad.webp")}
+                alt={trans?.alt?.family_image1 || "Volunteers sharing with host family at Christmas"}
+                fill
+                style={{ objectFit: 'cover' }}
+              />
+            </div>
+          </div>
+        </AnimatedSection>
       </div>
 
       {/* Meaning */}
@@ -78,82 +83,106 @@ export default async function FamilyPage(props) {
           style={{ objectFit: 'cover' }}
         />
         <div className="family-page__meaning--overlay">
-          <h3>{trans.family_page.meaning_title}</h3>
-          <div className="family-page__meaning--card">
-            <p>{trans.family_page.meaning_text.top}</p>
-            <ul>
-              <li>{trans.family_page.meaning_text.bullet1}</li>
-              <li>{trans.family_page.meaning_text.bullet2}</li>
-              <li>{trans.family_page.meaning_text.bullet3}</li>
-              <li>{trans.family_page.meaning_text.bullet4}</li>
-              <li>{trans.family_page.meaning_text.bullet5}</li>
-              <li>{trans.family_page.meaning_text.bullet6}</li>
-              <li>{trans.family_page.meaning_text.bullet7}</li>
-              <li>{trans.family_page.meaning_text.bullet8}</li>
-              <li>{trans.family_page.meaning_text.bullet9}</li>
-            </ul>
-          </div>
+          <AnimatedSection animation="fadeUp" delay={0.2}>
+            <h3>{trans.family_page.meaning_title}</h3>
+          </AnimatedSection>
+          <AnimatedSection animation="dominoFall" delay={0.2}>
+            <div className="family-page__meaning--card">
+              <p>{trans.family_page.meaning_text.top}</p>
+              <ul>
+                <li>{trans.family_page.meaning_text.bullet1}</li>
+                <li>{trans.family_page.meaning_text.bullet2}</li>
+                <li>{trans.family_page.meaning_text.bullet3}</li>
+                <li>{trans.family_page.meaning_text.bullet4}</li>
+                <li>{trans.family_page.meaning_text.bullet5}</li>
+                <li>{trans.family_page.meaning_text.bullet6}</li>
+                <li>{trans.family_page.meaning_text.bullet7}</li>
+                <li>{trans.family_page.meaning_text.bullet8}</li>
+                <li>{trans.family_page.meaning_text.bullet9}</li>
+              </ul>
+            </div>
+          </AnimatedSection>
         </div>
       </div>
 
       {/* Middle */}
-      <div className="family-page__middle">
-        <div className="family-page__middle--image">
-          <Image 
-            src={getAssetPath("/images/photos/vivol-pico.webp")}
-            alt={trans?.alt?.family_image2 || "Volunteer with host family on a rock"}
-            fill
-            style={{ objectFit: 'cover' }}
-          />
+      <AnimatedSection animation="slideFromLeft" delay={0.2}>
+        <div className="family-page__middle">
+          <div className="family-page__middle--image">
+            <Image
+              src={getAssetPath("/images/photos/vivol-pico.webp")}
+              alt={trans?.alt?.family_image2 || "Volunteer with host family on a rock"}
+              fill
+              style={{ objectFit: 'cover' }}
+            />
+          </div>
+          <p>{trans.family_page.middle_text}</p>
         </div>
-        <p>{trans.family_page.middle_text}</p>
-      </div>
+      </AnimatedSection>
 
       {/* Benefits */}
       <div className="family-page__benefits">
-        <h3>{trans.family_page.benefits_title}</h3>
+        <AnimatedSection animation="fadeUp" delay={0.2}>
+          <div className="family-page__benefits--text">
+            <h3>{trans.family_page.benefits_title}</h3>
+          </div>
+        </AnimatedSection>
         <div className="family-page__benefits--cards">
-          <BenefitCard 
-            icon={getAssetPath("/images/icons/culture.svg")}
-            title={trans.family_page.benefits_language}
-            color="#85AF59"
-            short={true}
-          />
-          <BenefitCard 
-            icon={getAssetPath("/images/icons/brain.svg")}
-            title={trans.family_page.benefits_culture}
-            color="#E1BD2A"
-            short={true}
-          />
-          <BenefitCard 
-            icon={getAssetPath("/images/icons/perspective.svg")}
-            title={trans.family_page.benefits_perspective}
-            color="#1583F0"
-            short={true}
-          />
-          <BenefitCard 
-            icon={getAssetPath("/images/icons/holding.svg")}
-            title={trans.family_page.benefits_learning}
-            color="#D53686"
-            short={true}
-          />
+          <AnimatedSection animation="dropCardMotion" delay={0.2}>
+            <BenefitCard
+              icon={getAssetPath("/images/icons/culture.svg")}
+              title={trans.family_page.benefits_language}
+              color="#85AF59"
+              short={true}
+            />
+          </AnimatedSection>
+          <AnimatedSection animation="dropCardMotion" delay={0.4}>
+            <BenefitCard
+              icon={getAssetPath("/images/icons/brain.svg")}
+              title={trans.family_page.benefits_culture}
+              color="#E1BD2A"
+              short={true}
+            />
+          </AnimatedSection>
+          <AnimatedSection animation="dropCardMotion" delay={0.6}>
+            <BenefitCard
+              icon={getAssetPath("/images/icons/perspective.svg")}
+              title={trans.family_page.benefits_perspective}
+              color="#1583F0"
+              short={true}
+            />
+          </AnimatedSection>
+          <AnimatedSection animation="dropCardMotion" delay={0.8}>
+            <BenefitCard
+              icon={getAssetPath("/images/icons/holding.svg")}
+              title={trans.family_page.benefits_learning}
+              color="#D53686"
+              short={true}
+            />
+          </AnimatedSection>
         </div>
       </div>
 
       {/* Join */}
       <div className="family-page__join">
-        <h3>{trans.family_page.join_title}</h3>
+        <AnimatedSection animation="fadeUp" delay={0.2}>
+          <h3>{trans.family_page.join_title}</h3>
+        </AnimatedSection>    
         <div className="family-page__join--bottom">
-          <p>{trans.family_page.join_text}</p>
-          <div className="family-page__join--contact">
-            <p>{trans.family_page.join_contact}</p>
-            <Button 
-              type='secondary'
-              route="contact"
-            >
-              {trans.button.contact_simple}
-            </Button>
-          </div>
+          <AnimatedSection animation="slideFromLeft" delay={0.2} className="animated-section">
+            <p>{trans.family_page.join_text}</p>
+          </AnimatedSection>
+          <AnimatedSection animation="slideFromRight" delay={0.2} className="animated-section"> 
+            <div className="family-page__join--contact">
+              <p>{trans.family_page.join_contact}</p>
+              <Button
+                type='secondary'
+                route="contact"
+              >
+                {trans.button.contact_simple}
+              </Button>
+            </div>
+          </AnimatedSection>
         </div>
       </div>
 

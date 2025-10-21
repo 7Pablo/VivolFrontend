@@ -6,6 +6,7 @@
         position: relative;
 		width: 100%;
 		height: 560px;
+        user-select: none;
 
         &--overlay {
 			@include flex();
@@ -23,7 +24,7 @@
             @include flex($align: start, $gap: 20px);
             width: 100%;
             max-width: 1440px;
-            animation: slideInLeft 0.8s ease-out forwards;
+            user-select: text;
 
             h1 {
 				@include title-font($size: 80px, $weight: 500, $color: #fff);
@@ -47,9 +48,10 @@
         @include flex($direction: row, $gap: 100px);
         padding: 100px 50px;
         max-width: 1440px;
-        animation: fadeInOpacity 0.8s ease-out forwards;
 
         &--image {
+            user-select: none;
+
             img {
                 object-fit: cover;
                 border-radius: 400px 400px 50px 400px;
@@ -77,6 +79,7 @@
 
         &--image {
             max-height: 800px;
+            user-select: none;
         }
 
         &--text {
@@ -112,22 +115,6 @@
             width: 100%;
             max-width: 1440px;
             justify-items: center;
-
-            > * {
-                animation: dropCard 0.6s ease-out forwards;
-            }
-        
-            > *:nth-child(1) {
-                animation-delay: 0s;
-            }
-        
-            > *:nth-child(2) {
-                animation-delay: 0.2s;
-            }
-        
-            > *:nth-child(3) {
-                animation-delay: 0.4s;
-            }
         }
     }
 
@@ -148,7 +135,6 @@
             padding: 50px;
             height: auto;
             align-self: stretch;
-            animation: slideInLeft 0.6s ease-out forwards;
 
             h3 {
                 @include body-font($size: 28px, $weight: 500, $color: $blue-tertiary);
@@ -174,7 +160,6 @@
             height: auto;
             align-self: stretch;
             box-shadow: -6px 0px 6px rgba(0, 0, 0, 0.3);
-            animation: slideInRight 0.6s ease-out forwards;
 
             h3 {
                 @include body-font($size: 28px, $weight: 500, $color: #fff);
@@ -203,7 +188,6 @@
 
         &--cards {
             @include flex($direction: row, $gap: 100px);
-            animation: fadeInOpacity 0.6s ease-out forwards;
         }
     }
 }
@@ -324,12 +308,10 @@
 
         &__reason {
             @include flex($direction: column);
-            animation: slideInTop 0.6s ease-out forwards;
             
             &--left {
                 @include flex($align: start, $gap: 20px);
                 padding: 40px;
-                animation: none;
     
                 h3 {
                     font-size: 26px;
@@ -345,7 +327,6 @@
                 @include flex($align: start, $gap: 20px);
                 padding: 40px;
                 box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.3);
-                animation: none;
                 width: 100%;
     
                 h3 {
@@ -448,59 +429,5 @@
                 @include flex($direction: column, $gap: 80px);
             }
         }
-    }
-}
-
-// Animations
-@keyframes slideInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-}
-  
-@keyframes slideInRight {
-    0% {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-}
-
-@keyframes fadeInOpacity {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes dropCard {
-    from {
-      opacity: 0;
-      transform: translateY(-30px) scale(0.95);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0) scale(1);
-    }
-}
-
-@keyframes slideInTop {
-    from {
-      opacity: 0;
-      transform: translateY(-30px) scale(0.95);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0) scale(1);
     }
 }

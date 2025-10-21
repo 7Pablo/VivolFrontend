@@ -16,21 +16,6 @@
             max-width: 1200px;
             justify-items: center;
             margin: 0 auto;
-
-            > * {
-                opacity: 0;
-                animation: fadeInOpacity 0.8s ease-out forwards;
-            }
-
-            > *:nth-child(1) {
-                animation-delay: 0.1s;  
-            }
-            > *:nth-child(2) {
-                animation-delay: 0.2s; 
-            }
-            > *:nth-child(3) {
-                animation-delay: 0.3s; 
-            }
         }
     }
 
@@ -39,6 +24,7 @@
         position: relative;
         width: 100%;
         height: 400px;
+        user-select: none;
 
         &--content {
             @include flex($direction: column, $align: start, $gap: 10px);
@@ -49,7 +35,6 @@
             z-index: 2;
             max-width: 1200px;
             width: 100%;
-            animation: fadeIn 1s ease-out;
         }
 
         &--fade {
@@ -93,7 +78,6 @@
             z-index: 2;
             max-width: 1200px;
             width: 100%;
-            animation: fadeIn 1s ease-out;
 
             h4 {
                 @include body-font($size: 50px, $weight: 500, $color: $gray-dark);
@@ -124,21 +108,6 @@
             max-width: 1200px;
             justify-items: center;
             margin: 0 auto;
-
-            > * {
-                opacity: 0;
-                animation: fadeInOpacity 0.8s ease-out forwards;
-            }
-
-            > *:nth-child(1) {
-                animation-delay: 0.1s;  
-            }
-            > *:nth-child(2) {
-                animation-delay: 0.2s; 
-            }
-            > *:nth-child(3) {
-                animation-delay: 0.3s; 
-            }
         }
     }
 
@@ -147,6 +116,7 @@
         position: relative;
         min-height: fit-content; 
         height: auto; 
+        overflow: hidden;
 
         h3 {
             @include title-font($size: 28px, $weight: 500, $color: #fff);
@@ -180,11 +150,11 @@
         &--content {
             @include flex($direction: row, $gap: 100px);
             max-width: 1440px;
-            animation: fadeInOpacity 0.8s ease-out forwards;
         }
 
         &--alliance {
             @include flex($justify: start);
+            user-select: none;
 
             h3, h2 {
                 @include body-font($size: 16px, $weight: 600);
@@ -415,20 +385,5 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
-}
-
-// Animations
-@keyframes fadeInOpacity {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; transform: translate(-50%, -60%); }
-    100% { opacity: 1; transform: translate(-50%, -50%); }
 }
 

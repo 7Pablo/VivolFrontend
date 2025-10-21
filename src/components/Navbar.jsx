@@ -6,7 +6,6 @@ import LanguageButton from "./buttons/LanguageButton";
 import NavbarButton from "./buttons/NavbarButton";
 import HamDropdown from "./buttons/HamDropdown";
 
-
 async function Navbar({ lang }) {
   const locale = lang || 'en';
   const trans = await getTranslations(locale);
@@ -22,14 +21,14 @@ async function Navbar({ lang }) {
 
   return (
     <div className="navbar">
-      <div className="navbar__content">
-        <NavbarButton />
-        <NavbarItems navItems={navItems} />
-        <div className="navbar__language">
-          <LanguageButton lang={locale}/>
+        <div className="navbar__content">
+          <NavbarButton />
+          <NavbarItems navItems={navItems} />
+          <div className="navbar__language">
+            <LanguageButton lang={locale}/>
+          </div>
+          <HamDropdown navItems={navItems}/>
         </div>
-        <HamDropdown navItems={navItems}/>
-      </div>
     </div>
   );
 }

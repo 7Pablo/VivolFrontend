@@ -9,6 +9,7 @@
         position: relative;
         transition: all .2s;
         min-width: 175px;
+        user-select: none;
 
         &:hover {
             transform: translateY(-5px); 

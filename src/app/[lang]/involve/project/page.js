@@ -3,6 +3,7 @@
 import { getAssetPath } from "@/utils/getAssetPath";
 import { getTranslations } from "locales/translations";
 import Image from "next/image";
+import AnimatedSection from "@/utils/AnimatedSection";
 
 // Metadata
 export async function generateMetadata({ params }) {
@@ -45,8 +46,12 @@ export default async function ProjectPage(props) {
         />
         <div className="project-page__intro--overlay">
           <div className="project-page__intro--text">
-            <h1>{trans.project_page.title}</h1>
-            <p>{trans.project_page.intro_text}</p>
+            <AnimatedSection animation="slideFromLeft" delay={0.2}> 
+              <h1>{trans.project_page.title}</h1>
+            </AnimatedSection>
+            <AnimatedSection animation="slideFromLeft" delay={0.4}> 
+              <p>{trans.project_page.intro_text}</p>
+            </AnimatedSection>
           </div>
         </div>
       </div>
@@ -54,90 +59,100 @@ export default async function ProjectPage(props) {
       {/* Body */}
       <div className="project-page__body">
         <div className="project-page__body--top">
-          <p>{trans.project_page.top_text1}</p>
-          <p>{trans.project_page.top_text2}</p>
+          <AnimatedSection animation="slideFromLeft" delay={0.2}> 
+            <p>{trans.project_page.top_text1}</p>
+          </AnimatedSection>
+          <AnimatedSection animation="slideFromLeft" delay={0.4}> 
+            <p>{trans.project_page.top_text2}</p>
+          </AnimatedSection>
         </div>
 
         {/* Card 1 */}
-        <div className="project-page__body--card">
-          <div className="project-page__body--text-left">
-            <h3>{trans.project_page.card1.title}</h3>
-            <ul>
-              <li>{trans.project_page.card1.bullet1}</li>
-              <li>{trans.project_page.card1.bullet2}</li>
-              <li>{trans.project_page.card1.bullet3}</li>
-              <li>{trans.project_page.card1.bullet4}</li>
-              <li>{trans.project_page.card1.bullet5}</li>
-              <li>{trans.project_page.card1.bullet6}</li>
-              <li>{trans.project_page.card1.bullet7}</li>
-            </ul>
+        <AnimatedSection animation="cardToss" delay={0.2} className="animated-section"> 
+          <div className="project-page__body--card">
+            <div className="project-page__body--text-left">
+              <h3>{trans.project_page.card1.title}</h3>
+              <ul>
+                <li>{trans.project_page.card1.bullet1}</li>
+                <li>{trans.project_page.card1.bullet2}</li>
+                <li>{trans.project_page.card1.bullet3}</li>
+                <li>{trans.project_page.card1.bullet4}</li>
+                <li>{trans.project_page.card1.bullet5}</li>
+                <li>{trans.project_page.card1.bullet6}</li>
+                <li>{trans.project_page.card1.bullet7}</li>
+              </ul>
+            </div>
+            <div className="project-page__body--image">
+              <Image
+                src={getAssetPath("/images/photos/vivol-salto.webp")}
+                alt={trans?.alt?.project_image2 || "VIVOL volunteers"}
+                fill
+                style={{ objectFit: 'cover', objectPosition: "50% 15%" }}
+              />
+            </div>
           </div>
-          <div className="project-page__body--image">
-            <Image
-              src={getAssetPath("/images/photos/vivol-salto.webp")}
-              alt={trans?.alt?.project_image2 || "VIVOL volunteers"}
-              fill
-              style={{ objectFit: 'cover', objectPosition: "50% 15%" }}
-            />
-          </div>
-        </div>
+        </AnimatedSection>
 
         {/* Card 2 */}
-        <div className="project-page__body--card">
-          <div className="project-page__body--image">
-            <Image
-              src={getAssetPath("/images/photos/vivol-mono.webp")}
-              alt={trans?.alt?.project_image3 || "Volunteer with a monkey"}
-              fill
-              style={{ objectFit: 'cover' }}
-            />
+        <AnimatedSection animation="cardToss" delay={0.2} className="animated-section"> 
+          <div className="project-page__body--card">
+            <div className="project-page__body--image">
+              <Image
+                src={getAssetPath("/images/photos/vivol-mono.webp")}
+                alt={trans?.alt?.project_image3 || "Volunteer with a monkey"}
+                fill
+                style={{ objectFit: 'cover' }}
+              />
+            </div>
+            <div className="project-page__body--text-right">
+              <h3>{trans.project_page.card2.title}</h3>
+              <ul>
+                <li>{trans.project_page.card2.bullet1}</li>
+                <li>{trans.project_page.card2.bullet2}</li>
+                <li>{trans.project_page.card2.bullet3}</li>
+                <li>{trans.project_page.card2.bullet4}</li>
+                <li>{trans.project_page.card2.bullet5}</li>
+                <li>{trans.project_page.card2.bullet6}</li>
+                <li>{trans.project_page.card2.bullet7}</li>
+                <li>{trans.project_page.card2.bullet8}</li>
+                <li>{trans.project_page.card2.bullet9}</li>
+                <li>{trans.project_page.card2.bullet10}</li>
+                <li>{trans.project_page.card2.bullet11}</li>
+                <li>{trans.project_page.card2.bullet12}</li>
+                <li>{trans.project_page.card2.bullet13}</li>
+              </ul>
+            </div>
           </div>
-          <div className="project-page__body--text-right">
-            <h3>{trans.project_page.card2.title}</h3>
-            <ul>
-              <li>{trans.project_page.card2.bullet1}</li>
-              <li>{trans.project_page.card2.bullet2}</li>
-              <li>{trans.project_page.card2.bullet3}</li>
-              <li>{trans.project_page.card2.bullet4}</li>
-              <li>{trans.project_page.card2.bullet5}</li>
-              <li>{trans.project_page.card2.bullet6}</li>
-              <li>{trans.project_page.card2.bullet7}</li>
-              <li>{trans.project_page.card2.bullet8}</li>
-              <li>{trans.project_page.card2.bullet9}</li>
-              <li>{trans.project_page.card2.bullet10}</li>
-              <li>{trans.project_page.card2.bullet11}</li>
-              <li>{trans.project_page.card2.bullet12}</li>
-              <li>{trans.project_page.card2.bullet13}</li>
-            </ul>
-          </div>
-        </div>
+        </AnimatedSection>
 
         {/* Card 3 */}
-        <div className="project-page__body--card">
-          <div className="project-page__body--text-left">
-            <h3>{trans.project_page.card3.title}</h3>
-            <ul>
-              <li>{trans.project_page.card3.bullet1}</li>
-              <li>{trans.project_page.card3.bullet2}</li>
-              <li>{trans.project_page.card3.bullet3}</li>
-              <li>{trans.project_page.card3.bullet4}</li>
-              <li>{trans.project_page.card3.bullet5}</li>
-              <li>{trans.project_page.card3.bullet6}</li>
-              <li>{trans.project_page.card3.bullet7}</li>
-              <li>{trans.project_page.card3.bullet8}</li>
-              <li>{trans.project_page.card3.bullet9}</li>
-              <li>{trans.project_page.card3.bullet10}</li>
-            </ul>
+        <AnimatedSection animation="cardToss" delay={0.2} className="animated-section"> 
+          <div className="project-page__body--card">
+            <div className="project-page__body--text-left">
+              <h3>{trans.project_page.card3.title}</h3>
+              <ul>
+                <li>{trans.project_page.card3.bullet1}</li>
+                <li>{trans.project_page.card3.bullet2}</li>
+                <li>{trans.project_page.card3.bullet3}</li>
+                <li>{trans.project_page.card3.bullet4}</li>
+                <li>{trans.project_page.card3.bullet5}</li>
+                <li>{trans.project_page.card3.bullet6}</li>
+                <li>{trans.project_page.card3.bullet7}</li>
+                <li>{trans.project_page.card3.bullet8}</li>
+                <li>{trans.project_page.card3.bullet9}</li>
+                <li>{trans.project_page.card3.bullet10}</li>
+              </ul>
+            </div>
+            <div className="project-page__body--image">
+              <Image
+                src={getAssetPath("/images/photos/vivol-gradas.webp")}
+                alt={trans?.alt?.project_image4 || "Volunteer with signs on some stairs"}
+                fill
+                style={{ objectFit: 'cover', objectPosition: "10% 80%" }}
+              />
+            </div>
           </div>
-          <div className="project-page__body--image">
-            <Image
-              src={getAssetPath("/images/photos/vivol-gradas.webp")}
-              alt={trans?.alt?.project_image4 || "Volunteer with signs on some stairs"}
-              fill
-              style={{ objectFit: 'cover', objectPosition: "10% 80%" }}
-            />
-          </div>
-        </div>
+        </AnimatedSection>
       </div>
 
     </div>

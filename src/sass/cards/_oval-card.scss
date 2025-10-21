@@ -6,9 +6,11 @@
     width: 325px;
     border-radius: 200px 200px 50px 50px;
     min-width: 0;
+    max-height: fit-content;
 
     &__image {  
         width: 45%;
+        user-select: none;
 
         &--wrapper {
             @include flex();
@@ -31,7 +33,7 @@
 
     p, li {
         @include body-font($size: 16px);
-        line-height: 28px;
+        line-height: 22px;
     }
 
     ul {
@@ -71,7 +73,7 @@
     
         p, li {
             font-size: 14px;
-            line-height: 26px;
+            line-height: 18px;
         }
     }
 

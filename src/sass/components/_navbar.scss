@@ -2,6 +2,7 @@
     @include flex();
     background-color: $background-secondary;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slideWaveIn 0.5s ease forwards;
 
     &__content {
         @include flex($direction: row, $gap: 50px, $justify: start);
@@ -15,10 +16,19 @@
     &__logo {
         @include flex();
         cursor: pointer;
+        transition: all 0.15s ease;
 
         img {
-            height: 140px;
+            height: 70px;
             width: 140px;
+        }
+
+        &:hover {
+            transform: scale(0.95);
+        }
+
+        &:active {
+            transform: scale(0.85);
         }
     }
 
@@ -94,4 +104,17 @@
             }
         }
     }
+}
+
+// Animation
+@keyframes slideWaveIn {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(5px); 
+  }
+  100% {
+    transform: translateY(0); 
+  }
 }
