@@ -48,7 +48,7 @@ export default async function DocumentsPage(props) {
                         icon={getAssetPath("/images/icons/peru.png")}
                         text={trans.documents_page.national}
                         color="#355FB5"
-                        doc="/docs/work-profile.pdf"
+                        doc="/docs/national-profile.pdf"
                     />
                     <PinCard
                         icon={getAssetPath("/images/icons/work.png")}
