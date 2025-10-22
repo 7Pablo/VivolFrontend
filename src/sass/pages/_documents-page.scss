@@ -1,6 +1,6 @@
 .documents-page {
     @include flex($gap: 40px);
-    padding: 80px 50px;
+    padding: 50px 80px;
 
     h1 {
         @include title-font($size: 45px, $color: $blue-tertiary);
@@ -32,7 +32,7 @@
 // Responsive medium
 @include responsive(medium) {
     .documents-page {
-        padding: 80px 40px;
+        padding: 50px 40px;
 
         h1 {
             font-size: 42px;
@@ -54,7 +54,7 @@
 // Responsive smedium
 @include responsive(smedium) {
     .documents-page {
-        padding: 60px 0 0;
+        padding: 50px 0 0;
 
         &__content {
             border-radius: 0;

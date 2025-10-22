@@ -3245,6 +3245,11 @@ a:focus {
   padding: 0px 50px;
 }
 .about-page__middle--wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   width: 100%;
 }
@@ -6037,7 +6042,7 @@ a:focus {
 }
 @media (max-width: 800px) {
   .book-form {
-    padding: 60px 40px;
+    padding: 40px;
   }
   .book-form h2 {
     font-size: 38px;
@@ -6098,7 +6103,7 @@ a:focus {
   gap: 40px;
   align-items: center;
   justify-content: center;
-  padding: 80px 50px;
+  padding: 50px 80px;
 }
 .documents-page h1 {
   font-family: var(--font-montserrat), sans-serif;
@@ -6137,7 +6142,7 @@ a:focus {
 
 @media (max-width: 1200px) {
   .documents-page {
-    padding: 80px 40px;
+    padding: 50px 40px;
   }
   .documents-page h1 {
     font-size: 42px;
@@ -6158,7 +6163,7 @@ a:focus {
 }
 @media (max-width: 800px) {
   .documents-page {
-    padding: 60px 0 0;
+    padding: 50px 0 0;
   }
   .documents-page__content {
     border-radius: 0;

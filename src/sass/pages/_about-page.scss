@@ -42,6 +42,7 @@
         padding: 0px 50px;
 
         &--wrapper {
+            @include flex();
             overflow: hidden;
             width: 100%; 
         }

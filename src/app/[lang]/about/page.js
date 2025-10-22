@@ -172,7 +172,7 @@ export default async function AboutPage(props) {
               <div className="about-page__members--cards">
                 <AnimatedSection animation="coinFlip" delay={0.2} className="animated-section">
                   <MemberCard
-                    src={getAssetPath("/images/photos/anonymous.webp")}
+                    src={getAssetPath("/images/photos/member1.webp")}
                     alt="Renato Noriega"
                     name="Renato Noriega"
                     role={trans.about_page.members.member1_role}
@@ -181,7 +181,7 @@ export default async function AboutPage(props) {
                 </AnimatedSection>
                 <AnimatedSection animation="coinFlip" delay={0.4} className="animated-section">
                   <MemberCard
-                    src={getAssetPath("/images/photos/anonymous.webp")}
+                    src={getAssetPath("/images/photos/member2.webp")}
                     alt="Pamela Villagómez"
                     name="Pamela Villagómez"
                     role={trans.about_page.members.member2_role}

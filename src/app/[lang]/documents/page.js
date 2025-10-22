@@ -48,19 +48,19 @@ export default async function DocumentsPage(props) {
                         icon={getAssetPath("/images/icons/peru.png")}
                         text={trans.documents_page.national}
                         color="#355FB5"
-                        link="https://www.canva.com/design/DAGiG0Jd6eM/R1GALqhZF-qsTWjkQuIcAA/view?utm_content=DAGiG0Jd6eM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h73cb9226ad"
+                        doc="/docs/national-profile.pdf"
                     />
                     <PinCard
                         icon={getAssetPath("/images/icons/work.png")}
                         text={trans.documents_page.work}
                         color="#85AF59"
-                        link="https://www.canva.com/design/DAGiG0Jd6eM/R1GALqhZF-qsTWjkQuIcAA/view?utm_content=DAGiG0Jd6eM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h73cb9226ad"
+                        doc="/docs/work-profile.pdf"
                     />
                     <PinCard
                         icon={getAssetPath("/images/icons/faq.png")}
                         text={trans.documents_page.faq}
                         color="#D53686"
-                        link="https://www.canva.com/design/DAGiG0Jd6eM/R1GALqhZF-qsTWjkQuIcAA/view?utm_content=DAGiG0Jd6eM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h73cb9226ad"
+                        doc="/docs/FAQ.pdf"
                     />
                 </div>
             </div>

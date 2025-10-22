@@ -5,7 +5,7 @@ import { ChevronDown } from 'lucide-react';
 import Toast from "./Toast";
 import emailjs from '@emailjs/browser';
 
-export default function ContactForm({ data, buttonText, trans }) {
+export default function ContactForm({ data, buttonText }) {
     const [form, setForm] = useState({
         name: "",
         email: "",

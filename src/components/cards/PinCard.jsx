@@ -4,10 +4,10 @@
 import { getAssetPath } from "@/utils/getAssetPath";
 import Image from "next/image";
 
-export default function PinCard({ icon, text, color, link }) {
+export default function PinCard({ icon, text, color, doc }) {
 
     const handleRedirect = () => {
-        window.open(link, '_blank'); 
+        window.open(doc, '_blank'); 
     };
 
     return (
