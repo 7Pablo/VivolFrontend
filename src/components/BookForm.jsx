@@ -5,6 +5,7 @@ import Toast from "./Toast";
 import { useState } from "react";
 import { ChevronDown } from 'lucide-react';
 import AnimatedSection from "@/utils/AnimatedSection";
+import emailjs from "@emailjs/browser";
 
 export default function BookForm({data, buttonText}) {
     // Form data 
@@ -15,7 +16,7 @@ export default function BookForm({data, buttonText}) {
         name: "",
         lastName: "",
         represent: "",
-        mail: "",
+        email: "",
         tel: "",
         cel: "",
         address: "",
@@ -27,6 +28,7 @@ export default function BookForm({data, buttonText}) {
     });
 
     const [toastMessage, setToastMessage] = useState(null);
+    const [consent, setConsent] = useState(false);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -36,20 +38,58 @@ export default function BookForm({data, buttonText}) {
         }));
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    const handleSubmit = async (e) => {
+      e.preventDefault();
 
-        // Check if any field is empty
-        const hasEmptyField = Object.values(form).some((value) => value.trim() === "");
+      // Verificar que todos los campos estén completos, incluyendo tel
+      const hasEmptyField = Object.values(form).some(
+        (value) => value.trim() === ""
+      );
 
-        if(hasEmptyField) {
-            setToastMessage(data.error || "Please fill in all fields");
-            return;
-        }
+      if (hasEmptyField) {
+        setToastMessage(data.error || "Please complete all fields");
+        return;
+      }
 
-        setToastMessage(data.success || "Message sent successfully");
-        console.log(form);
-    }
+      if (!consent) {
+        setToastMessage(data.consent || "You must accept the use of your data to submit the form");
+        return;
+      }
+
+      try {
+        await emailjs.send(
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_BOOK, 
+          form,
+          process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+        );
+
+        setToastMessage(data.success || "Complaint submitted successfully");
+
+        // Reiniciar el formulario
+        setForm({
+          age: "",
+          docType: "",
+          docNum: "",
+          name: "",
+          lastName: "",
+          represent: "",
+          email: "",
+          tel: "",
+          cel: "",
+          address: "",
+          department: "",
+          province: "",
+          district: "",
+          reason: "",
+          detail: ""
+        });
+        setConsent(false);
+      } catch (error) {
+        console.error("Error:", error);
+        setToastMessage(data.try || "There was an error sending the claim. Please try again.");
+      }
+    };
 
     return (
         <>
@@ -205,9 +245,9 @@ export default function BookForm({data, buttonText}) {
                                     <h4>{data.mail}</h4>
                                     <input
                                         type="text"
-                                        name="mail"
+                                        name="email"
                                         placeholder={data.mail_holder}
-                                        value={form.mail}
+                                        value={form.email}
                                         onChange={handleChange}
                                         required
                                     />
@@ -319,6 +359,20 @@ export default function BookForm({data, buttonText}) {
                                     required
                                 />
                             </div>
+
+                            {/* Consent */}
+                            <div className="book-form__consent">
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  checked={consent}
+                                  onChange={() => setConsent(!consent)}
+                                  required
+                                />
+                                {data.consent_message}
+                              </label>
+                            </div>
+
                             {/* Button */}
                             <button
                                 className="book-form__button"

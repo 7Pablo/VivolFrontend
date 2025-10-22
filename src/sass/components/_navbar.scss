@@ -4,6 +4,10 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     animation: slideWaveIn 0.5s ease forwards;
 
+    img {
+        user-select: none;
+    }
+
     &__content {
         @include flex($direction: row, $gap: 50px, $justify: start);
         max-width: 1440px;

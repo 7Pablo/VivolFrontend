@@ -16,6 +16,10 @@
         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); 
     }
 
+    &:active {
+        transform: scale(0.9);
+    }
+
     &__icon {
         @include flex($justify: end);
     }

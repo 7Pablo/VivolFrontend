@@ -40,6 +40,7 @@ export default async function ContactPage(props) {
     <div className="contact-page">
       <AnimatedSection animation="bouncyRise" delay={0.2}>
         <div className="contact-page__card">
+
           {/* Card left */}
           <div className="contact-page__left">
             <div className="contact-page__left--top">
@@ -102,6 +103,7 @@ export default async function ContactPage(props) {
               />
             </div>
           </div>
+          
           {/* Card right */}
           <div className="contact-page__right">
             <ContactForm

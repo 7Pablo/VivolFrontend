@@ -8,11 +8,17 @@
     height: 50px;
     box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    transition: all 0.3s ease;
     user-select: none;
 
     &:hover {
         transform: translateY(-5px); 
         box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2); 
+    }
+
+    &:active {
+        transform: translateY(0px); 
+        box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
     }
 
     &__close {

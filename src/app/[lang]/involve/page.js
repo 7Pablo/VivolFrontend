@@ -50,28 +50,30 @@ export default async function InvolvePage(props) {
             <p>{trans.involve_page.body}</p>
           </AnimatedSection>
         </div>
-        <AnimatedSection animation="squashStretch" delay={0.2} className="animated-section">
           <div className="involve-page__cards">
-            <SelectCard
-              image={getAssetPath("/images/photos/vivol-selfie.webp")}
-              alt={trans.alt.involve_image2}
-              title={trans.involve_page.card1}
-              backGroundColor="#fff"
-              textColor="#2087C9"
-              route="involve/family"
-              position="50% 0%"
-            />
-            <SelectCard
-              image={getAssetPath("/images/photos/vivol-sombrero.webp")}
-              alt={trans.alt.involve_image3}
-              title={trans.involve_page.card2}
-              backGroundColor="#2087C9"
-              textColor="#fff"
-              route="involve/project"
-              position="50% 45%"
-            />
+            <AnimatedSection animation="squashStretch" delay={0.2} className="animated-section">
+              <SelectCard
+                image={getAssetPath("/images/photos/vivol-selfie.webp")}
+                alt={trans.alt.involve_image2}
+                title={trans.involve_page.card1}
+                backGroundColor="#fff"
+                textColor="#2087C9"
+                route="involve/family"
+                position="50% 0%"
+              />
+            </AnimatedSection>
+            <AnimatedSection animation="squashStretch" delay={0.4} className="animated-section">
+              <SelectCard
+                image={getAssetPath("/images/photos/vivol-sombrero.webp")}
+                alt={trans.alt.involve_image3}
+                title={trans.involve_page.card2}
+                backGroundColor="#2087C9"
+                textColor="#fff"
+                route="involve/project"
+                position="50% 45%"
+              />
+            </AnimatedSection>
           </div>
-        </AnimatedSection>
       </div>
     </div>
   );

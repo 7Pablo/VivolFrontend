@@ -717,7 +717,10 @@
       "message": "Mensaje",
       "message_holder": "Deja algun mensaje",
       "success": "Mensaje enviado con éxito",
-      "error": "Por favor, completa todos los campos"
+      "error": "Por favor, completa todos los campos",
+      "try": "Hubo un error al enviar el reclamo. Intenta nuevamente.",
+      "consent": "Debe aceptar el uso de sus datos para enviar el formulario",
+      "consent_message": "Al enviar este formulario, acepto que mis datos personales serán utilizados únicamente para responder mi consulta y fines administrativos internos, por VIVOL."
     },
 
     "book_page": {
@@ -759,8 +762,11 @@
       "reason_holder": "Ingresa el motivo de reclamo",
       "detail": "Detalle",
       "detail_holder": "Ingresa con detalle el reclamo",
+      "consent_message": "Al enviar este formulario, acepto que mis datos se usarán únicamente para procesar mi reclamo y fines administrativos internos, por VIVOL. Entiendo que estos datos no serán compartidos con terceros, que puedo ejercer mis derechos de acceso, rectificación, supresión y oposición, y que podré revocar este consentimiento en cualquier momento.",
       "success": "Reclamo enviado con éxito",
-      "error": "Por favor, completa todos los campos"
+      "error": "Por favor, completa todos los campos",
+      "try": "Hubo un error al enviar el reclamo. Intenta nuevamente.",
+      "consent": "Debe aceptar el uso de sus datos para enviar el formulario"
     },
 
     "documents_page": {

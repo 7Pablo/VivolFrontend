@@ -1,12 +1,11 @@
-// ContactForm.jsx (Client component)
 'use client';
 
 import { useState } from "react";
 import { ChevronDown } from 'lucide-react';
 import Toast from "./Toast";
+import emailjs from '@emailjs/browser';
 
-export default function ContactForm({ data, buttonText }) {
-    // Form data 
+export default function ContactForm({ data, buttonText, trans }) {
     const [form, setForm] = useState({
         name: "",
         email: "",
@@ -16,29 +15,49 @@ export default function ContactForm({ data, buttonText }) {
     });
 
     const [toastMessage, setToastMessage] = useState(null);
+    const [consent, setConsent] = useState(false);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
         setForm((prev) => ({
-        ...prev,
-        [name]: value
+            ...prev,
+            [name]: value
         }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // Check if any field is empty
         const hasEmptyField = Object.values(form).some((value) => value.trim() === "");
 
-        if(hasEmptyField) {
-            setToastMessage(data.error || "Please fill in all fields");
+        if (hasEmptyField) {
+            setToastMessage(data.error || "Please fill in all the fields");
             return;
         }
-        setToastMessage(data.success || "Message sent successfully");
-        console.log(form);
-    }
-    
+
+        if (!consent) {
+            setToastMessage(data.consent || "You must accept the use of your data to submit the form");
+            return;
+        }
+
+        try {
+            await emailjs.send(
+                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_CONTACT,
+                form,
+                process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+            );
+
+            setToastMessage(data.success || "Message sent successfully");
+            setForm({ name: "", email: "", number: "", program: "", message: "" });
+            setConsent(false);
+
+        } catch (error) {
+            console.error("Error:", error);
+            setToastMessage(data.try || "There was an error sending the claim. Please try again.");
+        }
+    };
+
     return (
         <>
             {toastMessage && (
@@ -48,11 +67,7 @@ export default function ContactForm({ data, buttonText }) {
                 />
             )}
 
-            <form
-                className="contact-form"
-                onSubmit={handleSubmit}
-            >
-                {/* Name */}
+            <form className="contact-form" onSubmit={handleSubmit}>
                 <div className="contact-form__input">
                     <h4>{data.name}</h4>
                     <input
@@ -64,11 +79,11 @@ export default function ContactForm({ data, buttonText }) {
                         required
                     />
                 </div>
-                {/* Mail */}
+
                 <div className="contact-form__input">
                     <h4>{data.mail}</h4>
                     <input
-                        type="text"
+                        type="email"
                         name="email"
                         placeholder={data.mail_holder}
                         value={form.email}
@@ -76,7 +91,7 @@ export default function ContactForm({ data, buttonText }) {
                         required
                     />
                 </div>
-                {/* Number */}
+
                 <div className="contact-form__input">
                     <h4>{data.number}</h4>
                     <input
@@ -88,7 +103,7 @@ export default function ContactForm({ data, buttonText }) {
                         required
                     />
                 </div>
-                {/* Program */}
+
                 <div className="contact-form__input">
                     <h4>{data.program}</h4>
                     <div className="contact-form__input--wrapper">
@@ -107,8 +122,7 @@ export default function ContactForm({ data, buttonText }) {
                         <ChevronDown className="select-icon" />
                     </div>
                 </div>
-            
-                {/* Message */}
+
                 <div className="contact-form__input">
                     <h4>{data.message}</h4>
                     <textarea
@@ -119,12 +133,21 @@ export default function ContactForm({ data, buttonText }) {
                         required
                     />
                 </div>
-            
-                {/* Button */}
-                <button
-                    className="contact-form__button"
-                    type="submit"
-                >
+
+                {/* Consent */}
+                <div className="contact-form__consent">
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={consent}
+                      onChange={() => setConsent(!consent)}
+                      required
+                    />
+                    {data.consent_message}
+                  </label>
+                </div>
+
+                <button className="contact-form__button" type="submit">
                     {buttonText}
                 </button>
             </form>

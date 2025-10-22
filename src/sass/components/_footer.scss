@@ -4,6 +4,10 @@
     margin-top: auto;
     padding: 50px 100px 25px 100px;
     background: linear-gradient(to bottom, $blue-secondary, $blue-dark 80%);
+
+    img {
+        user-select: none;
+    }
     
     &__top {
         @include flex($direction: row, $justify: space-between, $align: start, $gap: 50px);

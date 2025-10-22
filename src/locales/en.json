@@ -718,7 +718,10 @@
       "message": "Message",
       "message_holder": "Leave a message",
       "success": "Message sent successfully",
-      "error": "Please fill in all the fields"
+      "error": "Please fill in all the fields",
+      "try": "There was an error sending the claim. Please try again.",
+      "consent": "You must accept the use of your data to submit the form",
+      "consent_message": "By submitting this form, I agree that my personal data will be used solely to respond to my inquiry and for internal administrative purposes by VIVOL."
     },
 
     "book_page": {
@@ -761,8 +764,11 @@
       "reason_holder": "Enter the reason for the complaint",
       "detail": "Details",
       "detail_holder": "Enter detailed information about the complaint",
+      "consent_message": "By submitting this form, I agree that my data will be used solely by VIVOL to process my claim and for internal administrative purposes. I understand that this data will not be shared with third parties, that I may exercise my rights of access, rectification, erasure, and objection, and that I may withdraw this consent at any time.",
       "success": "Complaint submitted successfully",
-      "error": "Please complete all fields"
+      "error": "Please complete all fields",
+      "try": "There was an error sending the claim. Please try again.",
+      "consent": "You must accept the use of your data to submit the form"
     },
 
     "documents_page": {
