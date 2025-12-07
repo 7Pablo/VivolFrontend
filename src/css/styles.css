@@ -50,6 +50,8 @@ a:focus {
   background-color: #f6f6f6;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   animation: slideWaveIn 0.5s ease forwards;
+  position: relative;
+  z-index: 999;
 }
 .navbar img {
   user-select: none;
